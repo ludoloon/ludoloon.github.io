@@ -1,0 +1,435 @@
+/***** Global *****/
+
+/* Body */
+body {
+    background: url("vaporwave-sunset.png") no-repeat center center fixed;
+    background-size: fill;
+    background-size: cover, contain;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+    color: #DFDFDF;
+    font-family:'Open Sans', sans-serif;
+    line-height: 1.5;
+    margin: 6px auto;
+    padding: 0;
+    text-align: left;
+}
+
+/* Headings */
+h1 {font-size: 2em }
+h2 {font-size: 1.571em;}	/* 22px */
+h3 {font-size: 1.429em; font-style: italic;}	/* 20px */
+h4 {font-size: 1.286em}	/* 18px */
+h5 {font-size: 1.143em}	/* 16px */
+h6 {font-size: 1em}		/* 14px */
+
+h1, h2, h3, h4, h5, h6 {
+    color:#FF71CE;
+	font-weight: 300;
+	line-height: 1.1;
+	margin-bottom: .4em;
+	font-family:'Open Sans', sans-serif;
+}
+
+h3, h4, h5, h6 { margin-top: .8em; }
+	
+hr { border: 2px solid #EEEEEE; }
+
+/* Anchors */
+a {outline: 0;}
+a img {border: 0px; text-decoration: none;}
+h1 a:link, h1 a:visited {text-decoration: none;}
+a:link, a:visited {
+	color: #FF71CE;
+	padding: 0 1px;
+	text-decoration: underline;
+}
+a img:hover, a:active {
+	background-color: #FF71CE;
+	color: #fff;
+	text-decoration: none;
+	text-shadow: 1px 1px 1px #333;
+    
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;  
+}
+
+h1 a:hover {
+    background-color: inherit;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Paragraphs */
+p {margin-bottom: 1.143em;}
+
+strong, b {font-weight: bold;}
+em, i {font-style: italic;}
+
+::-moz-selection {background: #777; color: #fff;}
+::selection {background: #777; color: #fff;}
+
+/* Lists */
+ul {
+	list-style: outside square;
+	margin: 1em 0 1.5em 1.5em;
+    color: #BBB;
+}
+
+ol {
+	list-style: outside decimal;
+	margin: 1em 0 1.5em 1.5em;
+    color: #BBB;
+}
+
+.post-info {
+    display: block;
+    padding-left: 5px; 
+    padding-right:16px;
+    border-left: 1px solid #FFF;
+    margin-bottom: 10px;
+    margin-left: 6px;
+}
+
+.post-info a{
+    text-decoration: none;
+}
+
+.post-info p{
+    margin-bottom: 1px;
+}
+
+dl {margin: 0 0 1.5em 0;}
+dt {font-weight: bold;}
+dd {margin-left: 1.5em;}
+
+pre{background-color: #000; padding: 10px; color: #fff; margin: 10px; overflow: auto;}
+
+/* Quotes */
+blockquote {
+    margin: 20px;
+    font-style: italic;
+}
+cite {}
+
+q {}
+
+div.note {
+   float: right;
+   margin: 5px;
+   font-size: 85%;
+   max-width: 300px;
+}
+
+/* Tables */
+table {margin: .5em auto 1.5em auto; width: 98%;}
+	
+	/* Thead */
+	thead th {padding: .5em .4em; text-align: left;}
+	thead td {}
+
+	/* Tbody */
+	tbody td {padding: .5em .4em;}
+	tbody th {}
+	
+	tbody .alt td {}
+	tbody .alt th {}
+	
+	/* Tfoot */
+	tfoot th {}
+	tfoot td {}
+	
+/* HTML5 tags */
+header, section, footer,
+aside, nav, article, figure {
+	display: block;
+}
+
+/***** Layout *****/
+.body {clear: both; margin: 0 auto;}
+img.right figure.right {float: right; margin: 0 0 2em 2em;}
+img.left, figure.left {float: right; margin: 0 0 2em 2em;}
+
+/*
+	Header
+*****************/
+#banner {
+	margin: 0;
+	padding: 0;
+}
+
+/* Banner */
+#banner h1 {font-size: 3.571em; line-height: 0;}
+#banner h1 a:link, #banner h1 a:visited {
+    color: #fff;
+    display: block;
+    font-weight: 300;
+    margin: 0 0 .6em .2em;
+    text-decoration: none;
+}
+#banner h1 a:hover, #banner h1 a:active {
+    background: none;
+    color: #FF71CE;
+    text-shadow: none;
+}
+
+#banner h1 strong {font-size: 0.36em; font-weight: normal;}
+
+/* Main Nav */
+#banner nav {
+    background: #000305;
+    border: 1px solid #EAEAEA;
+    font-size: 1.1em;
+    height: 40px;
+    line-height: 1.5;
+    margin: auto;
+    padding: 0;
+    text-align: center;
+    
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+#banner nav ul {list-style: none; margin: 0 auto;}
+#banner nav li {float: left; display: inline; margin: 0;}
+
+#banner nav a:link, #banner nav a:visited {
+    color: #fff;
+    display: inline-block;
+    height: 30px;
+    padding: 5px 1.5em;
+    text-decoration: none;
+}
+#banner nav a:hover, #banner nav a:active,
+#banner nav .active a:link, #banner nav .active a:visited {
+    background: #b92c3a;
+    color: #fff;
+    text-shadow: none !important;
+}
+
+#banner nav li:first-child a {
+    border-top-left-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -webkit-border-top-left-radius: 5px;
+    
+    border-bottom-left-radius: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+}
+
+#banner nav b {
+    font-size: 1.1em;
+    font-weight: 300;
+    color: #fff;
+    display: inline-block;
+    height: 30px;
+    padding: 5px 1.5em;
+    text-decoration: none;
+}
+
+/*
+	Featured
+*****************/
+#featured {
+	background: #202020;
+	border: 1px solid #EAEAEA;
+    margin: 6px 0 0 0; 
+	overflow: hidden;
+	padding: 20px;
+	
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+#featured figure {
+	border: 2px solid #eee;
+	float: right;
+	margin: 0.786em 2em 0 5em;
+	width: 248px;
+}
+#featured figure img {display: block; float: right;}
+
+#featured h2 {font-size: 1.714em; margin-bottom: 0.333em;}
+#featured h3 {font-size: 1.429em; margin-bottom: .5em;}
+
+#featured h3 a:link, #featured h3 a:visited {color: #000305; text-decoration: none;}
+#featured h3 a:hover, #featured h3 a:active {color: #fff;}
+
+/*
+	Body
+*****************/
+#content {
+    text-align: center;
+
+    background: rgba(32,32,32,.5);
+    border: 1px solid #EAEAEA;
+	margin: auto auto;
+	overflow: hidden;
+	padding: 20px;
+    width: 32em;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+#article-image {
+    display: block;
+    max-width: 100%;
+    max-height: 16em;
+    border: 1px solid #000;
+}
+
+#toc-header {
+    text-align: center;
+    width: 100%;
+    font-weight: 600;
+    font-size: 1em;
+    color: #DFDFDF;
+    padding: 0;
+    margin: 0;
+}
+
+#toc { /* table of contents */
+    display: inline-block;
+    background: #333;
+    border: 1px solid #FFF;
+    padding: 10px;
+
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;    
+}
+
+#toc ul{
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+#toc ul ul{
+    list-style-type: square;
+    color: #AAA;
+}
+
+/*
+    Media Player
+*****************/
+
+.thumbnail {
+    border: 3px solid #000;
+    width: 256px;
+    height: 256px;
+}
+
+.coverart {
+    border: 3px solid #000;
+    display: block;
+    max-width: 100%;
+    max-height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.song_list {
+    background: #111;
+    color: #FFF;
+    width: 100%;
+    overflow: hidden;
+}
+
+#player {
+    width: 100%;
+    font-size: 1em;
+}
+
+/*
+	Extras
+*****************/
+#extras {margin: 6px 20px; overflow: hidden;}
+
+#extras ul {list-style: none; margin: 0;}
+#extras li {border-bottom: 1px solid #fff;}
+#extras h2 {
+	color: #fff;
+	font-size: 1.429em;
+	margin-bottom: .25em;
+	padding: 0 3px;
+}
+
+#extras a:link, #extras a:visited {
+	color: #888;
+	display: block;
+	border-bottom: 1px solid #F4E3E3;
+	text-decoration: none;
+	padding: .3em .25em;
+}
+
+#extras a:hover, #extras a:active {color: #fff;}
+
+/* Blogroll */
+#extras .blogroll {
+    float: left;
+    max-width: 50%;
+}
+
+#extras .blogroll li {float: left; margin: 6px;}
+
+/* Social */
+#extras .social {
+    float: right;
+    max-width: 50%;
+}
+
+#extras .social a {
+    padding: 6px 25px;
+}
+
+/***** Sections *****/
+/* Blog */
+.hentry {
+	display: block;
+	clear: both;
+	border-bottom: 2px solid #eee;
+	padding: 1em 0;
+}
+li:last-child .hentry, #content > .hentry {border: 0; margin: 0;}
+#content > .hentry {padding: 1em 0;}
+.hentry img{display : none ;}
+.entry-title {font-size: 2.5em; margin-bottom: 10px; margin-top: 0;}
+.entry-title a:link, .entry-title a:visited {text-decoration: none;}
+.entry-title a:visited {background-color: #fff;}
+
+.hentry .post-info * {font-style: normal;}
+	/* Content */
+	.hentry footer {margin-bottom: 1em;}
+	.hentry footer address {display: inline;}
+	#posts-list footer address {display: block;}
+
+	/* Blog Index */
+	#posts-list {list-style: none; margin: 0;}
+	#posts-list .hentry {padding-left: 10px; position: relative;}
+	
+	#posts-list footer {
+		left: 30px;
+		position: relative;
+        float: right;
+		top: 0em;
+		width: 100%;
+	}
