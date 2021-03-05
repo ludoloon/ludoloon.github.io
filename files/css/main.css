@@ -52,6 +52,7 @@ a:link, a:visited {
 	padding: 0 1px;
 	text-decoration: underline;
 }
+
 a img:hover, a:active {
 	/*background-color: #FF71CE;
 	color: #fff;*/
