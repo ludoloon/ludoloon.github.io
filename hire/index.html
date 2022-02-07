@@ -39,7 +39,6 @@
 <script> 
 /* --- init --- */ 
 totalMinutes = 0; 
-totalTracks = 0; 
 deliveryRate = ""; 
 payRate = 100; 
 emailMessage = ""; 
@@ -83,7 +82,6 @@ function updateVariables() {
     timeframe = timeframeRef.options[timeframeRef.selectedIndex].text;
     emailMessage = '[Custom Music Request - Summary]' +
             '\nTotal Minutes: ' + totalMinutes +
-            '\nTotal # of Tracks: ' + totalTracks +
             '\nDelivery Time frame: ' + timeframe +
             '\nEstimated Total: $' + totalEstimate +
             '\n-----' + 
