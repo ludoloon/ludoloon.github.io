@@ -36,42 +36,43 @@
 <!--- price calculator form --->
 <noscript><strong>Javascript required to function: E-mail manually to the address below, including the details below, if unable to activate it.</strong></noscript>
 
-<script>
-/* --- init --- */
-totalMinutes = 0;
-totalTracks = 0;
-deliveryRate = "";
-payRate = 100;
-emailMessage = "";
-totalEstimate = 0;
-maxDeliverableMinutes = [3, 7, 15];
-maxDeliverableTracks = [2, 3, 6];
+<script> 
+/* --- init --- */ 
+totalMinutes = 0; 
+totalTracks = 0; 
+deliveryRate = ""; 
+payRate = 100; 
+emailMessage = ""; 
+totalEstimate = 0; 
+maxDeliverableMinutes = [9, 18, 27]; 
 
-function updateVariables() {
-    /* Object References */
-    minutesRef = document.getElementById("minutesNumber");
-    tracksRef = document.getElementById("tracksNumber");
-    timeframeRef = document.getElementById("timeframeSelect");
+function updateVariables() { 
+    /* Object References */ 
+    minutesRef = document.getElementById("minutesNumber"); 
+    tracksRef = document.getElementById("tracksNumber"); 
+    timeframeRef = document.getElementById("timeframeSelect"); 
     estimateRef = document.getElementById("estimateTotal");
 
-    /* Update calculator variables */
+    /* Update variables, make sure totalMinutes isn't " " for email */
     totalMinutes = (minutesRef.value != "") ? minutesRef.value : 0;
-    totalTracks = (tracksRef.value != "") ? tracksRef.value : 0;
 
     /* Update delivery timeframe estimates based on minutes needed */
     for(var i = 0; i < timeframeRef.options.length; i++){
-        if((totalMinutes > maxDeliverableMinutes[i] || totalTracks > maxDeliverableTracks[i])){
-            if(timeframeRef.options[i].selected == true){
-                timeframeRef.selectedIndex++;
-            }
+            if(totalMinutes > maxDeliverableMinutes[i]){
+                if(timeframeRef.options[i].selected == true){
+                    timeframeRef.selectedIndex++;
+                }
             timeframeRef.options[i].disabled = true;
-        } else {
-            timeframeRef.options[i].disabled = false;
-        }
+            } else {
+                timeframeRef.options[i].disabled = false;
+            }
     }
 
+    /* Update delivery rate & estimate after validating minutes fit the timeframe*/
     deliveryRate = timeframeRef.value;
     totalEstimate = totalMinutes * payRate * deliveryRate;
+
+    /* In case a delivery timeframe is not selected, tell the user to do so */
     if(deliveryRate > 0 ) {
         estimateRef.value = "$"+totalEstimate;
     } else {
@@ -81,51 +82,48 @@ function updateVariables() {
     /* Compose email message */
     timeframe = timeframeRef.options[timeframeRef.selectedIndex].text;
     emailMessage = '[Custom Music Request - Summary]' +
-        '\nTotal Minutes: ' + totalMinutes +
-        '\nTotal # of Tracks: ' + totalTracks +
-        '\nDelivery Time frame: ' + timeframe +
-        '\nEstimated Total: $' + totalEstimate +
-        '\n-----' + 
-        '\nPlease briefly describe the project, who this music request is for and include any musical style references. Thanks!';
+            'nTotal Minutes: ' + totalMinutes +
+            'nTotal # of Tracks: ' + totalTracks +
+            'nDelivery Time frame: ' + timeframe +
+            'nEstimated Total: $' + totalEstimate +
+            'n-----' + 
+            'nPlease briefly describe the project, who this music request is for and include any musical style references. Thanks!';
 }
 
-function updateInput(val, inputId) {
-    document.getElementById(inputId).value=val;
-    updateVariables();
-}
+function updateInput(val, inputId) { 
+    document.getElementById(inputId).value=val; 
+    updateVariables(); 
+} 
 </script>
 
-<form name="estimateCalculator">
-<h2>Calculate your estimate:</h2>
+<form name="estimateCalculator"> 
+<h2>Calculate your estimate:</h2> 
 <p>
-Total minutes of music needed: <input type="number" id="minutesNumber" value="1" min="1" max="40" onchange="updateInput(this.value, 'minutesRange');"><br/>
-<input type="range" id="minutesRange" value="1" min="1" max="40" oninput="updateInput(this.value, 'minutesNumber');"></br>
-
-Total number of tracks needed: <input type="number" id="tracksNumber" value="1" min="1" max="20" onchange="updateInput(this.value, 'tracksRange');"><br/>
-<input type="range" id="tracksRange" value="1" min="1" max="20" oninput="updateInput(this.value, 'tracksNumber');"></br>
-
-<label for="timeframeSelect">How many business days (Mon-Fri) until you need finished music?</label><br/>
-<select id="timeframeSelect" size="4" onchange="updateVariables();">
-    <option value=2.0>1-2 Days</option>
-    <option value=1.75 selected="selected">3-5 Days</option>
-    <option value=1.25>6-14 Days</option>
-    <option value=1.0>15+ Days</option>
-</select><br/>
-<i>(Total project size impacts timeframe)</i>
+    Total minutes of music needed: 
+    <input type="number" id="minutesNumber" value="0" min="1" max="40" onchange="updateInput(this.value, 'minutesRange');"><br/> 
+    <input type="range" id="minutesRange" value="0" min="1" max="40" oninput="updateInput(this.value, 'minutesNumber');"><br/>
+    <label for="timeframeSelect">How many business days (Mon-Fri) until you need finished music?</label><br/> 
+    <select id="timeframeSelect" size="4" onchange="updateVariables();"> 
+        <option value=2.0 selected="selected">3-5 Days</option> 
+        <option value=1.75>6-10 Days</option> 
+        <option value=1.5>11-15 Days</option> 
+        <option value=1.0>16+ Days</option> 
+    </select><br/> 
+    <i>(Total project size impacts timeframe)</i> 
 </p>
-<p style="font-weight: bold; font-size: 1.5em;">
-Estimated total: <output id="estimateTotal" for="estimateCalculator" onforminput="value = totalEstimate;">$0</output>
-</p>
-<a onclick="location.href='mailto:hire@ludoloon.studio?subject=Custom Music Request&body='+encodeURIComponent(emailMessage);" href="javascript:void(0)">
+<p style="font-weight: bold; font-size: 1.5em;"> 
+    Estimated total: <output id="estimateTotal" for="estimateCalculator" onforminput="value = totalEstimate;">$0</output> 
+</p> 
+<a onclick="location.href='mailto:hire@ludoloon.studio?subject=Custom Music Request&body='+encodeURIComponent(emailMessage);" href="javascript:void(0)"> 
     <button onclick="updateVariables();" type="button">Send via E-mail</button>
 </a> 
-<a onclick="navigator.clipboard.writeText(emailMessage);" href="javascript:void(0)">
-    <button onclick="updateVariables();" type="button">Copy to Clipboard</button>
-</a>
+<a onclick="navigator.clipboard.writeText(emailMessage);" href="javascript:void(0)"> 
+    <button onclick="updateVariables();" type="button">Copy to Clipboard</button> 
+</a> 
 </form>
 
-<p><strong>NOTE: This will generate an e-mail with your Operating System's default client.</strong> </p>
-<p>If you prefer a different e-mail client, send an email with subject line <i>Custom Music Request</i> to: <a href="mailto:hire@ludoloon.studio">hire@ludoloon.studio</a></p>
+<p><strong>NOTE: This will generate an e-mail with your Operating System's default client.</strong></p>
+<p>If you prefer a different e-mail client, send an email with subject line <i>Custom Music Request</i> to <a href="mailto:hire@ludoloon.studio">hire@ludoloon.studio</a></p>
 </section>
 <!-- /#content -->
         <footer id="contentinfo" class="body">
