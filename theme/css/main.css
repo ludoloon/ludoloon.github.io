@@ -63,7 +63,7 @@ nav img { width: 4em; height: 4em; border-right: 1px solid #EAEAEA; }
     margin: 0;
     padding: auto;
     /*border: 3px groove #AAA;*/
-    padding: .5em 1em;
+    padding: 1em;
 }
 
 img{
@@ -92,10 +92,30 @@ img{
     text-align: center;
 }
 
+form{
+    background: rgba(185,103,255, .15);
+    border: 3px groove #EAEAEA; 
+    padding: 1em;
+}
+
+input[type="text"], input[type="number"]{
+    background: inherit; 
+    color: inherit; 
+    width: 3em;
+}
+
+option:disabled{
+    color: #A00;
+    background: #CCC;
+    text-decoration: line-through;
+    opacity: .8;
+}
+
 /* Footer */
 time {
-    float: right;
-    display: inline;
+    /*float: right;
+    display: inline;*/
     padding: .33em;
-    border: dotted 3px #EEE;
+    border-top: groove 3px #EEE;
+    border-bottom: groove 3px #EEE;
 }

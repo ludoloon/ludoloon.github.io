@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+          <title>LudoLoon Studio - Custom Music Request</title>
+        <meta charset="utf-8" />
+        <meta name="generator" content="Pelican" />
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="https://ludoloon.studio/theme/css/main.css" type="text/css" />
+        <link rel="shortcut icon" href="https://ludoloon.studio/images/favicon.ico" />
+        <!-- Javascript -->
+        <!-- Feed stuff -->
+        <link href="https://ludoloon.studio/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="LudoLoon Studio Full Atom Feed" />
+
+
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+            
+        </header><!-- /#banner -->
+        <nav id="menu">
+        <table><tbody><tr>
+            <td><a href="/"><img id="header-logo" src="/images/navatar.png"/></a></td>
+            <td><a href="/music/">WORK</a></td>
+            <td><a href="/hire/">HIRE</a></td>
+            <td><a href="/about/">ABOUT</a></td>
+            <td><a href="/category/blog.html">BLOG</a></td>
+            <td><a href="mailto:connect@ludoloon.studio">E-MAIL</a></td>
+        </tr></tbody></table></nav><!-- /#menu -->
+<section id="content">
+    <h1>Custom Music Request</h1>
+    
+
+    <p><em>Requesting an estimate does not create a binding contract for service until terms are agreed upon by all parties.</em></p>
+<!--- price calculator form --->
+<noscript><strong>Javascript required to function: E-mail manually to the address below, including the details below, if unable to activate it.</strong></noscript>
+
+<script>
+/* --- init --- */
+totalMinutes = 0;
+totalTracks = 0;
+deliveryRate = "";
+payRate = 100;
+emailMessage = "";
+totalEstimate = 0;
+maxDeliverableMinutes = [3, 7, 15];
+maxDeliverableTracks = [2, 3, 6];
+
+function updateVariables() {
+    /* Object References */
+    minutesRef = document.getElementById("minutesNumber");
+    tracksRef = document.getElementById("tracksNumber");
+    timeframeRef = document.getElementById("timeframeSelect");
+    estimateRef = document.getElementById("estimateTotal");
+
+    /* Update calculator variables */
+    totalMinutes = (minutesRef.value != "") ? minutesRef.value : 0;
+    totalTracks = (tracksRef.value != "") ? tracksRef.value : 0;
+
+    /* Update delivery timeframe estimates based on minutes needed */
+    for(var i = 0; i < timeframeRef.options.length; i++){
+        if((totalMinutes > maxDeliverableMinutes[i] || totalTracks > maxDeliverableTracks[i])){
+            if(timeframeRef.options[i].selected == true){
+                timeframeRef.selectedIndex++;
+            }
+            timeframeRef.options[i].disabled = true;
+        } else {
+            timeframeRef.options[i].disabled = false;
+        }
+    }
+
+    deliveryRate = timeframeRef.value;
+    totalEstimate = totalMinutes * payRate * deliveryRate;
+    if(deliveryRate > 0 ) {
+        estimateRef.value = "$"+totalEstimate;
+    } else {
+        estimateRef.value = "(Select Delivery Timeframe)"
+    }
+
+    /* Compose email message */
+    timeframe = timeframeRef.options[timeframeRef.selectedIndex].text;
+    emailMessage = '[Custom Music Request - Summary]' +
+        '\nTotal Minutes: ' + totalMinutes +
+        '\nTotal # of Tracks: ' + totalTracks +
+        '\nDelivery Time frame: ' + timeframe +
+        '\nEstimated Total: $' + totalEstimate +
+        '\n-----' + 
+        '\nPlease briefly describe the project, who this music request is for and include any musical style references. Thanks!';
+}
+
+function updateInput(val, inputId) {
+    document.getElementById(inputId).value=val;
+    updateVariables();
+}
+</script>
+
+<form name="estimateCalculator">
+<h2>Calculate your estimate:</h2>
+<p>
+Total minutes of music needed: <input type="number" id="minutesNumber" value="1" min="1" max="40" onchange="updateInput(this.value, 'minutesRange');"><br/>
+<input type="range" id="minutesRange" value="1" min="1" max="40" oninput="updateInput(this.value, 'minutesNumber');"></br>
+
+Total number of tracks needed: <input type="number" id="tracksNumber" value="1" min="1" max="20" onchange="updateInput(this.value, 'tracksRange');"><br/>
+<input type="range" id="tracksRange" value="1" min="1" max="20" oninput="updateInput(this.value, 'tracksNumber');"></br>
+
+<label for="timeframeSelect">How many business days (Mon-Fri) until you need finished music?</label><br/>
+<select id="timeframeSelect" size="4" onchange="updateVariables();">
+    <option value=2.0>1-2 Days</option>
+    <option value=1.75 selected="selected">3-5 Days</option>
+    <option value=1.25>6-14 Days</option>
+    <option value=1.0>15+ Days</option>
+</select><br/>
+<i>(Total project size impacts timeframe)</i>
+</p>
+<p style="font-weight: bold; font-size: 1.5em;">
+Estimated total: <output id="estimateTotal" for="estimateCalculator" onforminput="value = totalEstimate;">$0</output>
+</p>
+<a onclick="location.href='mailto:hire@ludoloon.studio?subject=Custom Music Request&body='+encodeURIComponent(emailMessage);" href="javascript:void(0)">
+    <button onclick="updateVariables();" type="button">Send via E-mail</button>
+</a> 
+<a onclick="navigator.clipboard.writeText(emailMessage);" href="javascript:void(0)">
+    <button onclick="updateVariables();" type="button">Copy to Clipboard</button>
+</a>
+</form>
+
+<p><strong>NOTE: This will generate an e-mail with your Operating System's default client.</strong> </p>
+<p>If you prefer a different e-mail client, send an email with subject line <i>Custom Music Request</i> to: <a href="mailto:hire@ludoloon.studio">hire@ludoloon.studio</a></p>
+</section>
+<!-- /#content -->
+        <footer id="contentinfo" class="body">
+                <ul class="social">
+                        <li><a href="https://youtube.com/channel/UCziXXRaD4uUuTL7tMWtQeVQ"><img src="https://ludoloon.studio/images/icons/youtube.png" alt="youtube"/></a></li>
+                        <li><a href="https://instagram.com/ludoloonstudio/"><img src="https://ludoloon.studio/images/icons/instagram.png" alt="instagram"/></a></li>
+                        <li><a href="https://twitter.com/ludoloonstudio"><img src="https://ludoloon.studio/images/icons/twitter.png" alt="twitter"/></a></li>
+                        <li><a href="https://reddit.com/user/LudoLoonStudio/"><img src="https://ludoloon.studio/images/icons/reddit.png" alt="reddit"/></a></li>
+                        <li><a href="https://tiktok.com/@ludoloonstudio"><img src="https://ludoloon.studio/images/icons/tiktok.png" alt="tiktok"/></a></li>
+                        <li><a href="https://www.twitch.tv/ludoloonstudio"><img src="https://ludoloon.studio/images/icons/twitch.png" alt="twitch"/></a></li>
+                </ul>
+            <script style="margin: auto;" async data-uid="0950d6e40f" src="https://wondrous-founder-3760.ck.page/0950d6e40f/index.js"></script>
+        </footer><!-- /#contentinfo -->
+</body>
+</html>
