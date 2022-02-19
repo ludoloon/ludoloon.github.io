@@ -14,9 +14,12 @@ body{
 }
 
 /* Heading */
-h1{
-    text-align: center;
+h1, h2, h3, h4, h5, h6{
+    color: #05ffa1
 }
+h1{ text-align: center; font-size: 2em; }
+h2{ font-size: 1.75em; }
+h3{ font-size: 1.5em; }
 
 /* Navigation */
 /* Links */
@@ -24,7 +27,11 @@ a {color: #01cdfe;text-decoration: none;}
 a:visited {color: #00bced;text-decoration: none;}
 a:hover, a:active {color: #ff71ce; text-decoration: underline;}
 a:hover .thumbnail, a:active .thumbnail {border-color: #ff71ce; opacity: 85%;}
-a:hover img {opacity: 85%;}
+a:hover img {opacity: 75%;}
+iframe {
+    border: 3px groove #EAEAEA;
+    width: 100%;
+}
 
 /* Navbar */
 nav {
@@ -38,6 +45,70 @@ nav {
 nav table { width: 100%; }
 nav img, table, tbody, tr, td { margin: 0; padding: 0; border-spacing: 0; }
 nav img { width: 4em; height: 4em; border-right: 1px solid #EAEAEA; }
+
+/* Landing Page */
+.landing-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: #333;
+    border: 3px groove #EAEAEA;
+    margin: 1em;
+}
+.landing-thumbnail { 
+    margin: .75em;
+    /*width: 205px;*/
+    max-width: 16em;
+    justify-content: center;
+    align-items: center;
+    /*flex-grow: 1;*/
+}
+.landing-thumbnail img { width: 100%; box-shadow: 0 1px 1px 2px #000; }
+.landing-summary { 
+    padding: 0 1em;
+    border-left: 1px solid #444; 
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-width: 16em;
+}
+.landing-summary h3 { margin: .25em 0 0 0; }
+.landing-tags { 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.landing-tag { border: 1px groove #EAEAEA; padding: .25em .25em; margin: .5em; }
+.landing-links { padding: 0; margin: 0; }
+.landing-links img { max-width: 48px; max-height: 48px; margin: .25em; }
+
+/* Music page */
+.album-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-between;
+}
+.album {
+    position: relative;
+    background: #333;
+    border: 1px solid #EAEAEA;
+    width: 27em;
+    margin-bottom: 2em;
+    padding: 1em;
+    padding-bottom: 0;
+}
+.album-art img { box-shadow: 0 1px 1px 2px #000;}
+.play-button-overlay {position: absolute; top: 30px; left: 30px; width: 10%; height: 10%; opacity: .4; pointer-events: none; padding: 1em; }
+.album-info {
+    text-align: center; 
+    margin: 0em; 
+}
+.album-info img { width: 48px; height: 48px; margin: 0 4px;} /* link icons */
 
 /* Social List */
 .social ul{
@@ -57,7 +128,7 @@ nav img { width: 4em; height: 4em; border-right: 1px solid #EAEAEA; }
 
 /* Content */
 #content{
-    background: rgba(32,32,32,.8);
+    background: rgba(32,32,32,.9);
     border: 3px groove #EAEAEA;
     color: #EEE;
     margin: 0;
@@ -69,14 +140,6 @@ nav img { width: 4em; height: 4em; border-right: 1px solid #EAEAEA; }
 img{
     max-width: 100%;
     max-height: 100%;
-}
-
-.thumbnail {
-    border: 3px solid #083749;
-    width: 26%;
-    height: 26%;
-    min-width: 128px;
-    min-height: 128px;
 }
 
 .coverart {
@@ -106,7 +169,7 @@ input[type="text"], input[type="number"]{
 
 option:disabled{
     color: #A00;
-    background: #CCC;
+    background: #AAA;
     text-decoration: line-through;
     opacity: .8;
 }

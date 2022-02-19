@@ -13,32 +13,118 @@
 <!-- Feed stuff -->
 <link href="https://ludoloon.studio/feeds/all.atom.xml" rel="alternate" title="LudoLoon Studio Full Atom Feed" type="application/atom+xml"/>
 <meta content="Check out my most recent portfolio of music for Video Games, Podcasts, Videos and more! Custom or royalty free music available. Specialized in Electronic music." name="description">
-</meta><link href="https://ludoloon.studio/music/" rel="canonical"/><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "LudoLoon Studio", "item": "https://ludoloon.studio"}, {"@type": "ListItem", "position": 2, "name": "Music", "item": "https://ludoloon.studio/music"}, {"@type": "ListItem", "position": 3, "name": "Index", "item": "https://ludoloon.studio/music/index.html"}]}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "author": {"@type": "Person", "name": "LudoLoon Studio"}, "publisher": {"@type": "Organization", "name": "LudoLoon Studio"}, "headline": "Portfolio of Latest Royalty Free Music and Custom Music for Hire", "about": "pages", "datePublished": "2022-02-15 11:01"}</script></head>
+</meta><link href="https://ludoloon.studio/music/" rel="canonical"/><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "LudoLoon Studio", "item": "https://ludoloon.studio"}, {"@type": "ListItem", "position": 2, "name": "Music", "item": "https://ludoloon.studio/music"}, {"@type": "ListItem", "position": 3, "name": "Index", "item": "https://ludoloon.studio/music/index.html"}]}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "author": {"@type": "Person", "name": "LudoLoon Studio"}, "publisher": {"@type": "Organization", "name": "LudoLoon Studio"}, "headline": "Portfolio of Latest Royalty Free Music and Custom Music for Hire", "about": "pages", "datePublished": "2022-02-18 18:04"}</script></head>
 <body class="home" id="index">
 <header class="body" id="banner">
 </header><!-- /#banner -->
 <nav id="menu">
 <table><tbody><tr>
 <td><a href="/"><img id="header-logo" src="/images/navatar.png"/></a></td>
-<td><a href="/music/">WORK</a></td>
+<td><a href="/music/">MUSIC</a></td>
 <td><a href="/hire/">HIRE</a></td>
 <td><a href="/about/">ABOUT</a></td>
 <td><a href="/category/blog.html">BLOG</a></td>
 <td><a href="mailto:connect@ludoloon.studio">E-MAIL</a></td>
 </tr></tbody></table></nav><!-- /#menu -->
 <section id="content">
+<script>
+player = "";
+container = "";
+playOverlay = "";
+previousImage = "";
+previousWidth = "";
+previousPlay = "";
+
+function play(newPlayer, image, src){
+
+    //close and reset the previous player
+    if(player != ""){
+        player.innerHTML = "<div>"+previousImage+"</div>";
+        container.style.width = previousWidth;
+        if(previousPlay != ""){
+            playOverlay.innerHTML = previousPlay;
+        }
+        document.getElementById("close").remove();
+    }
+
+    //remember the old values so we can reset after changing to a new player.
+    previousImage = image;
+    player = newPlayer;
+    container = player.parentElement.parentElement; //assign AFTER player is no longer null
+    previousWidth = container.style.width;
+    container.style.width = "100%";
+
+    //Decide which player to use
+    if(src.search("youtube") > -1){
+        player.innerHTML = '<button id="close" onclick="closeplayer()">[ X ] Close Player</button><div style="position:relative;padding-bottom:56.25%;"> <iframe style="width:100%;height:100%;position:absolute;left:0px;top:0px;" src="'+src+'" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>';
+        close = document.getElementById("close");
+        container.prepend(close);
+        //player.appendChild(close);
+    }
+
+    container.scrollIntoView({behavior: "smooth", block: "center", inline: "nearest"});
+
+    /* hide the play button overlay and store a reference to play button element to turn back on after changing*/
+    if(container.getElementsByClassName("play-button-overlay")[0] != null){
+        playOverlay = container.getElementsByClassName("play-button-overlay")[0];
+        previousPlay = playOverlay.innerHTML;
+    playOverlay.innerHTML = "Loading...";
+    }
+}
+
+function closeplayer(){
+    if(player != ""){
+        player.innerHTML = "<div>"+previousImage+"</div>";
+        container.style.width = previousWidth;
+        if(previousPlay != ""){
+            playOverlay.innerHTML = previousPlay;
+        }
+        player = "";
+    previousPlay = "";
+    }
+    document.getElementById("close").remove();
+}
+</script>
 <h1>Portfolio</h1>
-<h2>Royalty Free Music for Your Projects</h2>
-<iframe frameborder="0" height="171" src="https://itch.io/embed/1399009?border_width=3&amp;bg_color=222&amp;fg_color=EEE&amp;link_color=01cdfe" width="100%"><a href="https://ludoloonstudio.itch.io/mysterious-fog">Mysterious Fog (Royalty Free Music Track) by LudoLoon Studio</a></iframe>
-<p><a href="https://assetstore.unity.com/packages/audio/music/mysterious-fog-royalty-free-213501">Download on the Unity Asset Store as well.</a></p>
-<h2>Latest Work</h2>
-<div style="position:relative;padding-bottom:56.25%;">
-<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/videoseries?list=UUziXXRaD4uUuTL7tMWtQeVQ" style="width:100%;height:100%;position:absolute;left:0px;top:0px;" title="YouTube video player"></iframe>
+<noscript><b>Please note, javascript is required to view videos.</b></noscript>
+<h2>Royalty Free Music</h2>
+<p>
+Music in this section is free to use! No compensation required. Just give credit to: <b>LudoLoon Studio</b><br/>
+<br/>
+<a href="mailto:connect@ludoloon.studio">If you use my music, send your promo to connect@ludoloon.studio and I'll share it!</a><br/>
+</p>
+<div class="album-container">
+<div class="album">
+<div class="play-button-overlay"><img src="../../theme/css/play_button.png"/>Watch</div>
+<div class="album-art"><a href="javascript:void();" onclick="play(this, this.innerHTML, 'https://www.youtube.com/embed/videoseries?list=UUziXXRaD4uUuTL7tMWtQeVQ')"><img src="https://ludoloon.studio/images/covers/mysterious-fog.png"/></a></div>
+<div class="album-info">
+<p class="album-title"><b>Mysterious Fog</b></p>
+<p class="album-description">
+            Perfect for any game that needs some spooky, mysterious or nostalgic ambience.
+        </p>
+<p class="album-links">
+<a href="https://ludoloonstudio.itch.io/mysterious-fog"><img alt="itch.io link" src="https://ludoloon.studio/images/icons/itch.png"/></a>
+<a href="https://assetstore.unity.com/packages/audio/music/mysterious-fog-royalty-free-213501"><img alt="unity link" src="https://ludoloon.studio/images/icons/unity.png"/></a>
+<a href="https://open.spotify.com/album/0nwwxR2fZRzOvtTBwkdBC7"><img alt="spotify link" src="https://ludoloon.studio/images/icons/spotify.png"/></a>
+</p>
 </div>
-<h2>Flight Sim Portraits</h2>
-<p><a href="https://ludoloon.studio/blog/flight-sim-portraits/"><em>A project dedicated to honing in on matching music to visual media</em></a></p>
-<div style="position:relative;padding-bottom:56.25%;">
-<iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" src="https://www.youtube.com/embed/videoseries?list=PLL06MmY4OQnZJtHTVJ4IlCetgx6wgS_b6" style="width:100%;height:100%;position:absolute;left:0px;top:0px;" title="YouTube video player"></iframe>
+</div>
+</div>
+<h2>My Work</h2>
+<div class="album-container">
+<div class="album">
+<div class="play-button-overlay"><img src="../../theme/css/play_button.png"/>Watch</div>
+<div class="album-art"><a href="javascript:void();" onclick="play(this, this.innerHTML, 'https://www.youtube.com/embed/videoseries?list=PLL06MmY4OQnZJtHTVJ4IlCetgx6wgS_b6')"><img src="https://ludoloon.studio/images/covers/flight-sim-portraits.png"/></a></div>
+<div class="album-info">
+<p class="album-title"><b>Flight Sim Portraits</b></p>
+<p class="album-description">
+<a href="https://ludoloon.studio/blog/flight-sim-portraits/">Dedicated to honing in on matching music to visual media.</a>
+</p>
+<p class="album-links">
+<a href="https://www.youtube.com/watch?v=C9JiT63OVHw&amp;list=PLL06MmY4OQnZJtHTVJ4IlCetgx6wgS_b6"><img alt="YouTube link" src="https://ludoloon.studio/images/icons/youtube.png"/></a>
+</p>
+</div>
+</div>
 </div>
 </section>
 <!-- /#content -->
