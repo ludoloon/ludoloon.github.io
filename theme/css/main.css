@@ -15,7 +15,7 @@ body{
 
 /* Heading */
 h1, h2, h3, h4, h5, h6{
-    color: #05ffa1
+    color: #05ffa1;
 }
 h1{ text-align: center; font-size: 2em; }
 h2{ font-size: 1.75em; }
@@ -102,13 +102,25 @@ nav img { width: 4em; height: 4em; border-right: 1px solid #EAEAEA; }
     padding: 1em;
     padding-bottom: 0;
 }
+
 .album-art img { box-shadow: 0 1px 1px 2px #000;}
-.play-button-overlay {position: absolute; top: 30px; left: 30px; width: 10%; height: 10%; opacity: .4; pointer-events: none; padding: 1em; }
+.play-button-overlay {
+    position: absolute; 
+    top: 30px; 
+    left: 30px; 
+    width: 10%; 
+    height: 10%; 
+    opacity: .5; 
+    text-shadow: 1px 1px #333;
+    pointer-events: none; 
+    padding: 1em; 
+}
 .album-info {
     text-align: center; 
     margin: 0em; 
 }
 .album-info img { width: 48px; height: 48px; margin: 0 4px;} /* link icons */
+.album-description{ min-height: 2.5em;}
 
 /* Social List */
 .social ul{
