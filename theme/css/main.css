@@ -191,6 +191,7 @@ pre{
     background: #222;
     border: 1px solid #EEE;
     padding: .5em;
+    overflow: scroll;
 }
 
 /* Footer */
