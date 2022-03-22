@@ -1,13 +1,318 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>LudoLoon Studio</title><link href="https://ludoloon.studio/" rel="alternate"></link><link href="https://ludoloon.studio/feeds/all.atom.xml" rel="self"></link><id>https://ludoloon.studio/</id><updated>2022-03-03T09:26:01-06:00</updated><subtitle>Here's that music you wanted!</subtitle><entry><title>Roguelike Adventure (Music Pack)</title><link href="https://ludoloon.studio/blog/roguelike-adventure/" rel="alternate"></link><published>2022-03-03T00:00:00-06:00</published><updated>2022-03-03T09:26:01-06:00</updated><author><name>LudoLoon Studio</name></author><id>tag:ludoloon.studio,2022-03-03:/blog/roguelike-adventure/</id><summary type="html">&lt;p&gt;I put together a music pack that's perfect for any roguelike, adventure or other type of game.&lt;/p&gt;</summary><content type="html">&lt;p&gt;Hello everyone!&lt;/p&gt;
-&lt;p&gt;I am excited to announce my Roguelike Adventure Music Pack! This pack contains &lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>LudoLoon Studio</title><link href="https://ludoloon.studio/" rel="alternate"></link><link href="https://ludoloon.studio/feeds/all.atom.xml" rel="self"></link><id>https://ludoloon.studio/</id><updated>2022-03-22T14:00:56-05:00</updated><subtitle>Here's that music you wanted!</subtitle><entry><title>Roguelike Adventure (Music Pack)</title><link href="https://ludoloon.studio/blog/roguelike-adventure/" rel="alternate"></link><published>2022-03-03T00:00:00-06:00</published><updated>2022-03-22T14:00:56-05:00</updated><author><name>LudoLoon Studio</name></author><id>tag:ludoloon.studio,2022-03-03:/blog/roguelike-adventure/</id><summary type="html">&lt;p&gt;I put together a music pack that's perfect for any roguelike, adventure or other type of game.&lt;/p&gt;</summary><content type="html">&lt;p&gt;Hello everyone!&lt;/p&gt;
+&lt;p&gt;I am excited to announce my Roguelike Adventure Music Pack!&lt;/p&gt;
 &lt;hr&gt;
-&lt;iframe src="https://itch.io/embed/1399009?border_width=0&amp;amp;bg_color=333&amp;amp;fg_color=EEE&amp;amp;link_color=00abde&amp;amp;border_color=4e4e4e" width="550" height="165" frameborder="0"&gt;&lt;a href="https://ludoloonstudio.itch.io/mysterious-fog"&gt;Mysterious Fog (Royalty Free Music Track) by LudoLoon Studio&lt;/a&gt;&lt;/iframe&gt;
-
-&lt;p&gt;&lt;a href="https://assetstore.unity.com/packages/audio/music/mysterious-fog-royalty-free-213501"&gt;Download on the Unity Asset Store as well.&lt;/a&gt;&lt;/p&gt;
 &lt;div style="position:relative;padding-bottom:56.25%;"&gt;
- &lt;iframe style="width:100%;height:100%;position:absolute;left:0px;top:0px;" src="https://www.youtube.com/embed/-niUrXn13Qw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
-&lt;/div&gt;</content><category term="blog"></category><category term="music"></category></entry><entry><title>Mysterious Fog (Royalty Free Music)</title><link href="https://ludoloon.studio/blog/mysterious-fog/" rel="alternate"></link><published>2022-02-15T00:00:00-06:00</published><updated>2022-02-15T21:31:06-06:00</updated><author><name>LudoLoon Studio</name></author><id>tag:ludoloon.studio,2022-02-15:/blog/mysterious-fog/</id><summary type="html">&lt;p&gt;I released my last flight sim portraits track (for now) as a royalty free game asset!&lt;/p&gt;</summary><content type="html">&lt;p&gt;Hello everyone!&lt;/p&gt;
+ &lt;iframe style="width:100%;height:100%;position:absolute;left:0px;top:0px;" src="https://www.youtube.com//embed/LDsvH-GBIlw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;h3&gt;Summary:&lt;/h3&gt;
+&lt;p&gt;Music for all types of classic RPG &amp;amp; Action Adventure locations! Ready to go, easy to customize.&lt;/p&gt;
+&lt;h3&gt;Description:&lt;/h3&gt;
+&lt;p&gt;Roguelike Adventure Music Pack is the essential music pack for any game that needs high quality, memorable tunes that are ready to go for your game, right now. &lt;/p&gt;
+&lt;p&gt;Each track has a variety of full length or seamlessly loopable versions and sections. You can craft the emotion exactly how you need it based on your narrative or game mechanic needs. If you prefer to do it the old fashioned way and just set it on loop, as is, this pack also has you covered.&lt;/p&gt;
+&lt;p&gt;Included are a variety of classic video game themed locations such as:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Castle&lt;/li&gt;
+&lt;li&gt;Cave&lt;/li&gt;
+&lt;li&gt;Desert&lt;/li&gt;
+&lt;li&gt;Dungeon&lt;/li&gt;
+&lt;li&gt;Forest&lt;/li&gt;
+&lt;li&gt;Hills &amp;amp; Valleys&lt;/li&gt;
+&lt;li&gt;Ruins&lt;/li&gt;
+&lt;li&gt;Sewers&lt;/li&gt;
+&lt;li&gt;Town&lt;/li&gt;
+&lt;li&gt;Winter&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This pack also includes other essential game sounds like:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Title music&lt;/li&gt;
+&lt;li&gt;Menu music&lt;/li&gt;
+&lt;li&gt;Victory music&lt;/li&gt;
+&lt;li&gt;Game Over music&lt;/li&gt;
+&lt;li&gt;Loot SFX&lt;/li&gt;
+&lt;li&gt;Treasure SFX&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Full Pack Details&lt;/h3&gt;
+&lt;p&gt;Essentials &amp;amp; Full Pack are both included when you purchase this pack. Essentials includes only the full loops instead of individually rendered sections.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Format: &lt;ul&gt;
+&lt;li&gt;.wav / 44.1khz / 16-bit depth / Loopable / Stereo&lt;/li&gt;
+&lt;li&gt;.mp3 / 44.1khz / V0 VBR / Loopable / Stereo&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Number of Files: &lt;ul&gt;
+&lt;li&gt;186 (Full Pack)&lt;/li&gt;
+&lt;li&gt;56 (Essentials)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Total hours of music: &lt;ul&gt;
+&lt;li&gt;2 hours 5 minutes (Full Pack)&lt;/li&gt;
+&lt;li&gt;58 minutes (Essentials)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Total project size: &lt;ul&gt;
+&lt;li&gt;Full Pack - WAV: 1.3GB&lt;/li&gt;
+&lt;li&gt;Essentials - WAV: 600MB&lt;/li&gt;
+&lt;li&gt;Full Pack - MP3: 213MB&lt;/li&gt;
+&lt;li&gt;Essentials - MP3: 100MB&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Royalty free license to use this music in your projects.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Licensing Agreement&lt;/h3&gt;
+&lt;p&gt;By purchasing this pack you agree to the following terms:&lt;/p&gt;
+&lt;h4&gt;Your Rights&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;You may use this music pack in any of your projects, whether they're commercial or not.&lt;/li&gt;
+&lt;li&gt;You may edit or remix the sounds in this pack to better suit your project's needs.&lt;/li&gt;
+&lt;li&gt;You may use the music in this pack in multiple projects without further payment.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;Restrictions&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;You must credit LudoLoon Studio as the creator of music used from this pack.&lt;/li&gt;
+&lt;li&gt;You may NOT resell, relicense or otherwise distribute this pack or individual tracks in any way.&lt;/li&gt;
+&lt;li&gt;Copyright ownership of all recordings still belongs to LudoLoon Studio LLC.&lt;/li&gt;
+&lt;li&gt;For any soundtrack deals please contact support@ludoloon.studio to negotiate a deal. &lt;ul&gt;
+&lt;li&gt;Without doing so, you may NOT redistribute tracks from this pack on any platforms as part of a standalone game soundtrack.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Contact&lt;/h3&gt;
+&lt;p&gt;For any help with any issues or inquiries email: support@ludoloon.studio
+If you use my track in your project then contact me and I'll share it on my website &amp;amp; social media!&lt;/p&gt;
+&lt;p&gt;I am available to make custom music for your game at: https://ludoloon.studio/hire
+Subscribe to my mailing list for more royalty free tracks sent straight to your inbox.&lt;/p&gt;
+&lt;h3&gt;File List&lt;/h3&gt;
+&lt;p&gt;Essentials pack only comes with files under "Full" in each song.
+Complete includes "Sections" as well.&lt;/p&gt;
+&lt;p&gt;File extensions are either WAV or MP3 (as noted by pack)&lt;/p&gt;
+&lt;pre&gt;
+Castle [75 BPM]
+    ./Full/
+        Full Track - All Sections
+        Full Track (non-loop ending)
+        No Drum or Bass - All Sections
+    ./Sections/
+        Edit - Drum &amp; Bass
+        Edit - Drum Only
+        Edit - Drum, Bass, Vox Organ
+        Full Track - Intro
+        Full Track - Section A
+        Full Track - Section B
+        Full Track - Sections A+B
+        No Drum or Bass - Intro
+        No Drum or Bass - Section A
+        No Drum or Bass - Section B
+        No Drum or Bass - Sections A+B
+Cave [60 BPM]
+    ./Full/
+        Full Track - All Sections
+        Full Track (non-loop ending)
+        No Drum - All Sections
+    ./Sections/
+        Edit - Drum Only
+        Full Track - Section A
+        Full Track - Section B
+        No Drum - Section A
+        No Drum - Section B
+Desert [75 BPM]
+    ./Full/
+        Full Track - All Sections
+        Full Track (non-loop ending)
+        No Bass or Drums - All Sections
+        No Drums - All Sections
+    ./Sections/
+        Edit - Drums &amp; Bass (Intro)
+        Edit - Drums &amp; Bass
+        Edit - Drums Only (All Sections)
+        Edit - Section A - Vocals
+        Edit - Slow Strings [50BPM]
+        Full Track - Intro
+        Full Track - Section A
+        Full Track - Section B
+        Full Track - Sections A+B
+        No Bass or Drums - Intro
+        No Bass or Drums - Section A
+        No Bass or Drums - Section B
+        No Bass or Drums - Sections A+B
+        No Drums - Intro
+        No Drums - Section A
+        No Drums - Section B
+        No Drums - Sections A+B
+Dungeon [65 BPM]
+    ./Full/
+        Full Track - All Sections (Play First)
+        Full Track - All Sections
+        Full Track (non-loop ending)
+        No Drums - All Sections (Play First)
+        No Drums - All Sections
+    ./Sections/
+        Edit - Drums Only
+        Full Track - Intro (Play First)
+        Full Track - Section A
+        Full Track - Section B
+        Full Track - Sections A+B
+        No Drums - Intro (Play First)
+        No Drums - Section A
+        No Drums - Section B
+        No Drums - Sections A+B
+        No Vox - Section A
+        No Vox - Section B
+        No Vox - Sections A+B
+Forest [60 BPM]
+    ./Full/
+        Full Track - All Sections (Play First)
+        Full Track - All Sections
+        Full Track (non-loop ending)
+    ./Sections/
+        Sections/Edit - Vocals (Play First)
+        Sections/Edit - Vocals
+        Sections/Full Track - Intro (Play First)
+        Sections/Full Track - Intro
+        Sections/Full Track - Section A
+        Sections/Full Track - Section B
+        Sections/Full Track - Sections A+B
+Hell [85 BPM]
+    ./Full/
+        Full Track - All Sections
+        Full Track (non-loop ending)
+        No Drums - All Sections
+    ./Sections/
+        Edit - Drum Only
+        Full Track - Section A
+        Full Track - Section B
+        No Drums - Section A
+        No Drums - Section B
+Hills &amp; Valleys [80 BPM]
+    ./Full/
+        Full Track - All Sections (Play First)
+        Full Track - All Sections
+        Full Track (non-loop ending)
+        No Drums - All Sections (Play First)
+        No Drums - All Sections
+    ./Sections/
+        Edit - Drums Only (All Sections)
+        Edit - No Harmony (Section A)
+        Full Track - Intro (Play First)
+        Full Track - Section A
+        Full Track - Section B
+        Full Track - Sections A+B
+        No Drums - Intro (Play First)
+        No Drums - Section A
+        No Drums - Section B
+        No Drums - Sections A+B
+Ruins [75 BPM]
+    ./Full/
+        Full Track - All Sections (Play First)
+        Full Track - All Sections
+        Full Track (non-loop ending)
+        No Drums - All Sections (Play First)
+        No Drums - All Sections
+    ./Sections/
+        Edit - Ambience
+        Edit - Drums &amp; Bass
+        Edit - Drums Only
+        Full Track - Intro A
+        Full Track - Intro B
+        Full Track - Section A
+        Full Track - Section B
+        Full Track - Sections A+B
+        No Drums - Intro A
+        No Drums - Intro B
+        No Drums - Section A
+        No Drums - Section B
+        No Drums - Sections A+B
+Sewers [80 BPM]
+    ./Full/
+        Full Track - All Sections
+        Full Track (non-loop ending)
+        No Drum - All Sections
+        No Drum or Bass - All Sections
+    ./Sections/
+        Edit - Drums Only
+        Full Track - Intro
+        Full Track - Section A
+        Full Track - Section B
+        Full Track - Sections A+B
+        No Drum - Intro
+        No Drum - Section A
+        No Drum - Section B
+        No Drum - Sections A+B
+        No Drum or Bass - Intro
+        No Drum or Bass - Section A
+        No Drum or Bass - Section B
+        No Drum or Bass - Sections A+B
+SFX
+    Game Over (Harmony Only)
+    Game Over (Laughter Only)
+    Game Over (No Laughter)
+    Game Over (No Lead)
+    Game Over (Vocal Only)
+    Game Over
+    Loot
+    Pause-Save Menu
+    Unlock
+    Victory
+Title [40 BPM]
+    ./Full/
+        Full Track - All Sections (Play First)
+        Full Track - All Sections
+        Full Track (non-loop ending)
+    ./Sections/
+        Harmony Only - All Sections
+Town [80 BPM]
+    ./Full/
+        Full Track - All Sections
+        Full Track (non-loop ending)
+        No Bass - All Sections
+        No Drums - All Sections
+    ./Sections/
+        Edit - Drums &amp; Bass
+        Edit - Drums Only (All Sections)
+        Full Track - Intro
+        Full Track - Section A
+        Full Track - Section B
+        Full Track - Sections A+B
+        No Bass - Section A
+        No Bass - Section B
+        No Bass - Sections A+B
+        No Bass or Drums - Intro
+        No Drums - Section A
+        No Drums - Section B
+        No Drums - Sections A+B
+Winter [60 BPM]
+    ./Full/
+        Full Track - All Sections
+        Full Track (non-loop ending)
+        No Drums - All Sections
+        No Leads - All Sections
+    ./Sections/
+        Edit - Drums Only
+        Edit - Intro Chords
+        Full Track - Intro
+        Full Track - Section A
+        Full Track - Section B
+        Full Track - Section C
+        Full Track - Sections A+B+C
+        Leads Only - Section A
+        Leads Only - Section B
+        Leads Only - Section C
+        Leads Only - Sections A+B+C
+        No Drums - Section A
+        No Drums - Section B
+        No Drums - Section C
+        No Drums - Sections A+B+C
+        No Harmony - Section A
+        No Harmony - Section B
+        No Harmony - Section C
+        No Harmony - Sections A+B+C
+        No Leads - Section A
+        No Leads - Section B
+        No Leads - Section C
+        No Leads - Sections A+B+C
+README.txt
+&lt;/pre&gt;</content><category term="blog"></category><category term="music"></category></entry><entry><title>Mysterious Fog (Royalty Free Music)</title><link href="https://ludoloon.studio/blog/mysterious-fog/" rel="alternate"></link><published>2022-02-15T00:00:00-06:00</published><updated>2022-02-15T21:31:06-06:00</updated><author><name>LudoLoon Studio</name></author><id>tag:ludoloon.studio,2022-02-15:/blog/mysterious-fog/</id><summary type="html">&lt;p&gt;I released my last flight sim portraits track (for now) as a royalty free game asset!&lt;/p&gt;</summary><content type="html">&lt;p&gt;Hello everyone!&lt;/p&gt;
 &lt;p&gt;I've decided to release this track as my last addition to the &lt;a href="https://ludoloon.studio/blog/flight-sim-portraits/"&gt;Flight Sim Portraits&lt;/a&gt; project that I had going on. This isn't a definitive end to the project forever, but in light of my goals I've decide that this has served its purpose for now. I do like making these videos, so maybe one day I'll come back to them.&lt;/p&gt;
 &lt;p&gt;This project has been a great way to get routine practice putting out weekly content, but video production &amp;amp; recording takes up too much time compared to actual music production right now. My next goal is to start making game packs to upload on itch.io and the Unity Asset Store, which is already well under way. Stay tuned!&lt;/p&gt;
 &lt;hr&gt;

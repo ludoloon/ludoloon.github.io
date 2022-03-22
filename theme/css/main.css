@@ -186,6 +186,13 @@ option:disabled{
     opacity: .8;
 }
 
+pre{
+    color: green;
+    background: #222;
+    border: 1px solid #EEE;
+    padding: .5em;
+}
+
 /* Footer */
 time {
     /*float: right;
