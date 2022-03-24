@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>LudoLoon Studio</title><link href="https://ludoloon.studio/" rel="alternate"></link><link href="https://ludoloon.studio/feeds/all.atom.xml" rel="self"></link><id>https://ludoloon.studio/</id><updated>2022-03-23T17:58:18-05:00</updated><subtitle>Here's that music you wanted!</subtitle><entry><title>Roguelike Adventure Music Pack</title><link href="https://ludoloon.studio/blog/roguelike-adventure/" rel="alternate"></link><published>2022-03-22T00:00:00-05:00</published><updated>2022-03-23T17:58:18-05:00</updated><author><name>LudoLoon Studio</name></author><id>tag:ludoloon.studio,2022-03-22:/blog/roguelike-adventure/</id><summary type="html">&lt;p&gt;I put together a music pack that's perfect for any roguelike, adventure or other type of game.&lt;/p&gt;</summary><content type="html">&lt;p&gt;Hello everyone!&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>LudoLoon Studio</title><link href="https://ludoloon.studio/" rel="alternate"></link><link href="https://ludoloon.studio/feeds/all.atom.xml" rel="self"></link><id>https://ludoloon.studio/</id><updated>2022-03-24T13:15:34-05:00</updated><subtitle>Here's that music you wanted!</subtitle><entry><title>Roguelike Adventure Music Pack</title><link href="https://ludoloon.studio/blog/roguelike-adventure/" rel="alternate"></link><published>2022-03-22T00:00:00-05:00</published><updated>2022-03-24T13:15:34-05:00</updated><author><name>LudoLoon Studio</name></author><id>tag:ludoloon.studio,2022-03-22:/blog/roguelike-adventure/</id><summary type="html">&lt;p&gt;I put together a music pack that's perfect for any roguelike, adventure or other type of game.&lt;/p&gt;</summary><content type="html">&lt;p&gt;Hello everyone!&lt;/p&gt;
 &lt;p&gt;I am excited to announce my Roguelike Adventure Music Pack!&lt;/p&gt;
 &lt;hr&gt;
 &lt;div style="position:relative;padding-bottom:56.25%;"&gt;
- &lt;iframe style="width:100%;height:100%;position:absolute;left:0px;top:0px;" src="https://www.youtube.com//embed/j9QzmUCokBQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+ &lt;iframe style="width:100%;height:100%;position:absolute;left:0px;top:0px;" src="https://www.youtube.com/embed/videoseries?list=PLL06MmY4OQnbZhDoKYUFZCEu5WgvtxPIg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
 &lt;p class="album-links"&gt;
@@ -97,7 +97,8 @@ Subscribe to my mailing list for more royalty free tracks sent straight to your 
 &lt;li&gt;Essentials - MP3&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Essentials Pack only comes with files under "Full" in each song. Full Pack includes folders labeled "Sections" as well.&lt;/p&gt;
-&lt;p&gt;File extensions are either WAV or MP3 (as noted by pack). (Unity asset store will only have Full Pack - WAV when released.)&lt;/p&gt;
+&lt;p&gt;File extensions are either WAV or MP3 (as noted by pack).&lt;/p&gt;
+&lt;p&gt;&lt;i&gt;&lt;em&gt; Unity and Game Dev Market only include the Full Pack - WAV editions because of how their distribution works. &lt;/em&gt;&lt;/i&gt;&lt;/p&gt;
 &lt;pre&gt;
 Castle [75 BPM]
     ./Full/
