@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>LudoLoon Studio</title><link href="https://ludoloon.studio/" rel="alternate"></link><link href="https://ludoloon.studio/feeds/all.atom.xml" rel="self"></link><id>https://ludoloon.studio/</id><updated>2022-03-31T17:18:02-05:00</updated><subtitle>Here's that music you wanted!</subtitle><entry><title>Roguelike Adventure Music Pack</title><link href="https://ludoloon.studio/roguelike-adventure/" rel="alternate"></link><published>2022-03-22T00:00:00-05:00</published><updated>2022-03-31T17:16:06-05:00</updated><author><name>LudoLoon Studio</name></author><id>tag:ludoloon.studio,2022-03-22:/roguelike-adventure/</id><summary type="html">&lt;p&gt;I put together a music pack that's perfect for any roguelike, adventure or other type of game.&lt;/p&gt;</summary><content type="html">&lt;p&gt;Hello everyone!&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>LudoLoon Studio</title><link href="https://ludoloon.studio/" rel="alternate"></link><link href="https://ludoloon.studio/feeds/all.atom.xml" rel="self"></link><id>https://ludoloon.studio/</id><updated>2022-03-31T17:45:50-05:00</updated><subtitle>Here's that music you wanted!</subtitle><entry><title>Roguelike Adventure Music Pack</title><link href="https://ludoloon.studio/roguelike-adventure/" rel="alternate"></link><published>2022-03-22T00:00:00-05:00</published><updated>2022-03-31T17:45:50-05:00</updated><author><name>LudoLoon Studio</name></author><id>tag:ludoloon.studio,2022-03-22:/roguelike-adventure/</id><summary type="html">&lt;p&gt;I put together a music pack that's perfect for any roguelike, adventure or other type of game.&lt;/p&gt;</summary><content type="html">&lt;p&gt;Hello everyone!&lt;/p&gt;
 &lt;p&gt;I am excited to announce my Roguelike Adventure Music Pack!&lt;/p&gt;
 &lt;hr&gt;
 &lt;div style="position:relative;padding-bottom:56.25%;"&gt;
@@ -91,7 +91,7 @@
 If you use my track in your project then contact me and I'll share it on my website &amp;amp; social media!&lt;/p&gt;
 &lt;p&gt;I am available to make custom music for your game at: &lt;a href="https://ludoloon.studio/hire/"&gt;https://ludoloon.studio/hire&lt;/a&gt; &lt;br/&gt;
 Subscribe to my mailing list for more royalty free tracks sent straight to your inbox.&lt;/p&gt;
-&lt;p&gt;&lt;a name="file-list"/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a name="file-list"&gt; &lt;/a&gt;&lt;/p&gt;
 &lt;h3&gt;File List&lt;/h3&gt;
 &lt;p&gt;This pack is divided into 4 different possible downloads (all included with a single purchase):&lt;/p&gt;
 &lt;ul&gt;
@@ -328,16 +328,41 @@ Winter [60 BPM]
         No Leads - Section C
         No Leads - Sections A+B+C
 README.txt
-&lt;/pre&gt;</content><category term="blog"></category><category term="music"></category></entry><entry><title>Mysterious Fog (Royalty Free Music)</title><link href="https://ludoloon.studio/mysterious-fog/" rel="alternate"></link><published>2022-02-15T00:00:00-06:00</published><updated>2022-03-31T17:17:49-05:00</updated><author><name>LudoLoon Studio</name></author><id>tag:ludoloon.studio,2022-02-15:/mysterious-fog/</id><summary type="html">&lt;p&gt;I released my last flight sim portraits track (for now) as a royalty free game asset!&lt;/p&gt;</summary><content type="html">&lt;p&gt;Hello everyone!&lt;/p&gt;
+&lt;/pre&gt;</content><category term="blog"></category><category term="music"></category></entry><entry><title>Mysterious Fog (Royalty Free Music)</title><link href="https://ludoloon.studio/mysterious-fog/" rel="alternate"></link><published>2022-02-15T00:00:00-06:00</published><updated>2022-03-31T17:38:45-05:00</updated><author><name>LudoLoon Studio</name></author><id>tag:ludoloon.studio,2022-02-15:/mysterious-fog/</id><summary type="html">&lt;p&gt;I released my last flight sim portraits track (for now) as a royalty free game asset!&lt;/p&gt;</summary><content type="html">&lt;p&gt;Hello everyone!&lt;/p&gt;
 &lt;p&gt;I've decided to release this track as my last addition to the &lt;a href="https://ludoloon.studio/flight-sim-portraits/"&gt;Flight Sim Portraits&lt;/a&gt; project that I had going on. This isn't a definitive end to the project forever, but in light of my goals I've decide that this has served its purpose for now. I do like making these videos, so maybe one day I'll come back to them.&lt;/p&gt;
 &lt;p&gt;This project has been a great way to get routine practice putting out weekly content, but video production &amp;amp; recording takes up too much time compared to actual music production right now. My next goal is to start making game packs to upload on itch.io and the Unity Asset Store, which is already well under way. Stay tuned!&lt;/p&gt;
 &lt;hr&gt;
-&lt;iframe src="https://itch.io/embed/1399009?border_width=0&amp;amp;bg_color=333&amp;amp;fg_color=EEE&amp;amp;link_color=00abde&amp;amp;border_color=4e4e4e" width="550" height="165" frameborder="0"&gt;&lt;a href="https://ludoloonstudio.itch.io/mysterious-fog"&gt;Mysterious Fog (Royalty Free Music Track) by LudoLoon Studio&lt;/a&gt;&lt;/iframe&gt;
-
-&lt;p&gt;&lt;a href="https://assetstore.unity.com/packages/audio/music/mysterious-fog-royalty-free-213501"&gt;Download on the Unity Asset Store as well.&lt;/a&gt;&lt;/p&gt;
 &lt;div style="position:relative;padding-bottom:56.25%;"&gt;
  &lt;iframe style="width:100%;height:100%;position:absolute;left:0px;top:0px;" src="https://www.youtube.com/embed/-niUrXn13Qw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
-&lt;/div&gt;</content><category term="blog"></category><category term="music"></category></entry><entry><title>Flight Sim Portraits</title><link href="https://ludoloon.studio/flight-sim-portraits/" rel="alternate"></link><published>2022-01-20T00:00:00-06:00</published><updated>2022-03-31T17:18:02-05:00</updated><author><name>LudoLoon Studio</name></author><id>tag:ludoloon.studio,2022-01-20:/flight-sim-portraits/</id><summary type="html">&lt;p&gt;I started a project to practice making music. What better way than by recording a game I'm already sinking hundreds of hours into!&lt;/p&gt;</summary><content type="html">&lt;p&gt;Hello everyone!&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;p class="album-links"&gt;
+    &lt;b&gt;Asset Stores&lt;/b&gt;&lt;br/&gt;
+        &lt;a href="https://ludoloonstudio.itch.io/mysterious-fog"&gt;&lt;img src="https://ludoloon.studio/images/icons/itch.png" alt="itch.io link"/&gt;&lt;/a&gt;
+        &lt;a href="https://assetstore.unity.com/packages/slug/213501" alt="unity link"&gt;&lt;img src="https://ludoloon.studio/images/icons/unity.png" alt="unity link"/&gt;&lt;/a&gt;
+        &lt;a href="https://godotmarketplace.com/shop/mysterious-fog-royalty-free/" alt="godot link"&gt;&lt;img src="https://ludoloon.studio/images/icons/godot.png" alt="godot link"/&gt;&lt;/a&gt;
+    &lt;br/&gt;&lt;b&gt;Streaming&lt;/b&gt;&lt;br/&gt;
+        &lt;a href="https://open.spotify.com/album/0nwwxR2fZRzOvtTBwkdBC7"&gt;&lt;img src="https://ludoloon.studio/images/icons/spotify.png" alt="Spotify link"/&gt;&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Available use: &lt;b&gt;&lt;i&gt;Royalty Free Commercial &amp;amp; Non-Commercial&lt;/i&gt;&lt;/b&gt;.&lt;/p&gt;
+&lt;p&gt;Track does not include propeller or sound effects heard in video.&lt;/p&gt;
+&lt;p&gt;Tracks List:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;em&gt;Mysterious Fog - Full Track.wav (3:10)&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Mysterious Fog - Intro.wav (0:48)&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Mysterious Fog - Loop.wav (1:04)&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Mysterious Fog - Outro.wav (0:32)&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Mysterious Fog - Pad &amp;amp; Flute Loop.wav (1:04)&lt;/em&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Total Length : 6:38s&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Please give credit to &lt;strong&gt;LudoLoon Studio&lt;/strong&gt;.&lt;br/&gt;
+Do &lt;strong&gt;not&lt;/strong&gt; resell or claim my music as your own creation.&lt;/p&gt;
+&lt;p&gt;If you use my track in your game I'll share it on my website &amp;amp; social media!&lt;br/&gt;
+&lt;strong&gt;E-mail your game promo to:&lt;/strong&gt; &lt;a href="mailto:connect@ludoloon.studio"&gt;connect@ludoloon.studio&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Available to make custom music for your game at: &lt;a href="https://ludoloon.studio/hire/"&gt;https://ludoloon.studio/hire&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Subscribe to my mailing list for more royalty free tracks sent straight to your inbox!&lt;/p&gt;</content><category term="blog"></category><category term="music"></category></entry><entry><title>Flight Sim Portraits</title><link href="https://ludoloon.studio/flight-sim-portraits/" rel="alternate"></link><published>2022-01-20T00:00:00-06:00</published><updated>2022-03-31T17:18:02-05:00</updated><author><name>LudoLoon Studio</name></author><id>tag:ludoloon.studio,2022-01-20:/flight-sim-portraits/</id><summary type="html">&lt;p&gt;I started a project to practice making music. What better way than by recording a game I'm already sinking hundreds of hours into!&lt;/p&gt;</summary><content type="html">&lt;p&gt;Hello everyone!&lt;/p&gt;
 &lt;div style="position:relative;padding-bottom:56.25%;"&gt;
  &lt;iframe style="width:100%;height:100%;position:absolute;left:0px;top:0px;" src="https://www.youtube.com/embed/videoseries?list=PLL06MmY4OQnZJtHTVJ4IlCetgx6wgS_b6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
 &lt;/div&gt;
