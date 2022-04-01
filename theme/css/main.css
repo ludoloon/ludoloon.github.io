@@ -123,16 +123,26 @@ nav img { width: 4em; height: 4em; border-right: 1px solid #EAEAEA; }
 .album-description{ min-height: 2.5em;}
 
 /* Social List */
-.social ul{
+.connect ul{
     list-style: none;
     padding: 0;
 }
-.social li {display: inline; margin: 0;}
-.social img {height: 44px; width: 44px;}
-.social {
-    margin: 4px;
+.connect li {display: inline; margin: 0;}
+.connect img {height: 48px; width: 48px;}
+.connect {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    color: #EEE;
+    background: rgba(32,32,32,.8);
+    /*border-top: 3px groove #EAEAEA;
+    border-bottom: 3px groove #EAEAEA;*/
+    border: 3px groove #EAEAEA;
+    margin: 4px auto;
     text-align: center;
-    padding: 0;
+    padding: .5em;
 }
 
 /* About */
