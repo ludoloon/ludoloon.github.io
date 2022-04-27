@@ -100,9 +100,14 @@ function updateInput(val, inputId) {
 <form name="estimateCalculator" style="max-width: 32em; margin: auto;"> 
 <h2 style="text-align: center;">Calculator</h2> 
 <p>
+    <p>
     Total minutes of music needed: 
     <input type="number" id="minutesNumber" value="0" min="1" max="40" onchange="updateInput(this.value, 'minutesRange');"><br/> 
     <input type="range" id="minutesRange" value="0" min="1" max="40" oninput="updateInput(this.value, 'minutesNumber');"><br/>
+    <i style="color: rgba(200,200,200,.8)">Enter your amount manually if it exceeds the slider's max above.</i><br/>
+    </p>
+    <hr/>
+    <p>
     <label for="timeframeSelect">How many business days (Mon-Fri) until you need finished music?</label><br/> 
     <select id="timeframeSelect" size="5" onchange="updateVariables();"> 
         <option value=2.0 selected="selected">3-5 Days</option>
@@ -110,9 +115,11 @@ function updateInput(val, inputId) {
         <option value=1.5>11-15 Days</option>
         <option value=1.25>16+ Days</option>
         <option value=1.0>Let's Talk</option>
-    </select><br/> 
-    <i>(Minutes needed affects timeframe)</i>
+    </select><br/><br/>
+    <i style="color: rgba(200,200,200,.8)">Minutes needed affects timeframe.</i><br/>
+    </p>
 </p>
+<hr/>
 <p style="font-weight: bold; font-size: 1.5em;"> 
     Estimated total: <output id="estimateTotal" for="estimateCalculator" onforminput="value = totalEstimate;">$0</output> 
 </p> 
