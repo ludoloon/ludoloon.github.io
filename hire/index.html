@@ -43,7 +43,7 @@
 /* --- init --- */ 
 totalMinutes = 0; 
 deliveryRate = ""; 
-payRate = 175; 
+payRate = 125;
 emailMessage = ""; 
 totalEstimate = 0; 
 maxDeliverableMinutes = [3, 6, 9, 12]; 
@@ -124,11 +124,9 @@ function updateInput(val, inputId) {
     Estimated total: <output id="estimateTotal" for="estimateCalculator" onforminput="value = totalEstimate;">$0</output> 
 </p> 
 <a onclick="location.href='mailto:hire@ludoloon.studio?subject=Custom Music Request&body='+encodeURIComponent(emailMessage);" href="javascript:void(0)"> 
-    <button onclick="updateVariables();" type="button">Send via E-mail</button>
-</a> 
+    <button onclick="updateVariables();" type="button">Send via E-mail</button></a>
 <a onclick="navigator.clipboard.writeText(emailMessage);" href="javascript:void(0)"> 
-    <button onclick="updateVariables();" type="button">Copy to Clipboard</button> 
-</a> 
+    <button onclick="updateVariables();" type="button">Copy to Clipboard</button></a> 
 </form>
 
 <p><strong>NOTE: This will generate an e-mail with your Operating System's default client.</strong></p>
