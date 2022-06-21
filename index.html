@@ -31,13 +31,34 @@
         </tr></tbody></table></nav><!-- /#menu -->
 <section id="content">
 <h1 style="text-align: center;">LudoLoon Studio</h2>
+
+<script>
+player = GetElementById("player");
+restore_btn = GetElementById("restore_btn");
+
+function play(youtube) {
+    player.src = "https://youtube.com/embed/"+youtube;
+    player.scrollIntoView({behavior: "smooth", block: "center", inline: "nearest"});
+    restore_btn.hidden = false;
+}
+
+function restore(){
+    player.src = "https://youtube.com/embed/ypSyoGxN-xI";
+    restore_btn.hidden = true;
+}
+</script>
+
+<noscript>This video player requires javascript to function.</noscript>
+<button id="restore_btn" onclick="restore()" hidden="true">Restore Demo Reel</button>
+<div style="position:relative;padding-bottom:56.25%;"><iframe id="player" style="width:100%;height:100%;position:absolute;left:0px;top:0px;" src="https://youtube.com/embed/ypSyoGxN-xI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div><br/>
+
 <p style="font-size: 1.2em; text-align: center;"><i>Here's that music you wanted!<br/> <a href="https://ko-fi.com/ludoloonstudio/tiers">Subscribe on ko-fi for discounts.</a></i></p>
 
 <h2>Most Recent Music</h2>
 
 <!--- under development --->
 <div class="landing-container">
-    <div class="landing-thumbnail"><img src="images/covers/tabletop-jazz-cafe.png"/></div>
+    <div class="landing-thumbnail" style="text-align: center; color: #01cdfe;"><a href="javascript:void(0)" onclick="play('CRv4Qs0vwTA')"><img src="images/covers/tabletop-jazz-cafe.png"/></a><br/>⬆▶🔉🎶</div>
     <div class="landing-summary">
         <h3><a href="music#tabletop-jazz-cafe">Tabletop Jazz Cafe</a></h3>
         <div class="landing-tags">
@@ -57,7 +78,7 @@
     </div>
 </div>
 <div class="landing-container">
-    <div class="landing-thumbnail"><img src="images/covers/starting-line.png"/></div>
+    <div class="landing-thumbnail" style="text-align: center; color: #01cdfe;"><a href="javascript:void(0)" onclick="play('LaXHIgOH9cE')"><img src="images/covers/starting-line.png"/></a><br/>⬆▶🔉🎶</div>
     <div class="landing-summary">
         <h3><a href="music#starting-line">Starting Line</a></h3>
         <div class="landing-tags">
@@ -76,26 +97,26 @@
     </div>
 </div>
 <div class="landing-container">
-    <div class="landing-thumbnail"><img src="images/covers/stuck.png"/></div>
+    <div class="landing-thumbnail" style="text-align: center; color: #01cdfe;"><a href="javascript:void(0)" onclick="play('iaoRYHZfWFQ')"><img src="images/covers/puzzled-mind.png"/></a><br/>⬆▶🔉🎶</div>
     <div class="landing-summary">
-        <h3><a href="music#stuck">Stuck</a></h3>
+        <h3><a href="music#puzzled-mind">Puzzled Mind</a></h3>
         <div class="landing-tags">
             <span class="landing-tag">Free Music</span>
-            <span class="landing-tag"> Horror</span>
+            <span class="landing-tag"> Downtempo</span>
         </div>
-        <p>You must leave but you're stuck. Designed to be played dynamically according to game events if needed.</p>
+        <p>Moody music for solving a puzzle.</p>
         <p class="landing-links">
             <b>Asset Stores</b><br/>
-            <a href="https://ludoloonstudio.itch.io/stuck-free-music"><img src="images/icons/itch.png"/></a>
-            <a href="https://assetstore.unity.com/packages/slug/223292"><img src="images/icons/unity.png"/></a>
+            <a href="https://ludoloonstudio.itch.io/puzzled-mind"><img src="images/icons/itch.png"/></a>
+            <a href="https://assetstore.unity.com/packages/slug/222465"><img src="images/icons/unity.png"/></a>
             <br/>
             <b>Streaming</b><br/>
-            <a href="https://youtu.be/D5oAisdVEW4"><img src="images/icons/youtube.png"></a>
+            <a href="https://youtu.be/iaoRYHZfWFQ"><img src="images/icons/youtube.png"></a>
         </p>
     </div>
 </div>
 <div class="landing-container">
-    <div class="landing-thumbnail"><img src="images/covers/roguelike-adventure.png"/></div>
+    <div class="landing-thumbnail" style="text-align: center; color: #01cdfe;"><a href="javascript:void(0)" onclick="play('videoseries?list=PLL06MmY4OQnbZhDoKYUFZCEu5WgvtxPIg')"><img src="images/covers/roguelike-adventure.png"/></a><br/>⬆▶🔉🎶</div>
     <div class="landing-summary">
         <h3><a href="blog/roguelike-adventure">Roguelike Adventure Music Pack</a></h3>
         <div class="landing-tags">

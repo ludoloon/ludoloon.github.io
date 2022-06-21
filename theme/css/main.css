@@ -1,4 +1,4 @@
-/* Body */
+/* --- Body --- */
 html{
     min-height: 100%;
     min-width: 100%;
@@ -21,7 +21,7 @@ h1{ text-align: center; font-size: 2em; }
 h2{ font-size: 1.75em; }
 h3{ font-size: 1.5em; }
 
-/* Navigation */
+/* --- Navigation --- */
 /* Links */
 a {color: #01cdfe;text-decoration: none;}
 a:visited {color: #00bced;text-decoration: none;}
@@ -85,7 +85,7 @@ nav img { width: 4em; height: 4em; border-right: 1px solid #EAEAEA; }
 .landing-links { padding: 0; margin: 0; }
 .landing-links img { max-width: 48px; max-height: 48px; margin: .25em; }
 
-/* Music page */
+/* --- (old) Music page --- */
 .album-container {
     display: flex;
     flex-direction: row;
@@ -122,33 +122,10 @@ nav img { width: 4em; height: 4em; border-right: 1px solid #EAEAEA; }
 .album-info img { width: 48px; height: 48px; margin: 0 4px;} /* link icons */
 .album-description{ min-height: 2.5em;}
 
-/* Social List */
-.connect ul{
-    list-style: none;
-    padding: 0;
-}
-.connect li {display: inline; margin: 0;}
-.connect img {height: 48px; width: 48px;}
-.connect {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    align-items: center;
-    color: #EEE;
-    background: rgba(32,32,32,.8);
-    /*border-top: 3px groove #EAEAEA;
-    border-bottom: 3px groove #EAEAEA;*/
-    border: 3px groove #EAEAEA;
-    margin: 4px auto;
-    text-align: center;
-    padding: .5em;
-}
-
-/* About */
+/* --- About --- */
 #avatar { width: 50%; margin-left: auto; margin-right: auto; display: block;}
 
-/* Content */
+/* --- Content --- */
 #content{
     background: rgba(32,32,32,.9);
     border: 3px groove #EAEAEA;
@@ -177,6 +154,63 @@ img{
     text-align: center;
 }
 
+/* --- Music Table --- */
+/* Entire tracklist <table> */
+.cover-cell img { box-shadow: 0 1px 1px 2px #000; }
+.cover-cell { width: 12em; text-align: center; }
+/*.links-cell { display: inline; }*/
+.links-cell img { width: 48px; padding: 2px; box-shadow: none; margin: auto; }
+.summary-cell { max-width: 20em; }
+
+#full-tracklist {
+    width: 100%;
+    border: 3px #EAEAEA groove;
+    background: #333;
+}
+
+#full-tracklist th {
+    background: #222;
+    font-size: 1.5em;
+    padding: .5em;
+}
+
+/* Just the tbody with data in it*/
+#tracklist td {
+    background: #333;
+    padding: 1em;
+    border-top: 1px solid #EAEAEA;
+    border-bottom: 1px solid #EAEAEA;
+}
+
+/* goes after to override all other settings */
+/* still in progress*/
+
+@media (max-width: 37em){
+    .summary-cell {
+
+    }
+    .cover-cell { width: auto; }
+    #full-tracklist td, tr, table, th{
+        border-style: none;
+    }
+    #tracklist td, tr, th, table{
+        border-style: none;
+        width: auto; 
+    }
+    #full-tracklist {
+        display: grid;
+        border-collapse: collapse;
+    }
+    #tracklist tr{
+        border-bottom: 3px groove #EAEAEA;
+    }
+    #tracklist td{
+        display: block;
+        border-style: none;
+    }
+}
+
+/* --- Hiring Page --- */
 form{
     background: rgba(185,103,255, .15);
     border: 3px groove #EAEAEA; 
@@ -196,6 +230,31 @@ option:disabled{
     opacity: .8;
 }
 
+/* --- Social List --- */
+.connect ul{
+    list-style: none;
+    padding: 0;
+}
+.connect li {display: inline; margin: 0;}
+.connect img {height: 48px; width: 48px;}
+.connect {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    color: #EEE;
+    background: rgba(32,32,32,.8);
+    /*border-top: 3px groove #EAEAEA;
+    border-bottom: 3px groove #EAEAEA;*/
+    border: 3px groove #EAEAEA;
+    margin: 4px auto;
+    text-align: center;
+    padding: .5em;
+}
+
+/* --- Misc --- */
+
 pre{
     color: green;
     background: #222;
@@ -204,7 +263,7 @@ pre{
     overflow: scroll;
 }
 
-/* Footer */
+/* --- Footer --- */
 time {
     /*float: right;
     display: inline;*/
