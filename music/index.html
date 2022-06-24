@@ -27,285 +27,286 @@
         <table><tbody><tr>
             <td><a href="/"><img id="header-logo" src="/images/navatar.png"/></a></td>
             <td><a href="/music/">MUSIC</a></td>
+            <td><a href="/works/">WORKS</a></td>
             <td><a href="/hire/">HIRE</a></td>
             <td><a href="/about/">ABOUT</a></td>
-            <td><a href="/category/blog.html">BLOG</a></td>
             <td><a href="mailto:connect@ludoloon.studio">E-MAIL</a></td>
         </tr></tbody></table></nav><!-- /#menu -->
 <section id="content">
     
 
-    <script>
+    <script type="text/javascript" src="https://ludoloon.studio/music_data.js"></script>
+<script>
+/* TODO:
+ * Make a JSON data table with music data
+ * Iterate through the table & render to HTML
+ */
+
+//music data global variables
+//change this to use a Free Songs data set & Paid Songs?
+const musicData = JSON.parse(JSON.stringify(music_JSON));
+var keywords = {};
+var tag_set = new Set();
+
+//Searchbar reference
+searchbar = "";
+//reference variables for music player
 player = "";
 container = "";
-playOverlay = "";
 previousImage = "";
 previousWidth = "";
-previousPlay = "";
+seek_btn = "";
+stop_music_btn = "";
 
+// --- Table Code --- //
+function search_tracklist(){
+    //If there are no terms then set the terms as null, otherwise read searchbar
+    terms = searchbar.value == "" ? terms = null : searchbar.value.split(" ");
+
+    //Search through the keywords list
+    for(key in keywords){
+        listing = document.getElementById(String(key));
+
+        //Restore all listings if there are no terms
+        if(terms == null) {
+            listing.hidden = false;
+            document.getElementById('clear-search-btn').hidden = true;
+            continue;
+        } else {
+            document.getElementById('clear-search-btn').hidden = false;
+        }
+
+        //Check each term for a match
+        for(i = 0; i < terms.length; i++){
+            word = terms[i];
+
+            if(String(keywords[key]).toLowerCase().match(word.toLowerCase())){
+                listing.hidden = false;
+                continue;
+            }
+            listing.hidden = true;
+            break;
+        }
+    }
+};
+
+function search_with_tag(tag, reset=false){
+    if(reset == true){ searchbar.value = "" + tag; }
+    else{ searchbar.value += " "+tag; }
+    search_tracklist();
+}
+
+function clear_search(){
+    searchbar.value="";
+    search_tracklist(); //searching white space will clear the search query
+}
+
+//Must wait until body is loaded to reference the #tracklist tbody where we show music
+document.body.onload = function() {
+    //set any DOM reference variables now that the page is loaded & ready
+    tracklist = document.getElementById("tracklist");
+    taglist = document.getElementById("taglist");
+    seek_btn = document.getElementById("seek-btn");
+    stop_music_btn = document.getElementById("stop-music");
+    searchbar = document.getElementById("search");
+
+    //Populate the tracklist table
+    for(i = 0; i < musicData.length; i++){  //run through each track individually
+        //Easier to reference this way
+        data = musicData[i];
+
+        //generate keyword list for search
+        keywords[data.url] = [];    //create a dictionary entry for this track's keywords
+        for(key in data){
+            switch(key){
+                case "embed":
+                case "url":
+                    break;
+                case "tags":
+                    keywords[data.url].push(String(data[key]).split(" "));
+                    for(tag in data.tags){
+                        tag_set.add(String(data.tags[tag]));
+                    }
+                    break;
+                case "details":
+                    keywords[data.url].push(String(Object.entries(data[key])).split(" "));
+                break;
+                case "stores":
+                case "streaming":
+                    keywords[data.url].push(String(Object.keys(data[key])).split(" "));
+                    break;
+                default:
+                    keywords[data.url].push(String(data[key]).split(" "));
+                    break;
+            }
+
+        }
+
+        //initialize HTML elements
+        let trow = document.createElement("tr");        //table row
+        let anchor = document.createElement("a");       //so we can jump to this table row with anchors
+        let track = document.createElement("td");
+        let summary = document.createElement("td");
+        let tags = document.createElement("td");
+        let details = document.createElement("td");
+
+
+        //assign attributes
+        trow.id = data.url;
+        anchor.name = data.url;
+        track.className = "cover-cell"
+        summary.className = "summary-cell";
+        tags.className = "tags-cell";
+        details.className = "details-cell";
+
+        //write cover & summary td elements
+        if(data.blog != null){
+            track.innerHTML = '<h3><a href="../'+ data.blog +'">🔗 '+ data.title + '</a></h3>';
+        } else {
+            track.innerHTML = '<h3>'+ data.title + "</h3>";
+        }
+        track.innerHTML += '<a href="javascript:void(0);" onclick="play(this, this.innerHTML,\''+data.embed+'\')"><img src="../../images/covers/'+ data.cover +' "/></a><br/>⬆▶ 🔊🎶';
+
+        //Add tags
+        tags.innerHTML, taglist.innerHTML += '<ul class="summary-tags">';
+        for(tag in data.tags) {
+            tags.innerHTML += 
+                '<li class="summary-tag" onclick="search_with_tag(\''+ data.tags[tag] +'\', true)">'+ data.tags[tag] +'</li>';
+        }
+        tags.innerHTML, taglist.innerHTML += '</ul>';
+
+        //Add details
+        details.innerHTML += '<ul class="summary-tags">';
+        for(detail in data.details){
+            details.innerHTML += '<li class="summary-tag" onclick="search_with_tag(\''+ data.details[detail] +'\', true)"><b style="color: #888">'+ detail.toUpperCase() + ":<br/></b>"+ data.details[detail] +'</li>';
+        }
+        details.innerHTML += '</ul>';
+
+        //fill summary cell, place links here
+        summary.innerHTML += '<span class="hide-in-mobile">'+ data.summary + '<hr/></span>';
+        summary.innerHTML += '<span class="hide-in-mobile"><b>Stores</b><br/></span>';
+        for(key in data.stores){
+            summary.innerHTML += '<a href="'+ data.stores[key] +'"><img src="../../images/icons/'+ key +'.png"/></a>';
+        }
+        //next we add streaming links
+        summary.innerHTML += '<span class="hide-in-mobile"><br/><b>Streaming</b><br/></span>';
+        for(key in data.streaming){
+            summary.innerHTML += '<a href="'+ data.streaming[key] +'"><img src="../../images/icons/'+ key +'.png"/></a>';
+        }
+
+        //append elements to appropriate table position, in order
+        track.appendChild(anchor);
+        //summary.appendChild(tags);
+        trow.appendChild(track);
+        trow.appendChild(summary);
+        trow.appendChild(tags);
+        trow.appendChild(details);
+        tracklist.appendChild(trow);
+    }
+
+    //Create a list of tags for people to click on & search with
+    taglist.innerHTML += '<ul class="summary-tags">';
+    taglist.innerHTML += '<li class="summary-tag" onclick="search_with_tag(\'Free\')">Free</li>';
+    for(tag of Array.from(tag_set).sort()){     //sort our tag list & then write it to the page
+        taglist.innerHTML += 
+            '<li class="summary-tag" onclick="search_with_tag(\''+ tag +'\')">'+ tag +'</li>';
+    }
+    taglist.innerHTML += '</ul>';
+
+    //Once we've finished loading, get rid of the placeholder text
+    document.getElementById("loader-warning").remove();
+    clear_search(); //refresh the search
+};
+
+/* --- MUSIC PLAYER CODE --- */
 function play(newPlayer, image, src){
+    //make the "Stop Music Player" button visible
+    stop_music_btn.hidden=false;
+    seek_btn.hidden = false;
 
     //close and reset the previous player
     if(player != ""){
-        player.innerHTML = "<div>"+previousImage+"</div>";
+        player.innerHTML = previousImage;
         container.style.width = previousWidth;
-        if(previousPlay != ""){
-            playOverlay.innerHTML = previousPlay;
-        }
-        document.getElementById("close").remove();
     }
 
     //remember the old values so we can reset after changing to a new player.
     previousImage = image;
     player = newPlayer;
-    container = player.parentElement.parentElement; //assign AFTER player is no longer null
+    container = player.parentElement; //assign AFTER player is no longer null
     previousWidth = container.style.width;
-    container.style.width = "100%";
 
     //Decide which player to use
     if(src.search("youtube") > -1){
-        player.innerHTML = '<button id="close" onclick="closeplayer()">[ X ] Close Player</button><div style="position:relative;padding-bottom:56.25%;"> <iframe style="width:100%;height:100%;position:absolute;left:0px;top:0px;" src="'+src+'" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>';
-        close = document.getElementById("close");
-        container.prepend(close);
-        //player.appendChild(close);
+        player.innerHTML = '<div style="position:relative;padding-bottom:56.25%;"> <iframe style="width:100%;height:100%;position:absolute;left:0px;top:0px;" src="'+src+'?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>';
+    }else if(src.search("bandcamp") > -1){
+        player.innerHTML = '<div style="position:relative; padding-top: 100%;"> <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="'+ src +'" seamless><a href="https://ludoloonstudio.bandcamp.com/">LudoLoon Studio on Bandcamp</a></iframe></div>';
     }
 
     container.scrollIntoView({behavior: "smooth", block: "center", inline: "nearest"});
-
-    /* hide the play button overlay and store a reference to play button element to turn back on after changing*/
-    if(container.getElementsByClassName("play-button-overlay")[0] != null){
-        playOverlay = container.getElementsByClassName("play-button-overlay")[0];
-        previousPlay = playOverlay.innerHTML;
-    playOverlay.innerHTML = "Loading...";
-    }
 }
 
-function closeplayer(){
+function close_player(){
+    //Check if there's a player already loaded
     if(player != ""){
-        player.innerHTML = "<div>"+previousImage+"</div>";
+        player.innerHTML = previousImage;
         container.style.width = previousWidth;
-        if(previousPlay != ""){
-            playOverlay.innerHTML = previousPlay;
-        }
         player = "";
-    previousPlay = "";
     }
-    document.getElementById("close").remove();
+
+    stop_music_btn.hidden=true;
+    seek_btn.hidden = true;
 }
+
 </script>
 
-<h1>Portfolio</h1>
+<h1>Music for Licensing</h1>
 <noscript><b>Please note, javascript is required to view videos.</b></noscript>
 
-<p>If you use my music, <a href="mailto:connect@ludoloon.studio">send your promo to connect@ludoloon.studio</a> and I'll share it!<br/></p>
-
-<h2>Music Packs</h2>
-<p>Fully complete music packs available for purchase.</p>
-
-<div class="album-container">
-
-<div class="album">
-<a id="roguelike-adventure"></a>
-    <div class="play-button-overlay"><img src="../../theme/css/play_button.png"/>Play</div>
-    <div class="album-art"><a href="javascript:void();" onclick="play(this, this.innerHTML, 'https://www.youtube.com/embed/videoseries?list=PLL06MmY4OQnbZhDoKYUFZCEu5WgvtxPIg')"><img src="https://ludoloon.studio/images/covers/roguelike-adventure.png" /></a></div>
-    <div class="album-info">
-        <p class="album-title"><b><a href="https://ludoloon.studio/roguelike-adventure/">Roguelike Adventure Music Pack</a></b></p>
-            <p class="album-description">
-                Music for all types of classic RPG & Action Adventure locations! Ready to go, easy to customize.
-            </p>
-        <hr/>
-        <p class="album-links">
-            <b>Asset Stores</b><br/>
-                <a href="https://ludoloonstudio.itch.io/roguelike-adventure-music-pack"><img src="https://ludoloon.studio/images/icons/itch.png" alt="itch.io link"/></a>
-                <a href="https://assetstore.unity.com/packages/slug/216619" alt="unity link"><img src="https://ludoloon.studio/images/icons/unity.png" alt="unity link"/></a>
-                <a href="https://www.gamedevmarket.net/asset/roguelike-adventure-music-pack/" alt="game dev market link"><img src="https://ludoloon.studio/images/icons/gamedevmarket.png" alt="game dev market link"/></a>
-                <a href="https://godotmarketplace.com/shop/roguelike-adventure-music-pack/"><img src="https://ludoloon.studio/images/icons/godot.png" alt="godot link"/></a>
-            <br/><b>Streaming</b><br/>
-                <a href="https://ludoloonstudio.bandcamp.com/album/roguelike-adventure-music-pack"><img src="https://ludoloon.studio/images/icons/bandcamp.png" alt="Bandcamp link"/></a>
-                <a href="https://distrokid.com/hyperfollow/ludoloonstudio/roguelike-adventure-music-pack-game-soundtrack-2"><img src="https://ludoloon.studio/images/icons/spotify.png" alt="Spotify link"/></a>
-        </p>
-    </div>
-</div>
-
-</div>
-
-<h2>Free Music</h2>
-<p>
-Free to use! No compensation required.
+<h2>Licensing Agreement</h2>
+<p>The actual license varies by which asset store you download from (see their terms for more).</p>
+<p>However, whether paid or free, the <em>general</em> <strong>rights &amp; restrictions</strong> to use my music are this:</p>
+<h3>Your Rights</h3>
+<ul>
+<li>You may use this music in any of your projects, whether they're commercial or not.</li>
+<li>You may edit or remix them to better suit your project's needs.</li>
+<li>You may use my music in multiple projects without further payment (if required).</li>
+<li>While you don't <em>have</em> to give credit to <strong>LudoLoon Studio</strong>, it's still certainly appreciated!</li>
+</ul>
+<h3>Restrictions</h3>
+<ul>
+<li>Copyright ownership of all recordings still belongs to <strong>LudoLoon Studio LLC</strong>.</li>
+<li>You may <strong>NOT</strong> resell, relicense or otherwise distribute any packs or individual tracks by themselves.</li>
+<li>For any soundtrack deals please contact <a href="support@ludoloon.studio">support@ludoloon.studio</a> to negotiate a deal. <ul>
+<li>Otherwise, you may <strong>NOT</strong> redistribute my music as part of a standalone game soundtrack.</li>
+</ul>
+</li>
+</ul>
+<p>This is the common sense, "plain English" version of my agreement with you. By agreeing on these simple terms I probably won't get mad at you for how you use my music. If you want to buy an individual track that's part of a music pack we can also arrange that <a href="mailto:connect@ludoloon.studio">by email</a>.</p>
+<p><strong>P.S.</strong> If you use my music, <a href="mailto:connect@ludoloon.studio">send your promo to connect@ludoloon.studio</a> and I'll share it!</p>
+<!-- create two styles, one for desktop and another for mobile -->
+<h4>Tag List:</h4>
+<p id="taglist">
 </p>
 
-<div class="album-container">
+<p>🔎 <input type="text" id="search" oninput="search_tracklist()"></input><br/> 
+<button id="clear-search-btn" onclick="clear_search();" hidden>Clear Search</button></p>
+<p><button id="stop-music" onclick="close_player();" hidden>❌ Stop Music 🔇</button> <button id="seek-btn" onclick="container.scrollIntoView({behavior: 'smooth', block: 'center', inline: 'nearest'});" hidden>↕ Scroll to Player 🎧</button></p>
+<table id="tracklist-table">
+<thead>
+  <tr>
+    <th class="cover-cell">Cover</th>
+    <th class="summary-cell">Links</th>
+    <th class="tags-cell">Tags</th>
+    <th class="details-cell">Details</th>
+  </tr>
+</thead>
+<tbody id="tracklist">
+<!-- This is filled in by the javascript -->
+</tbody>
+</table>
 
-<div class="album">
-<a id="tabletop-jazz-cafe"></a>
-    <div class="play-button-overlay"><img src="../../theme/css/play_button.png"/>Play</div>
-    <div class="album-art"><a href="javascript:void();" onclick="play(this, this.innerHTML, 'https://www.youtube.com/embed/CRv4Qs0vwTA')"><img src="https://ludoloon.studio/images/covers/tabletop-jazz-cafe.png" /></a></div>
-    <div class="album-info">
-        <p class="album-title"><b>Tabletop Jazz Cafe</b></p>
-        <p class="album-description">
-            Chill at a cafe, drink coffee and play games! Perfect for any situaiton that needs a jazz vibe.
-        </p>
-        <hr/>
-        <p class="album-links">
-            <b>Asset Stores</b><br/>
-                <a href="https://ludoloonstudio.itch.io/tabletop-jazz-cafe"><img src="https://ludoloon.studio/images/icons/itch.png" alt="itch.io link"/></a>
-                <a href="https://assetstore.unity.com/packages/slug/224462"><img src="https://ludoloon.studio/images/icons/unity.png" alt="unity link"/></a>
-            <br/><b>Streaming</b><br/>
-                <a href="https://www.youtube.com/watch?v=CRv4Qs0vwTA"><img src="https://ludoloon.studio/images/icons/youtube.png" alt="YouTube link"/></a>
-        </p>
-    </div>
-</div>
-
-<div class="album">
-<a id="starting-line"></a>
-    <div class="play-button-overlay"><img src="../../theme/css/play_button.png"/>Play</div>
-    <div class="album-art"><a href="javascript:void();" onclick="play(this, this.innerHTML, 'https://www.youtube.com/embed/LaXHIgOH9cE')"><img src="https://ludoloon.studio/images/covers/starting-line.png" /></a></div>
-    <div class="album-info">
-        <p class="album-title"><b>Starting Line</b></p>
-        <p class="album-description">
-            High-speed racing music heavily inspired by classic games like R4 and Gran Turismo.
-        </p>
-        <hr/>
-        <p class="album-links">
-            <b>Asset Stores</b><br/>
-                <a href="https://ludoloonstudio.itch.io/starting-line"><img src="https://ludoloon.studio/images/icons/itch.png" alt="itch.io link"/></a>
-                <a href="https://assetstore.unity.com/packages/slug/223471"><img src="https://ludoloon.studio/images/icons/unity.png" alt="unity link"/></a>
-            <br/><b>Streaming</b><br/>
-                <a href="https://youtu.be/LaXHIgOH9cE"><img src="https://ludoloon.studio/images/icons/youtube.png" alt="YouTube link"/></a>
-                <a href="https://www.newgrounds.com/audio/listen/1139719"><img src="https://ludoloon.studio/images/icons/newgrounds.png" alt="Newgrounds link"/></a>
-        </p>
-    </div>
-</div>
-
-<div class="album">
-<a id="stuck"></a>
-    <div class="play-button-overlay"><img src="../../theme/css/play_button.png"/>Play</div>
-    <div class="album-art"><a href="javascript:void();" onclick="play(this, this.innerHTML, 'https://www.youtube.com/embed/D5oAisdVEW4')"><img src="https://ludoloon.studio/images/covers/stuck.png" /></a></div>
-    <div class="album-info">
-        <p class="album-title"><b>Stuck</b></p>
-        <p class="album-description">
-            You must leave but you're stuck. Designed to be played dynamically according to game events if needed.
-        </p>
-        <hr/>
-        <p class="album-links">
-            <b>Asset Stores</b><br/>
-                <a href="https://ludoloonstudio.itch.io/stuck-free-music"><img src="https://ludoloon.studio/images/icons/itch.png" alt="itch.io link"/></a>
-                <a href="https://assetstore.unity.com/packages/slug/223292"><img src="https://ludoloon.studio/images/icons/unity.png" alt="unity link"/></a>
-            <br/><b>Streaming</b><br/>
-                <a href="https://youtu.be/D5oAisdVEW4"><img src="https://ludoloon.studio/images/icons/youtube.png" alt="YouTube link"/></a>
-                <a href="https://www.newgrounds.com/audio/listen/1138613"><img src="https://ludoloon.studio/images/icons/newgrounds.png" alt="Newgrounds link"/></a>
-        </p>
-    </div>
-</div>
-
-<div class="album">
-<a id="puzzled-mind"></a>
-    <div class="play-button-overlay"><img src="../../theme/css/play_button.png"/>Play</div>
-    <div class="album-art"><a href="javascript:void();" onclick="play(this, this.innerHTML, 'https://www.youtube.com/embed/iaoRYHZfWFQ')"><img src="https://ludoloon.studio/images/covers/puzzled-mind.png" /></a></div>
-    <div class="album-info">
-        <p class="album-title"><b>Puzzled Mind</b></p>
-        <p class="album-description">
-            Moody music for solving a puzzle.
-        </p>
-        <hr/>
-        <p class="album-links">
-            <b>Asset Stores</b><br/>
-                <a href="https://ludoloonstudio.itch.io/puzzled-mind"><img src="https://ludoloon.studio/images/icons/itch.png" alt="itch.io link"/></a>
-                <a href="https://assetstore.unity.com/packages/slug/222465"><img src="https://ludoloon.studio/images/icons/unity.png" alt="unity link"/></a>
-            <br/><b>Streaming</b><br/>
-                <a href="https://youtu.be/iaoRYHZfWFQ"><img src="https://ludoloon.studio/images/icons/youtube.png" alt="YouTube link"/></a>
-                <a href="https://www.newgrounds.com/audio/listen/1138191"><img src="https://ludoloon.studio/images/icons/newgrounds.png" alt="Newgrounds link"/></a>
-        </p>
-    </div>
-</div>
-
-<div class="album">
-<a id="on-the-farm"></a>
-    <div class="play-button-overlay"><img src="../../theme/css/play_button.png"/>Play</div>
-    <div class="album-art"><a href="javascript:void();" onclick="play(this, this.innerHTML, 'https://www.youtube.com/embed/0ZP9I0KOp7M')"><img src="https://ludoloon.studio/images/covers/on-the-farm.png" /></a></div>
-    <div class="album-info">
-        <p class="album-title"><b>On the Farm</b></p>
-        <p class="album-description">
-            Perfect for chorin' around the farm in the sun!
-        </p>
-        <hr/>
-        <p class="album-links">
-            <b>Asset Stores</b><br/>
-                <a href="https://ludoloonstudio.itch.io/on-the-farm"><img src="https://ludoloon.studio/images/icons/itch.png" alt="itch.io link"/></a>
-                <a href="https://assetstore.unity.com/packages/slug/221746"><img src="https://ludoloon.studio/images/icons/unity.png" alt="unity link"/></a>
-            <br/><b>Streaming</b><br/>
-                <a href="https://youtu.be/0ZP9I0KOp7M"><img src="https://ludoloon.studio/images/icons/youtube.png" alt="YouTube link"/></a>
-                <a href="https://www.newgrounds.com/audio/listen/1137021"><img src="https://ludoloon.studio/images/icons/newgrounds.png" alt="Newgrounds link"/></a>
-        </p>
-    </div>
-</div>
-
-<div class="album">
-<a id="save-pause-menu"></a>
-    <div class="play-button-overlay"><img src="../../theme/css/play_button.png"/>Play</div>
-    <div class="album-art"><a href="javascript:void();" onclick="play(this, this.innerHTML, 'https://www.youtube.com/embed/PlfbXKOpOms')"><img src="https://ludoloon.studio/images/covers/save-pause-menu.png" /></a></div>
-    <div class="album-info">
-        <p class="album-title"><b>Save/Pause Menu</b></p>
-        <p class="album-description">
-            Perfect for a pause, save or loading menu. Chill, loopable background music.
-        </p>
-        <hr/>
-        <p class="album-links">
-            <b>Asset Stores</b><br/>
-                <a href="https://ludoloonstudio.itch.io/save-pause-menu"><img src="https://ludoloon.studio/images/icons/itch.png" alt="itch.io link"/></a>
-                <a href="https://assetstore.unity.com/packages/slug/214277" alt="unity link"><img src="https://ludoloon.studio/images/icons/unity.png" alt="unity link"/></a>
-            <br/><b>Streaming</b><br/>
-                <a href="https://www.youtube.com/watch?v=PlfbXKOpOms"><img src="https://ludoloon.studio/images/icons/youtube.png" alt="YouTube link"/></a>
-        </p>
-    </div>
-</div>
-
-<div class="album">
-<a id="mysterious-fog"></a>
-    <div class="play-button-overlay"><img src="../../theme/css/play_button.png"/>Play</div>
-    <div class="album-art"><a href="javascript:void();" onclick="play(this, this.innerHTML, 'https://www.youtube.com/embed/-niUrXn13Qw')"><img src="https://ludoloon.studio/images/covers/mysterious-fog.png" /></a></div>
-    <div class="album-info">
-        <p class="album-title"><b><a href="https://ludoloon.studio/mysterious-fog/">Mysterious Fog</a></b></p>
-        <p class="album-description">
-            Perfect for any game that needs some spooky, mysterious or nostalgic ambience.
-        </p>
-        <hr/>
-        <p class="album-links">
-            <b>Asset Stores</b><br/>
-                <a href="https://ludoloonstudio.itch.io/mysterious-fog"><img src="https://ludoloon.studio/images/icons/itch.png" alt="itch.io link"/></a>
-                <a href="https://assetstore.unity.com/packages/slug/213501"><img src="https://ludoloon.studio/images/icons/unity.png" alt="unity link"/></a>
-                <a href="https://godotmarketplace.com/shop/mysterious-fog-royalty-free/"><img src="https://ludoloon.studio/images/icons/godot.png" alt="godot link"/></a>
-            <br/><b>Streaming</b><br/>
-                <a href="https://open.spotify.com/album/0nwwxR2fZRzOvtTBwkdBC7"><img src="https://ludoloon.studio/images/icons/spotify.png" alt="spotify link"/></a>
-                <a href="https://www.youtube.com/watch?v=-niUrXn13Qw"><img src="https://ludoloon.studio/images/icons/youtube.png" alt="YouTube link"/></a>
-        </p>
-    </div>
-</div>
-
-</div>
-
-<h2>My Work</h2>
-<div class="album-container">
-
-<div class="album">
-<a id="flight-sim-portraits"> </a>
-    <div class="play-button-overlay"><img src="../../theme/css/play_button.png"/>Play</div>
-    <div class="album-art"><a href="javascript:void();" onclick="play(this, this.innerHTML, 'https://www.youtube.com/embed/videoseries?list=PLL06MmY4OQnZJtHTVJ4IlCetgx6wgS_b6')"><img src="https://ludoloon.studio/images/covers/flight-sim-portraits.png" /></a></div>
-    <div class="album-info">
-        <p class="album-title"><b><a href="https://ludoloon.studio/flight-sim-portraits/">Flight Sim Portraits</a></b></p>
-        <p class="album-description">
-        Dedicated to honing in on matching music to visual media.
-        </p>
-        <hr/>
-        <p class="album-links">
-        <b>Streaming</b><br/>
-            <a href="https://www.youtube.com/watch?v=C9JiT63OVHw&list=PLL06MmY4OQnZJtHTVJ4IlCetgx6wgS_b6"><img src="https://ludoloon.studio/images/icons/youtube.png" alt="YouTube link"/></a>
-        </p>
-    </div>
-</div>
-
-
-</div>
+<p><span id="loader-warning">Loading...</span></p>
 </section>
 <!-- /#content -->
       <footer id="contentinfo" class="body">

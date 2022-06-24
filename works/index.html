@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+          <title>LudoLoon Studio - Portfolio of Latest Royalty Free Music and Custom Music for Hire</title>
+        <meta charset="utf-8" />
+        <meta name=”robots” content="index, follow" />
+        <meta name="generator" content="Pelican" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://ludoloon.studio/theme/css/main.css" type="text/css" />
+        <link rel="shortcut icon" href="https://ludoloon.studio/images/favicon.ico" />
+        <!-- Javascript -->
+        <!-- Feed stuff -->
+        <link href="https://ludoloon.studio/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="LudoLoon Studio Full Atom Feed" />
+
+
+  
+    <meta name="description" content="Check out my most recent portfolio of music for video games, podcasts, videos and more! Custom or royalty free music available. Specialized in Electronic music." />
+  
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+            
+        </header><!-- /#banner -->
+        <nav id="menu">
+        <table><tbody><tr>
+            <td><a href="/"><img id="header-logo" src="/images/navatar.png"/></a></td>
+            <td><a href="/music/">MUSIC</a></td>
+            <td><a href="/works/">WORKS</a></td>
+            <td><a href="/hire/">HIRE</a></td>
+            <td><a href="/about/">ABOUT</a></td>
+            <td><a href="mailto:connect@ludoloon.studio">E-MAIL</a></td>
+        </tr></tbody></table></nav><!-- /#menu -->
+<section id="content">
+    
+
+    <script>
+player = "";
+container = "";
+playOverlay = "";
+previousImage = "";
+previousWidth = "";
+previousPlay = "";
+
+function play(newPlayer, image, src){
+
+    //close and reset the previous player
+    if(player != ""){
+        player.innerHTML = "<div>"+previousImage+"</div>";
+        container.style.width = previousWidth;
+        if(previousPlay != ""){
+            playOverlay.innerHTML = previousPlay;
+        }
+        document.getElementById("close").remove();
+    }
+
+    //remember the old values so we can reset after changing to a new player.
+    previousImage = image;
+    player = newPlayer;
+    container = player.parentElement.parentElement; //assign AFTER player is no longer null
+    previousWidth = container.style.width;
+    container.style.width = "100%";
+
+    //Decide which player to use
+    if(src.search("youtube") > -1){
+        player.innerHTML = '<button id="close" onclick="closeplayer()">[ X ] Close Player</button><div style="position:relative;padding-bottom:56.25%;"> <iframe style="width:100%;height:100%;position:absolute;left:0px;top:0px;" src="'+src+'" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>';
+        close = document.getElementById("close");
+        container.prepend(close);
+        //player.appendChild(close);
+    }
+
+    container.scrollIntoView({behavior: "smooth", block: "center", inline: "nearest"});
+
+    /* hide the play button overlay and store a reference to play button element to turn back on after changing*/
+    if(container.getElementsByClassName("play-button-overlay")[0] != null){
+        playOverlay = container.getElementsByClassName("play-button-overlay")[0];
+        previousPlay = playOverlay.innerHTML;
+    playOverlay.innerHTML = "Loading...";
+    }
+}
+
+function closeplayer(){
+    if(player != ""){
+        player.innerHTML = "<div>"+previousImage+"</div>";
+        container.style.width = previousWidth;
+        if(previousPlay != ""){
+            playOverlay.innerHTML = previousPlay;
+        }
+        player = "";
+    previousPlay = "";
+    }
+    document.getElementById("close").remove();
+}
+</script>
+
+<h1>Portfolio</h1>
+<noscript><b>Please note, javascript is required to view videos.</b></noscript>
+
+<p>This is where any full projects I've worked on will be listed (like games, videos, albums, music packs).</p>
+<p>For any music to use in your projects, see my <a href="https://ludoloon.studio/music/">new &amp; improved music licensing database search page!</a></p>
+<h2>Music Packs</h2>
+<p>Fully complete music packs available for purchase.</p>
+
+<div class="album-container">
+
+<div class="album">
+<a id="roguelike-adventure"></a>
+    <div class="play-button-overlay"><img src="../../theme/css/play_button.png"/>Play</div>
+    <div class="album-art"><a href="javascript:void();" onclick="play(this, this.innerHTML, 'https://www.youtube.com/embed/videoseries?list=PLL06MmY4OQnbZhDoKYUFZCEu5WgvtxPIg')"><img src="https://ludoloon.studio/images/covers/roguelike-adventure.png" /></a></div>
+    <div class="album-info">
+        <p class="album-title"><b><a href="https://ludoloon.studio/roguelike-adventure/">Roguelike Adventure Music Pack</a></b></p>
+            <p class="album-description">
+                Music for all types of classic RPG & Action Adventure locations! Ready to go, easy to customize.
+            </p>
+        <hr/>
+        <p class="album-links">
+            <b>Asset Stores</b><br/>
+                <a href="https://ludoloonstudio.itch.io/roguelike-adventure-music-pack"><img src="https://ludoloon.studio/images/icons/itch.png" alt="itch.io link"/></a>
+                <a href="https://assetstore.unity.com/packages/slug/216619" alt="unity link"><img src="https://ludoloon.studio/images/icons/unity.png" alt="unity link"/></a>
+                <a href="https://www.gamedevmarket.net/asset/roguelike-adventure-music-pack/" alt="game dev market link"><img src="https://ludoloon.studio/images/icons/gamedevmarket.png" alt="game dev market link"/></a>
+                <a href="https://godotmarketplace.com/shop/roguelike-adventure-music-pack/"><img src="https://ludoloon.studio/images/icons/godot.png" alt="godot link"/></a>
+            <br/><b>Streaming</b><br/>
+                <a href="https://ludoloonstudio.bandcamp.com/album/roguelike-adventure-music-pack"><img src="https://ludoloon.studio/images/icons/bandcamp.png" alt="Bandcamp link"/></a>
+                <a href="https://distrokid.com/hyperfollow/ludoloonstudio/roguelike-adventure-music-pack-game-soundtrack-2"><img src="https://ludoloon.studio/images/icons/spotify.png" alt="Spotify link"/></a>
+        </p>
+    </div>
+</div>
+
+</div>
+
+<h2>My Work</h2>
+<div class="album-container">
+
+<div class="album">
+<a id="flight-sim-portraits"> </a>
+    <div class="play-button-overlay"><img src="../../theme/css/play_button.png"/>Play</div>
+    <div class="album-art"><a href="javascript:void();" onclick="play(this, this.innerHTML, 'https://www.youtube.com/embed/videoseries?list=PLL06MmY4OQnZJtHTVJ4IlCetgx6wgS_b6')"><img src="https://ludoloon.studio/images/covers/flight-sim-portraits.png" /></a></div>
+    <div class="album-info">
+        <p class="album-title"><b><a href="https://ludoloon.studio/flight-sim-portraits/">Flight Sim Portraits</a></b></p>
+        <p class="album-description">
+        Dedicated to honing in on matching music to visual media.
+        </p>
+        <hr/>
+        <p class="album-links">
+        <b>Streaming</b><br/>
+            <a href="https://www.youtube.com/watch?v=C9JiT63OVHw&list=PLL06MmY4OQnZJtHTVJ4IlCetgx6wgS_b6"><img src="https://ludoloon.studio/images/icons/youtube.png" alt="YouTube link"/></a>
+        </p>
+    </div>
+</div>
+
+
+</div>
+</section>
+<!-- /#content -->
+      <footer id="contentinfo" class="body">
+        <div class="connect">
+            <ul>
+              <b>Subscribe</b><br/>
+                  <li><a href="https://instagram.com/ludoloonstudio/"><img src="https://ludoloon.studio/images/icons/instagram.png" alt="instagram"/></a></li>
+                  <li><a href="https://twitter.com/ludoloonstudio"><img src="https://ludoloon.studio/images/icons/twitter.png" alt="twitter"/></a></li>
+                  <li><a href="https://ko-fi.com/ludoloonstudio/"><img src="https://ludoloon.studio/images/icons/ko-fi.png" alt="ko-fi"/></a></li>
+            </ul>
+            <ul>
+              <b>Streaming</b><br/>
+                  <li><a href="https://ludoloonstudio.bandcamp.com"><img src="https://ludoloon.studio/images/icons/bandcamp.png" alt="bandcamp"/></a></li>
+                  <li><a href="https://open.spotify.com/artist/0vd2NntqOGKhHvZaS2bnFJ"><img src="https://ludoloon.studio/images/icons/spotify.png" alt="spotify"/></a></li>
+                  <li><a href="https://youtube.com/channel/UCziXXRaD4uUuTL7tMWtQeVQ"><img src="https://ludoloon.studio/images/icons/youtube.png" alt="youtube"/></a></li>
+            </ul>
+            <ul>
+              <b>Asset Stores</b><br/>
+                  <li><a href="https://ludoloonstudio.itch.io/"><img src="https://ludoloon.studio/images/icons/itch.png" alt="itch"/></a></li>
+                  <li><a href="https://assetstore.unity.com/publishers/60862"><img src="https://ludoloon.studio/images/icons/unity.png" alt="unity"/></a></li>
+                  <li><a href="https://gamedevmarket.net/member/ludoloonstudio/"><img src="https://ludoloon.studio/images/icons/gamedevmarket.png" alt="gamedevmarket"/></a></li>
+                  <li><a href="https://godotmarketplace.com/publisher/ludoloon-studio/"><img src="https://ludoloon.studio/images/icons/godot.png" alt="godot"/></a></li>
+            </ul>
+        </div>
+        <script style="margin: auto;" async data-uid="0950d6e40f" src="https://wondrous-founder-3760.ck.page/0950d6e40f/index.js"></script>
+      </footer><!-- /#contentinfo -->
+</body>
+</html>

@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-          <title>LudoLoon Studio - Portfolio of Latest Royalty Free Music and Custom Music for Hire</title>
+          <title>LudoLoon Studio - New Searchable Music Database!</title>
         <meta charset="utf-8" />
         <meta name=”robots” content="index, follow" />
         <meta name="generator" content="Pelican" />
@@ -12,11 +12,13 @@
         <!-- Javascript -->
         <!-- Feed stuff -->
         <link href="https://ludoloon.studio/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="LudoLoon Studio Full Atom Feed" />
+        <link href="https://ludoloon.studio/feeds/blog.atom.xml" type="application/atom+xml" rel="alternate" title="LudoLoon Studio Categories Atom Feed" />
 
 
-  
-    <meta name="description" content="Check out my most recent portfolio of music for video games, podcasts, videos and more! Custom or royalty free music available. Specialized in Electronic music." />
-  
+
+
+    <meta name="tags" content="music" />
+
 </head>
 
 <body id="index" class="home">
@@ -27,85 +29,25 @@
         <table><tbody><tr>
             <td><a href="/"><img id="header-logo" src="/images/navatar.png"/></a></td>
             <td><a href="/music/">MUSIC</a></td>
+            <td><a href="/works/">WORKS</a></td>
             <td><a href="/hire/">HIRE</a></td>
             <td><a href="/about/">ABOUT</a></td>
-            <td><a href="/category/blog.html">BLOG</a></td>
             <td><a href="mailto:connect@ludoloon.studio">E-MAIL</a></td>
         </tr></tbody></table></nav><!-- /#menu -->
-<section id="content">
-    
-
-    <script type="text/javascript" src="https://ludoloon.studio/music_data.js"></script>
-<script>
-/* TODO:
- * Make a JSON data table with music data
- * Iterate through the table & render to HTML
- */
-
-//change this to use a Free Songs data set & Paid Songs?
-var musicData = JSON.parse(JSON.stringify(music_JSON));
-
-//Must wait until body is loaded to reference the tracklist tbody where we show music
-document.body.onload = function() {
-    tracklist = document.getElementById("tracklist");
-    //document.write(tracklist);
-
-    //Populate the tracklist table
-    for(i = 0; i < musicData.length; i++){
-        data = musicData[i];
-
-        //initialize elements
-        let trow = document.createElement("tr");        //table row
-        let anchor = document.createElement("a");       //so we can jump to this table row with anchors
-        let track = document.createElement("td");
-        let summary = document.createElement("td");
-        let links = document.createElement("p");
-
-        //assign attributes
-        anchor.name = data.url;
-        track.className = "cover-cell"
-        summary.className = "summary-cell";
-        links.className = "links-cell";
-
-        //write innerHTML
-        track.innerHTML = '<img src="../../images/covers/'+ data.url +'.png"/>';
-        if(data.blog != null){
-            summary.innerHTML = '<b><a href="../'+ data.blog +'">'+ data.title + '</a></b><br/><hr/>'+ data.summary;
-        } else {
-            summary.innerHTML = '<b>'+ data.title + "</b><br/><hr/>" + data.summary;
-        }
-        for(key in data.links){
-            links.innerHTML += '<a href="'+ data.links[key] +'"><img src="../../images/icons/'+ key +'.png"/></a>';
-        }
-
-        //append elements to appropriate table position, in order
-        track.appendChild(anchor);
-        summary.appendChild(links);
-        trow.appendChild(track);
-        trow.appendChild(summary);
-        //trow.appendChild(links);
-        tracklist.appendChild(trow);
-    }
-};
-
-</script>
-
-<h1>Portfolio</h1>
-<noscript><b>Please note, javascript is required to view videos.</b></noscript>
-
-<p>This page is under development</p>
-<!-- create two styles, one for desktop and another for mobile -->
-<table id="full-tracklist">
-<thead>
-  <tr>
-    <th>Track</th>
-    <th class="summary-cell">Summary</th>
-  </tr>
-</thead>
-<tbody id="tracklist">
-<!-- This is filled in by the javascript -->
-</tbody>
-</table>
+<section id="content" class="body">
+  <header>
+    <h2 class="entry-title">New Searchable Music Database!</h2>
+    <time class="published" datetime="2022-06-23T00:00:00-05:00"> 2022/06/23 </time>
+ 
+  </header>
+  <div class="entry-content">
+    <p>Hello again everyone!</p>
+<p>I recently updated the website so now I have a <a href="https://ludoloon.studio/music/">super slick database system that you can search</a> to really find exactly what you're looking for. I decided now would be a good time to deal with this before I put out much more music.</p>
+<p>Please let me know if you find any issues, but I think I've done a decent job of stress testing this new design. It all runs pretty slick on my hardware, but if you notice that it's too slow then send me an email to <a href="mailto:support@ludoloon.studio">support@ludoloon.studio</a> so I can address it.</p>
+<p>For the nerds out there: It's just a JSON structured database that I bring in with a script tag. That feeds the data into my basic little keyword search engine table.</p>
+<p>The previous music page will now be my <a href="https://ludoloon.studio/works/">"Works"</a> page, which will be a portfolio of any completed albums or other projects (like games &amp; videos), that my music is in.</p>
+<p>Anyway, super excited about this new development, should be much easier to sort through my music :) (and post it lol)</p>
+  </div><!-- /.entry-content -->
 </section>
 <!-- /#content -->
       <footer id="contentinfo" class="body">

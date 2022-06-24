@@ -14,12 +14,12 @@ body{
 }
 
 /* Heading */
-h1, h2, h3, h4, h5, h6{
+h1, h2, h4, h5, h6{
     color: #05ffa1;
 }
 h1{ text-align: center; font-size: 2em; }
 h2{ font-size: 1.75em; }
-h3{ font-size: 1.5em; }
+h3{ font-size: 1.5em; color: #fffb96; }
 
 /* --- Navigation --- */
 /* Links */
@@ -38,13 +38,14 @@ nav {
     background: rgba(32,32,32,.8);
     color: #EEE;
     border: 3px groove #EAEAEA;
-    margin: 4px auto;
+    margin: 4px auto;       /* space between content & navbar */
     max-width: 32em;
-    height: 64px;
+    height: 100%;
 }
 nav table { width: 100%; }
-nav img, table, tbody, tr, td { margin: 0; padding: 0; border-spacing: 0; }
-nav img { width: 4em; height: 4em; border-right: 1px solid #EAEAEA; }
+nav img, table, tbody, tr, td { height: 100%; margin: 0; padding: 0; border-spacing: 0; }
+nav img { width: 4em; height: 100%; border-right: 1px solid #EAEAEA; }
+nav td {padding-right: 4px;} /* avoid text scrunching up */
 
 /* Landing Page */
 .landing-container {
@@ -157,18 +158,34 @@ img{
 /* --- Music Table --- */
 /* Entire tracklist <table> */
 .cover-cell img { box-shadow: 0 1px 1px 2px #000; }
-.cover-cell { width: 12em; text-align: center; }
-/*.links-cell { display: inline; }*/
-.links-cell img { width: 48px; padding: 2px; box-shadow: none; margin: auto; }
-.summary-cell { max-width: 20em; }
+.cover-cell h3 { font-size: 14pt; margin: 2px; padding: 2px;}
 
-#full-tracklist {
-    width: 100%;
-    border: 3px #EAEAEA groove;
-    background: #333;
+/*table-cell ratios*/
+.details-cell{ width: 2em;}
+.cover-cell { width: 192px; text-align: center; }
+.tags-cell { max-width: 14em; width: 22%; }
+.summary-cell {width: 40%;}
+
+.summary-cell h3 { margin: 0; }
+.summary-cell img { width: 40px; padding: 2px; box-shadow: none; margin: auto; }
+
+.summary-tag:hover, .summary-tag:active {border-color: #ff71ce; opacity: 85%;}
+.summary-tag { 
+    display: inline-block; 
+    list-style: none;
+    padding: 4px;
+    margin: 2px;
+    border: 2px groove #EAEAEA;
+    background: #252525;
+    font-size: 10pt;
 }
 
-#full-tracklist th {
+#tracklist-table {
+    border: 3px #EAEAEA groove;
+    width: 100%;
+}
+
+#tracklist-table th {
     background: #222;
     font-size: 1.5em;
     padding: .5em;
@@ -177,37 +194,98 @@ img{
 /* Just the tbody with data in it*/
 #tracklist td {
     background: #333;
-    padding: 1em;
+    padding: .5em;
     border-top: 1px solid #EAEAEA;
     border-bottom: 1px solid #EAEAEA;
 }
 
-/* goes after to override all other settings */
-/* still in progress*/
+#search {
+    width: 90%; 
+    margin-bottom: 1em;
+}
 
-@media (max-width: 37em){
-    .summary-cell {
+/* Player Buttons */
+#stop-music {
+    position: fixed; 
+    left:5%; 
+    bottom: 1em; 
+    width: 40%; 
+    height: 64px; 
+    z-index: 20; 
+    background: #400; 
+    color: #EEE; 
+    border: 2px solid #888;
+    font-size: 16pt;
+}
 
+#seek-btn {
+    position: fixed; 
+    left:55%; 
+    bottom: 1em; 
+    width: 40%; 
+    height: 64px; 
+    z-index: 20; 
+    background: #040; 
+    color: #EEE;
+    border: 2px solid #888;
+    font-size: 16pt;
+}
+
+/* Displays from 561px to 800 */
+@media (max-width: 810px){   /* goes after to override all other settings */        
+    .summary-cell, 
+    .cover-cell,
+    .tags-cell, 
+    .details-cell {         /* Define on a per-cell basis to be able to hide other cells if needed*/
+        max-width: 100%;    /* Reset max-width so all cells are displayed properly in a column */
     }
-    .cover-cell { width: auto; }
-    #full-tracklist td, tr, table, th{
-        border-style: none;
-    }
-    #tracklist td, tr, th, table{
-        border-style: none;
-        width: auto; 
-    }
-    #full-tracklist {
-        display: grid;
+    .summary-cell { width: 40%;}
+    
+    #tracklist tr, thead { border: 3px groove #EAEAEA;}
+    
+    #tracklist-table td{ padding: .5em;}
+    #tracklist-table {              /* turns the table into a column */
         border-collapse: collapse;
-    }
-    #tracklist tr{
-        border-bottom: 3px groove #EAEAEA;
+        border-style: none;         /* tr contains border */
     }
     #tracklist td{
-        display: block;
-        border-style: none;
+        border-style: none;         /* tr contains border */
+        width: auto;                /* prevents background bleed */
     }
+    .tags-cell {display: none;}
+}
+
+/* Displays from 490px to 672px */
+@media (max-width: 672px;){
+    .hide-in-mobile {display: none;}
+}
+
+/* Displays from 320px to 434px */
+@media (max-width: 540px){   /* goes after to override all other settings */        
+    #tracklist tr,
+    .summary-cell, 
+    .cover-cell,
+    .tags-cell {         /* Define on a per-cell basis to be able to hide other cells if needed*/
+        max-width: 100%;    /* Reset max-width so all cells are displayed properly in a column */
+        display: block;     /* Turn the table into a column-based layout */
+    }
+    .cover-cell img { max-width: 256px; }
+    .summary-cell img { width: 32px; }
+    .details-cell h3{ font-size: 1.5em; }
+
+    #tracklist tr{ border: 3px groove #EAEAEA;}
+    
+    #tracklist-table td{ padding: 2px;}
+    #tracklist-table {              /* turns the table into a column */
+        border-collapse: collapse;
+        border-style: none;         /* tr contains border */
+    }
+    #tracklist td{
+        border-style: none;         /* tr contains border */
+        width: auto;                /* prevents background bleed */
+        text-align: center;
+    }
+    thead, .tags-cell, .details-cell, .hide-in-mobile {display: none;}
 }
 
 /* --- Hiring Page --- */
