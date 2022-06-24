@@ -262,10 +262,9 @@ img{
 
 /* Displays from 320px to 434px */
 @media (max-width: 540px){   /* goes after to override all other settings */        
-    #tracklist tr,
     .summary-cell, 
     .cover-cell,
-    .tags-cell {         /* Define on a per-cell basis to be able to hide other cells if needed*/
+    .tags-cell {            /* Define on a per-cell basis to be able to hide other cells if needed*/
         max-width: 100%;    /* Reset max-width so all cells are displayed properly in a column */
         display: block;     /* Turn the table into a column-based layout */
     }
@@ -273,7 +272,7 @@ img{
     .summary-cell img { width: 32px; }
     .details-cell h3{ font-size: 1.5em; }
 
-    #tracklist tr{ border: 3px groove #EAEAEA;}
+    #tracklist { display: flex; flex-direction: column;}
     
     #tracklist-table td{ padding: 2px;}
     #tracklist-table {              /* turns the table into a column */

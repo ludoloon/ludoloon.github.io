@@ -57,6 +57,7 @@ previousImage = "";
 previousWidth = "";
 seek_btn = "";
 stop_music_btn = "";
+clear_search_btn = "";
 
 // --- Table Code --- //
 function search_tracklist(){
@@ -70,10 +71,10 @@ function search_tracklist(){
         //Restore all listings if there are no terms
         if(terms == null) {
             listing.hidden = false;
-            document.getElementById('clear-search-btn').hidden = true;
+            clear_search_btn.hidden = true;
             continue;
         } else {
-            document.getElementById('clear-search-btn').hidden = false;
+            clear_search_btn.hidden = false;
         }
 
         //Check each term for a match
@@ -109,6 +110,7 @@ document.body.onload = function() {
     seek_btn = document.getElementById("seek-btn");
     stop_music_btn = document.getElementById("stop-music");
     searchbar = document.getElementById("search");
+    clear_search_btn = document.getElementById('clear-search-btn');
 
     //Populate the tracklist table
     for(i = 0; i < musicData.length; i++){  //run through each track individually
