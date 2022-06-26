@@ -135,8 +135,7 @@ const music_JSON =
 		"gamedevmarket": "https://www.gamedevmarket.net/asset/roguelike-adventure-music-pack/",
 		"godot": "https://godotmarketplace.com/shop/roguelike-adventure-music-pack/"},
 		"streaming":
-			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/roguelike-adventure-music-pack",
-			"spotify": "https://distrokid.com/hyperfollow/ludoloonstudio/roguelike-adventure-music-pack-game-soundtrack-2"},
+			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/roguelike-adventure-music-pack"},
 	},
 	{
 		"title": "Cave",
@@ -157,8 +156,7 @@ const music_JSON =
       "gamedevmarket": "https://www.gamedevmarket.net/asset/roguelike-adventure-music-pack/",
       "godot": "https://godotmarketplace.com/shop/roguelike-adventure-music-pack/"},
 		"streaming":
-			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/roguelike-adventure-music-pack",
-			"spotify":"https://distrokid.com/hyperfollow/ludoloonstudio/roguelike-adventure-music-pack-game-soundtrack-2"},
+			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/roguelike-adventure-music-pack"},
 	},
 	{
 		"title": "Desert",
@@ -179,8 +177,7 @@ const music_JSON =
 		"gamedevmarket": "https://www.gamedevmarket.net/asset/roguelike-adventure-music-pack/",
 		"godot": "https://godotmarketplace.com/shop/roguelike-adventure-music-pack/"},
 		"streaming":
-			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/roguelike-adventure-music-pack",
-			"spotify":"https://distrokid.com/hyperfollow/ludoloonstudio/roguelike-adventure-music-pack-game-soundtrack-2"},
+			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/roguelike-adventure-music-pack"},
 	},
 	{
 		"title": "Dungeon",
@@ -201,8 +198,7 @@ const music_JSON =
 		"gamedevmarket": "https://www.gamedevmarket.net/asset/roguelike-adventure-music-pack/",
 		"godot": "https://godotmarketplace.com/shop/roguelike-adventure-music-pack/"},
 		"streaming":
-			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/roguelike-adventure-music-pack",
-			"spotify":"https://distrokid.com/hyperfollow/ludoloonstudio/roguelike-adventure-music-pack-game-soundtrack-2"},
+			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/roguelike-adventure-music-pack"},
 	},
 	{
 		"title": "Forest",
@@ -223,8 +219,7 @@ const music_JSON =
 		"gamedevmarket": "https://www.gamedevmarket.net/asset/roguelike-adventure-music-pack/",
 		"godot": "https://godotmarketplace.com/shop/roguelike-adventure-music-pack/"},
 		"streaming":
-			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/roguelike-adventure-music-pack",
-			"spotify":"https://distrokid.com/hyperfollow/ludoloonstudio/roguelike-adventure-music-pack-game-soundtrack-2"},
+			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/roguelike-adventure-music-pack"},
 	},
 	{
 		"title": "Hell",
@@ -245,8 +240,7 @@ const music_JSON =
 		"gamedevmarket": "https://www.gamedevmarket.net/asset/roguelike-adventure-music-pack/",
 		"godot": "https://godotmarketplace.com/shop/roguelike-adventure-music-pack/"},
 		"streaming":
-			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/roguelike-adventure-music-pack",
-			"spotify":"https://distrokid.com/hyperfollow/ludoloonstudio/roguelike-adventure-music-pack-game-soundtrack-2"},
+			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/roguelike-adventure-music-pack"},
 	},
 	{
 		"title": "Hills & Valleys",
@@ -267,8 +261,7 @@ const music_JSON =
 		"gamedevmarket": "https://www.gamedevmarket.net/asset/roguelike-adventure-music-pack/",
 		"godot": "https://godotmarketplace.com/shop/roguelike-adventure-music-pack/"},
 		"streaming":
-			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/roguelike-adventure-music-pack",
-			"spotify":"https://distrokid.com/hyperfollow/ludoloonstudio/roguelike-adventure-music-pack-game-soundtrack-2"},
+			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/roguelike-adventure-music-pack"},
 	},
 	{
 		"title": "Ruins",
@@ -289,8 +282,7 @@ const music_JSON =
 		"gamedevmarket": "https://www.gamedevmarket.net/asset/roguelike-adventure-music-pack/",
 		"godot": "https://godotmarketplace.com/shop/roguelike-adventure-music-pack/"},
 		"streaming":
-			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/roguelike-adventure-music-pack",
-			"spotify":"https://distrokid.com/hyperfollow/ludoloonstudio/roguelike-adventure-music-pack-game-soundtrack-2"},
+			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/roguelike-adventure-music-pack"},
 	},
 	{
 		"title": "Sewers",
@@ -311,8 +303,7 @@ const music_JSON =
 		"gamedevmarket": "https://www.gamedevmarket.net/asset/roguelike-adventure-music-pack/",
 		"godot": "https://godotmarketplace.com/shop/roguelike-adventure-music-pack/"},
 		"streaming":
-			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/roguelike-adventure-music-pack",
-			"spotify":"https://distrokid.com/hyperfollow/ludoloonstudio/roguelike-adventure-music-pack-game-soundtrack-2"},
+			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/roguelike-adventure-music-pack"},
 	},
 	{
 		"title": "Title",
@@ -333,8 +324,7 @@ const music_JSON =
 		"gamedevmarket": "https://www.gamedevmarket.net/asset/roguelike-adventure-music-pack/",
 		"godot": "https://godotmarketplace.com/shop/roguelike-adventure-music-pack/"},
 		"streaming":
-			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/roguelike-adventure-music-pack",
-			"spotify":"https://distrokid.com/hyperfollow/ludoloonstudio/roguelike-adventure-music-pack-game-soundtrack-2"},
+			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/roguelike-adventure-music-pack"},
 	},
 	{
 		"title": "Town",
@@ -355,8 +345,7 @@ const music_JSON =
 		"gamedevmarket": "https://www.gamedevmarket.net/asset/roguelike-adventure-music-pack/",
 		"godot": "https://godotmarketplace.com/shop/roguelike-adventure-music-pack/"},
 		"streaming":
-			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/roguelike-adventure-music-pack",
-			"spotify":"https://distrokid.com/hyperfollow/ludoloonstudio/roguelike-adventure-music-pack-game-soundtrack-2"},
+			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/roguelike-adventure-music-pack"},
 	},
 	{
 		"title": "Winter",
@@ -377,8 +366,7 @@ const music_JSON =
 		"gamedevmarket": "https://www.gamedevmarket.net/asset/roguelike-adventure-music-pack/",
 		"godot": "https://godotmarketplace.com/shop/roguelike-adventure-music-pack/"},
 		"streaming":
-			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/roguelike-adventure-music-pack",
-			"spotify":"https://distrokid.com/hyperfollow/ludoloonstudio/roguelike-adventure-music-pack-game-soundtrack-2"},
+			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/roguelike-adventure-music-pack"},
 	},
 	{
 		"title": "Game Over",
@@ -399,8 +387,7 @@ const music_JSON =
 		"gamedevmarket": "https://www.gamedevmarket.net/asset/roguelike-adventure-music-pack/",
 		"godot": "https://godotmarketplace.com/shop/roguelike-adventure-music-pack/"},
 		"streaming":
-			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/roguelike-adventure-music-pack",
-        "spotify": "https://distrokid.com/hyperfollow/ludoloonstudio/roguelike-adventure-music-pack-game-soundtrack-2"},
+			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/roguelike-adventure-music-pack"},
 	},
 /* --- END PACK ---*/
 	{
@@ -440,7 +427,6 @@ const music_JSON =
 			"godot": "https://godotmarketplace.com/shop/mysterious-fog-royalty-free/",
 			},
 		"streaming":
-			{"youtube": "https://www.youtube.com/watch?v=-niUrXn13Qw",
-			},
+			{"youtube": "https://www.youtube.com/watch?v=-niUrXn13Qw",},
 	},
 ]

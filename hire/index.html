@@ -44,16 +44,23 @@
 totalMinutes = 0; 
 deliveryRate = ""; 
 payRate = 125;
+licenseRate = 1;
 emailMessage = ""; 
 totalEstimate = 0; 
 maxDeliverableMinutes = [3, 6, 9, 12]; 
 
-function updateVariables() { 
+document.body.onload = function() {
     /* Object References */ 
     minutesRef = document.getElementById("minutesNumber"); 
+    licenseRef = document.getElementById("licenseType");
     tracksRef = document.getElementById("tracksNumber"); 
     timeframeRef = document.getElementById("timeframeSelect"); 
     estimateRef = document.getElementById("estimateTotal");
+    updateVariables();
+};
+
+function updateVariables() { 
+
 
     /* Update variables, make sure totalMinutes isn't " " for email */
     totalMinutes = (minutesRef.value != "") ? minutesRef.value : 0;
@@ -72,7 +79,8 @@ function updateVariables() {
 
     /* Update delivery rate & estimate after validating minutes fit the timeframe*/
     deliveryRate = timeframeRef.value;
-    totalEstimate = Math.round(totalMinutes * payRate * deliveryRate);
+    licenseRate = licenseRef.value;
+    totalEstimate = Math.round(totalMinutes * payRate * licenseRate * deliveryRate);
 
     /* In case a delivery timeframe is not selected, tell the user to do so */
     if(deliveryRate > 0 ) {
@@ -83,8 +91,10 @@ function updateVariables() {
 
     /* Compose email message */
     timeframe = timeframeRef.options[timeframeRef.selectedIndex].text;
+    licenseType = licenseRef.options[licenseRef.selectedIndex].text;
     emailMessage = '[Custom Music Request - Summary]' +
             '\nTotal Minutes: ' + totalMinutes +
+            '\nLicense Type: ' + licenseType +
             '\nDelivery Time frame: ' + timeframe +
             '\nEstimated Total: $' + totalEstimate +
             '\n-----' + 
@@ -100,16 +110,47 @@ function updateInput(val, inputId) {
 <form name="estimateCalculator" style="max-width: 32em; margin: auto;"> 
 <h2 style="text-align: center;">Calculator</h2> 
 <p>
-    <p>
-    Total minutes of music needed: 
-    <input type="number" id="minutesNumber" value="0" min="1" max="40" onchange="updateInput(this.value, 'minutesRange');"><br/> 
+    <p style="display: flex; flex-direction: column;">
+    <span style="display: block;">Total minutes of music needed: 
+    <input type="number" id="minutesNumber" value="0" min="1" max="40" onchange="updateInput(this.value, 'minutesRange');"></span><br/> 
     <input type="range" id="minutesRange" value="0" min="1" max="40" oninput="updateInput(this.value, 'minutesNumber');"><br/>
     <i style="color: rgba(200,200,200,.8)">Type your amount manually if it exceeds the slider's max above.</i><br/>
     </p>
     <hr/>
-    <p>
+    <p style="display: flex; flex-direction: column;">
+    Which type of license do you need?<br/>
+    <select id="licenseType" size="3" onchange="updateVariables();"  style="text-align: center; margin: .5em;"> 
+        <option value=0.8 selected="selected">Non-exclusive</option>
+        <option value=1.0>Exclusive</option>
+        <option value=10.0>Buy-out</option>
+    </select><br/>
+    <i style="color: rgba(200,200,200,.8)">
+    <ul>
+        <li><b>Non-exclusive</b></li>
+            <ul>
+                <li><b>You:</b> use & edit this music.</li>
+                <li><b>Me:</b> retain copyright, sell in music pack.</li>
+            </ul>
+        </li>
+        <li><b>Exclusive:</b>
+            <ul>
+                <li><b>You:</b> only your projects can use this music.</li>
+                <li><b>Me:</b> retain copyright, distribute as soundtrack.</li>
+            </ul>
+        </li>
+        <li><b>Buy-out:</b>
+            <ul>
+                <li><b>You:</b> get all rights to this music.</li>
+                <li><b>Me:</b> retain writer's credits.</li>
+            </ul>
+        </li>
+    </ul>
+    </i>
+    </p>
+    <hr/>
+    <p style="display: flex; flex-direction: column;">
     <label for="timeframeSelect">How many business days (Mon-Fri) until you need finished music?</label><br/> 
-    <select id="timeframeSelect" size="5" onchange="updateVariables();"> 
+    <select id="timeframeSelect" size="5" onchange="updateVariables();" style="text-align: center; margin: .5em;"> 
         <option value=2.0 selected="selected">3-5 Days</option>
         <option value=1.75>6-10 Days</option>
         <option value=1.5>11-15 Days</option>
