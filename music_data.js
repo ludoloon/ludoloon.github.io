@@ -27,7 +27,7 @@ const music_JSON =
 		"cover": "tabletop-jazz-cafe.png",
         "summary": "Chill at a cafe, drink coffee and play games! Perfect for any situaiton that needs a jazz vibe.",
 		"embed": "https://www.youtube.com/embed/CRv4Qs0vwTA",
-		"tags": [ "Relaxing", "Smooth", "Groovy", "Cute", "Jazz", "Visual Novel", "RPG", "Board Game", "Casual"],
+		"tags": [ "Relaxing", "Smooth", "Chill", "Cute", "Jazz", "Visual Novel", "RPG", "Board Game", "Casual"],
 		"details": 
 			{"bpm": 65,
 			 "cost": "Free",
@@ -37,7 +37,9 @@ const music_JSON =
 			{"unity": "https://assetstore.unity.com/packages/slug/224462",
 			"itch": "https://ludoloonstudio.itch.io/tabletop-jazz-cafe"},
 		"streaming":
-			{"youtube": "https://www.youtube.com/watch?v=CRv4Qs0vwTA"},
+			{"youtube": "https://www.youtube.com/watch?v=CRv4Qs0vwTA",
+			"newgrounds": "https://www.newgrounds.com/audio/listen/1141271",
+			},
 	},
 	{
         "title": "Starting Line",
