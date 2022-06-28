@@ -108,7 +108,7 @@ function updateInput(val, inputId) {
 </script>
 
 <form name="estimateCalculator" style="max-width: 32em; margin: auto;"> 
-<h2 style="text-align: center;">Calculator</h2> 
+<h2 style="text-align: center;">Calculator</h2>
 <p>
     <p style="display: flex; flex-direction: column;">
     <span style="display: block;">Total minutes of music needed: 
@@ -119,22 +119,15 @@ function updateInput(val, inputId) {
     <hr/>
     <p style="display: flex; flex-direction: column;">
     Which type of license do you need?<br/>
-    <select id="licenseType" size="3" onchange="updateVariables();"  style="text-align: center; margin: .5em;"> 
-        <option value=0.6 selected="selected">Non-exclusive</option>
-        <option value=1.0>Exclusive</option>
+    <select id="licenseType" size="2" onchange="updateVariables();"  style="text-align: center; margin: .5em;"> 
+        <option value=1.0 selected="selected">Exclusive</option>
         <option value=10.0>Buy-out</option>
     </select><br/>
     <i style="color: rgba(200,200,200,.8)">
     <ul style="list-style: none; padding: 0;">
-        <li><b>Non-exclusive</b></li>
-            <ul>
-                <li><b>You:</b> use & edit this music.</li>
-                <li><b>Me:</b> retain copyright, sell to others.</li>
-            </ul>
-        </li>
         <li><b>Exclusive:</b>
             <ul>
-                <li><b>You:</b> only you can use this music.</li>
+                <li><b>You:</b> edit & use exclusively in your project.</li>
                 <li><b>Me:</b> retain copyright, distribute as soundtrack.</li>
             </ul>
         </li>
@@ -162,12 +155,13 @@ function updateInput(val, inputId) {
 </p>
 <hr/>
 <p style="font-weight: bold; font-size: 1.5em;"> 
-    Estimated total: <output id="estimateTotal" for="estimateCalculator" onforminput="value = totalEstimate;">$0</output> 
-</p> 
+    Estimated total: <output id="estimateTotal" for="estimateCalculator" onforminput="value = totalEstimate;">$0</output>
+</p>
 <a onclick="location.href='mailto:hire@ludoloon.studio?subject=Custom Music Request&body='+encodeURIComponent(emailMessage);" href="javascript:void(0)"> 
     <button onclick="updateVariables();" type="button">Send via E-mail</button></a>
 <a onclick="navigator.clipboard.writeText(emailMessage);" href="javascript:void(0)"> 
-    <button onclick="updateVariables();" type="button">Copy to Clipboard</button></a> 
+    <button onclick="updateVariables();" type="button">Copy to Clipboard</button></a>
+    <p><b>Specific details to be negotiated further. This tool is intended to help you estimate costs based on your general needs.</b></p>
 </form>
 
 <p><strong>NOTE: This will generate an e-mail with your Operating System's default client.</strong></p>
