@@ -413,7 +413,8 @@ const music_JSON =
 			{"unity": "https://assetstore.unity.com/packages/slug/214277",
 			"itch": "https://ludoloonstudio.itch.io/save-pause-menu"},
 		"streaming":
-			{"youtube": "https://www.youtube.com/watch?v=PlfbXKOpOms"},
+			{"archive.org": "https://archive.org/details/pause-save-menu-3x-loop",
+			"youtube": "https://www.youtube.com/watch?v=PlfbXKOpOms"},
 	},
 	{
         "title": "Mysterious Fog",
