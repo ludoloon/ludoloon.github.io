@@ -424,7 +424,8 @@ const music_JSON =
 			 "loop": "Loopable",
 			 "stems": "No-Stems"},         
 		"stores":
-			{"unity": "https://assetstore.unity.com/packages/slug/213501",
+			{"archive.org": "https://archive.org/details/mysterious-fog-full-track",
+			"unity": "https://assetstore.unity.com/packages/slug/213501",
 			"itch": "https://ludoloonstudio.itch.io/mysterious-fog",
 			"godot": "https://godotmarketplace.com/shop/mysterious-fog-royalty-free/",
 			},

@@ -186,7 +186,7 @@ document.body.onload = function() {
 
         //fill summary cell, place links here
         summary.innerHTML += '<span class="hide-in-mobile">'+ data.summary + '<hr/></span>';
-        summary.innerHTML += '<span class="hide-in-mobile"><b>Stores</b><br/></span>';
+        summary.innerHTML += '<span class="hide-in-mobile"><b>Download</b><br/></span>';
         for(key in data.stores){
             summary.innerHTML += '<a href="'+ data.stores[key] +'"><img src="../../images/icons/'+ key +'.png"/></a>';
         }
