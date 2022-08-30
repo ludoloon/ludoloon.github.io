@@ -34,11 +34,11 @@ const music_JSON =
 			 "loop": "Loopable",
 			 "stems": "No-Stems"},
         "stores":
-			{"archive.org": "https://archive.org/details/tabletop-jazz-cafe",
-			"unity": "https://assetstore.unity.com/packages/slug/224462",
+			{"unity": "https://assetstore.unity.com/packages/slug/224462",
 			"itch": "https://ludoloonstudio.itch.io/tabletop-jazz-cafe"},
 		"streaming":
-			{"youtube": "https://www.youtube.com/watch?v=CRv4Qs0vwTA",
+			{"archive.org": "https://archive.org/details/tabletop-jazz-cafe",
+			"youtube": "https://www.youtube.com/watch?v=CRv4Qs0vwTA",
 			"newgrounds": "https://www.newgrounds.com/audio/listen/1141271",
 			},
 	},
@@ -55,11 +55,11 @@ const music_JSON =
 			 "loop": "Loopable",
 			 "stems": "No-Stems"},
 		"stores":
-			{"archive.org": "https://archive.org/details/starting-line",
-			"unity": "https://assetstore.unity.com/packages/slug/223471",
+			{"unity": "https://assetstore.unity.com/packages/slug/223471",
 			"itch": "https://ludoloonstudio.itch.io/starting-line"},
 		"streaming":
-			{"youtube": "https://youtu.be/LaXHIgOH9cE",
+			{"archive.org": "https://archive.org/details/starting-line",
+			"youtube": "https://youtu.be/LaXHIgOH9cE",
 			"newgrounds": "https://www.newgrounds.com/audio/listen/1139719"},
 	},
 	{
@@ -75,11 +75,11 @@ const music_JSON =
 			 "loop": "Loopable",
 			 "stems": "Stems"},        
 		"stores":
-			{"archive.org": "https://archive.org/details/stuck_202208",
-			"unity": "https://assetstore.unity.com/packages/slug/223471",
+			{"unity": "https://assetstore.unity.com/packages/slug/223471",
 			"itch": "https://ludoloonstudio.itch.io/stuck-free-music"},
 		"streaming":
-			{"youtube": "https://youtu.be/D5oAisdVEW4",
+			{"archive.org": "https://archive.org/details/stuck_202208",
+			"youtube": "https://youtu.be/D5oAisdVEW4",
 			"newgrounds": "https://www.newgrounds.com/audio/listen/1138613"},
 	},
 	{
@@ -95,11 +95,11 @@ const music_JSON =
 			 "loop": "Loopable",
 			 "stems": "No-Stems"},
 		"stores":
-			{"archive.org": "https://archive.org/details/puzzled-mind",
-			"unity": "https://assetstore.unity.com/packages/slug/222465",
+			{"unity": "https://assetstore.unity.com/packages/slug/222465",
 			"itch": "https://ludoloonstudio.itch.io/puzzled-mind"},
 		"streaming":
-			{"youtube": "https://youtu.be/iaoRYHZfWFQ",
+			{"archive.org": "https://archive.org/details/puzzled-mind",
+			"youtube": "https://youtu.be/iaoRYHZfWFQ",
 			"newgrounds": "https://www.newgrounds.com/audio/listen/1138191"},
 	},
 	{
@@ -115,11 +115,11 @@ const music_JSON =
 			 "loop": "Loopable",
 			 "stems": "No-Stems"},        
 		"stores":
-			{"archive.org": "https://archive.org/details/on-the-farm",
-			"unity": "https://assetstore.unity.com/packages/slug/221746",
+			{"unity": "https://assetstore.unity.com/packages/slug/221746",
 			"itch": "https://ludoloonstudio.itch.io/on-the-farm"},
 		"streaming":
-			{"youtube": "https://youtu.be/0ZP9I0KOp7M",
+			{"archive.org": "https://archive.org/details/on-the-farm",
+			"youtube": "https://youtu.be/0ZP9I0KOp7M",
 			"newgrounds": "https://www.newgrounds.com/audio/listen/1137021"},
 	},
 /* --- ROGUELIKE ADVENTURE MUSIC PACK --- */
@@ -429,12 +429,12 @@ const music_JSON =
 			 "loop": "Loopable",
 			 "stems": "No-Stems"},         
 		"stores":
-			{"archive.org": "https://archive.org/details/mysterious-fog-full-track",
-			"unity": "https://assetstore.unity.com/packages/slug/213501",
+			{"unity": "https://assetstore.unity.com/packages/slug/213501",
 			"itch": "https://ludoloonstudio.itch.io/mysterious-fog",
 			"godot": "https://godotmarketplace.com/shop/mysterious-fog-royalty-free/",
 			},
 		"streaming":
-			{"youtube": "https://www.youtube.com/watch?v=-niUrXn13Qw",},
+			{"archive.org": "https://archive.org/details/mysterious-fog-full-track",
+			"youtube": "https://www.youtube.com/watch?v=-niUrXn13Qw",},
 	},
 ]
