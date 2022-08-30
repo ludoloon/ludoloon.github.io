@@ -34,7 +34,8 @@ const music_JSON =
 			 "loop": "Loopable",
 			 "stems": "No-Stems"},
         "stores":
-			{"unity": "https://assetstore.unity.com/packages/slug/224462",
+			{"archive.org": "https://archive.org/details/tabletop-jazz-cafe",
+			"unity": "https://assetstore.unity.com/packages/slug/224462",
 			"itch": "https://ludoloonstudio.itch.io/tabletop-jazz-cafe"},
 		"streaming":
 			{"youtube": "https://www.youtube.com/watch?v=CRv4Qs0vwTA",
@@ -54,7 +55,8 @@ const music_JSON =
 			 "loop": "Loopable",
 			 "stems": "No-Stems"},
 		"stores":
-			{"unity": "https://assetstore.unity.com/packages/slug/223471",
+			{"archive.org": "https://archive.org/details/starting-line",
+			"unity": "https://assetstore.unity.com/packages/slug/223471",
 			"itch": "https://ludoloonstudio.itch.io/starting-line"},
 		"streaming":
 			{"youtube": "https://youtu.be/LaXHIgOH9cE",
@@ -73,7 +75,8 @@ const music_JSON =
 			 "loop": "Loopable",
 			 "stems": "Stems"},        
 		"stores":
-			{"unity": "https://assetstore.unity.com/packages/slug/223471",
+			{"archive.org": "https://archive.org/details/stuck_202208",
+			"unity": "https://assetstore.unity.com/packages/slug/223471",
 			"itch": "https://ludoloonstudio.itch.io/stuck-free-music"},
 		"streaming":
 			{"youtube": "https://youtu.be/D5oAisdVEW4",
@@ -92,7 +95,8 @@ const music_JSON =
 			 "loop": "Loopable",
 			 "stems": "No-Stems"},
 		"stores":
-			{"unity": "https://assetstore.unity.com/packages/slug/222465",
+			{"archive.org": "https://archive.org/details/puzzled-mind",
+			"unity": "https://assetstore.unity.com/packages/slug/222465",
 			"itch": "https://ludoloonstudio.itch.io/puzzled-mind"},
 		"streaming":
 			{"youtube": "https://youtu.be/iaoRYHZfWFQ",
@@ -111,7 +115,8 @@ const music_JSON =
 			 "loop": "Loopable",
 			 "stems": "No-Stems"},        
 		"stores":
-			{"unity": "https://assetstore.unity.com/packages/slug/221746",
+			{"archive.org": "https://archive.org/details/on-the-farm",
+			"unity": "https://assetstore.unity.com/packages/slug/221746",
 			"itch": "https://ludoloonstudio.itch.io/on-the-farm"},
 		"streaming":
 			{"youtube": "https://youtu.be/0ZP9I0KOp7M",
