@@ -18,6 +18,80 @@
     },
 */
 
+const works_packs =
+[
+	{
+        "title": "Roguelike Adventure Music Pack",
+		"url": "roguelike-adventure",
+		"cover": "roguelike-adventure.png",
+		"blog": "roguelike-adventure",
+        "summary": "Music for all types of classic RPG & Action Adventure locations! Ready to go, easy to customize. ",
+		"embed": "https://www.youtube.com/embed/videoseries?list=PLL06MmY4OQnbZhDoKYUFZCEu5WgvtxPIg",
+		"tags": [ ],
+		"details": 
+			{"cost": "Paid",
+			 "loop": "Loopable",
+			 "stems": "Stems"},
+        "stores":
+			{"unity": "https://assetstore.unity.com/packages/slug/216619",
+			"itch": "https://ludoloonstudio.itch.io/roguelike-adventure-music-pack",
+			"gamedevmarket": "https://www.gamedevmarket.net/asset/roguelike-adventure-music-pack/",
+			"godot": "https://godotmarketplace.com/shop/roguelike-adventure-music-pack/",
+			},
+		"streaming":
+			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/roguelike-adventure-music-pack"},
+	},
+]
+
+const works_credits =
+[
+	{
+        "title": "Speakeasy Tycoon",
+		"url": "speakeasy-tycoon",
+		"cover": "speakeasy-tycoon.png",
+        "summary": 'A game jam project about running speakeasies that used my track <a href="../music#tabletop-jazz-cafe">Tabletop Jazz Cafe.</a>',
+		"tags": [ ],
+        "link": "https://axelancer.itch.io/speakeasy-tycoon",
+	},
+	{
+        "title": "Clean Cell",
+		"url": "clean-cell",
+		"cover": "clean-cell.png",
+        "summary": 'Clean Cell is a small hyper arcade game for Score Space Jam #19. My track <a href="../music#starting-line">Starting Line</a> was used.',
+		"tags": [ ],
+        "link": "https://klooonal.itch.io/clean-cell",
+	},
+]
+
+const works_projects =
+[
+	{
+        "title": "Giggly's Dare",
+		"url": "gigglys-dare",
+		"cover": "gigglys-dare.png",
+		"blog": "jam-gigglys-dare",
+        "summary": 'I made music for this game as part of the <a href="https://itch.io/jam/gmtk-jam-2022">Game Makers Toolkit Jam.</a>',
+		"embed": "https://www.youtube.com/embed/videoseries?list=PLL06MmY4OQnYiPEjGcOkcVH-INNMR0h5S",
+		"tags": [ ],
+		"streaming":
+			{"itch": "https://infinitegamesds.itch.io/gigglys-dare",
+			"youtube": "https://www.youtube.com/watch?v=z4a4quZ7xGE&list=PLL06MmY4OQnYiPEjGcOkcVH-INNMR0h5S&index=1",
+			},
+	},
+	{
+        "title": "Flight Sim Portraits",
+		"url": "flight-sim-portraits",
+		"cover": "flight-sim-portraits.png",
+		"blog": "flight-sim-portraits",
+        "summary": "Dedicated to honing in on matching music to visual media.",
+		"embed": "https://www.youtube.com/embed/videoseries?list=PLL06MmY4OQnZJtHTVJ4IlCetgx6wgS_b6",
+		"tags": [ ],
+		"streaming":
+			{"youtube": "https://www.youtube.com/watch?v=C9JiT63OVHw&list=PLL06MmY4OQnZJtHTVJ4IlCetgx6wgS_b6",
+			},
+	},
+]
+
 // Current idea: sort by variables with Free & Paid as separate tables
 const music_JSON = 
 [
@@ -428,7 +502,8 @@ const music_JSON =
 			{"bpm": "-",
 			 "cost": "Free",
 			 "loop": "Loopable",
-			 "stems": "No-Stems"},         
+			 "stems": "No-Stems"
+			},         
 		"stores":
 			{"unity": "https://assetstore.unity.com/packages/slug/213501",
 			"itch": "https://ludoloonstudio.itch.io/mysterious-fog",

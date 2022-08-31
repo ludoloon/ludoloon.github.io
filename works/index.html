@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-          <title>LudoLoon Studio - Portfolio of Latest Royalty Free Music and Custom Music for Hire</title>
+          <title>LudoLoon Studio - Portfolio of latest royalty free music and custom music for hire</title>
         <meta charset="utf-8" />
         <meta name=”robots” content="index, follow" />
         <meta name="generator" content="Pelican" />
@@ -35,13 +35,95 @@
 <section id="content">
     
 
-    <script>
+    <script type="text/javascript" src="https://ludoloon.studio/music_data.js"></script>
+<script>
+//music data global variables
+const projectsData = JSON.parse(JSON.stringify(works_projects));
+const creditsData = JSON.parse(JSON.stringify(works_credits));
+const musicpacksData = JSON.parse(JSON.stringify(works_packs));
+
 player = "";
 container = "";
 playOverlay = "";
 previousImage = "";
 previousWidth = "";
 previousPlay = "";
+
+function populate_album_container(div_id, JSON_data){
+    //set any DOM reference variables now that the page is loaded & ready
+    let album_container = document.getElementById(div_id);
+
+    //Populate the heading we're filling under
+    for(i = 0; i < JSON_data.length; i++){  //run through each track individually
+        //Easier to reference this way
+        data = JSON_data[i];
+
+        //initialize HTML elements
+        let anchor = document.createElement("a");             //so we can jump to this table row with anchors
+        let album = document.createElement("div");            //the album element
+        let album_art = document.createElement("div");          //cover art & title
+        let album_info = document.createElement("div");
+
+        //append together the html elements.
+        //assign attributes
+        album.id = data.url;
+        album.className = "album";
+        anchor.name = data.url;
+        album_art.className = "album-art";
+        album_info.className = "album-info";
+
+        //write cover & summary td elements
+        if(data.blog != null){
+            album_info.innerHTML = '<p class="album-title"><b><a href="../'+ data.blog +'">🔗 '+ data.title + '</a></b></p>';
+        } else {
+            album_info.innerHTML = '<p class="album-title"><b>'+ data.title + "</b></p>";
+        }
+        if(data.embed != null){
+            album.innerHTML += '<div class="play-button-overlay"><img src="../../theme/css/play_button.png"/>Play</div>';
+            album_art.innerHTML += '<a href="javascript:void(0);" onclick="play(this, this.innerHTML,\''+data.embed+'\')"><img src="../../images/covers/'+ data.cover +' "/></a><br/>';
+        } else if (data.link != null){
+            album_art.innerHTML += '<a href="'+data.link+'" target="_blank"><img src="../../images/covers/'+ data.cover +' "/></a><br/>';
+        }
+
+        //fill summary cell, place links here
+        album_info.innerHTML += '<p class="album-description">'+ data.summary + '</p>';
+
+        //process the links
+        if(data.stores != null || data.streaming != null){
+            album_info.innerHTML += '<hr/><p class="album-links">';
+            if(data.stores != null){
+                album_info.innerHTML += '<b>Asset Stores</b><br/>';
+                for(key in data.stores){
+                    album_info.innerHTML += '<a href="'+ data.stores[key] +'"><img src="../../images/icons/'+ key +'.png"/></a>';
+                }
+            }
+            if(data.stores != null && data.streaming != null) { album_info.innerHTML += "<br/>"; } //only add if both exist
+            //next we add streaming links
+            if(data.streaming != null){
+                album_info.innerHTML += '<b>Streaming</b><br/>';
+                for(key in data.streaming){
+                    album_info.innerHTML += '<a href="'+ data.streaming[key] +'"><img src="../../images/icons/'+ key +'.png"/></a>';
+                }
+            }
+            album_info.innerHTML += "</p>";
+        } else {
+            //in case this is a project where I'm being credited and all it uses is one link, instead of stores/streaming.
+        }
+
+        //append elements to appropriate table position, in order
+        album.appendChild(anchor);
+        album.appendChild(album_art);
+        album.appendChild(album_info);
+        album_container.appendChild(album);
+    }
+}
+
+//Must wait until body is loaded to reference the #tracklist tbody where we show music
+document.body.onload = function() {
+    populate_album_container("music-packs", works_packs);
+    populate_album_container("custom-projects", works_projects);
+    populate_album_container("credits", works_credits);
+};
 
 function play(newPlayer, image, src){
 
@@ -95,99 +177,27 @@ function closeplayer(){
 </script>
 
 <h1>Portfolio</h1>
-<noscript><b>Please note, javascript is required to view videos.</b></noscript>
+<noscript><b>Please note, javascript is required to view embeded videos.</b></noscript>
 
-<p>This is where any full projects I've worked on will be listed (like games, videos, albums, music packs).</p>
+<p>This is where any projects I've worked on will be listed (like games, videos, albums, music packs).</p>
 <p>For any music to use in your projects, see my <a href="https://ludoloon.studio/music/">new &amp; improved music licensing database search page!</a></p>
 <h2>Music Packs</h2>
 <p>Fully complete music packs available for purchase.</p>
 
-<div class="album-container">
-
-<div class="album">
-<a id="roguelike-adventure"></a>
-    <div class="play-button-overlay"><img src="../../theme/css/play_button.png"/>Play</div>
-    <div class="album-art"><a href="javascript:void();" onclick="play(this, this.innerHTML, 'https://www.youtube.com/embed/videoseries?list=PLL06MmY4OQnbZhDoKYUFZCEu5WgvtxPIg')"><img src="https://ludoloon.studio/images/covers/roguelike-adventure.png" /></a></div>
-    <div class="album-info">
-        <p class="album-title"><b><a href="https://ludoloon.studio/roguelike-adventure/">Roguelike Adventure Music Pack</a></b></p>
-            <p class="album-description">
-                Music for all types of classic RPG & Action Adventure locations! Ready to go, easy to customize.
-            </p>
-        <hr/>
-        <p class="album-links">
-            <b>Asset Stores</b><br/>
-                <a href="https://ludoloonstudio.itch.io/roguelike-adventure-music-pack"><img src="https://ludoloon.studio/images/icons/itch.png" alt="itch.io link"/></a>
-                <a href="https://assetstore.unity.com/packages/slug/216619" alt="unity link"><img src="https://ludoloon.studio/images/icons/unity.png" alt="unity link"/></a>
-                <a href="https://www.gamedevmarket.net/asset/roguelike-adventure-music-pack/" alt="game dev market link"><img src="https://ludoloon.studio/images/icons/gamedevmarket.png" alt="game dev market link"/></a>
-                <a href="https://godotmarketplace.com/shop/roguelike-adventure-music-pack/"><img src="https://ludoloon.studio/images/icons/godot.png" alt="godot link"/></a>
-            <br/><b>Streaming</b><br/>
-                <a href="https://ludoloonstudio.bandcamp.com/album/roguelike-adventure-music-pack"><img src="https://ludoloon.studio/images/icons/bandcamp.png" alt="Bandcamp link"/></a>
-        </p>
-    </div>
+<div class="album-container" id="music-packs">
+<!-- filled in by the javascript -->
 </div>
 
+<h2>Custom Projects</h2>
+<p>Projects that I made custom music for.</p>
+<div class="album-container" id="custom-projects">
+<!-- filled in by the javascript -->
 </div>
 
 <h2>Projects Crediting Me</h2>
-<p>Projects where people have used my music. Click the image to see the project.</p>
-<div class="album-container">
-
-<div class="album">
-<a id="jam-gigglys-dare"> </a>
-    <div class="album-art"><a href="https://infinitegamesds.itch.io/gigglys-dare" target="_blank"><img style="height: 259px; width: 100%;" src="https://ludoloon.studio/images/covers/gigglys-dare.png" /></a></div>
-    <div class="album-info">
-        <p class="album-title"><b>Gigglys Dare</b></p>
-        <p class="album-description">
-        I made music for this game as part of the <a href="https://itch.io/jam/gmtk-jam-2022" target="_blank">Game Makers Toolkit Jam</a>.
-        </p>
-    </div>
-</div>
-
-<div class="album">
-<a id="speakeasy-tycoon"> </a>
-    <div class="album-art"><a href="https://axelancer.itch.io/speakeasy-tycoon" target="_blank"><img src="https://ludoloon.studio/images/covers/speakeasy-tycoon.png" /></a></div>
-    <div class="album-info">
-        <p class="album-title"><b>Speakeasy Tycoon</b></p>
-        <p class="album-description">
-        A game jam project about running speakeasies that used my track <a href="https://ludoloon.studio/music/#tabletop-jazz-cafe">Tabletop Jazz Cafe</a>.
-        </p>
-    </div>
-</div>
-
-<div class="album">
-<a id="clean-cell"> </a>
-    <div class="album-art"><a href="https://klooonal.itch.io/clean-cell" target="_blank"><img src="https://ludoloon.studio/images/covers/clean-cell.png" /></a></div>
-    <div class="album-info">
-        <p class="album-title"><b>Clean Cell</b></p>
-        <p class="album-description">
-        Clean Cell is a small hyper arcade game for Score Space Jam #19. My track <a href="https://ludoloon.studio/music/#starting-line">Starting Line</a> was used.
-        </p>
-    </div>
-</div>
-
-</div>
-
-<h2>My Projects</h2>
-<p>Projects that I've personally made.</p>
-<div class="album-container">
-
-<div class="album">
-<a id="flight-sim-portraits"> </a>
-    <div class="play-button-overlay"><img src="../../theme/css/play_button.png"/>Play</div>
-    <div class="album-art"><a href="javascript:void();" onclick="play(this, this.innerHTML, 'https://www.youtube.com/embed/videoseries?list=PLL06MmY4OQnZJtHTVJ4IlCetgx6wgS_b6')"><img src="https://ludoloon.studio/images/covers/flight-sim-portraits.png" /></a></div>
-    <div class="album-info">
-        <p class="album-title"><b><a href="https://ludoloon.studio/flight-sim-portraits/">Flight Sim Portraits</a></b></p>
-        <p class="album-description">
-        Dedicated to honing in on matching music to visual media.
-        </p>
-        <hr/>
-        <p class="album-links">
-        <b>Streaming</b><br/>
-            <a href="https://www.youtube.com/watch?v=C9JiT63OVHw&list=PLL06MmY4OQnZJtHTVJ4IlCetgx6wgS_b6"><img src="https://ludoloon.studio/images/icons/youtube.png" alt="YouTube link"/></a>
-        </p>
-    </div>
-</div>
-
+<p>Projects where people have used my royalty free music. Click the image to see the project.</p>
+<div class="album-container" id="credits">
+<!-- filled in by the javascript -->
 </div>
 </section>
 <!-- /#content -->
