@@ -22,12 +22,13 @@ const works_packs =
 [
 	{
         "title": "Roguelike Adventure Music Pack",
+		"date": new Date(2022, 2, 22),
 		"url": "roguelike-adventure",
 		"cover": "roguelike-adventure.png",
 		"blog": "roguelike-adventure",
         "summary": "Music for all types of classic RPG & Action Adventure locations! Ready to go, easy to customize. ",
 		"embed": "https://www.youtube.com/embed/videoseries?list=PLL06MmY4OQnbZhDoKYUFZCEu5WgvtxPIg",
-		"tags": [ ],
+		"tags": [ "Music Pack" ],
 		"details": 
 			{"cost": "Paid",
 			 "loop": "Loopable",
@@ -47,6 +48,8 @@ const works_credits =
 [
 	{
         "title": "Speakeasy Tycoon",
+		"date": new Date(2022, 6, 12),
+		"frontpage": false,
 		"url": "speakeasy-tycoon",
 		"cover": "speakeasy-tycoon.png",
         "summary": 'A game jam project about running speakeasies that used my track <a href="../music#tabletop-jazz-cafe">Tabletop Jazz Cafe.</a>',
@@ -55,6 +58,8 @@ const works_credits =
 	},
 	{
         "title": "Clean Cell",
+		"date": new Date(2022, 5, 6),
+		"frontpage": false,
 		"url": "clean-cell",
 		"cover": "clean-cell.png",
         "summary": 'Clean Cell is a small hyper arcade game for Score Space Jam #19. My track <a href="../music#starting-line">Starting Line</a> was used.',
@@ -67,12 +72,13 @@ const works_projects =
 [
 	{
         "title": "Giggly's Dare",
+		"date": new Date(2022, 6, 19),
 		"url": "gigglys-dare",
 		"cover": "gigglys-dare.png",
 		"blog": "jam-gigglys-dare",
         "summary": 'I made music for this game as part of the <a href="https://itch.io/jam/gmtk-jam-2022">Game Makers Toolkit Jam.</a>',
 		"embed": "https://www.youtube.com/embed/videoseries?list=PLL06MmY4OQnYiPEjGcOkcVH-INNMR0h5S",
-		"tags": [ ],
+		"tags": [ "Game Jam", "Project" ],
 		"streaming":
 			{"itch": "https://infinitegamesds.itch.io/gigglys-dare",
 			"youtube": "https://www.youtube.com/watch?v=z4a4quZ7xGE&list=PLL06MmY4OQnYiPEjGcOkcVH-INNMR0h5S&index=1",
@@ -80,6 +86,7 @@ const works_projects =
 	},
 	{
         "title": "Flight Sim Portraits",
+		"date": new Date(2022, 0, 20),
 		"url": "flight-sim-portraits",
 		"cover": "flight-sim-portraits.png",
 		"blog": "flight-sim-portraits",
@@ -97,6 +104,7 @@ const music_JSON =
 [
 	{
         "title": "Tabletop Jazz Cafe",
+		"date": new Date(2022, 5, 7),
 		"url": "tabletop-jazz-cafe",
 		"cover": "tabletop-jazz-cafe.png",
         "summary": "Chill at a cafe, drink coffee and play games! Perfect for any situaiton that needs a jazz vibe.",
@@ -118,6 +126,7 @@ const music_JSON =
 	},
 	{
         "title": "Starting Line",
+		"date": new Date(2022, 4, 31),
 		"url": "starting-line",
 		"cover": "starting-line.png",
         "summary": "High-speed racing music heavily inspired by classic games like R4 and Gran Turismo.",
@@ -138,6 +147,8 @@ const music_JSON =
 	},
 	{
         "title": "Stuck",
+		"date": new Date(2022, 4, 24),
+		"frontpage": false,
 		"url": "stuck",
 		"cover": "stuck.png",
         "summary": "You must leave but you're stuck.",
@@ -158,6 +169,7 @@ const music_JSON =
 	},
 	{
         "title": "Puzzled Mind",
+		"date": new Date(2022, 4, 17),
 		"url": "puzzled-mind",
 		"cover": "puzzled-mind.png",
         "summary": "Moody music for solving a puzzle.",
@@ -178,6 +190,7 @@ const music_JSON =
 	},
 	{
         "title": "On the Farm",
+		"date": new Date(2022, 4, 10),
 		"url": "on-the-farm",
 		"cover": "on-the-farm.png",
         "summary": "Perfect for chorin' around the farm in the sun!",
@@ -199,6 +212,8 @@ const music_JSON =
 /* --- ROGUELIKE ADVENTURE MUSIC PACK --- */
 	{
 		"title": "Castle",
+		"date": new Date(2022, 2, 22),
+		"frontpage": false,
 		"url": "roguelike-adventure-castle",
 		"cover": "roguelike-adventure.png",
 		"blog": "roguelike-adventure",
@@ -220,6 +235,8 @@ const music_JSON =
 	},
 	{
 		"title": "Cave",
+		"date": new Date(2022, 2, 22),
+		"frontpage": false,
 		"url": "roguelike-adventure-cave",
 		"cover": "roguelike-adventure.png",
 		"blog": "roguelike-adventure",
@@ -241,6 +258,8 @@ const music_JSON =
 	},
 	{
 		"title": "Desert",
+		"date": new Date(2022, 2, 22),
+		"frontpage": false,
 		"url": "roguelike-adventure-desert",
 		"cover": "roguelike-adventure.png",
 		"blog": "roguelike-adventure",
@@ -262,6 +281,8 @@ const music_JSON =
 	},
 	{
 		"title": "Dungeon",
+		"date": new Date(2022, 2, 22),
+		"frontpage": false,
 		"url": "roguelike-adventure-dungeon",
 		"cover": "roguelike-adventure.png",
 		"blog": "roguelike-adventure",
@@ -283,6 +304,8 @@ const music_JSON =
 	},
 	{
 		"title": "Forest",
+		"date": new Date(2022, 2, 22),
+		"frontpage": false,
 		"url": "roguelike-adventure-forest",
 		"cover": "roguelike-adventure.png",
 		"blog": "roguelike-adventure",
@@ -304,6 +327,8 @@ const music_JSON =
 	},
 	{
 		"title": "Hell",
+		"date": new Date(2022, 2, 22),
+		"frontpage": false,
 		"url": "roguelike-adventure",
 		"cover": "roguelike-adventure.png",
 		"blog": "roguelike-adventure-hell",
@@ -325,6 +350,8 @@ const music_JSON =
 	},
 	{
 		"title": "Hills & Valleys",
+		"date": new Date(2022, 2, 22),
+		"frontpage": false,
 		"url": "roguelike-adventure-hills-valleys",
 		"cover": "roguelike-adventure.png",
 		"blog": "roguelike-adventure",
@@ -346,6 +373,8 @@ const music_JSON =
 	},
 	{
 		"title": "Ruins",
+		"date": new Date(2022, 2, 22),
+		"frontpage": false,
 		"url": "roguelike-adventure-ruins",
 		"cover": "roguelike-adventure.png",
 		"blog": "roguelike-adventure",
@@ -367,6 +396,8 @@ const music_JSON =
 	},
 	{
 		"title": "Sewers",
+		"date": new Date(2022, 2, 22),
+		"frontpage": false,
 		"url": "roguelike-adventure-sewers",
 		"cover": "roguelike-adventure.png",
 		"blog": "roguelike-adventure",
@@ -388,6 +419,8 @@ const music_JSON =
 	},
 	{
 		"title": "Title",
+		"date": new Date(2022, 2, 22),
+		"frontpage": false,
 		"url": "roguelike-adventure-title",
 		"cover": "roguelike-adventure.png",
 		"blog": "roguelike-adventure",
@@ -409,6 +442,8 @@ const music_JSON =
 	},
 	{
 		"title": "Town",
+		"date": new Date(2022, 2, 22),
+		"frontpage": false,
 		"url": "roguelike-adventure-town",
 		"cover": "roguelike-adventure.png",
 		"blog": "roguelike-adventure",
@@ -430,6 +465,8 @@ const music_JSON =
 	},
 	{
 		"title": "Winter",
+		"date": new Date(2022, 2, 22),
+		"frontpage": false,
 		"url": "roguelike-adventure-winter",
 		"cover": "roguelike-adventure.png",
 		"blog": "roguelike-adventure",
@@ -451,6 +488,8 @@ const music_JSON =
 	},
 	{
 		"title": "Game Over",
+		"date": new Date(2022, 2, 22),
+		"frontpage": false,
 		"url": "roguelike-adventure-game-over",
 		"cover": "roguelike-adventure.png",
 		"blog": "roguelike-adventure",
@@ -473,6 +512,7 @@ const music_JSON =
 /* --- END PACK ---*/
 	{
         "title": "Save/Pause Menu",
+		"date": new Date(2022, 1, 22),
 		"url": "save-pause-menu",
 		"cover": "save-pause-menu.png",
         "summary": "Perfect for a pause, save or loading menu. Chill, loop background music.",
@@ -492,6 +532,7 @@ const music_JSON =
 	},
 	{
         "title": "Mysterious Fog",
+		"date": new Date(2022, 1, 15),
 		"url": "mysterious-fog",
 		"cover": "mysterious-fog.png",
 		"blog": "mysterious-fog",

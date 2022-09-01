@@ -65,6 +65,7 @@ nav td {padding-right: 4px;} /* avoid text scrunching up */
     justify-content: center;
     align-items: center;
     /*flex-grow: 1;*/
+    text-align: center;
 }
 .landing-thumbnail img { width: 100%; box-shadow: 0 1px 1px 2px #000; }
 .landing-summary { 
@@ -82,7 +83,7 @@ nav td {padding-right: 4px;} /* avoid text scrunching up */
     flex-direction: row;
     flex-wrap: wrap;
 }
-.landing-tag { border: 1px groove #EAEAEA; padding: .25em .25em; margin: .5em; }
+.landing-tag { border: 1px groove #EAEAEA; padding: .25em .25em; margin: .3em; font-size: 14px; }
 .landing-links { padding: 0; margin: 0; }
 .landing-links img { max-width: 48px; max-height: 48px; margin: .25em; }
 
