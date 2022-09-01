@@ -92,15 +92,14 @@ nav td {padding-right: 4px;} /* avoid text scrunching up */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content:space-between;
+    justify-content:center;
 }
 .album {
     position: relative;
     background: #333;
     border: 1px solid #EAEAEA;
     width: 27em;
-    margin-bottom: 2em;
+    margin: 2em auto;
     padding: 1em;
     padding-bottom: 0;
 }
