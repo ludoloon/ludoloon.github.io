@@ -90,7 +90,7 @@ document.body.onload = function() {
 		//Add tags
 		for(tag in data.tags) {
 			tags.innerHTML += 
-				'<span class="landing-tag" onclick="search_with_tag(\''+ data.tags[tag] +'\', true)">'+ data.tags[tag] +'</span>';
+				'<span class="landing-tag">'+ data.tags[tag] +'</span>';
 		}
 		album_info.appendChild(tags);
 		
