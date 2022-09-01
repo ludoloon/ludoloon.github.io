@@ -120,6 +120,9 @@ document.body.onload = function() {
 		album.appendChild(album_info);
 		album_container.appendChild(album);
 	}
+	
+	//lastly, set the iframe video player source AFTER so that it doesn't slow down the page load
+	player.src = "https://youtube.com/embed/NGrljgl4IZk";
 };
 
 function play(youtube) {
@@ -137,7 +140,7 @@ function restore(){
 
 <noscript>This video player requires javascript to function.</noscript>
 <button id="restore_btn" onclick="restore()" hidden="true">Restore Demo Reel</button>
-<div style="position:relative;padding-bottom:56.25%;"><iframe id="player" style="width:100%;height:100%;position:absolute;left:0px;top:0px;" src="https://youtube.com/embed/NGrljgl4IZk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div><br/>
+<div style="position:relative;padding-bottom:56.25%;"><iframe id="player" style="width:100%;height:100%;position:absolute;left:0px;top:0px;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div><br/>
 
 <p style="font-size: 1.2em; text-align: center;"><i>Here's that music you wanted!<br/> <a href="https://ko-fi.com/ludoloonstudio/tiers">Subscribe on ko-fi for discounts.</a></i></p>
 
