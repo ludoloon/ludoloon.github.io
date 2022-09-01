@@ -51,6 +51,9 @@ document.body.onload = function() {
     let player = document.getElementById("player");
     let restore_btn = document.getElementById("restore_btn");
 	
+	//Set the iframe video player once we're in onload so that it doesn't slow down the js rendering the front page
+	player.src = "https://youtube.com/embed/NGrljgl4IZk";
+	
 	//Populate the heading we're filling under
 	for(i = 0; i < 4; i++){	//run through each track individually
         if( i > musicData.length ) break; //save oursevles
@@ -120,9 +123,6 @@ document.body.onload = function() {
 		album.appendChild(album_info);
 		album_container.appendChild(album);
 	}
-	
-	//lastly, set the iframe video player source AFTER so that it doesn't slow down the page load
-	player.src = "https://youtube.com/embed/NGrljgl4IZk";
 };
 
 function play(youtube) {
