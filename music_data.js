@@ -78,7 +78,7 @@ const works_projects =
 		"blog": "jam-gigglys-dare",
         "summary": 'I made music for this game as part of the <a href="https://itch.io/jam/gmtk-jam-2022">Game Makers Toolkit Jam.</a>',
 		"embed": "https://www.youtube.com/embed/videoseries?list=PLL06MmY4OQnYiPEjGcOkcVH-INNMR0h5S",
-		"tags": [ "Game Jam", "Project" ],
+		"tags": [ "Game Jam", "Custom Music", "Project" ],
 		"streaming":
 			{"itch": "https://infinitegamesds.itch.io/gigglys-dare",
 			"youtube": "https://www.youtube.com/watch?v=z4a4quZ7xGE&list=PLL06MmY4OQnYiPEjGcOkcVH-INNMR0h5S&index=1",
