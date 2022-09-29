@@ -18,8 +18,35 @@
     },
 */
 
+/* temporary place to put the data for the current music pack I'm work on 
+const temp_tracks =
+[
+
+]
+*/
+
 const works_packs =
 [
+	{
+        "title": "Mind Games",
+		"date": new Date(2022, 9, 29),
+		"url": "mind-games",
+		"cover": "mind-games.png",
+		"blog": "mind-games",
+        "summary": "Jazzy, groovy music pack designed for puzzle & platformer games. ",
+		"embed": "https://www.youtube.com/embed/videoseries?list=PLL06MmY4OQnZwpgJoRqxro9dDkZu1IsBZ",
+		"tags": ["Music Pack", "Jazz", "Blues", "Chill", "Groovy", "Puzzle", "Platformer", "Casual", "Exploration"],
+		"details": 
+			{"cost": "Paid",
+			 "loop": "Loopable",
+			 "stems": "Stems"},
+        "stores":
+			{"unity": "https://assetstore.unity.com/packages/slug/234292",
+			"itch": "https://ludoloonstudio.itch.io/mind-games",
+			},
+		"streaming":
+			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/mind-games"},
+	},
 	{
         "title": "Roguelike Adventure Music Pack",
 		"date": new Date(2022, 2, 22),
@@ -99,9 +126,236 @@ const works_projects =
 	},
 ]
 
+/*<iframe style="border: 0; width: 400px; height: 836px;" src="https://bandcamp.com/EmbeddedPlayer/album=3378943327/size=large/bgcol=ffffff/linkcol=0687f5/transparent=true/tracklist=true/tracks=,,,,,,,,,/esig=2b9635f6e83bc0318d0e11f8b1324359/" seamless><a href="https://ludoloonstudio.bandcamp.com/album/mind-games">Mind Games by LudoLoon Studio</a></iframe>*/
 // Current idea: sort by variables with Free & Paid as separate tables
 const music_JSON = 
 [
+// MIND GAMES MUSIC PACK
+	{
+        "title": "Puzzled Mind",
+		"date": new Date(2022, 4, 17),
+		"url": "puzzled-mind",
+		"cover": "mind-games.png",
+		"blog": "mind-games",
+        "summary": "Moody music for solving a puzzle.",
+		"embed": "https://bandcamp.com/EmbeddedPlayer/album=3378943327/size=large/bgcol=333333/linkcol=0f91ff/minimal=true/track=4094312774/transparent=true/",
+		"tags": ["Chill", "Downtempo", "Groovy", "Puzzle", "Simulation", "Casual", "Exploration", "Sci-Fi"],
+		"details": 
+			{"bpm": 87,
+			 "cost": "Free",
+			 "loop": "Loopable",
+			 "stems": "No-Stems"},
+		"stores":
+			{"unity": "https://assetstore.unity.com/packages/slug/222465",
+			"unity": "https://assetstore.unity.com/packages/slug/234292",
+			"itch": "https://ludoloonstudio.itch.io/puzzled-mind",
+			"itch": "https://ludoloonstudio.itch.io/mind-games",
+			},
+		"streaming":
+			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/mind-games",
+			"archive.org": "https://archive.org/details/puzzled-mind",
+			"youtube": "https://youtu.be/iaoRYHZfWFQ",
+			"newgrounds": "https://www.newgrounds.com/audio/listen/1138191"},
+	},
+	{
+		"title": "Brainstorm",
+		"date": new Date(2022, 9, 4),
+		"frontpage": false,
+		"url": "brainstorm",
+		"cover": "mind-games.png",
+		"blog": "mind-games",
+		"summary": "Bluesy, Jazz infused Drum & Bass goodness for thinking to.",
+		"embed": "https://bandcamp.com/EmbeddedPlayer/album=3378943327/size=large/bgcol=333333/linkcol=0f91ff/minimal=true/track=3903993827/transparent=true/",
+		"tags": ["Drum & Bass", "Groovy", "Blues", "Driving", "Action", "Jazz", "Puzzle", "Racing", "Smooth", "Upbeat"],
+		"details": 
+			{"bpm": 180,
+			 "cost": "Paid",
+			 "loop": "Loopable",
+			 "stems": "Stems"},
+		"stores":
+			{"unity": "https://assetstore.unity.com/packages/slug/234292",
+			"itch": "https://ludoloonstudio.itch.io/mind-games",
+			},
+		"streaming":
+			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/mind-games"},
+	},
+	{
+		"title": "Faulty Memory",
+		"date": new Date(2022, 9, 4),
+		"frontpage": false,
+		"url": "faulty-memory",
+		"cover": "mind-games.png",
+		"blog": "mind-games",
+		"summary": "Jazzy breakbeats for trying to remember what you don't know.",
+		"embed": "https://bandcamp.com/EmbeddedPlayer/album=3378943327/size=large/bgcol=333333/linkcol=0f91ff/minimal=true/track=4288280204/transparent=true/",
+		"tags": ["Blues", "Jazz", "Casual", "Chill", "Groovy", "Puzzle", "Rhythm", "Moody", "Breakbeat"],
+		"details": 
+			{"bpm": 93,
+			 "cost": "Paid",
+			 "loop": "Loopable",
+			 "stems": "Stems"},
+		"stores":
+			{"unity": "https://assetstore.unity.com/packages/slug/234292",
+			"itch": "https://ludoloonstudio.itch.io/mind-games",
+			},
+		"streaming":
+			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/mind-games"},
+	},
+	{
+		"title": "Funky Feeling",
+		"date": new Date(2022, 9, 4),
+		"frontpage": false,
+		"url": "funky-feeling",
+		"cover": "mind-games.png",
+		"blog": "mind-games",
+		"summary": "Some smooth upbeat dance music with a funky lead synth.",
+		"embed": "https://bandcamp.com/EmbeddedPlayer/album=3378943327/size=large/bgcol=333333/linkcol=0f91ff/minimal=true/track=480806541/transparent=true/",
+		"tags": ["Action", "Dance", "Driving", "Energetic", "Groovy", "Jazz", "Moody", "Rhythm", "Smooth", "Upbeat"],
+		"details": 
+			{"bpm": 120,
+			 "cost": "Paid",
+			 "loop": "Loopable",
+			 "stems": "Stems"},
+		"stores":
+			{"unity": "https://assetstore.unity.com/packages/slug/234292",
+			"itch": "https://ludoloonstudio.itch.io/mind-games",
+			},
+		"streaming":
+			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/mind-games"},
+	},
+	{
+		"title": "Meditation",
+		"date": new Date(2022, 9, 4),
+		"frontpage": false,
+		"url": "meditation",
+		"cover": "mind-games.png",
+		"blog": "mind-games",
+		"summary": "A righteous uplifting track that ascends you into a higher state.",
+		"embed": "https://bandcamp.com/EmbeddedPlayer/album=3378943327/size=large/bgcol=333333/linkcol=0f91ff/minimal=true/track=1500786441/transparent=true/",
+		"tags": ["Ambient", "Calm", "Chill", "Downtempo", "Exploration", "Groovy", "Puzzle", "Relaxing", "Uplifting"],
+		"details": 
+			{"bpm": 87,
+			 "cost": "Paid",
+			 "loop": "Loopable",
+			 "stems": "Stems"},
+		"stores":
+			{"unity": "https://assetstore.unity.com/packages/slug/234292",
+			"itch": "https://ludoloonstudio.itch.io/mind-games",
+			},
+		"streaming":
+			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/mind-games"},
+	},
+	{
+		"title": "Sneaky Thoughts",
+		"date": new Date(2022, 9, 4),
+		"frontpage": false,
+		"url": "sneaky-thoughts",
+		"cover": "mind-games.png",
+		"blog": "mind-games",
+		"summary": "Deciding how to take the last cookie from the jar without tripping the alarms...",
+		"embed": "https://bandcamp.com/EmbeddedPlayer/album=3378943327/size=large/bgcol=333333/linkcol=0f91ff/minimal=true/track=118856529/transparent=true/",
+		"tags": ["Blues", "Downtempo", "Exploration", "Groovy", "Jazz", "Mysterious", "Puzzle", "Smooth", "Suspense"],
+		"details": 
+			{"bpm": 87,
+			 "cost": "Paid",
+			 "loop": "Loopable",
+			 "stems": "Stems"},
+		"stores":
+			{"unity": "https://assetstore.unity.com/packages/slug/234292",
+			"itch": "https://ludoloonstudio.itch.io/mind-games",
+			},
+		"streaming":
+			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/mind-games"},
+	},
+	{
+		"title": "Hazy Mood",
+		"date": new Date(2022, 9, 4),
+		"frontpage": false,
+		"url": "hazy-mood",
+		"cover": "mind-games.png",
+		"blog": "mind-games",
+		"summary": "A moody track for a cloudy, hazy place that leaves you uncertain.",
+		"embed": "https://bandcamp.com/EmbeddedPlayer/album=3378943327/size=large/bgcol=333333/linkcol=0f91ff/minimal=true/track=1864266772/transparent=true/",
+		"tags": ["Ambient", "Blues", "Calm", "Dark", "Downtempo", "Exploration", "Groovy", "Moody", "Mysterious", "Puzzle", "Rhythm"],
+		"details": 
+			{"bpm": 87,
+			 "cost": "Paid",
+			 "loop": "Loopable",
+			 "stems": "Stems"},
+		"stores":
+			{"unity": "https://assetstore.unity.com/packages/slug/234292",
+			"itch": "https://ludoloonstudio.itch.io/mind-games",
+			},
+		"streaming":
+			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/mind-games"},
+	},
+	{
+		"title": "Clear Headed",
+		"date": new Date(2022, 9, 4),
+		"frontpage": false,
+		"url": "clear-headed",
+		"cover": "mind-games.png",
+		"blog": "mind-games",
+		"summary": "Like a lo-fi hip-hop beat to study to, but double speed.",
+		"embed": "https://bandcamp.com/EmbeddedPlayer/album=3378943327/size=large/bgcol=333333/linkcol=0f91ff/minimal=true/track=426614446/transparent=true/",
+		"tags": ["Drum & Bass", "Action", "Ambient", "Blues", "Chill", "Driving", "Puzzle", "Racing", "Rhythm", "Smooth"],
+		"details": 
+			{"bpm": 180,
+			 "cost": "Paid",
+			 "loop": "Loopable",
+			 "stems": "Stems"},
+		"stores":
+			{"unity": "https://assetstore.unity.com/packages/slug/234292",
+			"itch": "https://ludoloonstudio.itch.io/mind-games",
+			},
+		"streaming":
+			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/mind-games"},
+	},
+	{
+		"title": "Dream",
+		"date": new Date(2022, 9, 4),
+		"frontpage": false,
+		"url": "dream",
+		"cover": "mind-games.png",
+		"blog": "mind-games",
+		"summary": "Imagine the camp theme from psychonauts, but more upbeat and trippier.",
+		"embed": "https://bandcamp.com/EmbeddedPlayer/album=3378943327/size=large/bgcol=333333/linkcol=0f91ff/minimal=true/track=1465458886/transparent=true/",
+		"tags": ["Adventure", "Ambient", "Calm", "Casual", "Exploration", "Fantasy", "Puzzle", "Relaxing", "Sci-Fi", "Upbeat"],
+		"details": 
+			{"bpm": 90,
+			 "cost": "Paid",
+			 "loop": "Loopable",
+			 "stems": "Stems"},
+		"stores":
+			{"unity": "https://assetstore.unity.com/packages/slug/234292",
+			"itch": "https://ludoloonstudio.itch.io/mind-games",
+			},
+		"streaming":
+			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/mind-games"},
+	},
+	{
+		"title": "Wandering Rumination",
+		"date": new Date(2022, 9, 4),
+		"frontpage": false,
+		"url": "wandering-rumination",
+		"cover": "mind-games.png",
+		"blog": "mind-games",
+		"summary": "Hip-hop beats holding a torch walking down the haunted hallway of improv jamming.",
+		"embed": "https://bandcamp.com/EmbeddedPlayer/album=3378943327/size=large/bgcol=333333/linkcol=0f91ff/minimal=true/track=3357688258/transparent=true/",
+		"tags": ["Breakbeat", "Action", "Adventure", "Blues", "Dark", "Exploration", "Groovy", "Jazz", "Moody", "Puzzle"],
+		"details": 
+			{"bpm": 93,
+			 "cost": "Paid",
+			 "loop": "Loopable",
+			 "stems": "Stems"},
+		"stores":
+			{"unity": "https://assetstore.unity.com/packages/slug/234292",
+			"itch": "https://ludoloonstudio.itch.io/mind-games",
+			},
+		"streaming":
+			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/mind-games"},
+	},
+// --- END OF MIND GAME MUSIC PACK ---
 	{
         "title": "Tabletop Jazz Cafe",
 		"date": new Date(2022, 5, 7),
@@ -131,7 +385,7 @@ const music_JSON =
 		"cover": "starting-line.png",
         "summary": "High-speed racing music heavily inspired by classic games like R4 and Gran Turismo.",
 		"embed": "https://www.youtube.com/embed/LaXHIgOH9cE",
-		"tags": ["Energetic", "Upbeat", "Driving", "Fast", "Racing", "Simulation", "Action", "Rhythm"],
+		"tags": ["Drum & Bass", "Energetic", "Upbeat", "Driving", "Fast", "Racing", "Simulation", "Action", "Rhythm"],
 		"details": 
 			{"bpm": 140,
 			 "cost": "Free",
@@ -166,27 +420,6 @@ const music_JSON =
 			{"archive.org": "https://archive.org/details/stuck_202208",
 			"youtube": "https://youtu.be/D5oAisdVEW4",
 			"newgrounds": "https://www.newgrounds.com/audio/listen/1138613"},
-	},
-	{
-        "title": "Puzzled Mind",
-		"date": new Date(2022, 4, 17),
-		"url": "puzzled-mind",
-		"cover": "puzzled-mind.png",
-        "summary": "Moody music for solving a puzzle.",
-		"embed": "https://www.youtube.com/embed/iaoRYHZfWFQ",
-		"tags": ["Chill", "Downtempo", "Groovy", "Puzzle", "Simulation", "Casual", "Exploration", "Sci-Fi"],
-		"details": 
-			{"bpm": 87,
-			 "cost": "Free",
-			 "loop": "Loopable",
-			 "stems": "No-Stems"},
-		"stores":
-			{"unity": "https://assetstore.unity.com/packages/slug/222465",
-			"itch": "https://ludoloonstudio.itch.io/puzzled-mind"},
-		"streaming":
-			{"archive.org": "https://archive.org/details/puzzled-mind",
-			"youtube": "https://youtu.be/iaoRYHZfWFQ",
-			"newgrounds": "https://www.newgrounds.com/audio/listen/1138191"},
 	},
 	{
         "title": "On the Farm",

@@ -186,7 +186,8 @@ document.body.onload = function() {
         details.innerHTML += '</ul>';
 
         //fill summary cell, place links here
-        summary.innerHTML += '<span class="hide-in-mobile">'+ data.summary + ' [<a href="#'+data.url+'" style="color: grey;">#</a>]<hr/></span>';
+        summary.innerHTML += '<span class="hide-in-mobile">'+ data.summary + 
+                                ' <a href="#'+data.url+'" style="color: grey;">[#]</a><hr/></span>';    //summary, anchor link & hr
         summary.innerHTML += '<span class="hide-in-mobile"><b>Asset Stores</b><br/></span>';
         for(key in data.stores){
             summary.innerHTML += '<a href="'+ data.stores[key] +'"><img src="../../images/icons/'+ key +'.png"/></a>';
@@ -285,7 +286,7 @@ function close_player(){
 </ul>
 </li>
 </ul>
-<p>If you want to buy an individual track that's part of a music pack we can also arrange that <a href="mailto:connect@ludoloon.studio">by email</a>.</p>
+<p>If you want to buy an <b>individual track</b> that's part of a music pack we can also arrange that <a href="mailto:connect@ludoloon.studio">by email</a>.</p>
 <p><strong>P.S.</strong> If you use my music, <a href="mailto:connect@ludoloon.studio">send your promo to connect@ludoloon.studio</a> and I'll share it!</p>
 <!-- create two styles, one for desktop and another for mobile -->
 <h4>Tag List:</h4>

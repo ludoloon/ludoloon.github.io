@@ -29,7 +29,7 @@ a:hover, a:active {color: #ff71ce; text-decoration: underline;}
 a:hover .thumbnail, a:active .thumbnail {border-color: #ff71ce; opacity: 85%;}
 a:hover img {opacity: 75%;}
 iframe {
-    border: 3px groove #EAEAEA;
+    border: 3px groove #666;
     width: 100%;
 }
 
@@ -55,7 +55,7 @@ nav td {padding-right: 4px;} /* avoid text scrunching up */
     justify-content: center;
     align-items: center;
     background: #333;
-    border: 3px groove #EAEAEA;
+    border: 3px groove #666;
     margin: 1em;
 }
 .landing-thumbnail { 
@@ -83,7 +83,7 @@ nav td {padding-right: 4px;} /* avoid text scrunching up */
     flex-direction: row;
     flex-wrap: wrap;
 }
-.landing-tag { border: 1px groove #EAEAEA; padding: .25em .25em; margin: .3em; font-size: 14px; }
+.landing-tag { border: 1px groove #666; padding: .25em .25em; margin: .3em; font-size: 14px; }
 .landing-links { padding: 0; margin: 0; }
 .landing-links img { max-width: 48px; max-height: 48px; margin: .25em; }
 
@@ -97,7 +97,7 @@ nav td {padding-right: 4px;} /* avoid text scrunching up */
 .album {
     position: relative;
     background: #333;
-    border: 1px solid #EAEAEA;
+    border: 1px solid #666;
     width: 27em;
     margin: 2em auto;
     padding: 1em;
@@ -175,13 +175,13 @@ img{
     list-style: none;
     padding: 4px;
     margin: 2px;
-    border: 2px groove #EAEAEA;
+    border: 2px groove #666;
     background: #252525;
     font-size: 11pt;
 }
 
 #tracklist-table {
-    border: 3px #EAEAEA groove;
+    border: 3px #666 groove;
     width: 100%;
 }
 
@@ -195,8 +195,8 @@ img{
 #tracklist td {
     background: #333;
     padding: .5em;
-    border-top: 1px solid #EAEAEA;
-    border-bottom: 1px solid #EAEAEA;
+    border-top: 1px solid #666;
+    border-bottom: 1px solid #666;
 }
 
 #search {
@@ -241,7 +241,7 @@ img{
     }
     .summary-cell { width: 40%;}
     
-    #tracklist tr, thead { border: 3px groove #EAEAEA;}
+    #tracklist tr, thead { border: 1px solid #666;}
     
     #tracklist-table td{ padding: .5em;}
     #tracklist-table {              /* turns the table into a column */
@@ -285,12 +285,14 @@ img{
         text-align: center;
     }
     thead, .tags-cell, .details-cell, .hide-in-mobile {display: none;}
+    
+    .landing-summary {border: none;}
 }
 
 /* --- Hiring Page --- */
 form{
     background: rgba(185,103,255, .15);
-    border: 3px groove #EAEAEA; 
+    border: 3px groove #666; 
     padding: 1em;
 }
 
