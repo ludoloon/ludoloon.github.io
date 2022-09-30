@@ -126,7 +126,6 @@ const works_projects =
 	},
 ]
 
-/*<iframe style="border: 0; width: 400px; height: 836px;" src="https://bandcamp.com/EmbeddedPlayer/album=3378943327/size=large/bgcol=ffffff/linkcol=0687f5/transparent=true/tracklist=true/tracks=,,,,,,,,,/esig=2b9635f6e83bc0318d0e11f8b1324359/" seamless><a href="https://ludoloonstudio.bandcamp.com/album/mind-games">Mind Games by LudoLoon Studio</a></iframe>*/
 // Current idea: sort by variables with Free & Paid as separate tables
 const music_JSON = 
 [
@@ -138,7 +137,7 @@ const music_JSON =
 		"cover": "mind-games.png",
 		"blog": "mind-games",
         "summary": "Moody music for solving a puzzle.",
-		"embed": "https://bandcamp.com/EmbeddedPlayer/album=3378943327/size=large/bgcol=333333/linkcol=0f91ff/minimal=true/track=4094312774/transparent=true/esig=14ca93243ab97194dceb8810c604f128/",
+		"embed": "https://bandcamp.com/EmbeddedPlayer/album=3378943327/size=large/bgcol=333333/linkcol=0f91ff/minimal=true/track=4094312774/transparent=true/",
 		"tags": ["Chill", "Downtempo", "Groovy", "Puzzle", "Simulation", "Casual", "Exploration", "Sci-Fi"],
 		"details": 
 			{"bpm": 87,
@@ -165,7 +164,7 @@ const music_JSON =
 		"cover": "mind-games.png",
 		"blog": "mind-games",
 		"summary": "Bluesy, Jazz infused Drum & Bass goodness for thinking to.",
-		"embed": "https://bandcamp.com/EmbeddedPlayer/album=3378943327/size=large/bgcol=333333/linkcol=0f91ff/minimal=true/track=3903993827/transparent=true/esig=14ca93243ab97194dceb8810c604f128/",
+		"embed": "https://bandcamp.com/EmbeddedPlayer/album=3378943327/size=large/bgcol=333333/linkcol=0f91ff/minimal=true/track=3903993827/transparent=true/",
 		"tags": ["Drum & Bass", "Groovy", "Blues", "Driving", "Action", "Jazz", "Puzzle", "Racing", "Smooth", "Upbeat"],
 		"details": 
 			{"bpm": 180,
@@ -187,7 +186,7 @@ const music_JSON =
 		"cover": "mind-games.png",
 		"blog": "mind-games",
 		"summary": "Jazzy breakbeats for trying to remember what you don't know.",
-		"embed": "https://bandcamp.com/EmbeddedPlayer/album=3378943327/size=large/bgcol=333333/linkcol=0f91ff/minimal=true/track=4288280204/transparent=true/esig=14ca93243ab97194dceb8810c604f128/",
+		"embed": "https://bandcamp.com/EmbeddedPlayer/album=3378943327/size=large/bgcol=333333/linkcol=0f91ff/minimal=true/track=4288280204/transparent=true/",
 		"tags": ["Blues", "Jazz", "Casual", "Chill", "Groovy", "Puzzle", "Rhythm", "Moody", "Breakbeat"],
 		"details": 
 			{"bpm": 93,
@@ -209,7 +208,7 @@ const music_JSON =
 		"cover": "mind-games.png",
 		"blog": "mind-games",
 		"summary": "Some smooth upbeat dance music with a funky lead synth.",
-		"embed": "https://bandcamp.com/EmbeddedPlayer/album=3378943327/size=large/bgcol=333333/linkcol=0f91ff/minimal=true/track=480806541/transparent=true/esig=14ca93243ab97194dceb8810c604f128/",
+		"embed": "https://bandcamp.com/EmbeddedPlayer/album=3378943327/size=large/bgcol=333333/linkcol=0f91ff/minimal=true/track=480806541/transparent=true/",
 		"tags": ["Action", "Dance", "Driving", "Energetic", "Groovy", "Jazz", "Moody", "Rhythm", "Smooth", "Upbeat"],
 		"details": 
 			{"bpm": 120,
@@ -231,7 +230,7 @@ const music_JSON =
 		"cover": "mind-games.png",
 		"blog": "mind-games",
 		"summary": "A righteous uplifting track that ascends you into a higher state.",
-		"embed": "https://bandcamp.com/EmbeddedPlayer/album=3378943327/size=large/bgcol=333333/linkcol=0f91ff/minimal=true/track=1500786441/transparent=true/esig=14ca93243ab97194dceb8810c604f128/",
+		"embed": "https://bandcamp.com/EmbeddedPlayer/album=3378943327/size=large/bgcol=333333/linkcol=0f91ff/minimal=true/track=1500786441/transparent=true/",
 		"tags": ["Ambient", "Calm", "Chill", "Downtempo", "Exploration", "Groovy", "Puzzle", "Relaxing", "Uplifting"],
 		"details": 
 			{"bpm": 87,
@@ -253,7 +252,7 @@ const music_JSON =
 		"cover": "mind-games.png",
 		"blog": "mind-games",
 		"summary": "Deciding how to take the last cookie from the jar without tripping the alarms...",
-		"embed": "https://bandcamp.com/EmbeddedPlayer/album=3378943327/size=large/bgcol=333333/linkcol=0f91ff/minimal=true/track=118856529/transparent=true/esig=14ca93243ab97194dceb8810c604f128/",
+		"embed": "https://bandcamp.com/EmbeddedPlayer/album=3378943327/size=large/bgcol=333333/linkcol=0f91ff/minimal=true/track=118856529/transparent=true/",
 		"tags": ["Blues", "Downtempo", "Exploration", "Groovy", "Jazz", "Mysterious", "Puzzle", "Smooth", "Suspense"],
 		"details": 
 			{"bpm": 87,
@@ -275,7 +274,7 @@ const music_JSON =
 		"cover": "mind-games.png",
 		"blog": "mind-games",
 		"summary": "A moody track for a cloudy, hazy place that leaves you uncertain.",
-		"embed": "https://bandcamp.com/EmbeddedPlayer/album=3378943327/size=large/bgcol=333333/linkcol=0f91ff/minimal=true/track=1864266772/transparent=true/esig=14ca93243ab97194dceb8810c604f128/",
+		"embed": "https://bandcamp.com/EmbeddedPlayer/album=3378943327/size=large/bgcol=333333/linkcol=0f91ff/minimal=true/track=1864266772/transparent=true/",
 		"tags": ["Ambient", "Blues", "Calm", "Dark", "Downtempo", "Exploration", "Groovy", "Moody", "Mysterious", "Puzzle", "Rhythm"],
 		"details": 
 			{"bpm": 87,
@@ -297,7 +296,7 @@ const music_JSON =
 		"cover": "mind-games.png",
 		"blog": "mind-games",
 		"summary": "Like a lo-fi hip-hop beat to study to, but double speed.",
-		"embed": "https://bandcamp.com/EmbeddedPlayer/album=3378943327/size=large/bgcol=333333/linkcol=0f91ff/minimal=true/track=426614446/transparent=true/esig=14ca93243ab97194dceb8810c604f128/",
+		"embed": "https://bandcamp.com/EmbeddedPlayer/album=3378943327/size=large/bgcol=333333/linkcol=0f91ff/minimal=true/track=426614446/transparent=true/",
 		"tags": ["Drum & Bass", "Action", "Ambient", "Blues", "Chill", "Driving", "Puzzle", "Racing", "Rhythm", "Smooth"],
 		"details": 
 			{"bpm": 180,
@@ -319,7 +318,7 @@ const music_JSON =
 		"cover": "mind-games.png",
 		"blog": "mind-games",
 		"summary": "Imagine the camp theme from psychonauts, but more upbeat and trippier.",
-		"embed": "https://bandcamp.com/EmbeddedPlayer/album=3378943327/size=large/bgcol=333333/linkcol=0f91ff/minimal=true/track=1465458886/transparent=true/esig=14ca93243ab97194dceb8810c604f128/",
+		"embed": "https://bandcamp.com/EmbeddedPlayer/album=3378943327/size=large/bgcol=333333/linkcol=0f91ff/minimal=true/track=1465458886/transparent=true/",
 		"tags": ["Adventure", "Ambient", "Calm", "Casual", "Exploration", "Fantasy", "Puzzle", "Relaxing", "Sci-Fi", "Upbeat"],
 		"details": 
 			{"bpm": 90,
@@ -341,7 +340,7 @@ const music_JSON =
 		"cover": "mind-games.png",
 		"blog": "mind-games",
 		"summary": "Hip-hop beats holding a torch walking down the haunted hallway of improv jamming.",
-		"embed": "https://bandcamp.com/EmbeddedPlayer/album=3378943327/size=large/bgcol=333333/linkcol=0f91ff/minimal=true/track=3357688258/transparent=true/esig=14ca93243ab97194dceb8810c604f128/",
+		"embed": "https://bandcamp.com/EmbeddedPlayer/album=3378943327/size=large/bgcol=333333/linkcol=0f91ff/minimal=true/track=3357688258/transparent=true/",
 		"tags": ["Breakbeat", "Action", "Adventure", "Blues", "Dark", "Exploration", "Groovy", "Jazz", "Moody", "Puzzle"],
 		"details": 
 			{"bpm": 93,
