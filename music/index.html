@@ -189,7 +189,7 @@ document.body.onload = function() {
 
         //fill summary cell, place links here
         if (data.date > TODAY) {    //Let people know if the track is not yet out.
-            summary.innerHTML += '<i style="font-weight: bold;">(Release date: ' + data.date.slice(0,10) + ')</i> ';
+            summary.innerHTML += '<p><i style="font-weight: bold;">(Release date: ' + data.date.slice(0,10) + ')</i></p> ';
         }
         summary.innerHTML += '<span class="hide-in-mobile">'+ data.summary + 
                                 ' <a href="#'+data.url+'" style="color: grey;">[#]</a><hr/></span>';    //summary, anchor link & hr
