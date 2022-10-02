@@ -29,7 +29,7 @@ const works_packs =
 [
 	{
         "title": "Mind Games",
-		"date": new Date(2022, 9, 29),
+		"date": new Date(2022, 9, 4),
 		"url": "mind-games",
 		"cover": "mind-games.png",
 		"blog": "mind-games",

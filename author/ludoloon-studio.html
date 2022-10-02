@@ -50,6 +50,8 @@ document.body.onload = function() {
     let album_container = document.getElementById("landing-container");
     let player = document.getElementById("player");
     let restore_btn = document.getElementById("restore_btn");
+    //constants
+	const TODAY = new Date().toJSON();
 	
 	//Set the iframe video player once we're in onload so that it doesn't slow down the js rendering the front page
 	player.src = "https://youtube.com/embed/NGrljgl4IZk";
@@ -95,6 +97,9 @@ document.body.onload = function() {
 		album_info.appendChild(tags);
 		
 		//fill summary cell, place links here
+		if (data.date > TODAY) {	//Let people know if the track is not yet out.
+			album_info.innerHTML += '<i style="font-weight: bold;">(Release date: ' + data.date.slice(0,10) + ')</i> ';
+		}
 		album_info.innerHTML += '<p><i>'+ data.summary + '</i></p>';
 		
 		//process the links
