@@ -45,7 +45,9 @@ const works_packs =
 			"itch": "https://ludoloonstudio.itch.io/mind-games",
 			},
 		"streaming":
-			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/mind-games"},
+			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/mind-games",
+			"spotify": "https://show.co/cbVWx9s",
+			},
 	},
 	{
         "title": "Roguelike Adventure Music Pack",
