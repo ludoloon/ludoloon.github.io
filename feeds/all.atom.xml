@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>LudoLoon Studio</title><link href="https://ludoloon.studio/" rel="alternate"></link><link href="https://ludoloon.studio/feeds/all.atom.xml" rel="self"></link><id>https://ludoloon.studio/</id><updated>2022-10-04T00:00:00-05:00</updated><subtitle>Here's that music you wanted!&lt;br/&gt; &lt;a href="https://ko-fi.com/ludoloonstudio/tiers"&gt;Subscribe on ko-fi for discounts.&lt;/a&gt;</subtitle><entry><title>Mind Games</title><link href="https://ludoloon.studio/mind-games/" rel="alternate"></link><published>2022-10-04T00:00:00-05:00</published><updated>2022-09-29T18:40:30-05:00</updated><author><name>LudoLoon Studio</name></author><id>tag:ludoloon.studio,2022-10-04:/mind-games/</id><summary type="html">&lt;p&gt;I put together a music pack that's perfect for any chill puzzle or platformer game.&lt;/p&gt;</summary><content type="html">&lt;div style="position:relative;padding-bottom:56.25%;"&gt;
- &lt;iframe style="width:100%;height:100%;position:absolute;left:0px;top:0px;" src="https://www.youtube.com/embed/videoseries?list=PLL06MmY4OQnZwpgJoRqxro9dDkZu1IsBZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
-&lt;/div&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>LudoLoon Studio</title><link href="https://ludoloon.studio/" rel="alternate"></link><link href="https://ludoloon.studio/feeds/all.atom.xml" rel="self"></link><id>https://ludoloon.studio/</id><updated>2022-10-09T17:42:58-05:00</updated><subtitle>Here's that music you wanted!&lt;br/&gt; &lt;a href="https://ko-fi.com/ludoloonstudio/tiers"&gt;Subscribe on ko-fi for discounts.&lt;/a&gt;</subtitle><entry><title>Mind Games</title><link href="https://ludoloon.studio/mind-games/" rel="alternate"></link><published>2022-10-04T00:00:00-05:00</published><updated>2022-10-09T17:42:58-05:00</updated><author><name>LudoLoon Studio</name></author><id>tag:ludoloon.studio,2022-10-04:/mind-games/</id><summary type="html">&lt;p&gt;I put together a music pack that's perfect for any chill puzzle or platformer game.&lt;/p&gt;</summary><content type="html">&lt;!-- automated entry template --&gt;
+&lt;script type="text/javascript" src="https://ludoloon.studio/music_data.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="https://ludoloon.studio/album_render.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript"&gt;
+document.body.onload = function() {
+    render_album_entry("Mind Games");
+}
+&lt;/script&gt;
 
-&lt;p class="album-links"&gt;
-    &lt;b&gt;Asset Stores&lt;/b&gt;&lt;br/&gt;
-        &lt;a href="https://ludoloonstudio.itch.io/mind-games"&gt;&lt;img src="https://ludoloon.studio/images/icons/itch.png" alt="itch.io link"/&gt;&lt;/a&gt;
-        &lt;a href="https://assetstore.unity.com/packages/slug/234292" alt="unity link"&gt;&lt;img src="https://ludoloon.studio/images/icons/unity.png" alt="unity link"/&gt;&lt;/a&gt;
-    &lt;br/&gt;&lt;b&gt;Streaming&lt;/b&gt;&lt;br/&gt;
-        &lt;a href=""&gt;&lt;img src="https://ludoloon.studio/images/icons/bandcamp.png" alt="Bandcamp link"/&gt;&lt;/a&gt;
-&lt;/p&gt;
+&lt;div id="album"&gt;
+&lt;!-- filled in by javascript, div id must = "album" --&gt;
+&lt;noscript&gt;Javascript is turned off.&lt;/noscript&gt;
+&lt;/div&gt;
+&lt;!-- END of template --&gt;
 
 &lt;h3&gt;Summary:&lt;/h3&gt;
 &lt;p&gt;&lt;i&gt;Mind Games&lt;/i&gt; is &lt;strong&gt;chill, groovy, blues &amp;amp; jazz styled&lt;/strong&gt; music for &lt;strong&gt;puzzle games &amp;amp; platformers&lt;/strong&gt;.&lt;/b&gt;&lt;/p&gt;
@@ -68,7 +71,7 @@
 &lt;p&gt;If you want to buy an &lt;b&gt;individual track&lt;/b&gt; that's part of a music pack we can also arrange that &lt;a href="mailto:connect@ludoloon.studio"&gt;by email&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;P.S.&lt;/strong&gt; If you use my music, &lt;a href="mailto:connect@ludoloon.studio"&gt;send your promo to connect@ludoloon.studio&lt;/a&gt; and I'll share it!&lt;/p&gt;
 &lt;h3&gt;Contact&lt;/h3&gt;
-&lt;p&gt;&lt;em&gt;Tech support &amp;amp; inquiries:&lt;/em&gt; &lt;a href="mailto:support@ludoloon.studio"&gt;support@ludoloon.studio&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Support &amp;amp; inquiries:&lt;/em&gt; &lt;a href="mailto:support@ludoloon.studio"&gt;support@ludoloon.studio&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Available for hire:&lt;/em&gt; &lt;a href="https://ludoloon.studio/hire/"&gt;https://ludoloon.studio/hire&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Subscribe to my &lt;a href="https://ko-fi.com/ludoloonstudio/"&gt;ko-fi&lt;/a&gt; for discounts on other packs.&lt;/p&gt;
 &lt;p&gt;&lt;a name="file-list"&gt; &lt;/a&gt;&lt;/p&gt;
@@ -230,22 +233,27 @@ README.txt
 &lt;p&gt;Please let me know if you find any issues, but I think I've done a decent job of stress testing this new design. It all runs pretty slick on my hardware, but if you notice that it's too slow then send me an email to &lt;a href="mailto:support@ludoloon.studio"&gt;support@ludoloon.studio&lt;/a&gt; so I can address it.&lt;/p&gt;
 &lt;p&gt;For the nerds out there: It's just a JSON structured database that I bring in with a script tag. That feeds the data into my basic little keyword search engine table.&lt;/p&gt;
 &lt;p&gt;The previous music page will now be my &lt;a href="https://ludoloon.studio/works/"&gt;"Works"&lt;/a&gt; page, which will be a portfolio of any completed albums or other projects (like games &amp;amp; videos), that my music is in.&lt;/p&gt;
-&lt;p&gt;Anyway, super excited about this new development, should be much easier to sort through my music :) (and post it lol)&lt;/p&gt;</content><category term="blog"></category><category term="music"></category></entry><entry><title>Roguelike Adventure Music Pack</title><link href="https://ludoloon.studio/roguelike-adventure/" rel="alternate"></link><published>2022-03-22T00:00:00-05:00</published><updated>2022-09-01T11:44:36-05:00</updated><author><name>LudoLoon Studio</name></author><id>tag:ludoloon.studio,2022-03-22:/roguelike-adventure/</id><summary type="html">&lt;p&gt;I put together a music pack that's perfect for any roguelike, adventure or other type of game.&lt;/p&gt;</summary><content type="html">&lt;p&gt;Hello everyone!&lt;/p&gt;
+&lt;p&gt;Anyway, super excited about this new development, should be much easier to sort through my music :) (and post it lol)&lt;/p&gt;</content><category term="blog"></category><category term="music"></category></entry><entry><title>Roguelike Adventure Music Pack</title><link href="https://ludoloon.studio/roguelike-adventure/" rel="alternate"></link><published>2022-03-22T00:00:00-05:00</published><updated>2022-10-09T17:42:07-05:00</updated><author><name>LudoLoon Studio</name></author><id>tag:ludoloon.studio,2022-03-22:/roguelike-adventure/</id><summary type="html">&lt;p&gt;I put together a music pack that's perfect for any roguelike, adventure or other type of game.&lt;/p&gt;</summary><content type="html">&lt;p&gt;Hello everyone!&lt;/p&gt;
 &lt;p&gt;I am excited to announce my Roguelike Adventure Music Pack!&lt;/p&gt;
 &lt;hr&gt;
-&lt;div style="position:relative;padding-bottom:56.25%;"&gt;
- &lt;iframe style="width:100%;height:100%;position:absolute;left:0px;top:0px;" src="https://www.youtube.com/embed/videoseries?list=PLL06MmY4OQnbZhDoKYUFZCEu5WgvtxPIg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
-&lt;/div&gt;
+&lt;!-- automated entry template --&gt;
+&lt;script type="text/javascript" src="https://ludoloon.studio/music_data.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="https://ludoloon.studio/album_render.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript"&gt;
+document.body.onload = function() {
+    render_album_entry("Roguelike Adventure Music Pack");
+}
+&lt;/script&gt;
 
-&lt;p class="album-links"&gt;
-    &lt;b&gt;Asset Stores&lt;/b&gt;&lt;br/&gt;
-        &lt;a href="https://ludoloonstudio.itch.io/roguelike-adventure-music-pack"&gt;&lt;img src="https://ludoloon.studio/images/icons/itch.png" alt="itch.io link"/&gt;&lt;/a&gt;
-        &lt;a href="https://assetstore.unity.com/packages/slug/216619" alt="unity link"&gt;&lt;img src="https://ludoloon.studio/images/icons/unity.png" alt="unity link"/&gt;&lt;/a&gt;
-        &lt;a href="https://www.gamedevmarket.net/asset/roguelike-adventure-music-pack/" alt="game dev market link"&gt;&lt;img src="https://ludoloon.studio/images/icons/gamedevmarket.png" alt="game dev market link"/&gt;&lt;/a&gt;
-        &lt;a href="https://godotmarketplace.com/shop/roguelike-adventure-music-pack/"&gt;&lt;img src="https://ludoloon.studio/images/icons/godot.png" alt="godot link"/&gt;&lt;/a&gt;
-    &lt;br/&gt;&lt;b&gt;Streaming&lt;/b&gt;&lt;br/&gt;
-        &lt;a href="https://ludoloonstudio.bandcamp.com/album/roguelike-adventure-music-pack"&gt;&lt;img src="https://ludoloon.studio/images/icons/bandcamp.png" alt="Bandcamp link"/&gt;&lt;/a&gt;
-&lt;/p&gt;
+&lt;div id="album"&gt;
+&lt;!-- filled in by javascript, div id must = "album" --&gt;
+&lt;noscript&gt;Javascript is turned off.&lt;/noscript&gt;
+&lt;/div&gt;
+&lt;!-- END of template --&gt;
+
+&lt;div id="album"&gt;
+&lt;!-- filled in by javascript --&gt;
+&lt;/div&gt;
 
 &lt;h3&gt;Summary:&lt;/h3&gt;
 &lt;p&gt;Music for all types of classic RPG &amp;amp; Action Adventure locations! Ready to go, easy to customize.&lt;/p&gt;
