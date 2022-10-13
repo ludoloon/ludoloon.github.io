@@ -156,6 +156,7 @@ const music_JSON =
 			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/mind-games",
 			"archive.org": "https://archive.org/details/puzzled-mind",
 			"youtube": "https://youtu.be/iaoRYHZfWFQ",
+			"youtube": "https://youtu.be/fVPSM9ACMw4",
 			"newgrounds": "https://www.newgrounds.com/audio/listen/1138191"},
 	},
 	{
@@ -178,7 +179,9 @@ const music_JSON =
 			"itch": "https://ludoloonstudio.itch.io/mind-games",
 			},
 		"streaming":
-			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/mind-games"},
+			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/mind-games",
+			"youtube": "https://youtu.be/R_YjOFqAm_E",
+			},
 	},
 	{
 		"title": "Faulty Memory",
@@ -200,7 +203,9 @@ const music_JSON =
 			"itch": "https://ludoloonstudio.itch.io/mind-games",
 			},
 		"streaming":
-			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/mind-games"},
+			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/mind-games",
+			"youtube": "https://youtu.be/0RGTlupk3ys",
+			},
 	},
 	{
 		"title": "Funky Feeling",
@@ -222,7 +227,9 @@ const music_JSON =
 			"itch": "https://ludoloonstudio.itch.io/mind-games",
 			},
 		"streaming":
-			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/mind-games"},
+			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/mind-games",
+			"youtube": "https://youtu.be/C1Lf1_XmgIA",
+			},
 	},
 	{
 		"title": "Meditation",
@@ -244,7 +251,9 @@ const music_JSON =
 			"itch": "https://ludoloonstudio.itch.io/mind-games",
 			},
 		"streaming":
-			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/mind-games"},
+			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/mind-games",
+			"youtube": "https://youtu.be/w8cEYGg3CvU",
+			},
 	},
 	{
 		"title": "Sneaky Thoughts",
@@ -266,7 +275,9 @@ const music_JSON =
 			"itch": "https://ludoloonstudio.itch.io/mind-games",
 			},
 		"streaming":
-			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/mind-games"},
+			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/mind-games",
+			"youtube": "https://youtu.be/iUSMIGsK3ko",
+			},
 	},
 	{
 		"title": "Hazy Mood",
@@ -288,7 +299,9 @@ const music_JSON =
 			"itch": "https://ludoloonstudio.itch.io/mind-games",
 			},
 		"streaming":
-			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/mind-games"},
+			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/mind-games",
+			"youtube": "https://youtu.be/vlbhNgqM8V4",
+			},
 	},
 	{
 		"title": "Clear Headed",
@@ -310,7 +323,9 @@ const music_JSON =
 			"itch": "https://ludoloonstudio.itch.io/mind-games",
 			},
 		"streaming":
-			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/mind-games"},
+			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/mind-games",
+			"youtube": "https://youtu.be/wyrLZKva7Rg",
+			},
 	},
 	{
 		"title": "Dream",
@@ -332,7 +347,9 @@ const music_JSON =
 			"itch": "https://ludoloonstudio.itch.io/mind-games",
 			},
 		"streaming":
-			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/mind-games"},
+			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/mind-games",
+			"youtube": "https://youtu.be/9qoYoi6_KHk",
+			},
 	},
 	{
 		"title": "Wandering Rumination",
@@ -354,7 +371,9 @@ const music_JSON =
 			"itch": "https://ludoloonstudio.itch.io/mind-games",
 			},
 		"streaming":
-			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/mind-games"},
+			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/mind-games",
+			"youtube": "https://youtu.be/kx6B6RItgBM",
+			},
 	},
 // --- END OF MIND GAME MUSIC PACK ---
 	{
