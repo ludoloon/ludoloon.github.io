@@ -100,12 +100,26 @@ const works_credits =
 const works_projects =
 [
 	{
+        "title": "Bastard Tower",
+		"date": new Date(2023,1,19),
+		"url": "bastard-tower",
+		"cover": "bastard-tower.png",
+		"blog": "jam-bastard-tower",
+        "summary": 'I made music for <a href="https://infinitegamesds.itch.io/bastard-tower" target="_blank">Bastard Tower</a> as part of the <a href="https://itch.io/jam/brackeys-9" target="_blank">Brackeys Jam 2023.1</a>',
+		"embed": "https://www.youtube.com/embed/videoseries?list=PLL06MmY4OQnYtvftCVq8shyXwRQ2x7dPf",
+		"tags": [ "Game Jam", "Custom Music", "Project" ],
+		"streaming":
+			{"itch": "https://infinitegamesds.itch.io/bastard-tower",
+			"youtube": "https://www.youtube.com/watch?v=iQwCwBoPAns&list=PLL06MmY4OQnYtvftCVq8shyXwRQ2x7dPf&index=1",
+			},
+	},
+	{
         "title": "Giggly's Dare",
 		"date": new Date(2022, 6, 19),
 		"url": "gigglys-dare",
 		"cover": "gigglys-dare.png",
 		"blog": "jam-gigglys-dare",
-        "summary": 'I made music for this game as part of the <a href="https://itch.io/jam/gmtk-jam-2022">Game Makers Toolkit Jam.</a>',
+        "summary": 'I made music for this game as part of the <a href="https://itch.io/jam/gmtk-jam-2022" target="_blank">Game Makers Toolkit Jam.</a>',
 		"embed": "https://www.youtube.com/embed/videoseries?list=PLL06MmY4OQnYiPEjGcOkcVH-INNMR0h5S",
 		"tags": [ "Game Jam", "Custom Music", "Project" ],
 		"streaming":

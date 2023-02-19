@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>LudoLoon Studio</title><link href="https://ludoloon.studio/" rel="alternate"></link><link href="https://ludoloon.studio/feeds/all.atom.xml" rel="self"></link><id>https://ludoloon.studio/</id><updated>2022-10-09T17:42:58-05:00</updated><subtitle>Here's that music you wanted!&lt;br/&gt; &lt;a href="https://ko-fi.com/ludoloonstudio/tiers"&gt;Subscribe on ko-fi for discounts.&lt;/a&gt;</subtitle><entry><title>Mind Games</title><link href="https://ludoloon.studio/mind-games/" rel="alternate"></link><published>2022-10-04T00:00:00-05:00</published><updated>2022-10-09T17:42:58-05:00</updated><author><name>LudoLoon Studio</name></author><id>tag:ludoloon.studio,2022-10-04:/mind-games/</id><summary type="html">&lt;p&gt;I put together a music pack that's perfect for any chill puzzle or platformer game.&lt;/p&gt;</summary><content type="html">&lt;!-- automated entry template --&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>LudoLoon Studio</title><link href="https://ludoloon.studio/" rel="alternate"></link><link href="https://ludoloon.studio/feeds/all.atom.xml" rel="self"></link><id>https://ludoloon.studio/</id><updated>2023-02-19T11:21:00-06:00</updated><subtitle>Here's that music you wanted!&lt;br/&gt; &lt;a href="https://ko-fi.com/ludoloonstudio/tiers"&gt;Subscribe on ko-fi for discounts.&lt;/a&gt;</subtitle><entry><title>Mind Games</title><link href="https://ludoloon.studio/mind-games/" rel="alternate"></link><published>2022-10-04T00:00:00-05:00</published><updated>2022-10-09T17:42:58-05:00</updated><author><name>LudoLoon Studio</name></author><id>tag:ludoloon.studio,2022-10-04:/mind-games/</id><summary type="html">&lt;p&gt;I put together a music pack that's perfect for any chill puzzle or platformer game.&lt;/p&gt;</summary><content type="html">&lt;!-- automated entry template --&gt;
 &lt;script type="text/javascript" src="https://ludoloon.studio/music_data.js"&gt;&lt;/script&gt;
 &lt;script type="text/javascript" src="https://ludoloon.studio/album_render.js"&gt;&lt;/script&gt;
 &lt;script type="text/javascript"&gt;
@@ -212,7 +212,24 @@ Wandering Rumination [93 BPM]
         ...
         Wandering Rumination_Seq08.wav
 README.txt
-&lt;/pre&gt;</content><category term="blog"></category><category term="music"></category></entry><entry><title>Game jam project: Giggly's Dare</title><link href="https://ludoloon.studio/jam-gigglys-dare/" rel="alternate"></link><published>2022-07-19T00:00:00-05:00</published><updated>2022-07-21T10:24:07-05:00</updated><author><name>LudoLoon Studio</name></author><id>tag:ludoloon.studio,2022-07-19:/jam-gigglys-dare/</id><summary type="html">&lt;p&gt;Giggly's Dare is a game jam project that I helped make music for.&lt;/p&gt;</summary><content type="html">&lt;p&gt;I helped make the music for the game jam project &lt;a href="https://infinitegamesds.itch.io/gigglys-dare" target="blank"&gt;Giggly's Dare&lt;/a&gt;!&lt;/p&gt;
+&lt;/pre&gt;</content><category term="blog"></category><category term="music"></category></entry><entry><title>Game jam project: Bastard Tower</title><link href="https://ludoloon.studio/jam-bastard-tower/" rel="alternate"></link><published>2022-07-19T00:00:00-05:00</published><updated>2023-02-19T11:21:00-06:00</updated><author><name>LudoLoon Studio</name></author><id>tag:ludoloon.studio,2022-07-19:/jam-bastard-tower/</id><summary type="html">&lt;p&gt;Bastard Tower is a game jam project that I helped make music for.&lt;/p&gt;</summary><content type="html">&lt;p&gt;I helped make the music for the game jam project &lt;a href="https://infinitegamesds.itch.io/bastard-tower" target="_blank"&gt;Bastard Tower&lt;/a&gt;!&lt;/p&gt;
+&lt;p&gt;It was created for the &lt;a href="https://itch.io/jam/brackeys-9" target="_blank"&gt;Brackeys Game Jam 2023.1&lt;/a&gt; by &lt;a href="https://infinitegamesds.itch.io" target="_blank"&gt;The Great DS&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Features some upbeat boss music vibes as well as ambient builder music that I'm very pleased with :)&lt;/p&gt;
+&lt;hr&gt;
+&lt;div style="position:relative;padding-bottom:56.25%;"&gt;
+ &lt;iframe style="width:100%;height:100%;position:absolute;left:0px;top:0px;" src="https://www.youtube.com/embed/videoseries?list=PLL06MmY4OQnYtvftCVq8shyXwRQ2x7dPf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p class="album-links"&gt;
+        &lt;a href="https://infinitegamesds.itch.io/bastard-tower"&gt;&lt;img src="https://ludoloon.studio/images/icons/itch.png" alt="itch.io link"/&gt;&lt;/a&gt;
+        &lt;a href="https://www.youtube.com/watch?v=iQwCwBoPAns&amp;list=PLL06MmY4OQnYtvftCVq8shyXwRQ2x7dPf&amp;index=1"&gt;&lt;img src="https://ludoloon.studio/images/icons/youtube.png" alt="Youtube link"/&gt;&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;h3&gt;Summary&lt;/h3&gt;
+&lt;p&gt;From the project's itch page:&lt;/p&gt;
+&lt;p&gt;&lt;i&gt;The world has been absolutely dominated by stupid demonic creatures, now the last humans must fight them and survive their army of evil!&lt;/p&gt;
+&lt;p&gt;Order your team and build a high tower to protect your humans from the demons.&lt;/p&gt;
+&lt;p&gt;You are going to DIE in the end.. But hopefuly the next group of survivors may finish the tower.&lt;/i&gt;&lt;/p&gt;</content><category term="blog"></category><category term="music"></category></entry><entry><title>Game jam project: Giggly's Dare</title><link href="https://ludoloon.studio/jam-gigglys-dare/" rel="alternate"></link><published>2022-07-19T00:00:00-05:00</published><updated>2022-07-21T10:24:07-05:00</updated><author><name>LudoLoon Studio</name></author><id>tag:ludoloon.studio,2022-07-19:/jam-gigglys-dare/</id><summary type="html">&lt;p&gt;Giggly's Dare is a game jam project that I helped make music for.&lt;/p&gt;</summary><content type="html">&lt;p&gt;I helped make the music for the game jam project &lt;a href="https://infinitegamesds.itch.io/gigglys-dare" target="blank"&gt;Giggly's Dare&lt;/a&gt;!&lt;/p&gt;
 &lt;p&gt;It was created for the &lt;a href="https://itch.io/jam/gmtk-jam-2022" target="_blank"&gt;Game Maker's Toolkit Jam&lt;/a&gt; by &lt;a href="https://infinitegamesds.itch.io" target="_blank"&gt;The Great DS&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Features some Venetian Snares styled breakcore that I'm very pleased with :)&lt;/p&gt;
 &lt;hr&gt;
