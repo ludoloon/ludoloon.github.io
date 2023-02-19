@@ -111,6 +111,7 @@ const works_projects =
 		"streaming":
 			{"itch": "https://infinitegamesds.itch.io/bastard-tower",
 			"youtube": "https://www.youtube.com/watch?v=iQwCwBoPAns&list=PLL06MmY4OQnYtvftCVq8shyXwRQ2x7dPf&index=1",
+			"newgrounds": "https://www.newgrounds.com/playlists/view/b98e3ee40c8725cdb35f76b57d5b641a",
 			},
 	},
 	{
