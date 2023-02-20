@@ -38,6 +38,7 @@ nav {
     background: rgba(32,32,32,.8);
     color: #EEE;
     border: 3px groove #EAEAEA;
+    border-radius: 5px;
     margin: 4px auto;       /* space between content & navbar */
     max-width: 32em;
     height: 100%;
@@ -130,6 +131,7 @@ nav td {padding-right: 4px;} /* avoid text scrunching up */
 #content{
     background: rgba(32,32,32,.9);
     border: 3px groove #EAEAEA;
+    border-radius: 35px;
     color: #EEE;
     margin: 0;
     padding: auto;
@@ -330,6 +332,7 @@ option:disabled{
     margin: 4px auto;
     text-align: center;
     padding: .5em;
+    border-radius: 35px;
 }
 
 /* --- Misc --- */
@@ -340,6 +343,12 @@ pre{
     border: 1px solid #EEE;
     padding: .5em;
     overflow: scroll;
+}
+
+blockquote {
+    background: #00000055;
+    border: solid 1px #01cdfe;
+    padding: 1em;
 }
 
 /* --- Footer --- */
