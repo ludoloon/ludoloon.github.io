@@ -76,6 +76,16 @@ const works_packs =
 const works_credits =
 [
 	{
+        "title": "Resoraki",
+		"date": new Date(2023, 2, 23),
+		"frontpage": false,
+		"url": "resoraki",
+		"cover": "resoraki.png",
+        "summary": 'Get behind the wheel of a toy car and race! Used my track <a href="../music#starting-line">Starting Line.</a>',
+		"tags": [ ],
+        "link": "https://store.steampowered.com/app/2303180/Resoraki_The_racing/",
+	},
+	{
         "title": "Speakeasy Tycoon",
 		"date": new Date(2022, 6, 12),
 		"frontpage": false,
