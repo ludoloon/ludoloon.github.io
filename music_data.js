@@ -109,6 +109,34 @@ const works_credits =
 
 const works_projects =
 [
+	//Ludo Air - Hometown Nostalgia
+	{
+		"title": "Hometown Nostalgia",
+		"date": new Date(2023, 4, 4),
+		"url": "hometown-nostalgia",
+		"cover": "hometown-nostalgia.png",
+		"summary": "A spooky trip back home in the fog on flight sim with some video game music vibes.",
+		"blog": "ludoair/spooky-home-tour/",
+		"embed": "https://www.youtube.com/embed/Wt3SJZtzJ44",
+		"tags": ["Chill", "Pop", "Groovy", "Simulation", "Casual", "Exploration", "Nostalgic"],
+		"details": 
+			{"bpm": 120,
+			 "cost": "Free",
+			 "loop": "Loopable",
+			 "stems": "No-Stems"},
+		/*"stores":
+			{"unity": "https://assetstore.unity.com/packages/slug/222465",
+			"unity": "https://assetstore.unity.com/packages/slug/234292",
+			"itch": "https://ludoloonstudio.itch.io/puzzled-mind",
+			"itch": "https://ludoloonstudio.itch.io/mind-games",
+			},*/
+		"streaming":
+			{"bandcamp": "https://ludoloonstudio.bandcamp.com/track/hometown-nostalgia",
+			"archive.org": "https://archive.org/details/hometown-nostalgia",
+			"youtube": "https://youtu.be/Wt3SJZtzJ44",
+			"newgrounds": "https://www.newgrounds.com/audio/listen/1212024",
+			},
+	},
 	{
         "title": "Bastard Tower",
 		"date": new Date(2023,1,19),
@@ -156,33 +184,6 @@ const works_projects =
 // Current idea: sort by variables with Free & Paid as separate tables
 const music_JSON = 
 [
-//Ludo Air - Hometown Nostalgia
-	{
-	"title": "Hometown Nostalgia",
-	"date": new Date(2023, 4, 4),
-	"url": "hometown-nostalgia",
-	"cover": "hometown-nostalgia.png",
-	"summary": "A spooky trip back home in the fog on flight sim with some video game music vibes.",
-	"embed": "https://www.youtube.com/embed/Wt3SJZtzJ44",
-	"tags": ["Chill", "Pop", "Groovy", "Simulation", "Casual", "Exploration", "Nostalgic"],
-	"details": 
-		{"bpm": 120,
-		 "cost": "Free",
-		 "loop": "Loopable",
-		 "stems": "No-Stems"},
-	/*"stores":
-		{"unity": "https://assetstore.unity.com/packages/slug/222465",
-		"unity": "https://assetstore.unity.com/packages/slug/234292",
-		"itch": "https://ludoloonstudio.itch.io/puzzled-mind",
-		"itch": "https://ludoloonstudio.itch.io/mind-games",
-		},*/
-	"streaming":
-		{"bandcamp": "https://ludoloonstudio.bandcamp.com/track/hometown-nostalgia",
-		"archive.org": "https://archive.org/details/hometown-nostalgia",
-		"youtube": "https://youtu.be/Wt3SJZtzJ44",
-		"newgrounds": "https://www.newgrounds.com/audio/listen/1212024",
-		},
-},
 // MIND GAMES MUSIC PACK
 	{
         "title": "Puzzled Mind",
