@@ -76,7 +76,7 @@ const works_packs =
 const works_credits =
 [
 	{
-		"title": "Formula Car Racing 2023",
+		"title": "Formula Car Race 2023",
 		"date": new Date(2023, 6, 8),
 		"frontpage": false,
 		"url": "fcr2023",
