@@ -76,6 +76,16 @@ const works_packs =
 const works_credits =
 [
 	{
+		"title": "Formula Car Racing 2023",
+		"date": new Date(2023, 6, 8),
+		"frontpage": false,
+		"url": "fcr2023",
+		"cover": "fcr2023.jpg",
+        "summary": 'Hit the track on the all-new FCR2023! Used my track <a href="../music#starting-line">Starting Line.</a>',
+		"tags": [ ],
+        "link": "https://play.google.com/store/apps/details?id=ro.danandreicojocaru.fcr2023&hl=en_US",
+	},
+	{
         "title": "Resoraki",
 		"date": new Date(2023, 2, 23),
 		"frontpage": false,
