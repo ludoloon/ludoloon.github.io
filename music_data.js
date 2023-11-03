@@ -119,6 +119,34 @@ const works_credits =
 
 const works_projects =
 [
+	//Ludo Air - The Eery Silence of Dying
+	{
+		"title": "The Eery Silence of Dying",
+		"date": new Date(2023, 10, 3),
+		"url": "the-eery-silence-of-dying",
+		"cover": "the-eery-silence-of-dying.png",
+		"summary": 'On June 14, 2023, Minneapolis was covered in smoke from Canadian wildfires. I recorded this music video with flight sim using live time & weather, which was later submitted to <a href="https://screamitoffscreen.com">Scream It Off Screen</a>.',
+		"blog": "ludoair/minneapolis-canadian-smoke/",
+		"embed": "https://www.youtube.com/embed/CRGwM00b1jA",
+		"tags": ["Ambient", "Drone", "Eery", "Spooky", "Apocalyptic", "Cinematic"],
+		"details": 
+			{"bpm": 120,
+			 "cost": "Free",
+			 "loop": "Loopable",
+			 "stems": "No-Stems"},
+		/*"stores":
+			{"unity": "https://assetstore.unity.com/packages/slug/222465",
+			"unity": "https://assetstore.unity.com/packages/slug/234292",
+			"itch": "https://ludoloonstudio.itch.io/puzzled-mind",
+			"itch": "https://ludoloonstudio.itch.io/mind-games",
+			},*/
+		"streaming":
+			{"bandcamp": "https://ludoloonstudio.bandcamp.com/track/the-eery-silence-of-dying",
+			"archive.org": "https://archive.org/details/the-eery-silence-of-dying",
+			"youtube": "https://youtu.be/CRGwM00b1jA",
+			"newgrounds": "https://www.newgrounds.com/audio/listen/5140469",
+			},
+	},
 	//Ludo Air - Hometown Nostalgia
 	{
 		"title": "Hometown Nostalgia",
