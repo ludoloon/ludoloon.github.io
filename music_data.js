@@ -144,7 +144,7 @@ const works_projects =
 			{"bandcamp": "https://ludoloonstudio.bandcamp.com/track/the-eery-silence-of-dying",
 			"archive.org": "https://archive.org/details/the-eery-silence-of-dying-qhd",
 			"youtube": "https://youtu.be/CRGwM00b1jA",
-			"newgrounds": "https://www.newgrounds.com/audio/listen/5140469",
+			"newgrounds": "https://www.newgrounds.com/audio/listen/1260516",
 			},
 	},
 	//Ludo Air - Hometown Nostalgia
