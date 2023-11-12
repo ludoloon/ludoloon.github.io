@@ -76,6 +76,16 @@ const works_packs =
 const works_credits =
 [
 	{
+		"title": "Skyline Surge",
+		"date": new Date(2023, 7, 8),
+		"frontpage": false,
+		"url": "skyline-surge",
+		"cover": "skyline-surge.jpg",
+        "summary": 'Another mobile racing game! Used my track <a href="../music#starting-line">Starting Line.</a>',
+		"tags": [ ],
+        "link": "https://play.google.com/store/apps/details?id=com.mellowfoxstudios.SkylineSurge",
+	},
+	{
 		"title": "Formula Car Race 2023",
 		"date": new Date(2023, 6, 8),
 		"frontpage": false,
