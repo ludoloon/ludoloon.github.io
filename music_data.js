@@ -79,7 +79,7 @@ const works_credits =
 		"title": "Closing at 2",
 		"date": new Date(2023, 11, 8),
 		"frontpage": true,
-		"url": "tabletop-jazz-cafe",
+		"url": "closing-at-2",
 		"cover": "closing-at-2.png",
         "summary": 'Late night horrors of being a bartender. Amazing use of my track <a href="../music#tabletop-jazz-cafe">Tabletop Jazz Cafe</a>. Super creative vibe setting skills from <a href="https://natsrey.itch.io/">Natalie Reyes</a>.',
 		"tags": [ ],
