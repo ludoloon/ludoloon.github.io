@@ -78,7 +78,9 @@ document.body.onload = function() {
 		tags.className = "landing-tags";
 		
 		//write cover & summary td elements
-		if(data.blog != null){
+		if(data.link != null && data.blog == null){
+            album_info.innerHTML = '<h3><a href="'+ data.link +'">🔗 '+ data.title + '</a></h3>';
+        } else if(data.blog != null){
 			album_info.innerHTML = '<h3><a href="../'+ data.blog +'">🔗 '+ data.title + '</a></h3>';
 		} else {
 			album_info.innerHTML = '<h3><a href="../music#'+ data.url +'">🔗 '+ data.title + '</a></h3>';
