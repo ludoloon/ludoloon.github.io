@@ -81,7 +81,7 @@ const works_credits =
 		"frontpage": true,
 		"url": "tabletop-jazz-cafe",
 		"cover": "closing-at-2.png",
-        "summary": 'Late night horrors of being a bartender. Amazing use of my track <a href="../music#starting-line">Tabletop Jazz Cafe</a>. Super creative vibe setting skills from <a href="https://natsrey.itch.io/">Natalie Reyes</a>.',
+        "summary": 'Late night horrors of being a bartender. Amazing use of my track <a href="../music#tabletop-jazz-cafe">Tabletop Jazz Cafe</a>. Super creative vibe setting skills from <a href="https://natsrey.itch.io/">Natalie Reyes</a>.',
 		"tags": [ ],
         "link": "https://natsrey.itch.io/closing-at-2",
 		//"streaming":
