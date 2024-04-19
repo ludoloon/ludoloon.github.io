@@ -84,8 +84,6 @@ const works_credits =
         "summary": 'Late night horrors of being a bartender. Amazing use of my track <a href="../music#tabletop-jazz-cafe">Tabletop Jazz Cafe</a>. Super creative vibe setting skills from <a href="https://natsrey.itch.io/">Natalie Reyes</a>.',
 		"tags": [ ],
         "link": "https://natsrey.itch.io/closing-at-2",
-		//"streaming":
-		//	{"itch": "https://natsrey.itch.io/closing-at-2"},
 	},
 	{
 		"title": "Skyline Surge",
@@ -141,6 +139,29 @@ const works_credits =
 
 const works_projects =
 [
+	//PS2 Graveyards
+	{
+		"title": "PS2 Graveyards",
+		"date": new Date(2024, 3, 16),
+		"url": "ps2-graveyards",
+		"blog": "ps2-graveyards",
+		"cover": "ps2-graveyards.png",
+		"summary": 'An album I created as an ode to the bygone era of spooky, nostalgic Playstation 2 graveyards.',
+		"embed": "https://bandcamp.com/EmbeddedPlayer/album=2584251597/size=large/bgcol=333333/linkcol=2edb35/artwork=small/transparent=true/",
+		"tags": ["Techno", "Ambient", "Eery", "Spooky", "Apocalyptic", "Nostalgic"],
+		/*"stores":
+			{"unity": "https://assetstore.unity.com/packages/slug/222465",
+			"unity": "https://assetstore.unity.com/packages/slug/234292",
+			"itch": "https://ludoloonstudio.itch.io/puzzled-mind",
+			"itch": "https://ludoloonstudio.itch.io/mind-games",
+			},*/
+		"streaming":
+			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/ps2-graveyards",
+			//"archive.org": "https://archive.org/details/the-eery-silence-of-dying-qhd",
+			//"youtube": "https://youtu.be/CRGwM00b1jA",
+			//"newgrounds": "https://www.newgrounds.com/audio/listen/1260516",
+			},
+	},
 	//Ludo Air - The Eery Silence of Dying
 	{
 		"title": "The Eery Silence of Dying",
