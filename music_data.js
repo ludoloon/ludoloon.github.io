@@ -178,6 +178,7 @@ const works_projects =
 			},*/
 		"streaming":
 			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/ps2-graveyards",
+			"spotify": "https://open.spotify.com/intl-es/album/4cy3Dh3S5AOQO6TIqXdrnE",
 			//"archive.org": "https://archive.org/details/the-eery-silence-of-dying-qhd",
 			//"youtube": "https://youtu.be/CRGwM00b1jA",
 			//"newgrounds": "https://www.newgrounds.com/audio/listen/1260516",
