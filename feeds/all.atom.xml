@@ -1,5 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>LudoLoon Studio</title><link href="https://ludoloon.studio/" rel="alternate"></link><link href="https://ludoloon.studio/feeds/all.atom.xml" rel="self"></link><id>https://ludoloon.studio/</id><updated>2024-04-24T19:17:08-05:00</updated><subtitle>Here's that music you wanted!&lt;br/&gt; &lt;a href="https://ko-fi.com/ludoloonstudio/tiers"&gt;Subscribe on ko-fi for discounts.&lt;/a&gt;</subtitle><entry><title>VGMcon 2024!</title><link href="https://ludoloon.studio/vgmcon-2024/" rel="alternate"></link><published>2024-04-20T00:00:00-05:00</published><updated>2024-04-24T19:17:08-05:00</updated><author><name>LudoLoon Studio</name></author><id>tag:ludoloon.studio,2024-04-20:/vgmcon-2024/</id><summary type="html">&lt;p&gt;Hi there! I was at VGMcon in Minneapolis. Wanna get connected?&lt;/p&gt;</summary><content type="html">&lt;p&gt;EDIT: This was an awesome time! Best year yet.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>LudoLoon Studio</title><link href="https://ludoloon.studio/" rel="alternate"></link><link href="https://ludoloon.studio/feeds/all.atom.xml" rel="self"></link><id>https://ludoloon.studio/</id><updated>2024-05-31T00:00:00-05:00</updated><subtitle>Here's that music you wanted!&lt;br/&gt; &lt;a href="https://ko-fi.com/ludoloonstudio/tiers"&gt;Subscribe on ko-fi for discounts.&lt;/a&gt;</subtitle><entry><title>LudoLoon Yacht Dice</title><link href="https://ludoloon.studio/yacht-dice/" rel="alternate"></link><published>2024-05-31T00:00:00-05:00</published><updated>2024-05-30T19:25:15-05:00</updated><author><name>LudoLoon Studio</name></author><id>tag:ludoloon.studio,2024-05-31:/yacht-dice/</id><summary type="html">&lt;p&gt;In a surprising turn of events, I'm getting back into gamedev. I made a yacht dice clone!&lt;/p&gt;</summary><content type="html">&lt;p&gt;In a surprise turn of events, I got back into game development! I recently watched the Brackey's Godot tutorial and figured I'd port a previous version of Yacht Dice I made in React that was just sitting there.&lt;/p&gt;
+&lt;p&gt;The goal was to learn more about the editor with the intention to make more games. So keep an eye out for more!&lt;/p&gt;
+&lt;p&gt;You can find the game on itch.io in the summary below. Enjoy!&lt;/p&gt;
+&lt;hr&gt;
+&lt;div style="position:relative;padding-bottom:56.25%;"&gt;
+ &lt;iframe style="width:100%;height:100%;position:absolute;left:0px;top:0px;" src="https://www.youtube.com/embed/UH_1O8NOiS4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p class="album-links"&gt;
+        &lt;a href="https://ludoloonstudio.itch.io/yacht-dice"&gt;&lt;img src="https://ludoloon.studio/images/icons/itch.png" alt="itch.io link"/&gt;&lt;/a&gt;
+        &lt;a href="https://youtu.be/UH_1O8NOiS4"&gt;&lt;img src="https://ludoloon.studio/images/icons/youtube.png" alt="Youtube link"/&gt;&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;h3&gt;Summary&lt;/h3&gt;
+&lt;p&gt;From the project's itch page: &lt;a href="https://ludoloonstudio.itch.io/yacht-dice"&gt;https://ludoloonstudio.itch.io/yacht-dice&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;    My first godot game!
+
+    Decided to make a clone of the classic dice game, yacht dice.
+    Not technically yahtzee since there's no 3 of a kind option. 
+    Pretty simple though, you basically try to get the highest score you can.
+
+    You can play by yourself, with others locally or against the AI. 
+    Up to 16 players is possible! 
+    You can even have the AI play against itself if you remove the human player after adding AI opponents. 
+    Someday I may add online if I need a good practice run lol.
+
+    Feel free to screenshot your high scores and leave them in the comments.
+
+    Works with mouse or keys. Also works with gamepads:
+    - A to select
+    - B to cancel
+    - D-pad to navigate
+    - Y (top button) to swap between selecting scorecard &amp;amp; dice (d-pad also works)
+    - X (left button) or Space to roll
+
+    If your browser allows it, your scores &amp;amp; settings should save. For sure they will on the windows &amp;amp; linux version.
+
+    Music by yours truly! Available here or on my website.
+
+    Special thanks to andresix, toddcircle and corkob for a few of the SFX (available on freesound.org)&amp;lt;/p&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;</content><category term="blog"></category><category term="music"></category></entry><entry><title>VGMcon 2024!</title><link href="https://ludoloon.studio/vgmcon-2024/" rel="alternate"></link><published>2024-04-20T00:00:00-05:00</published><updated>2024-04-24T19:17:08-05:00</updated><author><name>LudoLoon Studio</name></author><id>tag:ludoloon.studio,2024-04-20:/vgmcon-2024/</id><summary type="html">&lt;p&gt;Hi there! I was at VGMcon in Minneapolis. Wanna get connected?&lt;/p&gt;</summary><content type="html">&lt;p&gt;EDIT: This was an awesome time! Best year yet.&lt;/p&gt;
 &lt;p&gt;&lt;img alt="VGMcon 2024 - Sunshine Resort" src="https://ludoloon.studio/images/covers/vgmcon-2024.png"&gt;&lt;/p&gt;
 &lt;p&gt;Hi there! &lt;strong&gt;I was at VGMcon in Minneapolis&lt;/strong&gt;. If we met, &lt;strong&gt;feel free to DM me or check out my social media pages&lt;/strong&gt; below under &lt;em&gt;Subscribe&lt;/em&gt;. You can &lt;a href="https://discord.gg/rS59ctF6cR"&gt;find me on discord through the VGMcon server&lt;/a&gt; too.&lt;/p&gt;
 &lt;p&gt;Super excited to check out &lt;a href="https://vgmcon.org/2024-schedule/"&gt;everyone's sets&lt;/a&gt; and have a dope ass time with y'all.&lt;/p&gt;

@@ -139,6 +139,27 @@ const works_credits =
 
 const works_projects =
 [
+	//LudoLoon Yacht Dice
+	{
+		"title": "LudoLoon Yacht Dice",
+		"date": new Date(2024, 4, 31),
+		"url": "yacht-dice",
+		"blog": "yacht-dice",
+		"cover": "yacht-dice.png",
+		"summary": 'Got back into game development using Godot and created a clone of the classic dice game!',
+		"embed": "https://www.youtube.com/embed/UH_1O8NOiS4",
+		"tags": ["Dice", "Casual", "Game", "Multiplayer", "Godot"],
+		"stores":
+			{
+			"itch": "https://ludoloonstudio.itch.io/yacht-dice",
+			},
+		"streaming":
+			{"youtube": "https://youtu.be/UH_1O8NOiS4",
+			//"archive.org": "https://archive.org/details/the-eery-silence-of-dying-qhd",
+			//"youtube": "https://youtu.be/CRGwM00b1jA",
+			//"newgrounds": "https://www.newgrounds.com/audio/listen/1260516",
+			},
+	},
 	//PS2 Graveyards
 	{
 		"title": "PS2 Graveyards",
