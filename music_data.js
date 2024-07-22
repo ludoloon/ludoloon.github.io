@@ -139,6 +139,27 @@ const works_credits =
 
 const works_projects =
 [
+	//Rice Lake Frolf Course Remaster
+	{
+		"title": "Rice Lake Frolf Course Remaster",
+		"date": new Date(2024, 6, 23),
+		"url": "rice-lake-frolf-course-remaster",
+		"blog": "rice-lake-frolf-course-remaster",
+		"cover": "rice-lake-frolf-course-remaster.png",
+		"summary": "Play on my hometown frolf course circa 2013! <br>Work in progress, but here's the prototype if you wanna try it out in its current form. <em>(<a href='/music/#brainstorm'>Trailer Music - Brainstorm</a>)</em>",
+		"embed": "https://www.youtube.com/embed/zhd8xJ7nvao",
+		"tags": ["Sports", "Casual", "Game", "Multiplayer", "Godot"],
+		"stores":
+			{
+			"itch": "https://ludoloonstudio.itch.io/rice-lake-frolf-course-remaster",
+			},
+		"streaming":
+			{"youtube": "https://youtu.be/zhd8xJ7nvao",
+			//"archive.org": "https://archive.org/details/the-eery-silence-of-dying-qhd",
+			//"youtube": "https://youtu.be/CRGwM00b1jA",
+			//"newgrounds": "https://www.newgrounds.com/audio/listen/1260516",
+			},
+	},
 	//LudoLoon Yacht Dice
 	{
 		"title": "LudoLoon Yacht Dice",
