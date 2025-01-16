@@ -76,6 +76,26 @@ const works_packs =
 const works_credits =
 [
 	{
+		"title": "Drone AI Demo",
+		"date": new Date(2024, 12, 15),
+		"frontpage": false,
+		"url": "drone-ai-demo",
+		"cover": "drone-ai-demo.png",
+        "summary": 'Showcase of an AI agent trained to pilot a drone through complex obstacle courses and complete designated missions. Uses <a href="../music#starting-line">Starting Line</a>.',
+		"tags": [ ],
+        "link": "https://true-bots.itch.io/drone-agent",
+	},
+	{
+		"title": "Omakase (お任せ)",
+		"date": new Date(2024, 10, 7),
+		"frontpage": true,
+		"url": "omakase",
+		"cover": "omakase.jpg",
+        "summary": 'Omakase is a relaxing cooking and creation game. Uses my track <a href="../music#tabletop-jazz-cafe">Tabletop Jazz Cafe</a>.',
+		"tags": [ ],
+        "link": "https://store.steampowered.com/app/3259260/Omakase/?beta=0",
+	},
+	{
 		"title": "Closing at 2",
 		"date": new Date(2023, 11, 8),
 		"frontpage": true,
