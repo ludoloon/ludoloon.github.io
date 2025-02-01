@@ -334,7 +334,6 @@ const music_JSON =
 		"date": new Date(2025, 1, 1),
 		"url": "16-bit-fishing",
 		"cover": "16-bit-fishing.png",
-		"blog": "16-bit-fishing",
         "summary": "Ride around the lake while vibin' out to some classic tunes. If the fish don't bite at least the bass will.",
 		"embed": "https://www.youtube.com/embed/zhaZ0z6hOzo",
 		"tags": ["16-bit", "Exploration", "Chill", "Fishing", "Groovy", "Casual", "Sports"],
