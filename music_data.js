@@ -328,6 +328,29 @@ const works_projects =
 // Current idea: sort by variables with Free & Paid as separate tables
 const music_JSON = 
 [
+//16-bit Fishing
+	{
+        "title": "16-bit Fishing",
+		"date": new Date(2025, 1, 1),
+		"url": "16-bit-fishing",
+		"cover": "16-bit-fishing.png",
+		"blog": "16-bit-fishing",
+        "summary": "Ride around the lake while vibin' out to some classic tunes. If the fish don't bite at least the bass will.",
+		"embed": "https://www.youtube.com/embed/zhaZ0z6hOzo",
+		"tags": ["16-bit", "Exploration", "Chill", "Fishing", "Groovy", "Casual", "Sports"],
+		"details": 
+			{"bpm": 85,
+			 "cost": "Free",
+			 "loop": "Loopable",
+			 "stems": "No-Stems"},
+		"stores":
+			{"itch": "https://ludoloonstudio.itch.io/16-bit-fishing"
+			},
+		"streaming":
+			{"youtube": "https://www.youtube.com/watch?v=zhaZ0z6hOzo",
+			"newgrounds": "https://www.newgrounds.com/audio/listen/1397693",
+			},
+	},
 // MIND GAMES MUSIC PACK
 	{
         "title": "Puzzled Mind",
