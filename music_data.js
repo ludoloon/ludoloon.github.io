@@ -328,6 +328,28 @@ const works_projects =
 // Current idea: sort by variables with Free & Paid as separate tables
 const music_JSON = 
 [
+//Solitaire
+	{
+        "title": "Solitaire",
+		"date": new Date(2025, 1, 6),
+		"url": "solitaire",
+		"cover": "solitaire.png",
+        "summary": "Groovin' by yourself ain't so bad.",
+		"embed": "https://www.youtube.com/embed/tVNcFsNMvis",
+		"tags": ["Groovy", "Casual", "Chill", "Board Game", "Downtempo", "Calm", "Moody", "Smooth", "Relaxing"],
+		"details": 
+			{"bpm": 85,
+			 "cost": "Free",
+			 "loop": "Loopable",
+			 "stems": "No-Stems"},
+		"stores":
+			{"itch": "https://ludoloonstudio.itch.io/solitaire-free-music"
+			},
+		"streaming":
+			{"youtube": "https://www.youtube.com/watch?v=tVNcFsNMvis",
+			"newgrounds": "https://www.newgrounds.com/audio/listen/1399017",
+			},
+	},
 //16-bit Fishing
 	{
         "title": "16-bit Fishing",
