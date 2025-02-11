@@ -338,7 +338,7 @@ const music_JSON =
 		"embed": "https://www.youtube.com/embed/z0XzMUw3tG8",
 		"tags": ["Ambient", "Atmospheric", "Creepy", "Dark", "Moody", "Mysterious", "Spooky", "Survival", "Suspense"],
 		"details": 
-			{"bpm": 85,
+			{"bpm": 75,
 			 "cost": "Free",
 			 "loop": "Loopable",
 			 "stems": "No-Stems"},
@@ -360,7 +360,7 @@ const music_JSON =
 		"embed": "https://www.youtube.com/embed/tVNcFsNMvis",
 		"tags": ["Groovy", "Casual", "Chill", "Board Game", "Downtempo", "Calm", "Moody", "Smooth", "Relaxing"],
 		"details": 
-			{"bpm": 85,
+			{"bpm": 74,
 			 "cost": "Free",
 			 "loop": "Loopable",
 			 "stems": "No-Stems"},
