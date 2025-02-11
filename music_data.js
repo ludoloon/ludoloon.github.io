@@ -328,6 +328,28 @@ const works_projects =
 // Current idea: sort by variables with Free & Paid as separate tables
 const music_JSON = 
 [
+//Lo-Fi Horror
+	{
+        "title": "Lo-fi Horror",
+		"date": new Date(2025, 1, 6),
+		"url": "lo-fi-horror",
+		"cover": "lo-fi-horror.png",
+        "summary": "Let the static guide you.",
+		"embed": "https://www.youtube.com/embed/z0XzMUw3tG8",
+		"tags": ["Ambient", "Atmospheric", "Creepy", "Dark", "Moody", "Mysterious", "Spooky", "Survival", "Suspense"],
+		"details": 
+			{"bpm": 85,
+			 "cost": "Free",
+			 "loop": "Loopable",
+			 "stems": "No-Stems"},
+		"stores":
+			{"itch": "https://ludoloonstudio.itch.io/lo-fi-horror-free-music"
+			},
+		"streaming":
+			{"youtube": "https://www.youtube.com/watch?v=z0XzMUw3tG8",
+			"newgrounds": "https://www.newgrounds.com/audio/listen/1400413",
+			},
+	},
 //Solitaire
 	{
         "title": "Solitaire",
