@@ -328,10 +328,56 @@ const works_projects =
 // Current idea: sort by variables with Free & Paid as separate tables
 const music_JSON = 
 [
+//Smooth Night
+	/*
+	{
+        "title": "Smooth Night",
+		"date": new Date(2025, 1, 27),
+		"url": "smooth-night",
+		"cover": "smooth-night.png",
+        "summary": "Goin' out on the town for date night.",
+		"embed": "https://www.youtube.com/embed/pHshL826roY",
+		"tags": ["Calm", "Chill", "Casual", "Groovy", "Jazz", "Moody", "Relaxing", "Smooth", "Visual Novel"],
+		"details": 
+			{"bpm": 115,
+			 "cost": "Free",
+			 "loop": "Loopable",
+			 "stems": "No-Stems"},
+		"stores":
+			{"itch": "https://ludoloonstudio.itch.io/smooth-night-free-music"
+			},
+		"streaming":
+			{"youtube": "https://www.youtube.com/watch?v=pHshL826roY",
+			"newgrounds": "	https://www.newgrounds.com/audio/listen/project/6458415",
+			},
+	},
+	*/
+//Happy Wheels
+	{
+        "title": "Happy Wheels",
+		"date": new Date(2025, 1, 11),
+		"url": "happy-wheels",
+		"cover": "happy-wheels.png",
+        "summary": "Someone should really supervise these middle schoolers lol",
+		"embed": "https://www.youtube.com/embed/kLPMZPBwLh4",
+		"tags": ["Action", "Rock", "Energetic", "Fast", "Hard", "Sports", "Upbeat"],
+		"details": 
+			{"bpm": 120,
+			 "cost": "Free",
+			 "loop": "Loopable",
+			 "stems": "No-Stems"},
+		"stores":
+			{"itch": "https://ludoloonstudio.itch.io/happy-wheels-free-music"
+			},
+		"streaming":
+			{"youtube": "https://www.youtube.com/watch?v=kLPMZPBwLh4",
+			"newgrounds": "https://www.newgrounds.com/audio/listen/1402022",
+			},
+	},
 //Lo-Fi Horror
 	{
         "title": "Lo-fi Horror",
-		"date": new Date(2025, 1, 6),
+		"date": new Date(2025, 1, 11),
 		"url": "lo-fi-horror",
 		"cover": "lo-fi-horror.png",
         "summary": "Let the static guide you.",
