@@ -329,7 +329,6 @@ const works_projects =
 const music_JSON = 
 [
 //Smooth Night
-	/*
 	{
         "title": "Smooth Night",
 		"date": new Date(2025, 1, 27),
@@ -351,7 +350,6 @@ const music_JSON =
 			"newgrounds": "	https://www.newgrounds.com/audio/listen/project/6458415",
 			},
 	},
-	*/
 //Happy Wheels
 	{
         "title": "Happy Wheels",
