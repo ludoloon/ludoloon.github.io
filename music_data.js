@@ -375,7 +375,7 @@ const music_JSON =
 //Happy Wheels
 	{
         "title": "Happy Wheels",
-		"date": new Date(2025, 1, 11),
+		"date": new Date(2025, 1, 20),
 		"url": "happy-wheels",
 		"cover": "happy-wheels.png",
         "summary": "Someone should really supervise these middle schoolers lol",
