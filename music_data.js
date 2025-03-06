@@ -328,6 +328,28 @@ const works_projects =
 // Current idea: sort by variables with Free & Paid as separate tables
 const music_JSON = 
 [
+//Getaway Driver
+	{
+        "title": "Getaway Driver",
+		"date": new Date(2025, 2, 8),
+		"url": "getaway-driver",
+		"cover": "getaway-driver.png",
+        "summary": "Hit the gas man!",
+		"embed": "https://www.youtube.com/embed/-pchfPcfPSA",
+		"tags": ["Action", "Blues", "Casual", "Driving", "Exploration", "Rock", "Retro"],
+		"details": 
+			{"bpm": 105,
+			 "cost": "Free",
+			 "loop": "Loopable",
+			 "stems": "No-Stems"},
+		"stores":
+			{"itch": "https://ludoloonstudio.itch.io/getaway-driver-free-music"
+			},
+		"streaming":
+			{"youtube": "https://www.youtube.com/watch?v=-pchfPcfPSA",
+			"newgrounds": "https://www.newgrounds.com/audio/listen/project/6505026",
+			},
+	},
 //Smooth Night
 	{
         "title": "Smooth Night",
@@ -347,7 +369,7 @@ const music_JSON =
 			},
 		"streaming":
 			{"youtube": "https://www.youtube.com/watch?v=pHshL826roY",
-			"newgrounds": "	https://www.newgrounds.com/audio/listen/project/6458415",
+			"newgrounds": "https://www.newgrounds.com/audio/listen/project/6458415",
 			},
 	},
 //Happy Wheels
@@ -424,7 +446,7 @@ const music_JSON =
 		"cover": "16-bit-fishing.png",
         "summary": "Ride around the lake while vibin' out to some classic tunes. If the fish don't bite at least the bass will.",
 		"embed": "https://www.youtube.com/embed/zhaZ0z6hOzo",
-		"tags": ["16-bit", "Exploration", "Chill", "Fishing", "Groovy", "Casual", "Sports"],
+		"tags": ["16-bit", "Exploration", "Chill", "Fishing", "Groovy", "Casual", "Sports", "Retro"],
 		"details": 
 			{"bpm": 85,
 			 "cost": "Free",
@@ -723,7 +745,7 @@ const music_JSON =
 		"cover": "starting-line.png",
         "summary": "High-speed racing music heavily inspired by classic games like R4 and Gran Turismo.",
 		"embed": "https://www.youtube.com/embed/LaXHIgOH9cE",
-		"tags": ["Drum & Bass", "Energetic", "Upbeat", "Driving", "Fast", "Racing", "Simulation", "Action", "Rhythm"],
+		"tags": ["Drum & Bass", "Energetic", "Upbeat", "Driving", "Fast", "Racing", "Simulation", "Action", "Rhythm", "Retro"],
 		"details": 
 			{"bpm": 140,
 			 "cost": "Free",
@@ -1043,7 +1065,7 @@ const music_JSON =
 		"blog": "roguelike-adventure",
 		"summary": "Track from the Roguelike Adventure Music Pack. Click title link for more.",
 		"embed": "https://bandcamp.com/EmbeddedPlayer/album=1675597268/size=large/bgcol=333333/linkcol=0f91ff/minimal=true/track=961952819/transparent=true/",
-		"tags": ["Adventure", "Uplifting", "Chill", "Relaxing", "Exploration", "Upbeat", "World"],
+		"tags": ["Adventure", "Uplifting", "Chill", "Relaxing", "Exploration", "Upbeat", "World", "Retro"],
 		"details": 
 			{"bpm": 60,
 			 "cost": "Paid",
