@@ -393,6 +393,7 @@ const music_JSON =
 		"date": new Date(2025, 1, 20),
 		"url": "happy-wheels",
 		"cover": "happy-wheels.png",
+		"frontpage": false,
         "summary": "Someone should really supervise these middle schoolers lol",
 		"embed": "https://www.youtube.com/embed/kLPMZPBwLh4",
 		"tags": ["Action", "Rock", "Energetic", "Fast", "Hard", "Sports", "Upbeat"],
