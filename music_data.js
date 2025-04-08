@@ -159,6 +159,21 @@ const works_credits =
 
 const works_projects =
 [
+	//Wacky Workbench (Past) Remix
+	{
+		"title": "Wacky Workbench (Past) Remix",
+		"date": new Date(2025, 3, 8),
+		"url": "wacky-workbench-remix",
+		"cover": "wacky-workbench-remix.png",
+		"summary": 'Made a remix to get hype for VGMcon 2025!',
+		"embed": "https://www.youtube.com/embed/2f8vjmreMso",
+		"tags": ["VGM", "Remix", "EDM", "Groovy", "Sonic"],
+		"streaming":
+			{"youtube": "https://www.youtube.com/watch?v=2f8vjmreMso",
+			"newgrounds": "https://www.newgrounds.com/audio/listen/1416688",
+			//"archive.org": "https://archive.org/details/the-eery-silence-of-dying-qhd",
+			},
+	},
 	//Rice Lake Frolf Course Remaster
 	{
 		"title": "Rice Lake Frolf Course Remaster",
