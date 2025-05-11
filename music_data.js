@@ -101,7 +101,7 @@ const works_credits =
 		"frontpage": false,
 		"url": "farm-by-day-fight-by-night",
 		"cover": "farm-by-day-fight-by-night.webp",
-        "summary": 'Plant your crops defend your farm battle monsters and collect rare seeds in farm by day, fight by night!. Uses my track <a href="../music#on-the-farm">On The Farm</a>.',
+        "summary": 'Plant your crops. Defend your farm. Battle monsters and collect rare seeds in farm by day, fight by night!. Uses my track <a href="../music#on-the-farm">On The Farm</a>.',
 		"tags": [ ],
         "link": "https://trident-dev-indie.itch.io/farm-by-day-fight-by-night",
 	},
