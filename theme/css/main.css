@@ -6,20 +6,27 @@ html{
 }
 
 body{
-    font-family: Helvetica;
-    font-size: 1em;
+    font-family: Lato, Helvetica;
+    font-size: 1rem;
     margin: auto;
     width: 95%;
-    max-width: 64em;
+    max-width: 64rem;
 }
 
 /* Heading */
 h1, h2, h4, h5, h6{
     color: #05ffa1;
 }
-h1{ text-align: center; font-size: 2em; }
-h2{ font-size: 1.75em; }
-h3{ font-size: 1.5em; color: #fffb96; }
+h1,h2{ 
+    font-size: 1.75rem; 
+    background-color: #b967ff22; 
+    border: 3px groove #eee; 
+    border-radius: 35px; 
+    padding: 1rem;
+    margin-bottom: 0px;
+}
+h1{ color: #fffb96; text-align: center; font-size: 2rem; margin-bottom: 1rem;}
+h3{ font-size: 1.5rem; color: #fffb96; }
 
 /* --- Navigation --- */
 /* Links */
@@ -35,20 +42,59 @@ iframe {
 
 /* Navbar */
 nav {
-    background: rgba(32,32,32,.8);
+    font-family: monospace;
+    font-weight: 700;
+    background: rgba(32,32,32, .8);
     color: #EEE;
     border: 3px groove #EAEAEA;
-    border-radius: 5px;
-    margin: 4px auto;       /* space between content & navbar */
-    max-width: 32em;
-    height: 100%;
+    border-radius: 35px;
+    margin: auto;       /* space between content & navbar */
+    width: 100%;
+    overflow: hidden;
+    z-index: 10;
 }
 nav table { width: 100%; }
 nav img, table, tbody, tr, td { height: 100%; margin: 0; padding: 0; border-spacing: 0; }
-nav img { width: 4em; height: 100%; border-right: 1px solid #EAEAEA; }
+nav img { width: 4rem; height: 100%; border-right: 1px solid #EAEAEA; }
 nav td {padding-right: 4px;} /* avoid text scrunching up */
 
+#return-to-top{
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    background: #ff71ceAA;
+    font-size: 3rem;
+    border: 0px;
+    border-radius: 35px;
+    width: 4rem;
+    height: 4rem;
+    color: #eee;
+    margin: 0;
+    padding: 0;
+    text-shadow: 2px 2px #555;
+    opacity: .75;
+}
+#return-to-top:hover{
+    cursor: pointer;
+}
+
 /* Landing Page */
+.feed-wrapper {
+    border: 3px groove #666;
+    border-radius: 35px;
+    height: 40rem;
+    overflow: scroll;
+}
+
+.text-wrapper{
+    border: 3px groove #666;
+    border-radius: 35px;
+    overflow: scroll;
+    background: #b967ff11;
+    padding: 1rem;
+    font-family: monospace;
+}
+
 .landing-container {
     display: flex;
     flex-direction: row;
@@ -56,13 +102,13 @@ nav td {padding-right: 4px;} /* avoid text scrunching up */
     justify-content: center;
     align-items: center;
     background: #333;
-    border: 3px groove #666;
-    margin: 1em;
+    border-bottom: 3px groove #666;
+    /*margin: 1rem;*/
 }
 .landing-thumbnail { 
-    margin: .75em;
+    margin: .75rem;
     /*width: 205px;*/
-    max-width: 16em;
+    max-width: 16rem;
     justify-content: center;
     align-items: center;
     /*flex-grow: 1;*/
@@ -70,13 +116,13 @@ nav td {padding-right: 4px;} /* avoid text scrunching up */
 }
 .landing-thumbnail img { width: 100%; box-shadow: 0 1px 1px 2px #000; }
 .landing-summary { 
-    padding: 0 1em;
+    padding: 0 1rem;
     border-left: 1px solid #444; 
     flex: 1;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    min-width: 16em;
+    min-width: 16rem;
 }
 .landing-summary h3 { margin: .25em 0 0 0; }
 .landing-tags { 
@@ -84,9 +130,16 @@ nav td {padding-right: 4px;} /* avoid text scrunching up */
     flex-direction: row;
     flex-wrap: wrap;
 }
-.landing-tag { border: 1px groove #666; padding: .25em .25em; margin: .3em; font-size: 14px; }
+.landing-tag { 
+    color: #ff71ce99;
+    font-family: monospace;
+    padding: .25em .25rem; 
+    margin: .3rem; 
+    font-size: 14px;
+}
 .landing-links { padding: 0; margin: 0; }
-.landing-links img { max-width: 48px; max-height: 48px; margin: .25em; }
+.landing-links img { max-width: 48px; max-height: 48px; margin: .25rem; }
+
 
 /* --- (old) Music page --- */
 .album-container {
@@ -99,9 +152,9 @@ nav td {padding-right: 4px;} /* avoid text scrunching up */
     position: relative;
     background: #333;
     border: 1px solid #666;
-    width: 27em;
+    width: 27rem;
     margin: 2em auto;
-    padding: 1em;
+    padding: 1rem;
     padding-bottom: 0;
 }
 
@@ -115,14 +168,14 @@ nav td {padding-right: 4px;} /* avoid text scrunching up */
     opacity: .5; 
     text-shadow: 1px 1px #333;
     pointer-events: none; 
-    padding: 1em; 
+    padding: 1rem; 
 }
 .album-info {
     text-align: center; 
-    margin: 0em; 
+    margin: 0rem; 
 }
 .album-info img { width: 48px; height: 48px; margin: 0 4px;} /* link icons */
-.album-description{ min-height: 2.5em;}
+.album-description{ min-height: 2.5rem;}
 
 /* --- About --- */
 #avatar { width: 50%; margin-left: auto; margin-right: auto; display: block;}
@@ -136,7 +189,7 @@ nav td {padding-right: 4px;} /* avoid text scrunching up */
     margin: 0;
     padding: auto;
     /*border: 3px groove #AAA;*/
-    padding: 1em;
+    padding: 1rem;
 }
 
 img{
@@ -163,9 +216,9 @@ img{
 .cover-cell h3 { font-size: 14pt; margin: 2px; padding: 2px;}
 
 /*table-cell ratios*/
-.details-cell{ width: 2em;}
+.details-cell{ width: 2rem;}
 .cover-cell { width: 192px; text-align: center; }
-.tags-cell { max-width: 14em; width: 22%; }
+.tags-cell { max-width: 14rem; width: 22%; }
 .summary-cell {width: 40%;}
 
 .summary-cell h3 { margin: 0; }
@@ -189,28 +242,28 @@ img{
 
 #tracklist-table th {
     background: #222;
-    font-size: 1.5em;
-    padding: .5em;
+    font-size: 1.5rem;
+    padding: .5rem;
 }
 
 /* Just the tbody with data in it*/
 #tracklist td {
     background: #333;
-    padding: .5em;
+    padding: .5rem;
     border-top: 1px solid #666;
     border-bottom: 1px solid #666;
 }
 
 #search {
     width: 90%; 
-    margin-bottom: 1em;
+    margin-bottom: 1rem;
 }
 
 /* Player Buttons */
 #stop-music {
     position: fixed; 
     left:5%; 
-    bottom: 1em; 
+    bottom: 1rem; 
     width: 40%; 
     height: 64px; 
     z-index: 20; 
@@ -223,7 +276,7 @@ img{
 #seek-btn {
     position: fixed; 
     left:55%; 
-    bottom: 1em; 
+    bottom: 1rem; 
     width: 40%; 
     height: 64px; 
     z-index: 20; 
@@ -245,7 +298,7 @@ img{
     
     #tracklist tr, thead { border: 1px solid #666;}
     
-    #tracklist-table td{ padding: .5em;}
+    #tracklist-table td{ padding: .5rem;}
     #tracklist-table {              /* turns the table into a column */
         border-collapse: collapse;
         border-style: none;         /* tr contains border */
@@ -272,7 +325,7 @@ img{
     }
     .cover-cell img { max-width: 256px; }
     .summary-cell img { width: 32px; }
-    .details-cell h3{ font-size: 1.5em; }
+    .details-cell h3{ font-size: 1.5rem; }
 
     #tracklist { display: flex; flex-direction: column;}
     
@@ -293,15 +346,27 @@ img{
 
 /* --- Hiring Page --- */
 form{
-    background: rgba(185,103,255, .15);
-    border: 3px groove #666; 
-    padding: 1em;
+    background: #b967ff11;
+    border: 3px groove #666;
+    border-radius: 35px; 
+    padding: 1rem;
 }
 
-input[type="text"], input[type="number"]{
-    background: inherit; 
-    color: inherit; 
-    width: 3em;
+label{
+    font-weight: 900;
+}
+
+input[type="text"] {
+    background: #333;
+    color: #eee;
+    font-family: monospace;
+}
+
+textarea{
+    background: #333;
+    color: #eee;
+    width: 100%;
+    height: 5rem;
 }
 
 option:disabled{
@@ -331,7 +396,7 @@ option:disabled{
     border: 3px groove #EAEAEA;
     margin: 4px auto;
     text-align: center;
-    padding: .5em;
+    padding: .5rem;
     border-radius: 35px;
 }
 
@@ -341,21 +406,22 @@ pre{
     color: green;
     background: #222;
     border: 1px solid #EEE;
-    padding: .5em;
+    padding: .5rem;
     overflow: scroll;
 }
 
 blockquote {
     background: #00000055;
     border: solid 1px #01cdfe;
-    padding: 1em;
+    padding: 1rem;
 }
 
 /* --- Footer --- */
 time {
     /*float: right;
     display: inline;*/
-    padding: .33em;
+    padding: .33rem;
     border-top: groove 3px #EEE;
     border-bottom: groove 3px #EEE;
 }
+    

@@ -19,20 +19,29 @@
 
     <meta name="tags" content="music" />
 
+        <script>
+          window.onscroll = function(){
+            let return_btn = document.getElementById("return-to-top");
+            console.log("scroll")
+          }
+          function return_to_top(){
+            let return_btn = document.getElementById("return-to-top");
+            document.getElementById('menu').scrollIntoView({behavior: 'smooth'});
+          }
+        </script>
 </head>
 
 <body id="index" class="home">
         <header id="banner" class="body">
             
         </header><!-- /#banner -->
+        <button id="return-to-top" onclick="return_to_top();">^</button>
         <nav id="menu">
         <table><tbody><tr>
             <td><a href="/"><img id="header-logo" src="/images/navatar.png"/></a></td>
             <td><a href="/music/">MUSIC</a></td>
-            <td><a href="/works/">WORKS</a></td>
-            <td><a href="/hire/">HIRE</a></td>
-            <td><a href="/about/">ABOUT</a></td>
-            <td><a href="mailto:connect@ludoloon.studio">E-MAIL</a></td>
+            <td><a href="/#connect">CONNECT</a></td>
+            <td><a href="#socials">SOCIALS</a></td>
         </tr></tbody></table></nav><!-- /#menu -->
 <section id="content" class="body">
   <header>
@@ -42,7 +51,7 @@
   </header>
   <div class="entry-content">
     <p>EDIT: This was an awesome time! Best year yet.</p>
-<p><img alt="VGMcon 2024 - Sunshine Resort" src="https://ludoloon.studio/images/covers/vgmcon-2024.png"></p>
+<p><img alt="VGMcon 2024 - Sunshine Resort" src="https://ludoloon.studio/images/covers/vgmcon-2024.webp"></p>
 <p>Hi there! <strong>I was at VGMcon in Minneapolis</strong>. If we met, <strong>feel free to DM me or check out my social media pages</strong> below under <em>Subscribe</em>. You can <a href="https://discord.gg/rS59ctF6cR">find me on discord through the VGMcon server</a> too.</p>
 <p>Super excited to check out <a href="https://vgmcon.org/2024-schedule/">everyone's sets</a> and have a dope ass time with y'all.</p>
 <p>I'm based here in Minneapolis so if you want to collab or hang, hmu! To learn more about me, check out <a href="https://ludoloon.studio/about/">my about page.</a></p>
@@ -53,6 +62,7 @@
 </section>
 <!-- /#content -->
       <footer id="contentinfo" class="body">
+        <a name="socials"></a>
         <div class="connect">
             <ul>
               <b>Subscribe</b><br/>
@@ -64,7 +74,6 @@
             </ul>
             <ul>
               <b>Streaming</b><br/>
-                  <li><a href="https://soundcloud.com/ludoloonstudio"><img src="https://ludoloon.studio/images/icons/soundcloud.png" alt="soundcloud"/></a></li>
                   <li><a href="https://ludoloonstudio.bandcamp.com"><img src="https://ludoloon.studio/images/icons/bandcamp.png" alt="bandcamp"/></a></li>
                   <li><a href="https://ludoloonstudio.newgrounds.com/audio"><img src="https://ludoloon.studio/images/icons/newgrounds.png" alt="newgrounds"/></a></li>
                   <li><a href="https://youtube.com/channel/UCziXXRaD4uUuTL7tMWtQeVQ"><img src="https://ludoloon.studio/images/icons/youtube.png" alt="youtube"/></a></li>

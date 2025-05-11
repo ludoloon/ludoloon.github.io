@@ -17,20 +17,29 @@
   
     <meta name="description" content="Check out my music available to license for games, podcasts, videos and more! Premium and royalty free music available, ready to go for your project now." />
   
+        <script>
+          window.onscroll = function(){
+            let return_btn = document.getElementById("return-to-top");
+            console.log("scroll")
+          }
+          function return_to_top(){
+            let return_btn = document.getElementById("return-to-top");
+            document.getElementById('menu').scrollIntoView({behavior: 'smooth'});
+          }
+        </script>
 </head>
 
 <body id="index" class="home">
         <header id="banner" class="body">
             
         </header><!-- /#banner -->
+        <button id="return-to-top" onclick="return_to_top();">^</button>
         <nav id="menu">
         <table><tbody><tr>
             <td><a href="/"><img id="header-logo" src="/images/navatar.png"/></a></td>
             <td><a href="/music/">MUSIC</a></td>
-            <td><a href="/works/">WORKS</a></td>
-            <td><a href="/hire/">HIRE</a></td>
-            <td><a href="/about/">ABOUT</a></td>
-            <td><a href="mailto:connect@ludoloon.studio">E-MAIL</a></td>
+            <td><a href="/#connect">CONNECT</a></td>
+            <td><a href="#socials">SOCIALS</a></td>
         </tr></tbody></table></nav><!-- /#menu -->
 <section id="content">
     
@@ -93,7 +102,7 @@ function search_tracklist(){
 
 function search_with_tag(tag, reset=false){
     if(reset == true){ searchbar.value = "" + tag; }
-    else{ searchbar.value += " "+tag; }
+    else{ searchbar.value = " "+tag; }
     search_tracklist();
 }
 
@@ -273,34 +282,49 @@ function close_player(){
 <noscript><b>Please note, javascript is required to view videos.</b></noscript>
 
 <h2>Licensing Agreement</h2>
-<p>The actual license varies by which asset store you download from (see their terms for more).</p>
-<p>However, whether paid or free, the <em>general</em> <strong>rights &amp; restrictions</strong> to use my music are this:</p>
+<section class="text-wrapper">
+<p>
+The actual license varies by which asset store you download from (see their terms for more).
+
+However, whether paid or free, the <em>general</em> <strong>rights & restrictions</strong> to use my music are this:
+</p>
+
 <h3>Your Rights</h3>
+You may:
 <ul>
-<li>You may use this music in any of your projects, whether they're commercial or not.</li>
-<li>You may edit or remix them to better suit your project's needs.</li>
-<li>You may use my music in multiple projects without further payment (if required).</li>
-<li>While you don't <em>have</em> to give credit to <strong>LudoLoon Studio</strong>, it's still certainly appreciated!</li>
+<li>Use this music in any project, commercial or not.</li>
+<li>Edit or remix tracks to better suit your project.</li>
+<li>Use my music in multiple projects after purchase (if relevant).</li>
+<li>While you don't <em>have</em> to give credit to <strong>LudoLoon Studio</strong>, it's appreciated!</li>
 </ul>
+
 <h3>Restrictions</h3>
 <ul>
-<li>Copyright ownership of all recordings still belongs to <strong>LudoLoon Studio LLC</strong>.</li>
-<li>You may <strong>NOT</strong> resell, relicense or otherwise distribute any packs or individual tracks by themselves.</li>
-<li>For any soundtrack deals please contact <a href="support@ludoloon.studio">support@ludoloon.studio</a> to negotiate a deal. <ul>
-<li>Otherwise, you may <strong>NOT</strong> redistribute my music as part of a standalone game soundtrack.</li>
+    <li>Copyright of all recordings belongs to <strong>LudoLoon Studio LLC</strong>.</li>
+    <li>You may <strong>NOT</strong> resell, relicense or otherwise distribute any tracks unless authorized.</li>
+    <li><a href="mailto:support@ludoloon.studio?subject=Soundtrack Deal">For soundtrack deals please contact support@ludoloon.studio</a> to negotiate a deal.</li>
 </ul>
-</li>
-</ul>
-<p>If you want to buy an <b>individual track</b> that's part of a music pack we can also arrange that <a href="mailto:connect@ludoloon.studio">by email</a>.</p>
-<p><strong>P.S.</strong> If you use my music, <a href="mailto:connect@ludoloon.studio">send your promo to connect@ludoloon.studio</a> and I'll share it!</p>
+
+<p><strong><a href="mailto:connect@ludoloon.studio?subject=Buy Indivdidual Track">To buy an individual track that's part of a music pack</a> we can also arrange that by email</strong>.</p>
+
+<p><strong>P.S.</strong> If you use my music, send your promo to <a href="mailto:connect@ludoloon.studio?subject=Social Media Promo">connect@ludoloon.studio</a> and I'll share it!</p>
+
+</section>
+
 <!-- create two styles, one for desktop and another for mobile -->
-<h4>Tag List:</h4>
+<h2>Tag List</h2>
+<section class="text-wrapper">
 <p id="taglist">
 </p>
 
-<p>🔎 <input type="text" id="search" oninput="search_tracklist()"></input><br/> 
-<button id="clear-search-btn" onclick="clear_search();" hidden>Clear Search</button></p>
-<p><button id="stop-music" onclick="close_player();" hidden>❌ Stop Music 🔇</button> <button id="seek-btn" onclick="container.scrollIntoView({behavior: 'smooth', block: 'center', inline: 'nearest'});" hidden>↕ Scroll to Player 🎧</button></p>
+🔎 <input type="text" id="search" oninput="search_tracklist()"></input><br/> 
+<button id="clear-search-btn" onclick="clear_search();" hidden>Clear Search</button>
+
+<button id="stop-music" onclick="close_player();" hidden>❌ Stop Music 🔇</button> <button id="seek-btn" onclick="container.scrollIntoView({behavior: 'smooth', block: 'center', inline: 'nearest'});" hidden>↕ Scroll to Player 🎧</button>
+</section>
+
+<hr/>
+
 <table id="tracklist-table">
 <thead>
   <tr>
@@ -319,6 +343,7 @@ function close_player(){
 </section>
 <!-- /#content -->
       <footer id="contentinfo" class="body">
+        <a name="socials"></a>
         <div class="connect">
             <ul>
               <b>Subscribe</b><br/>
@@ -330,7 +355,6 @@ function close_player(){
             </ul>
             <ul>
               <b>Streaming</b><br/>
-                  <li><a href="https://soundcloud.com/ludoloonstudio"><img src="https://ludoloon.studio/images/icons/soundcloud.png" alt="soundcloud"/></a></li>
                   <li><a href="https://ludoloonstudio.bandcamp.com"><img src="https://ludoloon.studio/images/icons/bandcamp.png" alt="bandcamp"/></a></li>
                   <li><a href="https://ludoloonstudio.newgrounds.com/audio"><img src="https://ludoloon.studio/images/icons/newgrounds.png" alt="newgrounds"/></a></li>
                   <li><a href="https://youtube.com/channel/UCziXXRaD4uUuTL7tMWtQeVQ"><img src="https://ludoloon.studio/images/icons/youtube.png" alt="youtube"/></a></li>

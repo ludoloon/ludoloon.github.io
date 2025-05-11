@@ -12,20 +12,29 @@
         <!-- Javascript -->
         <!-- Feed stuff -->
         <link href="https://ludoloon.studio/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="LudoLoon Studio Full Atom Feed" />
+        <script>
+          window.onscroll = function(){
+            let return_btn = document.getElementById("return-to-top");
+            console.log("scroll")
+          }
+          function return_to_top(){
+            let return_btn = document.getElementById("return-to-top");
+            document.getElementById('menu').scrollIntoView({behavior: 'smooth'});
+          }
+        </script>
 </head>
 
 <body id="index" class="home">
         <header id="banner" class="body">
             
         </header><!-- /#banner -->
+        <button id="return-to-top" onclick="return_to_top();">^</button>
         <nav id="menu">
         <table><tbody><tr>
             <td><a href="/"><img id="header-logo" src="/images/navatar.png"/></a></td>
             <td><a href="/music/">MUSIC</a></td>
-            <td><a href="/works/">WORKS</a></td>
-            <td><a href="/hire/">HIRE</a></td>
-            <td><a href="/about/">ABOUT</a></td>
-            <td><a href="mailto:connect@ludoloon.studio">E-MAIL</a></td>
+            <td><a href="/#connect">CONNECT</a></td>
+            <td><a href="#socials">SOCIALS</a></td>
         </tr></tbody></table></nav><!-- /#menu -->
 <h1>Archives for LudoLoon Studio</h1>
 
@@ -59,6 +68,7 @@
 </dl>
 <!-- /#content -->
       <footer id="contentinfo" class="body">
+        <a name="socials"></a>
         <div class="connect">
             <ul>
               <b>Subscribe</b><br/>
@@ -70,7 +80,6 @@
             </ul>
             <ul>
               <b>Streaming</b><br/>
-                  <li><a href="https://soundcloud.com/ludoloonstudio"><img src="https://ludoloon.studio/images/icons/soundcloud.png" alt="soundcloud"/></a></li>
                   <li><a href="https://ludoloonstudio.bandcamp.com"><img src="https://ludoloon.studio/images/icons/bandcamp.png" alt="bandcamp"/></a></li>
                   <li><a href="https://ludoloonstudio.newgrounds.com/audio"><img src="https://ludoloon.studio/images/icons/newgrounds.png" alt="newgrounds"/></a></li>
                   <li><a href="https://youtube.com/channel/UCziXXRaD4uUuTL7tMWtQeVQ"><img src="https://ludoloon.studio/images/icons/youtube.png" alt="youtube"/></a></li>

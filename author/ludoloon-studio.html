@@ -14,53 +14,61 @@
         <link href="https://ludoloon.studio/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="LudoLoon Studio Full Atom Feed" />
 
     <meta name="description" content="I'm a freelance music composer. I can make custom video game, podcast and background music for your project! VGM fans are welcome too."/>
+        <script>
+          window.onscroll = function(){
+            let return_btn = document.getElementById("return-to-top");
+            console.log("scroll")
+          }
+          function return_to_top(){
+            let return_btn = document.getElementById("return-to-top");
+            document.getElementById('menu').scrollIntoView({behavior: 'smooth'});
+          }
+        </script>
 </head>
 
 <body id="index" class="home">
         <header id="banner" class="body">
             
         </header><!-- /#banner -->
+        <button id="return-to-top" onclick="return_to_top();">^</button>
         <nav id="menu">
         <table><tbody><tr>
             <td><a href="/"><img id="header-logo" src="/images/navatar.png"/></a></td>
             <td><a href="/music/">MUSIC</a></td>
-            <td><a href="/works/">WORKS</a></td>
-            <td><a href="/hire/">HIRE</a></td>
-            <td><a href="/about/">ABOUT</a></td>
-            <td><a href="mailto:connect@ludoloon.studio">E-MAIL</a></td>
+            <td><a href="/#connect">CONNECT</a></td>
+            <td><a href="#socials">SOCIALS</a></td>
         </tr></tbody></table></nav><!-- /#menu -->
 <section id="content">
 <h2>Articles by LudoLoon Studio</h2>
 <script type="text/javascript" src="/music_data.js"></script>
 <script>
+//constants
+const TODAY = new Date().toJSON();
 //combine all the JSON arrays into one then sort by most recent date in the process
 const musicData = JSON.parse(                                   //Create the JSON database thing
                     JSON.stringify(                             //feeds the object arrays into the above
                         [].concat(                              //create a new array that is the contents below combined.
                             works_packs,                        //all the types of music I've got to offer.
-                            works_projects, 
-                            works_credits, 
+                            works_projects,  
                             music_JSON)
                             .sort((a, b) => b.date - a.date)    //sort by most recent.
                             .filter(entry => entry.frontpage != false)
-                ));
+));
 
-document.body.onload = function() {
+function populate_feed(){
     //set any DOM reference variables now that the page is loaded & ready
-    let album_container = document.getElementById("landing-container");
+    let album_container = document.getElementById("feed-wrapper");
     let player = document.getElementById("player");
     let restore_btn = document.getElementById("restore_btn");
-    //constants
-	const TODAY = new Date().toJSON();
 	
 	//Set the iframe video player once we're in onload so that it doesn't slow down the js rendering the front page
 	player.src = "https://youtube.com/embed/AVSL-dpT1Us";
 	
 	//Populate the heading we're filling under
-	for(i = 0; i < 4; i++){	//run through each track individually
-        if( i > musicData.length ) break;               //save oursevles an exception lol
+	for(i = 0; i < 50; i++){	//run through each track individually
+        if( musicData[i] == undefined ) break;               //save oursevles an exception lol
 		//Easier to reference this way
-		data = musicData[i];
+		let data = musicData[i];
 		//initialize HTML elements
 		let album = document.createElement("div");            //the album element
 		let album_art = document.createElement("div");          //cover art
@@ -89,6 +97,86 @@ document.body.onload = function() {
             album_art.innerHTML += '<a href="javascript:void(0);" onclick="play(\''+data.embed+'\')"><img src="../../images/covers/'+ data.cover +' "/></a><br/>⬆▶🔉🎶';
         } else if (data.link != null){
             album_art.innerHTML += '<a href="'+data.link+'" target="_blank"><img src="../../images/covers/'+ data.cover +' "/></a><br/>⬆▶🔉🎶';
+        }
+		
+		//Add tags
+		for(tag in data.tags) {
+			tags.innerHTML += 
+				'<span class="landing-tag">#'+ data.tags[tag] +'</span>';
+		}
+		album_info.appendChild(tags);
+		
+		//fill summary cell, place links here
+		if (data.date > TODAY) {	//Let people know if the track is not yet out.
+			album_info.innerHTML += '<i style="font-weight: bold;">(Release date: ' + data.date.slice(0,10) + ')</i> ';
+		}
+		album_info.innerHTML += '<p><i>'+ data.summary + '</i></p>';
+		
+		//process the links
+        if(data.stores != null || data.streaming != null){
+            if(data.stores != null){
+                landing_links.innerHTML += '<b>Asset Stores</b><br/>';
+                for(key in data.stores){
+                    landing_links.innerHTML += '<a href="'+ data.stores[key] +'"><img src="../../images/icons/'+ key +'.png"/></a>';
+                }
+            }
+            if(data.stores != null && data.streaming != null) { landing_links.innerHTML += "<br/>"; } //only add if both exist
+            //next we add streaming links
+            if(data.streaming != null){
+                landing_links.innerHTML += '<b>Streaming</b><br/>';
+                for(key in data.streaming){
+                    landing_links.innerHTML += '<a href="'+ data.streaming[key] +'"><img src="../../images/icons/'+ key +'.png"/></a>';
+                }
+            }
+        } else {
+            //in case this is a project where I'm being credited and all it uses is one link, instead of stores/streaming.
+        }
+
+		//append elements to appropriate table position, in order
+		album.appendChild(album_art);
+		album_info.appendChild(landing_links);
+		album.appendChild(album_info);
+		album_container.appendChild(album);
+	}
+};
+
+function populate_credits() {
+    //set any DOM reference variables now that the page is loaded & ready
+    let credits_container = document.getElementById("credits-wrapper");
+	
+	//Populate the heading we're filling under
+	for(i = 0; i < 50; i++){	//run through each track individually
+        if( i >= works_credits.length ) break;               //save oursevles an exception lol
+		//Easier to reference this way
+		data = works_credits[i];
+		//initialize HTML elements
+		let album = document.createElement("div");            //the album element
+		let album_art = document.createElement("div");        //cover art
+		let album_info = document.createElement("div");
+		let landing_links = document.createElement("p");      //for index.html specifically
+		let tags = document.createElement("div");
+		
+		//append together the html elements.
+		//assign attributes
+		//album.id = data.url;
+		album.className = "landing-container";
+		album_art.className = "landing-thumbnail";
+		album_info.className = "landing-summary";
+		landing_links.className = "landing-links";
+		tags.className = "landing-tags";
+		
+		//write cover & summary td elements
+		if(data.link != null && data.blog == null){
+            album_info.innerHTML = '<h3><a href="'+ data.link +'">🔗 '+ data.title + '</a></h3>';
+        } else if(data.blog != null){
+			album_info.innerHTML = '<h3><a href="../'+ data.blog +'">🔗 '+ data.title + '</a></h3>';
+		} else {
+			album_info.innerHTML = '<h3><a href="../music#'+ data.url +'">🔗 '+ data.title + '</a></h3>';
+		}
+		if(data.embed != null){
+            album_art.innerHTML += '<a href="javascript:void(0);" onclick="play(\''+data.embed+'\')"><img src="../../images/covers/'+ data.cover +' "/></a>';
+        } else if (data.link != null){
+            album_art.innerHTML += '<a href="'+data.link+'" target="_blank"><img src="../../images/covers/'+ data.cover +' "/></a>';
         }
 		
 		//Add tags
@@ -128,20 +216,25 @@ document.body.onload = function() {
 		album.appendChild(album_art);
 		album_info.appendChild(landing_links);
 		album.appendChild(album_info);
-		album_container.appendChild(album);
+		credits_container.appendChild(album);
 	}
+};
+
+document.body.onload = function() {
+    populate_feed();
+    populate_credits();
 };
 
 function play(youtube) {
     player.src = youtube;
     player.scrollIntoView({behavior: "smooth", block: "center", inline: "nearest"});
     restore_btn.hidden = false;
-}
+};
 
 function restore(){
     player.src = "https://youtube.com/embed/AVSL-dpT1Us";
     restore_btn.hidden = true;
-}
+};
 
 </script>
 
@@ -149,27 +242,58 @@ function restore(){
 <button id="restore_btn" onclick="restore()" hidden="true">Restore Demo Reel</button>
 <div style="position:relative;padding-bottom:56.25%;"><iframe id="player" style="width:100%;height:100%;position:absolute;left:0px;top:0px;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div><br/>
 
-<p style="font-size: 1.2em; text-align: center;"><i>Here's that music you wanted!<br/> <a href="https://patreon.com/ludoloonstudio">Subscribe on Patreon for stems and early tracks.</a></i></p>
+<p style="font-size: 1.2em; text-align: center;"><i>Here's that music you wanted!<br/><br/> For <strong>stems</strong> and <strong>early tracks</strong>, <a href="https://patreon.com/ludoloonstudio">Subscribe on Patreon</a>.</i></p>
 
-<h2>Most Recent Music</h2>
-
-<!--- under development --->
-<div id="landing-container">
+<h2>The Feed</h2>
+<div id="feed-wrapper" class="feed-wrapper">
 <!--- populated by javascript --->
 </div>
 
-<h2>Latest News</h2>
-    <article class="hentry">
-            <header> 
-                <h2 class="entry-title"><a href="https://ludoloon.studio/rice-lake-frolf-course-remaster/" rel="bookmark">Rice Lake Frolf Course Remaster</a></h2>
-                <time class="published" datetime="2024-07-23T00:00:00-05:00"> 2024/07/23 </time>
-            </header>
-            <div class="entry-content"> <p>Play on my hometown frolf course circa 2013! (Work In Progress)</p> </div><!-- /.entry-content -->
-    </article>
- <!-- /#latest-news -->
+<script>
+let emailSubject = "";
+let emailMessage = "";
+
+function updateMessage(){
+    emailSubject = document.getElementById("senderSubject").value;
+    emailMessage = document.getElementById("senderMessage").value
+}
+</script>
+<a name="connect"></a>
+<h2>Connect &amp; Collab</h2>
+<form id="contact-form">
+<p><strong>Trying to connect? Want to collab and <a href="/hire">hire me for your project</a>? Reach out here!</strong></p>
+
+<p><label for="name">Subject:</label><br/> <input type="text" id="senderSubject"></p>
+<p><label for="message">Message:</label><br/> <textarea id="senderMessage" placeholder="Your message here..."></textarea></p>
+
+<a onclick="location.href='mailto:connect@ludoloon.studio?subject='+encodeURIComponent(emailSubject)+'&body='+encodeURIComponent(emailMessage);" href="javascript:void(0)"> 
+    <button onclick="updateMessage();" type="button">Send via E-mail</button></a>
+<a onclick="navigator.clipboard.writeText(emailMessage);" href="javascript:void(0)"> 
+    <button onclick="updateMessage();" type="button">Copy to Clipboard</button></a>
+    <p><strong>NOTE: This will generate an e-mail with your Operating System's default client.</strong><br/><br/>
+
+<em>If you prefer a different e-mail client, send an email to <a href="mailto:connect@ludoloon.studio">connect@ludoloon.studio</a></em></p>
+</p>
+</form>
+
+<a name="credits"></a>
+<h2>As seen on...</h2>
+<div id="credits-wrapper" class="feed-wrapper">
+<!--- populated by javascript --->
+</div>
+
+    <a name="about"></a>
+    <h2>About Me</h2>
+    <div class="text-wrapper"><p>
+<strong>LudoLoon Studio is my digital art studio.</strong></p>
+<p><strong>I am a creator, gamer, nerd, musician, web &amp; game developer, and more!</strong></p>
+<p>My biggest focus is video game music. <a href="/music">I offer a lot of free and premium music</a> that's ready for your project or listening pleasure. If you want something custom for your game just <a href="#connect">reach out</a>. I love connecting with other VGM fans, so feel free to just say hi too and we can geek out!</p>
+<p>On occassion, <a href="https://itch.io/c/5755672/ludoloon-studio-games">I like to make games (see my itch page)</a>, or start creative projects to hone my coding and design skills like <a href="https://air.ludoloon.studio">Ludo Air, my virtual travel blog</a>.</p>
+<p>Make yourself welcome. Follow me where you want to below in the footer.</p></div>
 </section><!-- /#content -->
 <!-- /#content -->
       <footer id="contentinfo" class="body">
+        <a name="socials"></a>
         <div class="connect">
             <ul>
               <b>Subscribe</b><br/>
@@ -181,7 +305,6 @@ function restore(){
             </ul>
             <ul>
               <b>Streaming</b><br/>
-                  <li><a href="https://soundcloud.com/ludoloonstudio"><img src="https://ludoloon.studio/images/icons/soundcloud.png" alt="soundcloud"/></a></li>
                   <li><a href="https://ludoloonstudio.bandcamp.com"><img src="https://ludoloon.studio/images/icons/bandcamp.png" alt="bandcamp"/></a></li>
                   <li><a href="https://ludoloonstudio.newgrounds.com/audio"><img src="https://ludoloon.studio/images/icons/newgrounds.png" alt="newgrounds"/></a></li>
                   <li><a href="https://youtube.com/channel/UCziXXRaD4uUuTL7tMWtQeVQ"><img src="https://ludoloon.studio/images/icons/youtube.png" alt="youtube"/></a></li>
