@@ -83,13 +83,13 @@ nav td {padding-right: 4px;} /* avoid text scrunching up */
     border: 3px groove #666;
     border-radius: 35px;
     height: 40rem;
-    overflow: scroll;
+    overflow-y: scroll;
 }
 
 .text-wrapper{
     border: 3px groove #666;
     border-radius: 35px;
-    overflow: scroll;
+    overflow-y: scroll;
     background: #b967ff11;
     padding: 1rem;
     font-family: monospace;
