@@ -76,6 +76,16 @@ const works_packs =
 const works_credits =
 [
 	{
+		"title": "Path Optimizer",
+		"date": new Date(2025, 5, 4),
+		"frontpage": false,
+		"url": "path-optimizer",
+		"cover": "path-optimizer.webp",
+        "summary": 'Draw one seamless path, conquer every tile, and become the ultimate PathOptimizer. Uses <a href="../music#puzzled-mind">Music from Mind Games</a>.',
+		"tags": [ ],
+        "link": "https://pathoptimizer.carrd.co/",
+	},
+	{
 		"title": "Drone AI Demo",
 		"date": new Date(2024, 12, 15),
 		"frontpage": false,
