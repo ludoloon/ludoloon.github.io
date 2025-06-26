@@ -76,7 +76,7 @@ const works_packs =
 const works_credits =
 [
 	{
-		"title": "Path Optimizer",
+		"title": "PathOptimizer",
 		"date": new Date(2025, 5, 4),
 		"frontpage": false,
 		"url": "path-optimizer",
