@@ -388,6 +388,7 @@ const music_JSON =
 		"date": new Date(2025, 8, 4),
 		"url": "groovy-platformer-music-pack",
 		"cover": "groovy-platformer-music-pack.webp",
+		"frontpage": false,
         "summary": "Music pack inspired by the original 16-bit Sonic the Hedgehog style.",
 		"embed": "https://www.youtube.com/embed/VA_JTsNwiWc",
 		"tags": ["Music Pack", "Groovy", "Funky", "Adventure", "Action", "Platformer", "Casual", "Exploration"],
