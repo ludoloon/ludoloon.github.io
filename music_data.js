@@ -28,6 +28,25 @@ const temp_tracks =
 const works_packs =
 [
 	{
+        "title": "Groovy Platformer Music Pack",
+		"date": new Date(2025, 8, 4),
+		"url": "groovy-platformer-music-pack",
+		"cover": "groovy-platformer-music-pack.webp",
+        "summary": "Music pack inspired by the original 16-bit Sonic the Hedgehog style.",
+		"embed": "https://www.youtube.com/embed/VA_JTsNwiWc",
+		"tags": ["Music Pack", "Groovy", "Funky", "Adventure", "Action", "Platformer", "Casual", "Exploration"],
+		"details": 
+			{"cost": "Paid",
+			 "loop": "Loopable",
+			 "stems": "Stems"},
+        "stores":
+			{"itch": "https://ludoloonstudio.itch.io/groovy-platformer-music-pack",
+			},
+		"streaming":
+			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/groovy-platformer-music-pack",
+			},
+	},
+	{
         "title": "Mind Games",
 		"date": new Date(2022, 9, 4),
 		"url": "mind-games",
@@ -363,6 +382,26 @@ const works_projects =
 // Current idea: sort by variables with Free & Paid as separate tables
 const music_JSON = 
 [
+//Groovy Platformer Music Pack
+	{
+        "title": "Groovy Platformer Music Pack",
+		"date": new Date(2025, 8, 4),
+		"url": "groovy-platformer-music-pack",
+		"cover": "groovy-platformer-music-pack.webp",
+        "summary": "Music pack inspired by the original 16-bit Sonic the Hedgehog style.",
+		"embed": "https://www.youtube.com/embed/VA_JTsNwiWc",
+		"tags": ["Music Pack", "Groovy", "Funky", "Adventure", "Action", "Platformer", "Casual", "Exploration"],
+		"details": 
+			{"cost": "Paid",
+			 "loop": "Loopable",
+			 "stems": "Stems"},
+        "stores":
+			{"itch": "https://ludoloonstudio.itch.io/groovy-platformer-music-pack",
+			},
+		"streaming":
+			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/groovy-platformer-music-pack",
+			},
+	},
 //Getaway Driver
 	{
         "title": "Getaway Driver",
