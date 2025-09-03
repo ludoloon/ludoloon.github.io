@@ -33,7 +33,7 @@ const works_packs =
 		"url": "groovy-platformer-music-pack",
 		"cover": "groovy-platformer-music-pack.webp",
         "summary": "Music pack inspired by the original 16-bit Sonic the Hedgehog style.",
-		"embed": "https://www.youtube.com/embed/VA_JTsNwiWc",
+		"embed": "https://www.youtube.com/embed/r12EWSRDxF4",
 		"tags": ["Music Pack", "Groovy", "Funky", "Adventure", "Action", "Platformer", "Casual", "Exploration"],
 		"details": 
 			{"cost": "Paid",
@@ -390,7 +390,7 @@ const music_JSON =
 		"cover": "groovy-platformer-music-pack.webp",
 		"frontpage": false,
         "summary": "Music pack inspired by the original 16-bit Sonic the Hedgehog style.",
-		"embed": "https://www.youtube.com/embed/VA_JTsNwiWc",
+		"embed": "https://www.youtube.com/embed/r12EWSRDxF4",
 		"tags": ["Music Pack", "Groovy", "Funky", "Adventure", "Action", "Platformer", "Casual", "Exploration"],
 		"details": 
 			{"cost": "Paid",
