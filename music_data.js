@@ -382,21 +382,221 @@ const works_projects =
 // Current idea: sort by variables with Free & Paid as separate tables
 const music_JSON = 
 [
-//Groovy Platformer Music Pack
+//GROOVY PLATFORMER MUSIC PACK
+//Boss Battle
 	{
-        "title": "Groovy Platformer Music Pack",
+		"title": "Boss Battle",
 		"date": new Date(2025, 8, 4),
-		"url": "groovy-platformer-music-pack",
+		"url": "groovy-platformer-boss-battle",
 		"cover": "groovy-platformer-music-pack.webp",
 		"frontpage": false,
         "summary": "Music pack inspired by the original 16-bit Sonic the Hedgehog style.",
-		"embed": "https://www.youtube.com/embed/r12EWSRDxF4",
-		"tags": ["Music Pack", "Groovy", "Funky", "Adventure", "Action", "Platformer", "Casual", "Exploration"],
+		"embed": "https://bandcamp.com/EmbeddedPlayer/album=4231033004/size=large/bgcol=333333/linkcol=0f91ff/minimal=true/track=2904492706/transparent=true/",
+		"tags": ["Groovy", "Funky", "Adventure", "Action", "Platformer", "Casual", "Exploration"],
 		"details": 
-			{"cost": "Paid",
+			{"bpm": 120,
+			 "cost": "Paid",
 			 "loop": "Loopable",
 			 "stems": "Stems"},
-        "stores":
+		"stores":
+			{"itch": "https://ludoloonstudio.itch.io/groovy-platformer-music-pack",
+			},
+		"streaming":
+			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/groovy-platformer-music-pack",
+			},
+	},
+//Final Zone
+	{
+		"title": "Final Zone",
+		"date": new Date(2025, 8, 4),
+		"url": "groovy-platformer-final-zone",
+		"cover": "groovy-platformer-music-pack.webp",
+		"frontpage": false,
+        "summary": "Music pack inspired by the original 16-bit Sonic the Hedgehog style.",
+		"embed": "https://bandcamp.com/EmbeddedPlayer/album=4231033004/size=large/bgcol=333333/linkcol=0f91ff/minimal=true/track=1098956354/transparent=true/",
+		"tags": ["Groovy", "Funky", "Adventure", "Action", "Platformer", "Casual", "Exploration"],
+		"details": 
+			{"bpm": 120,
+			 "cost": "Paid",
+			 "loop": "Loopable",
+			 "stems": "Stems"},
+		"stores":
+			{"itch": "https://ludoloonstudio.itch.io/groovy-platformer-music-pack",
+			},
+		"streaming":
+			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/groovy-platformer-music-pack",
+			},
+	},
+//Special Stage
+	{
+		"title": "Special Stage",
+		"date": new Date(2025, 8, 4),
+		"url": "groovy-platformer-special-stage",
+		"cover": "groovy-platformer-music-pack.webp",
+		"frontpage": false,
+        "summary": "Music pack inspired by the original 16-bit Sonic the Hedgehog style.",
+		"embed": "https://bandcamp.com/EmbeddedPlayer/album=4231033004/size=large/bgcol=333333/linkcol=0f91ff/minimal=true/track=1835085938/transparent=true/",
+		"tags": ["Groovy", "Funky", "Adventure", "Action", "Platformer", "Casual", "Exploration"],
+		"details": 
+			{"bpm": 130,
+			 "cost": "Paid",
+			 "loop": "Loopable",
+			 "stems": "Stems"},
+		"stores":
+			{"itch": "https://ludoloonstudio.itch.io/groovy-platformer-music-pack",
+			},
+		"streaming":
+			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/groovy-platformer-music-pack",
+			},
+	},
+//Industry
+	{
+		"title": "Industry",
+		"date": new Date(2025, 8, 4),
+		"url": "groovy-platformer-industry",
+		"cover": "groovy-platformer-music-pack.webp",
+		"frontpage": false,
+        "summary": "Music pack inspired by the original 16-bit Sonic the Hedgehog style.",
+		"embed": "https://bandcamp.com/EmbeddedPlayer/album=4231033004/size=large/bgcol=333333/linkcol=0f91ff/minimal=true/track=1068210308/transparent=true/",
+		"tags": ["Groovy", "Funky", "Adventure", "Action", "Platformer", "Casual", "Exploration"],
+		"details": 
+			{"bpm": 120,
+			 "cost": "Paid",
+			 "loop": "Loopable",
+			 "stems": "Stems"},
+		"stores":
+			{"itch": "https://ludoloonstudio.itch.io/groovy-platformer-music-pack",
+			},
+		"streaming":
+			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/groovy-platformer-music-pack",
+			},
+	},
+//Night Sky
+	{
+		"title": "Night Sky",
+		"date": new Date(2025, 8, 4),
+		"url": "groovy-platformer-night-sky",
+		"cover": "groovy-platformer-music-pack.webp",
+		"frontpage": false,
+        "summary": "Music pack inspired by the original 16-bit Sonic the Hedgehog style.",
+		"embed": "https://bandcamp.com/EmbeddedPlayer/album=4231033004/size=large/bgcol=333333/linkcol=0f91ff/minimal=true/track=1779547841/transparent=true/",
+		"tags": ["Groovy", "Funky", "Adventure", "Action", "Platformer", "Casual", "Exploration"],
+		"details": 
+			{"bpm": 126,
+			 "cost": "Paid",
+			 "loop": "Loopable",
+			 "stems": "Stems"},
+		"stores":
+			{"itch": "https://ludoloonstudio.itch.io/groovy-platformer-music-pack",
+			},
+		"streaming":
+			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/groovy-platformer-music-pack",
+			},
+	},
+//Exploring
+	{
+		"title": "Exploring",
+		"date": new Date(2025, 8, 4),
+		"url": "groovy-platformer-exploring",
+		"cover": "groovy-platformer-music-pack.webp",
+		"frontpage": false,
+        "summary": "Music pack inspired by the original 16-bit Sonic the Hedgehog style.",
+		"embed": "https://bandcamp.com/EmbeddedPlayer/album=4231033004/size=large/bgcol=333333/linkcol=0f91ff/minimal=true/track=3186569011/transparent=true/",
+		"tags": ["Groovy", "Funky", "Adventure", "Action", "Platformer", "Casual", "Exploration"],
+		"details": 
+			{"bpm": 124,
+			 "cost": "Paid",
+			 "loop": "Loopable",
+			 "stems": "Stems"},
+		"stores":
+			{"itch": "https://ludoloonstudio.itch.io/groovy-platformer-music-pack",
+			},
+		"streaming":
+			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/groovy-platformer-music-pack",
+			},
+	},
+//Swingtown
+	{
+		"title": "Swingtown",
+		"date": new Date(2025, 8, 4),
+		"url": "groovy-platformer-swingtown",
+		"cover": "groovy-platformer-music-pack.webp",
+		"frontpage": false,
+        "summary": "Music pack inspired by the original 16-bit Sonic the Hedgehog style.",
+		"embed": "https://bandcamp.com/EmbeddedPlayer/album=4231033004/size=large/bgcol=333333/linkcol=0f91ff/minimal=true/track=3746934119/transparent=true/",
+		"tags": ["Groovy", "Funky", "Adventure", "Action", "Platformer", "Casual", "Exploration"],
+		"details": 
+			{"bpm": 100,
+			 "cost": "Paid",
+			 "loop": "Loopable",
+			 "stems": "Stems"},
+		"stores":
+			{"itch": "https://ludoloonstudio.itch.io/groovy-platformer-music-pack",
+			},
+		"streaming":
+			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/groovy-platformer-music-pack",
+			},
+	},
+//Underground
+	{
+		"title": "Underground",
+		"date": new Date(2025, 8, 4),
+		"url": "groovy-platformer-underground",
+		"cover": "groovy-platformer-music-pack.webp",
+		"frontpage": false,
+        "summary": "Music pack inspired by the original 16-bit Sonic the Hedgehog style.",
+		"embed": "https://bandcamp.com/EmbeddedPlayer/album=4231033004/size=large/bgcol=333333/linkcol=0f91ff/minimal=true/track=2130182206/transparent=true/",
+		"tags": ["Groovy", "Funky", "Adventure", "Action", "Platformer", "Casual", "Exploration"],
+		"details": 
+			{"bpm": 134,
+			 "cost": "Paid",
+			 "loop": "Loopable",
+			 "stems": "Stems"},
+		"stores":
+			{"itch": "https://ludoloonstudio.itch.io/groovy-platformer-music-pack",
+			},
+		"streaming":
+			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/groovy-platformer-music-pack",
+			},
+	},
+//Verdant Valley
+	{
+		"title": "Verdant Valley",
+		"date": new Date(2025, 8, 4),
+		"url": "groovy-platformer-verdant-valley",
+		"cover": "groovy-platformer-music-pack.webp",
+		"frontpage": false,
+        "summary": "Music pack inspired by the original 16-bit Sonic the Hedgehog style.",
+		"embed": "https://bandcamp.com/EmbeddedPlayer/album=4231033004/size=large/bgcol=333333/linkcol=0f91ff/minimal=true/track=477623225/transparent=true/",
+		"tags": ["Groovy", "Funky", "Adventure", "Action", "Platformer", "Casual", "Exploration"],
+		"details": 
+			{"bpm": 150,
+			 "cost": "Paid",
+			 "loop": "Loopable",
+			 "stems": "Stems"},
+		"stores":
+			{"itch": "https://ludoloonstudio.itch.io/groovy-platformer-music-pack",
+			},
+		"streaming":
+			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/groovy-platformer-music-pack",
+			},
+	},
+//Title
+	{
+		"title": "Title",
+		"date": new Date(2025, 8, 4),
+		"url": "groovy-platformer-title",
+		"cover": "groovy-platformer-music-pack.webp",
+		"frontpage": false,
+        "summary": "Music pack inspired by the original 16-bit Sonic the Hedgehog style.",
+		"embed": "https://bandcamp.com/EmbeddedPlayer/album=4231033004/size=large/bgcol=333333/linkcol=0f91ff/minimal=true/track=202486268/transparent=true/",
+		"tags": ["Groovy", "Funky", "Adventure", "Action", "Platformer", "Casual", "Exploration"],
+		"details": 
+			{"bpm": 130,
+			 "cost": "Paid",
+			 "loop": "Loopable",
+			 "stems": "Stems"},
+		"stores":
 			{"itch": "https://ludoloonstudio.itch.io/groovy-platformer-music-pack",
 			},
 		"streaming":
