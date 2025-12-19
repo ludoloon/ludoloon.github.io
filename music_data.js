@@ -382,6 +382,28 @@ const works_projects =
 // Current idea: sort by variables with Free & Paid as separate tables
 const music_JSON = 
 [
+	//Chill Shop
+	{
+        "title": "Chill Shop",
+		"date": new Date(2025, 11, 19),
+		"url": "chill-shop",
+		"cover": "chill-shop.webp",
+        "summary": "Funky little shop music for spending all that loot.",
+		"embed": "https://www.youtube.com/embed/0IDK_DdBlnM",
+		"tags": ["Chill", "Casual", "Groovy", "Blues", "Moody", "Relaxing", "Smooth"],
+		"details": 
+			{"bpm": 115,
+			 "cost": "Free",
+			 "loop": "Loopable",
+			 "stems": "No-Stems"},
+		"stores":
+			{"itch": "https://ludoloonstudio.itch.io/chill-shop"
+			},
+		"streaming":
+			{"youtube": "https://youtu.be/0IDK_DdBlnM",
+			"newgrounds": "https://www.newgrounds.com/audio/listen/1502506",
+			},
+	},
 //GROOVY PLATFORMER MUSIC PACK
 //Boss Battle
 	{
