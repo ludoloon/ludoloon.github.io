@@ -392,7 +392,7 @@ const music_JSON =
 		"embed": "https://www.youtube.com/embed/0IDK_DdBlnM",
 		"tags": ["Blues", "Chill", "Casual", "Downtempo", "Groovy", "Menu", "Relaxing", "RPG", "Smooth"],
 		"details": 
-			{"bpm": 115,
+			{"bpm": 95,
 			 "cost": "Free",
 			 "loop": "Loopable",
 			 "stems": "No-Stems"},
