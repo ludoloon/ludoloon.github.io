@@ -382,6 +382,48 @@ const works_projects =
 // Current idea: sort by variables with Free & Paid as separate tables
 const music_JSON = 
 [
+	//Animal Town
+	{
+        "title": "Animal Town",
+        "date": new Date(2025,11,28),
+        "url": "animal-town",
+        "cover": "animal-town.webp",
+        "summary": "It's a good day to be a chill little critter and vibe.",
+        "tags": [
+            "Chill",
+            "Casual",
+            "Cute",
+            "Exploration",
+            "Funky",
+            "Groovy",
+            "HipHop",
+            "Relaxing",
+            "RPG",
+            "Smooth",
+            "Upbeat",
+            "Visual Novel"
+        ],
+        "mp3": {
+            "genre": "Game",
+            "website": "https://ludoloon.studio",
+            "artist": "LudoLoon Studio",
+            "album": ""
+        },
+        "details": {
+            "bpm": 94,
+            "cost": "Free",
+            "loop": "Loopable",
+            "stems": "No-Stems"
+        },
+        "stores": {
+            "itch": "https://ludoloonstudio.itch.io/animal-town"
+        },
+        "streaming": {
+            "youtube": "https://youtu.be/5Ho5VJyXgIY",
+            "newgrounds": "https://www.newgrounds.com/audio/listen/1506338"
+        },
+        "embed": "https://youtube.com/embed/5Ho5VJyXgIY"
+    },
 	//Chill Shop
 	{
         "title": "Chill Shop",
@@ -414,7 +456,7 @@ const music_JSON =
 		"frontpage": false,
         "summary": "Music pack inspired by the original 16-bit Sonic the Hedgehog style.",
 		"embed": "https://bandcamp.com/EmbeddedPlayer/album=4231033004/size=large/bgcol=333333/linkcol=0f91ff/minimal=true/track=2904492706/transparent=true/",
-		"tags": ["Groovy", "Funky", "Adventure", "Action", "Platformer", "Casual", "Exploration"],
+		"tags": ["16-bit", "Groovy", "Funky", "Adventure", "Action", "Platformer", "Casual", "Exploration"],
 		"details": 
 			{"bpm": 120,
 			 "cost": "Paid",
@@ -436,7 +478,7 @@ const music_JSON =
 		"frontpage": false,
         "summary": "Music pack inspired by the original 16-bit Sonic the Hedgehog style.",
 		"embed": "https://bandcamp.com/EmbeddedPlayer/album=4231033004/size=large/bgcol=333333/linkcol=0f91ff/minimal=true/track=1098956354/transparent=true/",
-		"tags": ["Groovy", "Funky", "Adventure", "Action", "Platformer", "Casual", "Exploration"],
+		"tags": ["16-bit", "Groovy", "Funky", "Adventure", "Action", "Platformer", "Casual", "Exploration"],
 		"details": 
 			{"bpm": 120,
 			 "cost": "Paid",
@@ -458,7 +500,7 @@ const music_JSON =
 		"frontpage": false,
         "summary": "Music pack inspired by the original 16-bit Sonic the Hedgehog style.",
 		"embed": "https://bandcamp.com/EmbeddedPlayer/album=4231033004/size=large/bgcol=333333/linkcol=0f91ff/minimal=true/track=1835085938/transparent=true/",
-		"tags": ["Groovy", "Funky", "Adventure", "Action", "Platformer", "Casual", "Exploration"],
+		"tags": ["16-bit", "Groovy", "Funky", "Adventure", "Action", "Platformer", "Casual", "Exploration"],
 		"details": 
 			{"bpm": 130,
 			 "cost": "Paid",
@@ -480,7 +522,7 @@ const music_JSON =
 		"frontpage": false,
         "summary": "Music pack inspired by the original 16-bit Sonic the Hedgehog style.",
 		"embed": "https://bandcamp.com/EmbeddedPlayer/album=4231033004/size=large/bgcol=333333/linkcol=0f91ff/minimal=true/track=1068210308/transparent=true/",
-		"tags": ["Groovy", "Funky", "Adventure", "Action", "Platformer", "Casual", "Exploration"],
+		"tags": ["16-bit", "Groovy", "Funky", "Adventure", "Action", "Platformer", "Casual", "Exploration"],
 		"details": 
 			{"bpm": 120,
 			 "cost": "Paid",
@@ -502,7 +544,7 @@ const music_JSON =
 		"frontpage": false,
         "summary": "Music pack inspired by the original 16-bit Sonic the Hedgehog style.",
 		"embed": "https://bandcamp.com/EmbeddedPlayer/album=4231033004/size=large/bgcol=333333/linkcol=0f91ff/minimal=true/track=1779547841/transparent=true/",
-		"tags": ["Groovy", "Funky", "Adventure", "Action", "Platformer", "Casual", "Exploration"],
+		"tags": ["16-bit", "Groovy", "Funky", "Adventure", "Action", "Platformer", "Casual", "Exploration"],
 		"details": 
 			{"bpm": 126,
 			 "cost": "Paid",
@@ -524,7 +566,7 @@ const music_JSON =
 		"frontpage": false,
         "summary": "Music pack inspired by the original 16-bit Sonic the Hedgehog style.",
 		"embed": "https://bandcamp.com/EmbeddedPlayer/album=4231033004/size=large/bgcol=333333/linkcol=0f91ff/minimal=true/track=3186569011/transparent=true/",
-		"tags": ["Groovy", "Funky", "Adventure", "Action", "Platformer", "Casual", "Exploration"],
+		"tags": ["16-bit", "Groovy", "Funky", "Adventure", "Action", "Platformer", "Casual", "Exploration"],
 		"details": 
 			{"bpm": 124,
 			 "cost": "Paid",
@@ -546,7 +588,7 @@ const music_JSON =
 		"frontpage": false,
         "summary": "Music pack inspired by the original 16-bit Sonic the Hedgehog style.",
 		"embed": "https://bandcamp.com/EmbeddedPlayer/album=4231033004/size=large/bgcol=333333/linkcol=0f91ff/minimal=true/track=3746934119/transparent=true/",
-		"tags": ["Groovy", "Funky", "Adventure", "Action", "Platformer", "Casual", "Exploration"],
+		"tags": ["16-bit", "Groovy", "Funky", "Adventure", "Action", "Platformer", "Casual", "Exploration"],
 		"details": 
 			{"bpm": 100,
 			 "cost": "Paid",
@@ -568,7 +610,7 @@ const music_JSON =
 		"frontpage": false,
         "summary": "Music pack inspired by the original 16-bit Sonic the Hedgehog style.",
 		"embed": "https://bandcamp.com/EmbeddedPlayer/album=4231033004/size=large/bgcol=333333/linkcol=0f91ff/minimal=true/track=2130182206/transparent=true/",
-		"tags": ["Groovy", "Funky", "Adventure", "Action", "Platformer", "Casual", "Exploration"],
+		"tags": ["16-bit", "Groovy", "Funky", "Adventure", "Action", "Platformer", "Casual", "Exploration"],
 		"details": 
 			{"bpm": 134,
 			 "cost": "Paid",
@@ -590,7 +632,7 @@ const music_JSON =
 		"frontpage": false,
         "summary": "Music pack inspired by the original 16-bit Sonic the Hedgehog style.",
 		"embed": "https://bandcamp.com/EmbeddedPlayer/album=4231033004/size=large/bgcol=333333/linkcol=0f91ff/minimal=true/track=477623225/transparent=true/",
-		"tags": ["Groovy", "Funky", "Adventure", "Action", "Platformer", "Casual", "Exploration"],
+		"tags": ["16-bit", "Groovy", "Funky", "Adventure", "Action", "Platformer", "Casual", "Exploration"],
 		"details": 
 			{"bpm": 150,
 			 "cost": "Paid",
@@ -612,7 +654,7 @@ const music_JSON =
 		"frontpage": false,
         "summary": "Music pack inspired by the original 16-bit Sonic the Hedgehog style.",
 		"embed": "https://bandcamp.com/EmbeddedPlayer/album=4231033004/size=large/bgcol=333333/linkcol=0f91ff/minimal=true/track=202486268/transparent=true/",
-		"tags": ["Groovy", "Funky", "Adventure", "Action", "Platformer", "Casual", "Exploration"],
+		"tags": ["16-bit", "Groovy", "Funky", "Adventure", "Action", "Platformer", "Casual", "Exploration"],
 		"details": 
 			{"bpm": 130,
 			 "cost": "Paid",
