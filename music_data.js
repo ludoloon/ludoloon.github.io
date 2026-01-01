@@ -382,6 +382,46 @@ const works_projects =
 // Current idea: sort by variables with Free & Paid as separate tables
 const music_JSON = 
 [
+	//Techno Purgatory
+	{
+        "title": "Techno Purgatory",
+        "date": new Date(2026, 0, 1),
+        "url": "techno-purgatory",
+        "cover": "techno-purgatory.webp",
+        "summary": "The party never stops in purgatory.",
+        "tags": [
+            "Dance",
+            "Dark",
+            "Driving",
+            "Energetic",
+            "Fast",
+            "Groovy",
+            "Hard",
+            "Racing",
+            "Rhythm",
+            "Space"
+        ],
+        "mp3": {
+            "genre": "Techno",
+            "website": "https://ludoloon.studio",
+            "artist": "LudoLoon Studio",
+            "album": ""
+        },
+        "details": {
+            "bpm": 140,
+            "cost": "Free",
+            "loop": "Loopable",
+            "stems": "No-Stems"
+        },
+        "stores": {
+            "itch": "https://ludoloonstudio.itch.io/techno-purgatory"
+        },
+        "streaming": {
+            "newgrounds": "https://www.newgrounds.com/audio/listen/1508340",
+            "youtube": "https://youtu.be/RmnqJ2i04_c"
+        },
+        "embed": "https://youtube.com/embed/RmnqJ2i04_c"
+    },
 	//Animal Town
 	{
         "title": "Animal Town",
