@@ -418,6 +418,7 @@ const music_JSON =
         },
         "streaming": {
             "newgrounds": "https://www.newgrounds.com/audio/listen/1508340",
+			"soundcloud": "https://soundcloud.com/ludoloonstudio/techno-purgatory",
             "youtube": "https://youtu.be/RmnqJ2i04_c"
         },
         "embed": "https://youtube.com/embed/RmnqJ2i04_c"
