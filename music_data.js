@@ -395,11 +395,12 @@ const music_JSON =
             "Driving",
             "Energetic",
             "Fast",
+			"Fighting",
             "Groovy",
             "Hard",
+			"Mysterious",
             "Racing",
-            "Rhythm",
-            "Space"
+            "Rhythm"
         ],
         "mp3": {
             "genre": "Techno",
