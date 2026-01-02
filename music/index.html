@@ -182,12 +182,12 @@ document.body.onload = function() {
         track.innerHTML += '<a href="javascript:void(0);" onclick="play(this, this.innerHTML,\''+data.embed+'\')"><img src="../../images/covers/'+ data.cover +' "/></a><br/>⬆▶ 🔊🎶';
 
         //Add tags
-        tags.innerHTML, taglist.innerHTML += '<ul class="summary-tags">';
+        taglist.innerHTML += '<ul class="summary-tags">';
         for(tag in data.tags) {
             tags.innerHTML += 
                 '<li class="summary-tag" onclick="search_with_tag(\''+ data.tags[tag] +'\', true)">'+ data.tags[tag] +'</li>';
         }
-        tags.innerHTML, taglist.innerHTML += '</ul>';
+        taglist.innerHTML += '</ul>';
 
         //Add details
         details.innerHTML += '<ul class="summary-tags">';

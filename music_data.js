@@ -403,7 +403,6 @@ const music_JSON =
             "Rhythm"
         ],
         "mp3": {
-            "genre": "Techno",
             "website": "https://ludoloon.studio",
             "artist": "LudoLoon Studio",
             "album": ""
@@ -412,7 +411,7 @@ const music_JSON =
             "bpm": 140,
             "cost": "Free",
             "loop": "Loopable",
-            "stems": "No-Stems"
+            "genre": "Dance",
         },
         "stores": {
             "itch": "https://ludoloonstudio.itch.io/techno-purgatory"
@@ -438,7 +437,6 @@ const music_JSON =
             "Exploration",
             "Funky",
             "Groovy",
-            "HipHop",
             "Relaxing",
             "RPG",
             "Smooth",
@@ -455,7 +453,7 @@ const music_JSON =
             "bpm": 94,
             "cost": "Free",
             "loop": "Loopable",
-            "stems": "No-Stems"
+            "genre": "Hip-hop"
         },
         "stores": {
             "itch": "https://ludoloonstudio.itch.io/animal-town"
@@ -479,7 +477,7 @@ const music_JSON =
 			{"bpm": 95,
 			 "cost": "Free",
 			 "loop": "Loopable",
-			 "stems": "No-Stems"},
+			 "genre": "Funk"},
 		"stores":
 			{"itch": "https://ludoloonstudio.itch.io/chill-shop"
 			},
@@ -503,7 +501,7 @@ const music_JSON =
 			{"bpm": 120,
 			 "cost": "Paid",
 			 "loop": "Loopable",
-			 "stems": "Stems"},
+			 "genre": "Electronic"},
 		"stores":
 			{"itch": "https://ludoloonstudio.itch.io/groovy-platformer-music-pack",
 			},
@@ -525,7 +523,7 @@ const music_JSON =
 			{"bpm": 120,
 			 "cost": "Paid",
 			 "loop": "Loopable",
-			 "stems": "Stems"},
+			 "genre": "Electronic"},
 		"stores":
 			{"itch": "https://ludoloonstudio.itch.io/groovy-platformer-music-pack",
 			},
@@ -547,7 +545,7 @@ const music_JSON =
 			{"bpm": 130,
 			 "cost": "Paid",
 			 "loop": "Loopable",
-			 "stems": "Stems"},
+			 "genre": "Electronic"},
 		"stores":
 			{"itch": "https://ludoloonstudio.itch.io/groovy-platformer-music-pack",
 			},
@@ -569,7 +567,7 @@ const music_JSON =
 			{"bpm": 120,
 			 "cost": "Paid",
 			 "loop": "Loopable",
-			 "stems": "Stems"},
+			 "genre": "Electronic"},
 		"stores":
 			{"itch": "https://ludoloonstudio.itch.io/groovy-platformer-music-pack",
 			},
@@ -591,7 +589,7 @@ const music_JSON =
 			{"bpm": 126,
 			 "cost": "Paid",
 			 "loop": "Loopable",
-			 "stems": "Stems"},
+			 "genre": "Electronic"},
 		"stores":
 			{"itch": "https://ludoloonstudio.itch.io/groovy-platformer-music-pack",
 			},
@@ -613,7 +611,7 @@ const music_JSON =
 			{"bpm": 124,
 			 "cost": "Paid",
 			 "loop": "Loopable",
-			 "stems": "Stems"},
+			 "genre": "Electronic"},
 		"stores":
 			{"itch": "https://ludoloonstudio.itch.io/groovy-platformer-music-pack",
 			},
@@ -635,7 +633,7 @@ const music_JSON =
 			{"bpm": 100,
 			 "cost": "Paid",
 			 "loop": "Loopable",
-			 "stems": "Stems"},
+			 "genre": "Electronic"},
 		"stores":
 			{"itch": "https://ludoloonstudio.itch.io/groovy-platformer-music-pack",
 			},
@@ -657,7 +655,7 @@ const music_JSON =
 			{"bpm": 134,
 			 "cost": "Paid",
 			 "loop": "Loopable",
-			 "stems": "Stems"},
+			 "genre": "Electronic"},
 		"stores":
 			{"itch": "https://ludoloonstudio.itch.io/groovy-platformer-music-pack",
 			},
@@ -679,7 +677,7 @@ const music_JSON =
 			{"bpm": 150,
 			 "cost": "Paid",
 			 "loop": "Loopable",
-			 "stems": "Stems"},
+			 "genre": "Electronic"},
 		"stores":
 			{"itch": "https://ludoloonstudio.itch.io/groovy-platformer-music-pack",
 			},
@@ -701,7 +699,7 @@ const music_JSON =
 			{"bpm": 130,
 			 "cost": "Paid",
 			 "loop": "Loopable",
-			 "stems": "Stems"},
+			 "genre": "Electronic"},
 		"stores":
 			{"itch": "https://ludoloonstudio.itch.io/groovy-platformer-music-pack",
 			},
@@ -722,7 +720,7 @@ const music_JSON =
 			{"bpm": 105,
 			 "cost": "Free",
 			 "loop": "Loopable",
-			 "stems": "No-Stems"},
+			 "genre": "Rock"},
 		"stores":
 			{"itch": "https://ludoloonstudio.itch.io/getaway-driver-free-music"
 			},
@@ -744,7 +742,7 @@ const music_JSON =
 			{"bpm": 115,
 			 "cost": "Free",
 			 "loop": "Loopable",
-			 "stems": "No-Stems"},
+			 "genre": "R&B & Soul"},
 		"stores":
 			{"itch": "https://ludoloonstudio.itch.io/smooth-night-free-music"
 			},
@@ -767,7 +765,7 @@ const music_JSON =
 			{"bpm": 120,
 			 "cost": "Free",
 			 "loop": "Loopable",
-			 "stems": "No-Stems"},
+			 "genre": "Rock"},
 		"stores":
 			{"itch": "https://ludoloonstudio.itch.io/happy-wheels-free-music"
 			},
@@ -789,7 +787,7 @@ const music_JSON =
 			{"bpm": 75,
 			 "cost": "Free",
 			 "loop": "Loopable",
-			 "stems": "No-Stems"},
+			 "genre": "Ambient"},
 		"stores":
 			{"itch": "https://ludoloonstudio.itch.io/lo-fi-horror-free-music"
 			},
@@ -811,7 +809,7 @@ const music_JSON =
 			{"bpm": 74,
 			 "cost": "Free",
 			 "loop": "Loopable",
-			 "stems": "No-Stems"},
+			 "genre": "R&B & Soul"},
 		"stores":
 			{"itch": "https://ludoloonstudio.itch.io/solitaire-free-music"
 			},
@@ -833,7 +831,7 @@ const music_JSON =
 			{"bpm": 85,
 			 "cost": "Free",
 			 "loop": "Loopable",
-			 "stems": "No-Stems"},
+			 "genre": "Electronic"},
 		"stores":
 			{"itch": "https://ludoloonstudio.itch.io/16-bit-fishing"
 			},
@@ -856,7 +854,7 @@ const music_JSON =
 			{"bpm": 87,
 			 "cost": "Free",
 			 "loop": "Loopable",
-			 "stems": "No-Stems"},
+			 "genre": "Hip-hop"},
 		"stores":
 			{"unity": "https://assetstore.unity.com/packages/slug/222465",
 			"unity": "https://assetstore.unity.com/packages/slug/234292",
@@ -886,7 +884,7 @@ const music_JSON =
 			{"bpm": 180,
 			 "cost": "Paid",
 			 "loop": "Loopable",
-			 "stems": "Stems"},
+			 "genre": "Drum & Bass"},
 		"stores":
 			{"unity": "https://assetstore.unity.com/packages/slug/234292",
 			"itch": "https://ludoloonstudio.itch.io/mind-games",
@@ -911,7 +909,7 @@ const music_JSON =
 			{"bpm": 93,
 			 "cost": "Paid",
 			 "loop": "Loopable",
-			 "stems": "Stems"},
+			 "genre": "Funk"},
 		"stores":
 			{"unity": "https://assetstore.unity.com/packages/slug/234292",
 			"itch": "https://ludoloonstudio.itch.io/mind-games",
@@ -936,7 +934,7 @@ const music_JSON =
 			{"bpm": 120,
 			 "cost": "Paid",
 			 "loop": "Loopable",
-			 "stems": "Stems"},
+			 "genre": "Dance"},
 		"stores":
 			{"unity": "https://assetstore.unity.com/packages/slug/234292",
 			"itch": "https://ludoloonstudio.itch.io/mind-games",
@@ -961,7 +959,7 @@ const music_JSON =
 			{"bpm": 87,
 			 "cost": "Paid",
 			 "loop": "Loopable",
-			 "stems": "Stems"},
+			 "genre": "Electronic"},
 		"stores":
 			{"unity": "https://assetstore.unity.com/packages/slug/234292",
 			"itch": "https://ludoloonstudio.itch.io/mind-games",
@@ -986,7 +984,7 @@ const music_JSON =
 			{"bpm": 87,
 			 "cost": "Paid",
 			 "loop": "Loopable",
-			 "stems": "Stems"},
+			 "genre": "Trip-hop"},
 		"stores":
 			{"unity": "https://assetstore.unity.com/packages/slug/234292",
 			"itch": "https://ludoloonstudio.itch.io/mind-games",
@@ -1011,7 +1009,7 @@ const music_JSON =
 			{"bpm": 87,
 			 "cost": "Paid",
 			 "loop": "Loopable",
-			 "stems": "Stems"},
+			 "genre": "Trip-hop"},
 		"stores":
 			{"unity": "https://assetstore.unity.com/packages/slug/234292",
 			"itch": "https://ludoloonstudio.itch.io/mind-games",
@@ -1036,7 +1034,7 @@ const music_JSON =
 			{"bpm": 180,
 			 "cost": "Paid",
 			 "loop": "Loopable",
-			 "stems": "Stems"},
+			 "genre": "Drum & Bass"},
 		"stores":
 			{"unity": "https://assetstore.unity.com/packages/slug/234292",
 			"itch": "https://ludoloonstudio.itch.io/mind-games",
@@ -1061,7 +1059,7 @@ const music_JSON =
 			{"bpm": 90,
 			 "cost": "Paid",
 			 "loop": "Loopable",
-			 "stems": "Stems"},
+			 "genre": "Electronic"},
 		"stores":
 			{"unity": "https://assetstore.unity.com/packages/slug/234292",
 			"itch": "https://ludoloonstudio.itch.io/mind-games",
@@ -1086,7 +1084,7 @@ const music_JSON =
 			{"bpm": 93,
 			 "cost": "Paid",
 			 "loop": "Loopable",
-			 "stems": "Stems"},
+			 "genre": "Hip-hop"},
 		"stores":
 			{"unity": "https://assetstore.unity.com/packages/slug/234292",
 			"itch": "https://ludoloonstudio.itch.io/mind-games",
@@ -1110,7 +1108,7 @@ const music_JSON =
 			{"bpm": 65,
 			 "cost": "Free",
 			 "loop": "Loopable",
-			 "stems": "No-Stems"},
+			 "genre": "Jazz"},
         "stores":
 			{"unity": "https://assetstore.unity.com/packages/slug/224462",
 			"itch": "https://ludoloonstudio.itch.io/tabletop-jazz-cafe"},
@@ -1132,7 +1130,7 @@ const music_JSON =
 			{"bpm": 140,
 			 "cost": "Free",
 			 "loop": "Loopable",
-			 "stems": "No-Stems"},
+			 "genre": "Dance"},
 		"stores":
 			{"unity": "https://assetstore.unity.com/packages/slug/223471",
 			"itch": "https://ludoloonstudio.itch.io/starting-line"},
@@ -1154,7 +1152,7 @@ const music_JSON =
 			{"bpm": 120,
 			 "cost": "Free",
 			 "loop": "Loopable",
-			 "stems": "Stems"},        
+			 "genre": "Ambient"},        
 		"stores":
 			{"unity": "https://assetstore.unity.com/packages/slug/223471",
 			"itch": "https://ludoloonstudio.itch.io/stuck-free-music"},
@@ -1175,7 +1173,7 @@ const music_JSON =
 			{"bpm": 83,
 			 "cost": "Free",
 			 "loop": "Loopable",
-			 "stems": "No-Stems"},        
+			 "genre": "Country"},        
 		"stores":
 			{"unity": "https://assetstore.unity.com/packages/slug/221746",
 			"itch": "https://ludoloonstudio.itch.io/on-the-farm"},
@@ -1199,7 +1197,7 @@ const music_JSON =
 			{"bpm": 75,
 			 "cost": "Paid",
 			 "loop": "Loopable",
-			 "stems": "Stems"},
+			 "genre": "Classical"},
 		"stores":
 			{"unity": "https://assetstore.unity.com/packages/slug/216619",
 		"itch": "https://ludoloonstudio.itch.io/roguelike-adventure-music-pack",
@@ -1222,7 +1220,7 @@ const music_JSON =
 			{"bpm": 60,
 			 "cost": "Paid",
 			 "loop": "Loopable",
-			 "stems": "Stems"},
+			 "genre": "Ambient"},
 		"stores":
 			{"unity": "https://assetstore.unity.com/packages/slug/216619",
       "itch": "https://ludoloonstudio.itch.io/roguelike-adventure-music-pack",
@@ -1245,7 +1243,7 @@ const music_JSON =
 			{"bpm": 75,
 			 "cost": "Paid",
 			 "loop": "Loopable",
-			 "stems": "Stems"},
+			 "genre": "World"},
 		"stores":
 			{"unity": "https://assetstore.unity.com/packages/slug/216619",
 		"itch": "https://ludoloonstudio.itch.io/roguelike-adventure-music-pack",
@@ -1268,7 +1266,7 @@ const music_JSON =
 			{"bpm": 65,
 			 "cost": "Paid",
 			 "loop": "Loopable",
-			 "stems": "Stems"},
+			 "genre": "Electronic"},
 		"stores":
 			{"unity": "https://assetstore.unity.com/packages/slug/216619",
 		"itch": "https://ludoloonstudio.itch.io/roguelike-adventure-music-pack",
@@ -1291,7 +1289,7 @@ const music_JSON =
 			{"bpm": 60,
 			 "cost": "Paid",
 			 "loop": "Loopable",
-			 "stems": "Stems"},
+			 "genre": "Soundtrack"},
 		"stores":
 			{"unity": "https://assetstore.unity.com/packages/slug/216619",
 		"itch": "https://ludoloonstudio.itch.io/roguelike-adventure-music-pack",
@@ -1314,7 +1312,7 @@ const music_JSON =
 			{"bpm": 85,
 			 "cost": "Paid",
 			 "loop": "Loopable",
-			 "stems": "Stems"},
+			 "genre": "Soundtrack"},
 		"stores":
 			{"unity": "https://assetstore.unity.com/packages/slug/216619",
 		"itch": "https://ludoloonstudio.itch.io/roguelike-adventure-music-pack",
@@ -1337,7 +1335,7 @@ const music_JSON =
 			{"bpm": 80,
 			 "cost": "Paid",
 			 "loop": "Loopable",
-			 "stems": "Stems"},
+			 "genre": "Electronic"},
 		"stores":
 			{"unity": "https://assetstore.unity.com/packages/slug/216619",
 		"itch": "https://ludoloonstudio.itch.io/roguelike-adventure-music-pack",
@@ -1360,7 +1358,7 @@ const music_JSON =
 			{"bpm": 75,
 			 "cost": "Paid",
 			 "loop": "Loopable",
-			 "stems": "Stems"},
+			 "genre": "Trip-hop"},
 		"stores":
 			{"unity": "https://assetstore.unity.com/packages/slug/216619",
 		"itch": "https://ludoloonstudio.itch.io/roguelike-adventure-music-pack",
@@ -1383,7 +1381,7 @@ const music_JSON =
 			{"bpm": 60,
 			 "cost": "Paid",
 			 "loop": "Loopable",
-			 "stems": "Stems"},
+			 "genre": "Electronic"},
 		"stores":
 			{"unity": "https://assetstore.unity.com/packages/slug/216619",
 		"itch": "https://ludoloonstudio.itch.io/roguelike-adventure-music-pack",
@@ -1406,7 +1404,7 @@ const music_JSON =
 			{"bpm": 40,
 			"cost": "Paid",
 			"loop": "Loopable",
-			"stems": "Stems"},
+			"genre": "Soundtrack"},
 		"stores":
 			{"unity": "https://assetstore.unity.com/packages/slug/216619",
 		"itch": "https://ludoloonstudio.itch.io/roguelike-adventure-music-pack",
@@ -1429,7 +1427,7 @@ const music_JSON =
 			{"bpm": 80,
 			 "cost": "Paid",
 			 "loop": "Loopable",
-			 "stems": "Stems"},
+			 "genre": "Trip-hop"},
 		"stores":
 			{"unity": "https://assetstore.unity.com/packages/slug/216619",
 		"itch": "https://ludoloonstudio.itch.io/roguelike-adventure-music-pack",
@@ -1452,7 +1450,7 @@ const music_JSON =
 			{"bpm": 60,
 			 "cost": "Paid",
 			 "loop": "Loopable",
-			 "stems": "Stems"},
+			 "genre": "Pop"},
 		"stores":
 			{"unity": "https://assetstore.unity.com/packages/slug/216619",
 		"itch": "https://ludoloonstudio.itch.io/roguelike-adventure-music-pack",
@@ -1475,7 +1473,7 @@ const music_JSON =
 			{"bpm": "SFX",
 			 "cost": "Paid",
 			 "loop": "Loopable",
-			 "stems": "Stems"},
+			 "genre": "SFX"},
 		"stores":
 			{"unity": "https://assetstore.unity.com/packages/slug/216619",
 		"itch": "https://ludoloonstudio.itch.io/roguelike-adventure-music-pack",
@@ -1497,7 +1495,7 @@ const music_JSON =
 			{"bpm": 60,
 			 "cost": "Free",
 			 "loop": "Loopable",
-			 "stems": "No-Stems"},        
+			 "genre": "Ambient"},        
 		"stores":
 			{"unity": "https://assetstore.unity.com/packages/slug/214277",
 			"itch": "https://ludoloonstudio.itch.io/save-pause-menu"},
@@ -1518,7 +1516,7 @@ const music_JSON =
 			{"bpm": "-",
 			 "cost": "Free",
 			 "loop": "Loopable",
-			 "stems": "No-Stems"
+			 "genre": "Soundtrack"
 			},         
 		"stores":
 			{"unity": "https://assetstore.unity.com/packages/slug/213501",
