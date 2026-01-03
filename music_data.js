@@ -411,7 +411,7 @@ const music_JSON =
             "bpm": 140,
             "cost": "Free",
             "loop": "Loopable",
-            "genre": "Dance",
+            "genre": "Dance"
         },
         "stores": {
             "itch": "https://ludoloonstudio.itch.io/techno-purgatory"
