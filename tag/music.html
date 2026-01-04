@@ -115,7 +115,7 @@ function populate_feed(){
 		//process the links
         if(data.stores != null || data.streaming != null){
             if(data.stores != null){
-                landing_links.innerHTML += '<b>Asset Stores</b><br/>';
+                landing_links.innerHTML += '<b>Stores</b><br/>';
                 for(key in data.stores){
                     landing_links.innerHTML += '<a href="'+ data.stores[key] +'"><img src="../../images/icons/'+ key +'.png"/></a>';
                 }

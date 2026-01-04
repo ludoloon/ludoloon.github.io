@@ -202,7 +202,7 @@ document.body.onload = function() {
         }
         summary.innerHTML += '<span class="hide-in-mobile">'+ data.summary + 
                                 ' <a href="#'+data.url+'" style="color: grey;">[#]</a><hr/></span>';    //summary, anchor link & hr
-        summary.innerHTML += '<span class="hide-in-mobile"><b>Asset Stores</b><br/></span>';
+        summary.innerHTML += '<span class="hide-in-mobile"><b>Stores</b><br/></span>';
         for(key in data.stores){
             summary.innerHTML += '<a href="'+ data.stores[key] +'"><img src="../../images/icons/'+ key +'.png"/></a>';
         }
