@@ -95,6 +95,16 @@ const works_packs =
 const works_credits =
 [
 	{
+		"title": "Bear & Hunger",
+		"date": new Date(2025, 3, 20),
+		"frontpage": false,
+		"url": "bear-and-hunger",
+		"cover": "bear-and-hunger.webp",
+        "summary": 'Mayble the Maybear woke up from her hibernation and her belly is rumbling! Help her get some tasty fish!. Uses <a href="../music#groovy-platformer-night-sky">Music from Groovy Platformer Pack</a>.',
+		"tags": [ ],
+        "link": "https://dahlitea.itch.io/bear-and-hunger",
+	},
+	{
 		"title": "PathOptimizer",
 		"date": new Date(2025, 5, 4),
 		"frontpage": false,
@@ -103,16 +113,6 @@ const works_credits =
         "summary": 'Draw one seamless path, conquer every tile, and become the ultimate PathOptimizer. Uses <a href="../music#puzzled-mind">Music from Mind Games</a>.',
 		"tags": [ ],
         "link": "https://pathoptimizer.carrd.co/",
-	},
-	{
-		"title": "Drone AI Demo",
-		"date": new Date(2024, 12, 15),
-		"frontpage": false,
-		"url": "drone-ai-demo",
-		"cover": "drone-ai-demo.webp",
-        "summary": 'Showcase of an AI agent trained to pilot a drone through complex obstacle courses and complete designated missions. Uses <a href="../music#starting-line">Starting Line</a>.',
-		"tags": [ ],
-        "link": "https://true-bots.itch.io/drone-agent",
 	},
 	{
 		"title": "Omakase (お任せ)",
