@@ -4,7 +4,7 @@
 	"url": "anchor-name",
 	"blog": "",
 	"summary": "Brief summary.",
-	"embed": "https://www.youtube.com/embed/",
+	"embed": "https://www.youtube-nocookie.com/embed/",
 	"tags": ["3-4 mood tags", "3 genre tags", "3-4 game genres"],
 	"stores":
 		{"unity": "https://assetstore.unity.com/packages/slug/",
@@ -33,7 +33,7 @@ const works_packs =
 		"url": "groovy-platformer-music-pack",
 		"cover": "groovy-platformer-music-pack.webp",
         "summary": "Music pack inspired by the original 16-bit Sonic the Hedgehog style.",
-		"embed": "https://www.youtube.com/embed/r12EWSRDxF4",
+		"embed": "https://www.youtube-nocookie.com/embed/r12EWSRDxF4",
 		"tags": ["Music Pack", "Groovy", "Funky", "Adventure", "Action", "Platformer", "Casual", "Exploration"],
 		"details": 
 			{"cost": "Paid",
@@ -53,7 +53,7 @@ const works_packs =
 		"cover": "mind-games.webp",
 		"blog": "mind-games",
         "summary": "Jazzy, groovy music pack designed for puzzle & platformer games. ",
-		"embed": "https://www.youtube.com/embed/videoseries?list=PLL06MmY4OQnZwpgJoRqxro9dDkZu1IsBZ",
+		"embed": "https://www.youtube-nocookie.com/embed/videoseries?list=PLL06MmY4OQnZwpgJoRqxro9dDkZu1IsBZ",
 		"tags": ["Music Pack", "Jazz", "Blues", "Chill", "Groovy", "Puzzle", "Platformer", "Casual", "Exploration"],
 		"details": 
 			{"cost": "Paid",
@@ -75,7 +75,7 @@ const works_packs =
 		"cover": "roguelike-adventure.webp",
 		"blog": "roguelike-adventure",
         "summary": "Music for all types of classic RPG & Action Adventure locations! Ready to go, easy to customize. ",
-		"embed": "https://www.youtube.com/embed/videoseries?list=PLL06MmY4OQnbZhDoKYUFZCEu5WgvtxPIg",
+		"embed": "https://www.youtube-nocookie.com/embed/videoseries?list=PLL06MmY4OQnbZhDoKYUFZCEu5WgvtxPIg",
 		"tags": [ "Music Pack" ],
 		"details": 
 			{"cost": "Paid",
@@ -185,7 +185,7 @@ const works_projects =
 		"url": "wacky-workbench-remix",
 		"cover": "wacky-workbench-remix.webp",
 		"summary": 'Made a remix to get hype for VGMcon 2025!',
-		"embed": "https://www.youtube.com/embed/2f8vjmreMso",
+		"embed": "https://www.youtube-nocookie.com/embed/2f8vjmreMso",
 		"tags": ["VGM", "Remix", "EDM", "Groovy", "Sonic"],
 		"streaming":
 			{"youtube": "https://www.youtube.com/watch?v=2f8vjmreMso",
@@ -201,7 +201,7 @@ const works_projects =
 		"blog": "rice-lake-frolf-course-remaster",
 		"cover": "rice-lake-frolf-course-remaster.webp",
 		"summary": "Play on my hometown frolf course circa 2013! <br>Work in progress, but here's the prototype if you wanna try it out in its current form. <em>(<a href='/music/#brainstorm'>Trailer Music - Brainstorm</a>)</em>",
-		"embed": "https://www.youtube.com/embed/zhd8xJ7nvao",
+		"embed": "https://www.youtube-nocookie.com/embed/zhd8xJ7nvao",
 		"tags": ["Sports", "Casual", "Game", "Multiplayer", "Godot"],
 		"stores":
 			{
@@ -222,7 +222,7 @@ const works_projects =
 		"blog": "yacht-dice",
 		"cover": "yacht-dice.webp",
 		"summary": 'Got back into game development using Godot and created a clone of the classic dice game!',
-		"embed": "https://www.youtube.com/embed/UH_1O8NOiS4",
+		"embed": "https://www.youtube-nocookie.com/embed/UH_1O8NOiS4",
 		"tags": ["Dice", "Casual", "Game", "Multiplayer", "Godot"],
 		"stores":
 			{
@@ -267,7 +267,7 @@ const works_projects =
 		"cover": "the-eery-silence-of-dying.webp",
 		"summary": 'On June 14, 2023, Minneapolis was covered in smoke from Canadian wildfires. I recorded this music video with flight sim using live time & weather, which was later submitted to <a href="https://screamitoffscreen.com">Scream It Off Screen</a>.',
 		"blog": "ludoair/minneapolis-canadian-smoke/",
-		"embed": "https://www.youtube.com/embed/CRGwM00b1jA",
+		"embed": "https://www.youtube-nocookie.com/embed/CRGwM00b1jA",
 		"tags": ["Ambient", "Drone", "Eery", "Spooky", "Apocalyptic", "Cinematic"],
 		"details": 
 			{"bpm": 120,
@@ -295,7 +295,7 @@ const works_projects =
 		"cover": "hometown-nostalgia.webp",
 		"summary": "A spooky trip back home in the fog on flight sim with some video game music vibes.",
 		"blog": "ludoair/spooky-home-tour/",
-		"embed": "https://www.youtube.com/embed/Wt3SJZtzJ44",
+		"embed": "https://www.youtube-nocookie.com/embed/Wt3SJZtzJ44",
 		"tags": ["Chill", "Pop", "Groovy", "Simulation", "Casual", "Exploration", "Nostalgic"],
 		"details": 
 			{"bpm": 120,
@@ -322,7 +322,7 @@ const works_projects =
 		"cover": "bastard-tower.webp",
 		"blog": "jam-bastard-tower",
         "summary": 'I made music for <a href="https://infinitegamesds.itch.io/bastard-tower" target="_blank">Bastard Tower</a> as part of the <a href="https://itch.io/jam/brackeys-9" target="_blank">Brackeys Jam 2023.1</a>',
-		"embed": "https://www.youtube.com/embed/videoseries?list=PLL06MmY4OQnYtvftCVq8shyXwRQ2x7dPf",
+		"embed": "https://www.youtube-nocookie.com/embed/videoseries?list=PLL06MmY4OQnYtvftCVq8shyXwRQ2x7dPf",
 		"tags": [ "Game Jam", "Custom Music", "Project" ],
 		"streaming":
 			{"itch": "https://infinitegamesds.itch.io/bastard-tower",
@@ -337,7 +337,7 @@ const works_projects =
 		"cover": "gigglys-dare.webp",
 		"blog": "jam-gigglys-dare",
         "summary": 'I made music for this game as part of the <a href="https://itch.io/jam/gmtk-jam-2022" target="_blank">Game Makers Toolkit Jam.</a>',
-		"embed": "https://www.youtube.com/embed/videoseries?list=PLL06MmY4OQnYiPEjGcOkcVH-INNMR0h5S",
+		"embed": "https://www.youtube-nocookie.com/embed/videoseries?list=PLL06MmY4OQnYiPEjGcOkcVH-INNMR0h5S",
 		"tags": [ "Game Jam", "Custom Music", "Project" ],
 		"streaming":
 			{"itch": "https://infinitegamesds.itch.io/gigglys-dare",
@@ -351,7 +351,7 @@ const works_projects =
 		"cover": "flight-sim-portraits.webp",
 		"blog": "flight-sim-portraits",
         "summary": "Dedicated to honing in on matching music to visual media.",
-		"embed": "https://www.youtube.com/embed/videoseries?list=PLL06MmY4OQnZJtHTVJ4IlCetgx6wgS_b6",
+		"embed": "https://www.youtube-nocookie.com/embed/videoseries?list=PLL06MmY4OQnZJtHTVJ4IlCetgx6wgS_b6",
 		"tags": [ ],
 		"streaming":
 			{"youtube": "https://www.youtube.com/watch?v=C9JiT63OVHw&list=PLL06MmY4OQnZJtHTVJ4IlCetgx6wgS_b6",
@@ -401,7 +401,7 @@ const music_JSON =
 			"soundcloud": "https://soundcloud.com/ludoloonstudio/techno-purgatory",
             "youtube": "https://youtu.be/RmnqJ2i04_c"
         },
-        "embed": "https://youtube.com/embed/RmnqJ2i04_c"
+        "embed": "https://youtube-nocookie.com/embed/RmnqJ2i04_c"
     },
 	//Animal Town
 	{
@@ -442,7 +442,7 @@ const music_JSON =
             "youtube": "https://youtu.be/5Ho5VJyXgIY",
             "newgrounds": "https://www.newgrounds.com/audio/listen/1506338"
         },
-        "embed": "https://youtube.com/embed/5Ho5VJyXgIY"
+        "embed": "https://youtube-nocookie.com/embed/5Ho5VJyXgIY"
     },
 	//Chill Shop
 	{
@@ -451,7 +451,7 @@ const music_JSON =
 		"url": "chill-shop",
 		"cover": "chill-shop.webp",
         "summary": "Funky little shop music for spending all that loot.",
-		"embed": "https://www.youtube.com/embed/0IDK_DdBlnM",
+		"embed": "https://www.youtube-nocookie.com/embed/0IDK_DdBlnM",
 		"tags": ["Blues", "Chill", "Casual", "Downtempo", "Funky", "Groovy", "Menu", "Relaxing", "RPG", "Smooth", "Visual Novel"],
 		"details": 
 			{"bpm": 95,
@@ -694,7 +694,7 @@ const music_JSON =
 		"url": "getaway-driver",
 		"cover": "getaway-driver.webp",
         "summary": "Hit the gas man!",
-		"embed": "https://www.youtube.com/embed/-pchfPcfPSA",
+		"embed": "https://www.youtube-nocookie.com/embed/-pchfPcfPSA",
 		"tags": ["Action", "Blues", "Casual", "Driving", "Exploration", "Rock", "Retro"],
 		"details": 
 			{"bpm": 105,
@@ -716,7 +716,7 @@ const music_JSON =
 		"url": "smooth-night",
 		"cover": "smooth-night.webp",
         "summary": "Goin' out on the town for date night.",
-		"embed": "https://www.youtube.com/embed/pHshL826roY",
+		"embed": "https://www.youtube-nocookie.com/embed/pHshL826roY",
 		"tags": ["Calm", "Chill", "Casual", "Groovy", "Jazz", "Moody", "Relaxing", "Smooth", "Visual Novel"],
 		"details": 
 			{"bpm": 115,
@@ -739,7 +739,7 @@ const music_JSON =
 		"cover": "happy-wheels.webp",
 		"frontpage": false,
         "summary": "Someone should really supervise these middle schoolers lol",
-		"embed": "https://www.youtube.com/embed/kLPMZPBwLh4",
+		"embed": "https://www.youtube-nocookie.com/embed/kLPMZPBwLh4",
 		"tags": ["Action", "Rock", "Energetic", "Fast", "Hard", "Sports", "Upbeat"],
 		"details": 
 			{"bpm": 120,
@@ -761,7 +761,7 @@ const music_JSON =
 		"url": "lo-fi-horror",
 		"cover": "lo-fi-horror.webp",
         "summary": "Let the static guide you.",
-		"embed": "https://www.youtube.com/embed/z0XzMUw3tG8",
+		"embed": "https://www.youtube-nocookie.com/embed/z0XzMUw3tG8",
 		"tags": ["Ambient", "Atmospheric", "Creepy", "Dark", "Moody", "Mysterious", "Spooky", "Survival", "Suspense"],
 		"details": 
 			{"bpm": 75,
@@ -783,7 +783,7 @@ const music_JSON =
 		"url": "solitaire",
 		"cover": "solitaire.webp",
         "summary": "Groovin' by yourself ain't so bad.",
-		"embed": "https://www.youtube.com/embed/tVNcFsNMvis",
+		"embed": "https://www.youtube-nocookie.com/embed/tVNcFsNMvis",
 		"tags": ["Groovy", "Casual", "Chill", "Board Game", "Downtempo", "Calm", "Moody", "Smooth", "Relaxing"],
 		"details": 
 			{"bpm": 74,
@@ -805,7 +805,7 @@ const music_JSON =
 		"url": "16-bit-fishing",
 		"cover": "16-bit-fishing.webp",
         "summary": "Ride around the lake while vibin' out to some classic tunes. If the fish don't bite at least the bass will.",
-		"embed": "https://www.youtube.com/embed/zhaZ0z6hOzo",
+		"embed": "https://www.youtube-nocookie.com/embed/zhaZ0z6hOzo",
 		"tags": ["16-bit", "Exploration", "Chill", "Fishing", "Groovy", "Casual", "Sports", "Retro"],
 		"details": 
 			{"bpm": 85,
@@ -1082,7 +1082,7 @@ const music_JSON =
 		"url": "tabletop-jazz-cafe",
 		"cover": "tabletop-jazz-cafe.webp",
         "summary": "Chill at a cafe, drink coffee and play games! Perfect for any situaiton that needs a jazz vibe.",
-		"embed": "https://www.youtube.com/embed/CRv4Qs0vwTA",
+		"embed": "https://www.youtube-nocookie.com/embed/CRv4Qs0vwTA",
 		"tags": [ "Relaxing", "Smooth", "Chill", "Cute", "Jazz", "Visual Novel", "RPG", "Board Game", "Casual"],
 		"details": 
 			{"bpm": 65,
@@ -1104,7 +1104,7 @@ const music_JSON =
 		"url": "starting-line",
 		"cover": "starting-line.webp",
         "summary": "High-speed racing music heavily inspired by classic games like R4 and Gran Turismo.",
-		"embed": "https://www.youtube.com/embed/LaXHIgOH9cE",
+		"embed": "https://www.youtube-nocookie.com/embed/LaXHIgOH9cE",
 		"tags": ["Drum & Bass", "Energetic", "Upbeat", "Driving", "Fast", "Racing", "Simulation", "Action", "Rhythm", "Retro"],
 		"details": 
 			{"bpm": 140,
@@ -1126,7 +1126,7 @@ const music_JSON =
 		"url": "stuck",
 		"cover": "stuck.webp",
         "summary": "You must leave but you're stuck.",
-		"embed": "https://www.youtube.com/embed/D5oAisdVEW4",
+		"embed": "https://www.youtube-nocookie.com/embed/D5oAisdVEW4",
 		"tags": ["Creepy", "Dark", "Atmospheric", "Exploration", "Survival", "Horror", "Spooky"],
 		"details": 
 			{"bpm": 120,
@@ -1147,7 +1147,7 @@ const music_JSON =
 		"url": "on-the-farm",
 		"cover": "on-the-farm.webp",
         "summary": "Perfect for chorin' around the farm in the sun!",
-		"embed": "https://www.youtube.com/embed/0ZP9I0KOp7M",
+		"embed": "https://www.youtube-nocookie.com/embed/0ZP9I0KOp7M",
 		"tags": ["Cute", "Country", "Farming", "Western", "Adventure", "RPG", "Simulation", "Visual Novel", "Exploration"],
 		"details": 
 			{"bpm": 83,
@@ -1495,7 +1495,7 @@ const music_JSON =
 		"url": "save-pause-menu",
 		"cover": "save-pause-menu.webp",
         "summary": "Perfect for a pause, save or loading menu. Chill, loop background music.",
-		"embed": "https://www.youtube.com/embed/PlfbXKOpOms",
+		"embed": "https://www.youtube-nocookie.com/embed/PlfbXKOpOms",
 		"tags": ["Space", "Atmospheric", "Chill", "Simulation", "Relaxing", "Menu"],
 		"details": 
 			{"bpm": 60,
@@ -1516,7 +1516,7 @@ const music_JSON =
 		"cover": "mysterious-fog.webp",
 		"blog": "mysterious-fog",
         "summary": "Perfect for any game that needs some spooky, mysterious or nostalgic ambience.",
-		"embed": "https://www.youtube.com/embed/-niUrXn13Qw",
+		"embed": "https://www.youtube-nocookie.com/embed/-niUrXn13Qw",
 		"tags": ["Mysterious", "RPG", "Fantasy", "Simulation", "Survival", "Atmospheric", "Creepy", "Suspense"],
 		"details":
 			{"bpm": "-",
