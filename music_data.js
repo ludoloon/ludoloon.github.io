@@ -401,7 +401,7 @@ const music_JSON =
 			"soundcloud": "https://soundcloud.com/ludoloonstudio/techno-purgatory",
             "youtube": "https://youtu.be/RmnqJ2i04_c"
         },
-        "embed": "https://youtube-nocookie.com/embed/RmnqJ2i04_c"
+        "embed": "https://www.youtube-nocookie.com/embed/RmnqJ2i04_c"
     },
 	//Animal Town
 	{
@@ -442,7 +442,7 @@ const music_JSON =
             "youtube": "https://youtu.be/5Ho5VJyXgIY",
             "newgrounds": "https://www.newgrounds.com/audio/listen/1506338"
         },
-        "embed": "https://youtube-nocookie.com/embed/5Ho5VJyXgIY"
+        "embed": "https://www.youtube-nocookie.com/embed/5Ho5VJyXgIY"
     },
 	//Chill Shop
 	{
