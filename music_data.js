@@ -95,12 +95,22 @@ const works_packs =
 const works_credits =
 [
 	{
+		"title": "Gray Trading",
+		"date": new Date(2025, 3, 20),
+		"frontpage": false,
+		"url": "gray-trading",
+		"cover": "gray-trading.webp",
+        "summary": 'An incremental game where you buy and sell stocks, trade forex, and dive into other unusual markets. Uses <a href="../music#smooth-night">Smooth Night</a>.',
+		"tags": [ ],
+        "link": "https://store.steampowered.com/app/4596160/Gray_Trading/",
+	},
+	{
 		"title": "Bear & Hunger",
 		"date": new Date(2025, 3, 20),
 		"frontpage": false,
 		"url": "bear-and-hunger",
 		"cover": "bear-and-hunger.webp",
-        "summary": 'Mayble the Maybear woke up from her hibernation and her belly is rumbling! Help her get some tasty fish!. Uses <a href="../music#groovy-platformer-night-sky">Music from Groovy Platformer Pack</a>.',
+        "summary": 'Mayble the Maybear woke up from her hibernation and her belly is rumbling! Help her get some tasty fish! Uses <a href="../music#groovy-platformer-night-sky">Music from Groovy Platformer Pack</a>.',
 		"tags": [ ],
         "link": "https://dahlitea.itch.io/bear-and-hunger",
 	},
