@@ -7,7 +7,7 @@
 	"embed": "https://www.youtube-nocookie.com/embed/",
 	"tags": ["3-4 mood tags", "3 genre tags", "3-4 game genres"],
 	"stores":
-		{"unity": "https://assetstore.unity.com/packages/slug/",
+		{//"unity": "https://assetstore.unity.com/packages/slug/",
 		"itch": "https://ludoloonstudio.itch.io/",
 		"youtube": "",
 		"bandcamp": "",
@@ -81,7 +81,7 @@ const works_packs =
 			 "loop": "Loopable",
 			 "stems": "Stems"},
         "stores":
-			{"unity": "https://assetstore.unity.com/packages/slug/216619",
+			{//"unity": "https://assetstore.unity.com/packages/slug/216619",
 			"itch": "https://ludoloonstudio.itch.io/roguelike-adventure-music-pack",
 			"gamedevmarket": "https://www.gamedevmarket.net/asset/roguelike-adventure-music-pack/",
 			"godot": "https://godotmarketplace.com/shop/roguelike-adventure-music-pack/",
@@ -255,8 +255,8 @@ const works_projects =
 		"embed": "https://bandcamp.com/EmbeddedPlayer/album=2584251597/size=large/bgcol=333333/linkcol=2edb35/artwork=small/transparent=true/",
 		"tags": ["Techno", "Ambient", "Eery", "Spooky", "Apocalyptic", "Nostalgic"],
 		/*"stores":
-			{"unity": "https://assetstore.unity.com/packages/slug/222465",
-			"unity": "https://assetstore.unity.com/packages/slug/234292",
+			{//"unity": "https://assetstore.unity.com/packages/slug/222465",
+			//"unity": "https://assetstore.unity.com/packages/slug/234292",
 			"itch": "https://ludoloonstudio.itch.io/puzzled-mind",
 			"itch": "https://ludoloonstudio.itch.io/mind-games",
 			},*/
@@ -284,8 +284,8 @@ const works_projects =
 			 "loop": "Loopable",
 			 "stems": "No-Stems"},
 		/*"stores":
-			{"unity": "https://assetstore.unity.com/packages/slug/222465",
-			"unity": "https://assetstore.unity.com/packages/slug/234292",
+			{//"unity": "https://assetstore.unity.com/packages/slug/222465",
+			//"unity": "https://assetstore.unity.com/packages/slug/234292",
 			"itch": "https://ludoloonstudio.itch.io/puzzled-mind",
 			"itch": "https://ludoloonstudio.itch.io/mind-games",
 			},*/
@@ -312,8 +312,8 @@ const works_projects =
 			 "loop": "Loopable",
 			 "stems": "No-Stems"},
 		/*"stores":
-			{"unity": "https://assetstore.unity.com/packages/slug/222465",
-			"unity": "https://assetstore.unity.com/packages/slug/234292",
+			{//"unity": "https://assetstore.unity.com/packages/slug/222465",
+			//"unity": "https://assetstore.unity.com/packages/slug/234292",
 			"itch": "https://ludoloonstudio.itch.io/puzzled-mind",
 			"itch": "https://ludoloonstudio.itch.io/mind-games",
 			},*/
@@ -388,8 +388,8 @@ const music_JSON =
 			 "loop": "Loopable",
 			 "genre": "Hip-hop"},
 		"stores":
-			{"unity": "https://assetstore.unity.com/packages/slug/222465",
-			"unity": "https://assetstore.unity.com/packages/slug/234292",
+			{//"unity": "https://assetstore.unity.com/packages/slug/222465",
+			//"unity": "https://assetstore.unity.com/packages/slug/234292",
 			"itch": "https://ludoloonstudio.itch.io/puzzled-mind",
 			"itch": "https://ludoloonstudio.itch.io/mind-games",
 			},
@@ -418,7 +418,7 @@ const music_JSON =
 			 "loop": "Loopable",
 			 "genre": "Drum & Bass"},
 		"stores":
-			{"unity": "https://assetstore.unity.com/packages/slug/234292",
+			{//"unity": "https://assetstore.unity.com/packages/slug/234292",
 			"itch": "https://ludoloonstudio.itch.io/mind-games",
 			},
 		"streaming":
@@ -443,7 +443,7 @@ const music_JSON =
 			 "loop": "Loopable",
 			 "genre": "Funk"},
 		"stores":
-			{"unity": "https://assetstore.unity.com/packages/slug/234292",
+			{//"unity": "https://assetstore.unity.com/packages/slug/234292",
 			"itch": "https://ludoloonstudio.itch.io/mind-games",
 			},
 		"streaming":
@@ -468,7 +468,7 @@ const music_JSON =
 			 "loop": "Loopable",
 			 "genre": "Dance"},
 		"stores":
-			{"unity": "https://assetstore.unity.com/packages/slug/234292",
+			{//"unity": "https://assetstore.unity.com/packages/slug/234292",
 			"itch": "https://ludoloonstudio.itch.io/mind-games",
 			},
 		"streaming":
@@ -493,7 +493,7 @@ const music_JSON =
 			 "loop": "Loopable",
 			 "genre": "Electronic"},
 		"stores":
-			{"unity": "https://assetstore.unity.com/packages/slug/234292",
+			{//"unity": "https://assetstore.unity.com/packages/slug/234292",
 			"itch": "https://ludoloonstudio.itch.io/mind-games",
 			},
 		"streaming":
@@ -518,7 +518,7 @@ const music_JSON =
 			 "loop": "Loopable",
 			 "genre": "Trip-hop"},
 		"stores":
-			{"unity": "https://assetstore.unity.com/packages/slug/234292",
+			{//"unity": "https://assetstore.unity.com/packages/slug/234292",
 			"itch": "https://ludoloonstudio.itch.io/mind-games",
 			},
 		"streaming":
@@ -543,7 +543,7 @@ const music_JSON =
 			 "loop": "Loopable",
 			 "genre": "Trip-hop"},
 		"stores":
-			{"unity": "https://assetstore.unity.com/packages/slug/234292",
+			{//"unity": "https://assetstore.unity.com/packages/slug/234292",
 			"itch": "https://ludoloonstudio.itch.io/mind-games",
 			},
 		"streaming":
@@ -568,7 +568,7 @@ const music_JSON =
 			 "loop": "Loopable",
 			 "genre": "Drum & Bass"},
 		"stores":
-			{"unity": "https://assetstore.unity.com/packages/slug/234292",
+			{//"unity": "https://assetstore.unity.com/packages/slug/234292",
 			"itch": "https://ludoloonstudio.itch.io/mind-games",
 			},
 		"streaming":
@@ -593,7 +593,7 @@ const music_JSON =
 			 "loop": "Loopable",
 			 "genre": "Electronic"},
 		"stores":
-			{"unity": "https://assetstore.unity.com/packages/slug/234292",
+			{//"unity": "https://assetstore.unity.com/packages/slug/234292",
 			"itch": "https://ludoloonstudio.itch.io/mind-games",
 			},
 		"streaming":
@@ -618,7 +618,7 @@ const music_JSON =
 			 "loop": "Loopable",
 			 "genre": "Hip-hop"},
 		"stores":
-			{"unity": "https://assetstore.unity.com/packages/slug/234292",
+			{//"unity": "https://assetstore.unity.com/packages/slug/234292",
 			"itch": "https://ludoloonstudio.itch.io/mind-games",
 			},
 		"streaming":
@@ -1100,7 +1100,7 @@ const music_JSON =
 			 "loop": "Loopable",
 			 "genre": "Jazz"},
         "stores":
-			{"unity": "https://assetstore.unity.com/packages/slug/224462",
+			{//"unity": "https://assetstore.unity.com/packages/slug/224462",
 			"itch": "https://ludoloonstudio.itch.io/tabletop-jazz-cafe"},
 		"streaming":
 			{"archive.org": "https://archive.org/details/tabletop-jazz-cafe",
@@ -1122,7 +1122,7 @@ const music_JSON =
 			 "loop": "Loopable",
 			 "genre": "Dance"},
 		"stores":
-			{"unity": "https://assetstore.unity.com/packages/slug/223471",
+			{//"unity": "https://assetstore.unity.com/packages/slug/223471",
 			"itch": "https://ludoloonstudio.itch.io/starting-line"},
 		"streaming":
 			{"archive.org": "https://archive.org/details/starting-line",
@@ -1144,7 +1144,7 @@ const music_JSON =
 			 "loop": "Loopable",
 			 "genre": "Ambient"},        
 		"stores":
-			{"unity": "https://assetstore.unity.com/packages/slug/223471",
+			{//"unity": "https://assetstore.unity.com/packages/slug/223471",
 			"itch": "https://ludoloonstudio.itch.io/stuck-free-music"},
 		"streaming":
 			{"archive.org": "https://archive.org/details/stuck_202208",
@@ -1165,7 +1165,7 @@ const music_JSON =
 			 "loop": "Loopable",
 			 "genre": "Country"},        
 		"stores":
-			{"unity": "https://assetstore.unity.com/packages/slug/221746",
+			{//"unity": "https://assetstore.unity.com/packages/slug/221746",
 			"itch": "https://ludoloonstudio.itch.io/on-the-farm"},
 		"streaming":
 			{"archive.org": "https://archive.org/details/on-the-farm",
@@ -1189,7 +1189,7 @@ const music_JSON =
 			 "loop": "Loopable",
 			 "genre": "Classical"},
 		"stores":
-			{"unity": "https://assetstore.unity.com/packages/slug/216619",
+			{//"unity": "https://assetstore.unity.com/packages/slug/216619",
 		"itch": "https://ludoloonstudio.itch.io/roguelike-adventure-music-pack",
 		"gamedevmarket": "https://www.gamedevmarket.net/asset/roguelike-adventure-music-pack/",
 		"godot": "https://godotmarketplace.com/shop/roguelike-adventure-music-pack/"},
@@ -1214,7 +1214,7 @@ const music_JSON =
 			 "loop": "Loopable",
 			 "genre": "Ambient"},
 		"stores":
-			{"unity": "https://assetstore.unity.com/packages/slug/216619",
+			{//"unity": "https://assetstore.unity.com/packages/slug/216619",
       "itch": "https://ludoloonstudio.itch.io/roguelike-adventure-music-pack",
       "gamedevmarket": "https://www.gamedevmarket.net/asset/roguelike-adventure-music-pack/",
       "godot": "https://godotmarketplace.com/shop/roguelike-adventure-music-pack/"},
@@ -1239,7 +1239,7 @@ const music_JSON =
 			 "loop": "Loopable",
 			 "genre": "World"},
 		"stores":
-			{"unity": "https://assetstore.unity.com/packages/slug/216619",
+			{//"unity": "https://assetstore.unity.com/packages/slug/216619",
 		"itch": "https://ludoloonstudio.itch.io/roguelike-adventure-music-pack",
 		"gamedevmarket": "https://www.gamedevmarket.net/asset/roguelike-adventure-music-pack/",
 		"godot": "https://godotmarketplace.com/shop/roguelike-adventure-music-pack/"},
@@ -1264,7 +1264,7 @@ const music_JSON =
 			 "loop": "Loopable",
 			 "genre": "Electronic"},
 		"stores":
-			{"unity": "https://assetstore.unity.com/packages/slug/216619",
+			{//"unity": "https://assetstore.unity.com/packages/slug/216619",
 		"itch": "https://ludoloonstudio.itch.io/roguelike-adventure-music-pack",
 		"gamedevmarket": "https://www.gamedevmarket.net/asset/roguelike-adventure-music-pack/",
 		"godot": "https://godotmarketplace.com/shop/roguelike-adventure-music-pack/"},
@@ -1289,7 +1289,7 @@ const music_JSON =
 			 "loop": "Loopable",
 			 "genre": "Soundtrack"},
 		"stores":
-			{"unity": "https://assetstore.unity.com/packages/slug/216619",
+			{//"unity": "https://assetstore.unity.com/packages/slug/216619",
 		"itch": "https://ludoloonstudio.itch.io/roguelike-adventure-music-pack",
 		"gamedevmarket": "https://www.gamedevmarket.net/asset/roguelike-adventure-music-pack/",
 		"godot": "https://godotmarketplace.com/shop/roguelike-adventure-music-pack/"},
@@ -1314,7 +1314,7 @@ const music_JSON =
 			 "loop": "Loopable",
 			 "genre": "Soundtrack"},
 		"stores":
-			{"unity": "https://assetstore.unity.com/packages/slug/216619",
+			{//"unity": "https://assetstore.unity.com/packages/slug/216619",
 		"itch": "https://ludoloonstudio.itch.io/roguelike-adventure-music-pack",
 		"gamedevmarket": "https://www.gamedevmarket.net/asset/roguelike-adventure-music-pack/",
 		"godot": "https://godotmarketplace.com/shop/roguelike-adventure-music-pack/"},
@@ -1339,7 +1339,7 @@ const music_JSON =
 			 "loop": "Loopable",
 			 "genre": "Electronic"},
 		"stores":
-			{"unity": "https://assetstore.unity.com/packages/slug/216619",
+			{//"unity": "https://assetstore.unity.com/packages/slug/216619",
 		"itch": "https://ludoloonstudio.itch.io/roguelike-adventure-music-pack",
 		"gamedevmarket": "https://www.gamedevmarket.net/asset/roguelike-adventure-music-pack/",
 		"godot": "https://godotmarketplace.com/shop/roguelike-adventure-music-pack/"},
@@ -1364,7 +1364,7 @@ const music_JSON =
 			 "loop": "Loopable",
 			 "genre": "Trip-hop"},
 		"stores":
-			{"unity": "https://assetstore.unity.com/packages/slug/216619",
+			{//"unity": "https://assetstore.unity.com/packages/slug/216619",
 		"itch": "https://ludoloonstudio.itch.io/roguelike-adventure-music-pack",
 		"gamedevmarket": "https://www.gamedevmarket.net/asset/roguelike-adventure-music-pack/",
 		"godot": "https://godotmarketplace.com/shop/roguelike-adventure-music-pack/"},
@@ -1389,7 +1389,7 @@ const music_JSON =
 			 "loop": "Loopable",
 			 "genre": "Electronic"},
 		"stores":
-			{"unity": "https://assetstore.unity.com/packages/slug/216619",
+			{//"unity": "https://assetstore.unity.com/packages/slug/216619",
 		"itch": "https://ludoloonstudio.itch.io/roguelike-adventure-music-pack",
 		"gamedevmarket": "https://www.gamedevmarket.net/asset/roguelike-adventure-music-pack/",
 		"godot": "https://godotmarketplace.com/shop/roguelike-adventure-music-pack/"},
@@ -1414,7 +1414,7 @@ const music_JSON =
 			"loop": "Loopable",
 			"genre": "Soundtrack"},
 		"stores":
-			{"unity": "https://assetstore.unity.com/packages/slug/216619",
+			{//"unity": "https://assetstore.unity.com/packages/slug/216619",
 		"itch": "https://ludoloonstudio.itch.io/roguelike-adventure-music-pack",
 		"gamedevmarket": "https://www.gamedevmarket.net/asset/roguelike-adventure-music-pack/",
 		"godot": "https://godotmarketplace.com/shop/roguelike-adventure-music-pack/"},
@@ -1439,7 +1439,7 @@ const music_JSON =
 			 "loop": "Loopable",
 			 "genre": "Trip-hop"},
 		"stores":
-			{"unity": "https://assetstore.unity.com/packages/slug/216619",
+			{//"unity": "https://assetstore.unity.com/packages/slug/216619",
 		"itch": "https://ludoloonstudio.itch.io/roguelike-adventure-music-pack",
 		"gamedevmarket": "https://www.gamedevmarket.net/asset/roguelike-adventure-music-pack/",
 		"godot": "https://godotmarketplace.com/shop/roguelike-adventure-music-pack/"},
@@ -1464,7 +1464,7 @@ const music_JSON =
 			 "loop": "Loopable",
 			 "genre": "Pop"},
 		"stores":
-			{"unity": "https://assetstore.unity.com/packages/slug/216619",
+			{//"unity": "https://assetstore.unity.com/packages/slug/216619",
 		"itch": "https://ludoloonstudio.itch.io/roguelike-adventure-music-pack",
 		"gamedevmarket": "https://www.gamedevmarket.net/asset/roguelike-adventure-music-pack/",
 		"godot": "https://godotmarketplace.com/shop/roguelike-adventure-music-pack/"},
@@ -1489,7 +1489,7 @@ const music_JSON =
 			 "loop": "Loopable",
 			 "genre": "SFX"},
 		"stores":
-			{"unity": "https://assetstore.unity.com/packages/slug/216619",
+			{//"unity": "https://assetstore.unity.com/packages/slug/216619",
 		"itch": "https://ludoloonstudio.itch.io/roguelike-adventure-music-pack",
 		"gamedevmarket": "https://www.gamedevmarket.net/asset/roguelike-adventure-music-pack/",
 		"godot": "https://godotmarketplace.com/shop/roguelike-adventure-music-pack/"},
@@ -1513,7 +1513,7 @@ const music_JSON =
 			 "loop": "Loopable",
 			 "genre": "Ambient"},        
 		"stores":
-			{"unity": "https://assetstore.unity.com/packages/slug/214277",
+			{//"unity": "https://assetstore.unity.com/packages/slug/214277",
 			"itch": "https://ludoloonstudio.itch.io/save-pause-menu"},
 		"streaming":
 			{"archive.org": "https://archive.org/details/pause-save-menu-3x-loop",
@@ -1535,7 +1535,7 @@ const music_JSON =
 			 "genre": "Soundtrack"
 			},         
 		"stores":
-			{"unity": "https://assetstore.unity.com/packages/slug/213501",
+			{//"unity": "https://assetstore.unity.com/packages/slug/213501",
 			"itch": "https://ludoloonstudio.itch.io/mysterious-fog",
 			"godot": "https://godotmarketplace.com/shop/mysterious-fog-royalty-free/",
 			},
