@@ -30,7 +30,7 @@ const works_packs =
 	{
         "title": "Groovy Platformer Music Pack",
 		"date": new Date(2025, 8, 4),
-		"url": "groovy-platformer-music-pack",
+		"url": "groovy-platformer-boss-battle",
 		"cover": "groovy-platformer-music-pack.webp",
         "summary": "Music pack inspired by the original 16-bit Sonic the Hedgehog style.",
 		"embed": "https://www.youtube-nocookie.com/embed/r12EWSRDxF4",
@@ -47,25 +47,24 @@ const works_packs =
 			},
 	},
 	{
-        "title": "Mind Games",
-		"date": new Date(2022, 9, 4),
-		"url": "mind-games",
+        "title": "Mind Games [Remastered]",
+		"date": new Date(2026, 8, 28),
+		"url": "puzzled-mind",
 		"cover": "mind-games.webp",
 		"blog": "mind-games",
-        "summary": "Jazzy, groovy music pack designed for puzzle & platformer games. ",
-		"embed": "https://www.youtube-nocookie.com/embed/videoseries?list=PLL06MmY4OQnZwpgJoRqxro9dDkZu1IsBZ",
+        "summary": "Jazzy, groovy music pack designed for puzzle & platformer games. Recently remastered!",
+		"embed": "https://www.youtube-nocookie.com/embed/8RYT5FASnl0",
 		"tags": ["Music Pack", "Jazz", "Blues", "Chill", "Groovy", "Puzzle", "Platformer", "Casual", "Exploration"],
 		"details": 
 			{"cost": "Paid",
 			 "loop": "Loopable",
 			 "stems": "Stems"},
         "stores":
-			{"unity": "https://assetstore.unity.com/packages/slug/234292",
+			{
 			"itch": "https://ludoloonstudio.itch.io/mind-games",
 			},
 		"streaming":
-			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/mind-games",
-			"spotify": "https://open.spotify.com/album/6sPrNlKqCSjM6FENq9uaRN",
+			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/mind-games-remastered",
 			},
 	},
 	{
@@ -852,7 +851,7 @@ const music_JSON =
 			"itch": "https://ludoloonstudio.itch.io/mind-games",
 			},
 		"streaming":
-			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/mind-games",
+			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/mind-games-remastered",
 			"archive.org": "https://archive.org/details/puzzled-mind",
 			"youtube": "https://youtu.be/iaoRYHZfWFQ",
 			"youtube": "https://youtu.be/fVPSM9ACMw4",
@@ -880,7 +879,7 @@ const music_JSON =
 			"itch": "https://ludoloonstudio.itch.io/mind-games",
 			},
 		"streaming":
-			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/mind-games",
+			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/mind-games-remastered",
 			"youtube": "https://youtu.be/R_YjOFqAm_E",
 			"spotify": "https://open.spotify.com/track/53UmWN6SUMQ5pE7F4EiaxR?si=1ce4b8f12866408a",
 			},
@@ -905,7 +904,7 @@ const music_JSON =
 			"itch": "https://ludoloonstudio.itch.io/mind-games",
 			},
 		"streaming":
-			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/mind-games",
+			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/mind-games-remastered",
 			"youtube": "https://youtu.be/0RGTlupk3ys",
 			"spotify": "https://open.spotify.com/track/0WbhLFu4RhittuUNuLG9Gr?si=51e5176eb243403e",
 			},
@@ -930,7 +929,7 @@ const music_JSON =
 			"itch": "https://ludoloonstudio.itch.io/mind-games",
 			},
 		"streaming":
-			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/mind-games",
+			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/mind-games-remastered",
 			"youtube": "https://youtu.be/C1Lf1_XmgIA",
 			"spotify": "https://open.spotify.com/track/3cR4VdZ9LDOsqlX272LyDg?si=660268ce74794abd",
 			},
@@ -955,7 +954,7 @@ const music_JSON =
 			"itch": "https://ludoloonstudio.itch.io/mind-games",
 			},
 		"streaming":
-			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/mind-games",
+			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/mind-games-remastered",
 			"youtube": "https://youtu.be/w8cEYGg3CvU",
 			"spotify": "https://open.spotify.com/track/1ufEm37TPYJgnDrVkSz9jh?si=4ac37c702ee6451c",
 			},
@@ -980,7 +979,7 @@ const music_JSON =
 			"itch": "https://ludoloonstudio.itch.io/mind-games",
 			},
 		"streaming":
-			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/mind-games",
+			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/mind-games-remastered",
 			"youtube": "https://youtu.be/iUSMIGsK3ko",
 			"spotify": "https://open.spotify.com/track/0gS7QPO5j5EkVd4lxmBdZP?si=ad688e140a77473f",
 			},
@@ -1005,7 +1004,7 @@ const music_JSON =
 			"itch": "https://ludoloonstudio.itch.io/mind-games",
 			},
 		"streaming":
-			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/mind-games",
+			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/mind-games-remastered",
 			"youtube": "https://youtu.be/vlbhNgqM8V4",
 			"spotify": "https://open.spotify.com/track/50pFdBVkUlQ6KtvjZzxNmM?si=2caf4b5063544e23",
 			},
@@ -1030,7 +1029,7 @@ const music_JSON =
 			"itch": "https://ludoloonstudio.itch.io/mind-games",
 			},
 		"streaming":
-			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/mind-games",
+			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/mind-games-remastered",
 			"youtube": "https://youtu.be/wyrLZKva7Rg",
 			"spotify": "https://open.spotify.com/track/5Y3coIhy74DS00mDP3NJS9?si=0db9e8bdf5a64172",
 			},
@@ -1055,7 +1054,7 @@ const music_JSON =
 			"itch": "https://ludoloonstudio.itch.io/mind-games",
 			},
 		"streaming":
-			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/mind-games",
+			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/mind-games-remastered",
 			"youtube": "https://youtu.be/9qoYoi6_KHk",
 			"spotify": "https://open.spotify.com/track/5pF0o1tOYn3MltZ7DcPTaf?si=f7b46ce57e2e4d07",
 			},
@@ -1080,7 +1079,7 @@ const music_JSON =
 			"itch": "https://ludoloonstudio.itch.io/mind-games",
 			},
 		"streaming":
-			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/mind-games",
+			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/mind-games-remastered",
 			"youtube": "https://youtu.be/kx6B6RItgBM",
 			"spotify": "https://open.spotify.com/track/44Ycml2RzJWbb0wcwODZ7o?si=9589b3bcd83c41e0",
 			},

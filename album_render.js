@@ -1,7 +1,7 @@
 //include music_data.js database prior to this on same page in HTML
 const musicData = JSON.parse(JSON.stringify(works_packs));
 
-function render_album_entry (entry_title) {
+function render_album_entry(entry_title) {
 	//Get song info with song title
 	data = musicData.find(({title}) => title == entry_title);
 	//set any DOM reference variables now that the page is loaded & ready
