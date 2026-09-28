@@ -64,7 +64,9 @@ const works_packs =
 			"itch": "https://ludoloonstudio.itch.io/mind-games",
 			},
 		"streaming":
-			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/mind-games-remastered",
+			{
+				"bandcamp": "https://ludoloonstudio.bandcamp.com/album/mind-games-remastered",
+				"subvert": "https://www.subvert.fm/ludoloonstudio/mind-games"
 			},
 	},
 	{
@@ -400,6 +402,7 @@ const music_JSON =
 			//"youtube": "https://youtu.be/fVPSM9ACMw4",
 			"newgrounds": "https://www.newgrounds.com/audio/listen/1138191",
 			//"spotify": "https://open.spotify.com/track/7iZ0txTd7d5xpTguKsnP9C?si=467238ba301f4bff",
+			"subvert": "https://www.subvert.fm/ludoloonstudio/tracks/puzzled-mind"
 			},
 	},
 	{
@@ -425,6 +428,7 @@ const music_JSON =
 			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/mind-games-remastered",
 			//"youtube": "https://youtu.be/R_YjOFqAm_E",
 			//"spotify": "https://open.spotify.com/track/53UmWN6SUMQ5pE7F4EiaxR?si=1ce4b8f12866408a",
+			"subvert": "https://www.subvert.fm/ludoloonstudio/tracks/brainstorm"
 			},
 	},
 	{
@@ -450,6 +454,7 @@ const music_JSON =
 			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/mind-games-remastered",
 			//"youtube": "https://youtu.be/0RGTlupk3ys",
 			//"spotify": "https://open.spotify.com/track/0WbhLFu4RhittuUNuLG9Gr?si=51e5176eb243403e",
+			"subvert": "https://www.subvert.fm/ludoloonstudio/tracks/faulty-memory"
 			},
 	},
 	{
@@ -475,6 +480,7 @@ const music_JSON =
 			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/mind-games-remastered",
 			//"youtube": "https://youtu.be/C1Lf1_XmgIA",
 			//"spotify": "https://open.spotify.com/track/3cR4VdZ9LDOsqlX272LyDg?si=660268ce74794abd",
+			"subvert": "https://www.subvert.fm/ludoloonstudio/tracks/funky-feeling"
 			},
 	},
 	{
@@ -500,6 +506,7 @@ const music_JSON =
 			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/mind-games-remastered",
 			//"youtube": "https://youtu.be/w8cEYGg3CvU",
 			//"spotify": "https://open.spotify.com/track/1ufEm37TPYJgnDrVkSz9jh?si=4ac37c702ee6451c",
+			"subvert": "https://www.subvert.fm/ludoloonstudio/tracks/meditation"
 			},
 	},
 	{
@@ -525,6 +532,7 @@ const music_JSON =
 			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/mind-games-remastered",
 			//"youtube": "https://youtu.be/iUSMIGsK3ko",
 			//"spotify": "https://open.spotify.com/track/0gS7QPO5j5EkVd4lxmBdZP?si=ad688e140a77473f",
+			"subvert": "https://www.subvert.fm/ludoloonstudio/tracks/sneaky-thoughts"
 			},
 	},
 	{
@@ -550,6 +558,7 @@ const music_JSON =
 			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/mind-games-remastered",
 			//"youtube": "https://youtu.be/vlbhNgqM8V4",
 			//"spotify": "https://open.spotify.com/track/50pFdBVkUlQ6KtvjZzxNmM?si=2caf4b5063544e23",
+			"subvert": "https://www.subvert.fm/ludoloonstudio/tracks/hazy-mood"
 			},
 	},
 	{
@@ -575,6 +584,7 @@ const music_JSON =
 			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/mind-games-remastered",
 			//"youtube": "https://youtu.be/wyrLZKva7Rg",
 			//"spotify": "https://open.spotify.com/track/5Y3coIhy74DS00mDP3NJS9?si=0db9e8bdf5a64172",
+			"subvert": "https://www.subvert.fm/ludoloonstudio/tracks/clear-headed"
 			},
 	},
 	{
@@ -600,6 +610,7 @@ const music_JSON =
 			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/mind-games-remastered",
 			//"youtube": "https://youtu.be/9qoYoi6_KHk",
 			//"spotify": "https://open.spotify.com/track/5pF0o1tOYn3MltZ7DcPTaf?si=f7b46ce57e2e4d07",
+			"subvert": "https://www.subvert.fm/ludoloonstudio/tracks/dream"
 			},
 	},
 	{
@@ -625,6 +636,7 @@ const music_JSON =
 			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/mind-games-remastered",
 			//"youtube": "https://youtu.be/kx6B6RItgBM",
 			//"spotify": "https://open.spotify.com/track/44Ycml2RzJWbb0wcwODZ7o?si=9589b3bcd83c41e0",
+			"subvert": "https://www.subvert.fm/ludoloonstudio/tracks/wandering-rumination"
 			},
 	},
 	// --- END OF MIND GAME MUSIC PACK ---
