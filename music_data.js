@@ -1192,7 +1192,7 @@ const music_JSON =
 			{//"unity": "https://assetstore.unity.com/packages/slug/216619",
 		"itch": "https://ludoloonstudio.itch.io/roguelike-adventure-music-pack",
 		"gamedevmarket": "https://www.gamedevmarket.net/asset/roguelike-adventure-music-pack/",
-		"godot": "https://godotmarketplace.com/shop/roguelike-adventure-music-pack/"},
+			},
 		"streaming":
 			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/roguelike-adventure-music-pack",
 			"subvert": "https://www.subvert.fm/ludoloonstudio/roguelike-adventure-music-pack",
@@ -1217,7 +1217,7 @@ const music_JSON =
 			{//"unity": "https://assetstore.unity.com/packages/slug/216619",
       "itch": "https://ludoloonstudio.itch.io/roguelike-adventure-music-pack",
       "gamedevmarket": "https://www.gamedevmarket.net/asset/roguelike-adventure-music-pack/",
-      "godot": "https://godotmarketplace.com/shop/roguelike-adventure-music-pack/"},
+			},
 		"streaming":
 			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/roguelike-adventure-music-pack",
 			"subvert": "https://www.subvert.fm/ludoloonstudio/roguelike-adventure-music-pack",
@@ -1242,7 +1242,7 @@ const music_JSON =
 			{//"unity": "https://assetstore.unity.com/packages/slug/216619",
 		"itch": "https://ludoloonstudio.itch.io/roguelike-adventure-music-pack",
 		"gamedevmarket": "https://www.gamedevmarket.net/asset/roguelike-adventure-music-pack/",
-		"godot": "https://godotmarketplace.com/shop/roguelike-adventure-music-pack/"},
+			},
 		"streaming":
 			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/roguelike-adventure-music-pack",
 			"subvert": "https://www.subvert.fm/ludoloonstudio/roguelike-adventure-music-pack",
@@ -1267,7 +1267,7 @@ const music_JSON =
 			{//"unity": "https://assetstore.unity.com/packages/slug/216619",
 		"itch": "https://ludoloonstudio.itch.io/roguelike-adventure-music-pack",
 		"gamedevmarket": "https://www.gamedevmarket.net/asset/roguelike-adventure-music-pack/",
-		"godot": "https://godotmarketplace.com/shop/roguelike-adventure-music-pack/"},
+			},
 		"streaming":
 			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/roguelike-adventure-music-pack",
 			"subvert": "https://www.subvert.fm/ludoloonstudio/roguelike-adventure-music-pack",
@@ -1292,7 +1292,7 @@ const music_JSON =
 			{//"unity": "https://assetstore.unity.com/packages/slug/216619",
 		"itch": "https://ludoloonstudio.itch.io/roguelike-adventure-music-pack",
 		"gamedevmarket": "https://www.gamedevmarket.net/asset/roguelike-adventure-music-pack/",
-		"godot": "https://godotmarketplace.com/shop/roguelike-adventure-music-pack/"},
+			},
 		"streaming":
 			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/roguelike-adventure-music-pack",
 			"subvert": "https://www.subvert.fm/ludoloonstudio/roguelike-adventure-music-pack",
@@ -1317,7 +1317,7 @@ const music_JSON =
 			{//"unity": "https://assetstore.unity.com/packages/slug/216619",
 		"itch": "https://ludoloonstudio.itch.io/roguelike-adventure-music-pack",
 		"gamedevmarket": "https://www.gamedevmarket.net/asset/roguelike-adventure-music-pack/",
-		"godot": "https://godotmarketplace.com/shop/roguelike-adventure-music-pack/"},
+			},
 		"streaming":
 			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/roguelike-adventure-music-pack",
 			"subvert": "https://www.subvert.fm/ludoloonstudio/roguelike-adventure-music-pack",
@@ -1342,7 +1342,7 @@ const music_JSON =
 			{//"unity": "https://assetstore.unity.com/packages/slug/216619",
 		"itch": "https://ludoloonstudio.itch.io/roguelike-adventure-music-pack",
 		"gamedevmarket": "https://www.gamedevmarket.net/asset/roguelike-adventure-music-pack/",
-		"godot": "https://godotmarketplace.com/shop/roguelike-adventure-music-pack/"},
+			},
 		"streaming":
 			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/roguelike-adventure-music-pack",
 			"subvert": "https://www.subvert.fm/ludoloonstudio/roguelike-adventure-music-pack",
@@ -1367,7 +1367,7 @@ const music_JSON =
 			{//"unity": "https://assetstore.unity.com/packages/slug/216619",
 		"itch": "https://ludoloonstudio.itch.io/roguelike-adventure-music-pack",
 		"gamedevmarket": "https://www.gamedevmarket.net/asset/roguelike-adventure-music-pack/",
-		"godot": "https://godotmarketplace.com/shop/roguelike-adventure-music-pack/"},
+			},
 		"streaming":
 			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/roguelike-adventure-music-pack",
 			"subvert": "https://www.subvert.fm/ludoloonstudio/roguelike-adventure-music-pack",
@@ -1392,7 +1392,7 @@ const music_JSON =
 			{//"unity": "https://assetstore.unity.com/packages/slug/216619",
 		"itch": "https://ludoloonstudio.itch.io/roguelike-adventure-music-pack",
 		"gamedevmarket": "https://www.gamedevmarket.net/asset/roguelike-adventure-music-pack/",
-		"godot": "https://godotmarketplace.com/shop/roguelike-adventure-music-pack/"},
+			},
 		"streaming":
 			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/roguelike-adventure-music-pack",
 			"subvert": "https://www.subvert.fm/ludoloonstudio/roguelike-adventure-music-pack",
@@ -1417,7 +1417,7 @@ const music_JSON =
 			{//"unity": "https://assetstore.unity.com/packages/slug/216619",
 		"itch": "https://ludoloonstudio.itch.io/roguelike-adventure-music-pack",
 		"gamedevmarket": "https://www.gamedevmarket.net/asset/roguelike-adventure-music-pack/",
-		"godot": "https://godotmarketplace.com/shop/roguelike-adventure-music-pack/"},
+			},
 		"streaming":
 			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/roguelike-adventure-music-pack",
 			"subvert": "https://www.subvert.fm/ludoloonstudio/roguelike-adventure-music-pack",
@@ -1442,7 +1442,7 @@ const music_JSON =
 			{//"unity": "https://assetstore.unity.com/packages/slug/216619",
 		"itch": "https://ludoloonstudio.itch.io/roguelike-adventure-music-pack",
 		"gamedevmarket": "https://www.gamedevmarket.net/asset/roguelike-adventure-music-pack/",
-		"godot": "https://godotmarketplace.com/shop/roguelike-adventure-music-pack/"},
+			},
 		"streaming":
 			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/roguelike-adventure-music-pack",
 			"subvert": "https://www.subvert.fm/ludoloonstudio/roguelike-adventure-music-pack",
@@ -1467,7 +1467,7 @@ const music_JSON =
 			{//"unity": "https://assetstore.unity.com/packages/slug/216619",
 		"itch": "https://ludoloonstudio.itch.io/roguelike-adventure-music-pack",
 		"gamedevmarket": "https://www.gamedevmarket.net/asset/roguelike-adventure-music-pack/",
-		"godot": "https://godotmarketplace.com/shop/roguelike-adventure-music-pack/"},
+			},
 		"streaming":
 			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/roguelike-adventure-music-pack",
 			"subvert": "https://www.subvert.fm/ludoloonstudio/roguelike-adventure-music-pack",
@@ -1492,7 +1492,7 @@ const music_JSON =
 			{//"unity": "https://assetstore.unity.com/packages/slug/216619",
 		"itch": "https://ludoloonstudio.itch.io/roguelike-adventure-music-pack",
 		"gamedevmarket": "https://www.gamedevmarket.net/asset/roguelike-adventure-music-pack/",
-		"godot": "https://godotmarketplace.com/shop/roguelike-adventure-music-pack/"},
+			},
 		"streaming":
 			{"bandcamp": "https://ludoloonstudio.bandcamp.com/album/roguelike-adventure-music-pack",
 			"subvert": "https://www.subvert.fm/ludoloonstudio/roguelike-adventure-music-pack",
@@ -1537,7 +1537,6 @@ const music_JSON =
 		"stores":
 			{//"unity": "https://assetstore.unity.com/packages/slug/213501",
 			"itch": "https://ludoloonstudio.itch.io/mysterious-fog",
-			"godot": "https://godotmarketplace.com/shop/mysterious-fog-royalty-free/",
 			},
 		"streaming":
 			{"archive.org": "https://archive.org/details/mysterious-fog-full-track",
