@@ -189,6 +189,19 @@ const works_credits =
 
 const works_projects =
 [
+	//Big Bite - Hellavision Television
+	{
+		"title": "Rhthym Hellavision: Big Bite",
+		"date": new Date(2026, 9, 21),
+		"url": "rhthym-hellavision-big-bite",
+		"embed": "https://youtube.com/embed/kG21yunXvMM?start=1594",
+		"cover": "rhthym-hellavision-big-bite.webp",
+		"summary": 'I made some music for a <a href="https://www.hellavisiontelevision.com/">Hellavision Television</a> entry by Lukas Anderson and Brady Johnson!',
+		"tags": ["Hellavision", "Video", "RhythmHeaven", "Short"],
+		"streaming":{
+			"youtube": "https://youtube.com/watch?v=kG21yunXvMM&t=1594"
+		}
+	},
 	//Wacky Workbench (Past) Remix
 	{
 		"title": "Wacky Workbench (Past) Remix",
